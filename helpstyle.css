@@ -1,0 +1,144 @@
+/*added by schmutzka*/
+table.tbl
+{
+border-color:#333333;
+background-color:#DDEEFF;
+font-size: 13px;
+font-weight: normal;
+}
+
+.boright
+{border-right: 1px solid black;}
+/**/
+
+
+
+
+
+/* STYLY spolecne pro vsechny stranky Webgame helpu */
+
+body
+{
+background-color: #DEF; 
+font-size: x-small;
+font-family: Verdana
+}
+/*  BGCOLOR="#ffffff" TEXT="#000000" LINK="#0000ff" VLINK="#800080" */
+
+
+								
+								
+.tema        {font-size: x-small ;
+                        font-weight: bold ;
+                        color:#000;
+                    font-variant: small-caps; clip:  rect(   )}
+
+ol     	{          margin: 8px 12px 8px 8px ;       }
+
+
+h1            {margin-top: 3ex;
+		 text-indent: 4ex;
+                 font-size: large;
+                 color:Rgb(2,78,202) }
+
+h2            {margin-top: 3ex;
+                 text-indent: 1ex;
+                 font-size: medium;
+		 COLOR: #0066ff;
+                  }
+
+h3            {margin-left: 20px;
+                 font-size: x-small;
+                 color:Rgb(3,166,189);
+                 font-weight: bold }
+
+h4            {margin-left: 40px;
+                 font-size: x-small;
+                 color: #034;
+                 margin-bottom:5px}
+
+h5            {margin-top: 3ex;
+                 text-indent: 1ex;
+                 font-size: 16px;
+				 font-weight: bold;
+		 COLOR: #639ADF;
+	  	 }
+
+p    {
+	margin: 6px;
+
+}
+
+
+table.std        {font-size: x-small;
+                margin: 6px 6px 6px 6px ;
+                background-color: #DDEEFF;
+            border: 2px solid #333333;
+            text-align:center}
+
+.transp {background-color: transparent; vertical-align:top}
+
+
+td                {background-color: #FFF; padding: 4px}
+th                {background-color: #6AD; padding: 4px}
+li            {margin: 0px}
+
+
+.inf   {
+	font-size:x-small;
+	color: #666666;
+	font-style: italic;
+	font-weight: lighter;
+	font-variant: normal;
+	text-transform: none;
+	font-family: Verdana;
+}
+/* nasledujici b1 az b5 jsou pouze pro graficke znazorneni kvalit statnich zrizeni */
+td.b5, td.b4, td.b3, td.b2, td.b1
+                 {font-size: x-large; color: #0F0; font-weight:900; background-color: #444;
+                 text-align:center}
+td.b5   {color:#0F0 ; font-size:medium}
+td.b4   {color:#0A0 ; font-size:medium}
+td.b3   {color:#444 ; font-size:small}
+td.b2   {color:#A00 ; font-size:medium}
+td.b1   {color:#F00 ; font-size:medium}
+td.h        {font-weight: bold }
+
+/* pos je ted zelena a neg cervena barva  */
+.pos         {color:#090}
+.neg    {color:#900}
+
+
+/* nasledujici grafika znazornenije tabulku karticek */
+td.a5
+                 {font-size: x-small; color: #000;  background-color: #FFF;
+                 text-align:center}
+td.a5   {color:#000 ; font-size:x-small}
+td.h        {font-weight: bold }
+
+/* pos=zelena, neg=cervena barva  */
+.pos         {color:#090}
+.neg    {color:#900}
+
+
+
+
+a {color:blue;text-decoration:none;}
+a:hover {
+	color: #01148B;
+	text-decoration:underline;
+}
+
+.exception {
+	font-family: "Times New Roman", Times, serif;
+	font-size: x-small;
+	font-style: italic;
+	color: #999999;
+	background-color: #DFDEED;
+	white-space: normal;
+	clear: left;
+	float: left;
+	border: thin dotted;
+	left: 1cm;
+
+}

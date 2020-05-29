@@ -1,0 +1,906 @@
+<HTML>
+<HEAD>
+<TITLE>Manuál k strategii Webgame</TITLE>
+<META name="keywords" content="">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="helpstyle.css" type="text/css">
+<style type="text/css">
+<!--
+.styl1 {color: #000000}
+.styl2 {
+	color: #FF0000;
+	font-weight: bold;
+}
+-->
+</style>
+</HEAD>
+<body>
+<a name="Sta"> </a>
+<h1>12 Žebříčky a hodnosti</h1>
+ 
+<a name="H1"></a>
+  
+
+  <h2> 12.1 Prestiž zemí</h2>
+  <blockquote>
+  
+    <p>Prestiž je nejdůležitějším hodnocením země. Je to ukazatel toho, jak je zem silná (ať už vojensky či hospodářsky). Prestiž země je součtem bodů za <a href="valky.htm#JDr">jednotky</a>, <a href="valky.htm#Rak">rakety</a>, rozlohu, <a href="budovy.htm#Typ">budovy</a>, <a href="budovy.htm#Ruin">ruiny</a>, <a href="techno.htm#TUv">technologie</a> a <a href="zbozi.htm#Zbo">zboží</a>. Do prestiže se počítají i věci na trhu do doby, než se prodají. Ostatní faktory jako <a href="techno.htm#POK">pokroky</a>, <a href="valky.htm#Gen">generálové</a>, <a href="valky.htm#Vxp">zkušenosti armády</a>, <a href="#H3">hodnost</a> apod. <strong>neovlivňují</strong> velikost prestiže, a proto se může země zdát slabší, než opravdu je. Prestiž <a href="aliance.htm#Al">aliance</a> je potom součtem prestiží jejích členů. To, kolik dostáváte prestiže a za co, uvádí tabulka: </p>
+    <p>&nbsp;</p>
+  
+  <table align=center>
+  <tr valign=top><td class=transp>
+  
+  <table class=tbl align=center border=2>
+          <col>
+          <col align=right>
+          <tr> 
+            <th>Jednotka </div></th>
+            <th>Prestiž </div></th>
+          </tr>
+          <tr> 
+            <td><a href="valky.htm#Voj">Voják</a></div></td>
+            <td>1 </div></td>
+          </tr>
+          <tr> 
+            <td><a href="valky.htm#Tan">Tank</a> </div></td>
+            <td>5 </div></td>
+          </tr>
+          <tr> 
+            <td><a href="valky.htm#Sti">Stíhačka</a> </div></td>
+            <td>3,5 </div></td>
+          </tr>
+          <tr> 
+            <td><a href="valky.htm#Bun">Bunkr</a> </div></td>
+            <td>3,5 </div></td>
+          </tr>
+          <tr> 
+            <td><a href="valky.htm#Mech">Mech</a> </div></td>
+            <td>2,7 </div></td>
+          </tr>
+          <tr> 
+            <td><a href="valky.htm#Age">Agent</a> </div></td>
+            <td>15</div></td>
+          </tr>
+          <tr> 
+            <td><a href="valky.htm#Rak">Raketa</a> </div></td>
+            <td>500</div></td>
+          </tr>
+        </table>
+      </td>
+      <td class=transp>
+       
+        <table class=tbl align=center border=2>
+        
+            <col>
+          <col align=right>
+       
+        
+          <tr> 
+            <th>Jednotka </div></th>
+            <th>Prestiž </div></th>
+          </tr>
+          <tr> 
+            <td>1km<sup>2</sup> </div></td>
+            <td>15 </div></td>
+          </tr>
+          <tr> 
+            <td><a href="budovy.htm#Typ">Budova</a> </div></td>
+            <td>5</div></td>
+          </tr>
+          <tr> 
+            <td><a href="budovy.htm#Ruin">Ruina</a> </div></td>
+            <td>2</div></td>
+          </tr>
+          <tr> 
+            <td><a href="techno.htm#TUv">Technologie</a> </div></td>
+            <td>1</div></td>
+          </tr>
+          <tr> 
+            <td>1000<a href="zbozi.htm#Pen">$</a></div></td>
+            <td>2</div></td>
+          </tr>
+          <tr> 
+            <td>100t <a href="zbozi.htm#JaE">jídla</a></div></td>
+            <td>2 </div></td>
+          </tr>
+          <tr> 
+            <td>100MWh <a href="zbozi.htm#JaE">energie</a></div></td>
+            <td>2</div></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <hr>
+  <p><a name="H2"></a></p>
+  </blockquote>
+  <h2>12.2 Žebříčky a statistiky</h2>
+</ol>
+<blockquote>
+  <p><a name="ZeZ" id="ZeZ"></a></p>
+  <p><strong>Žebříček zemí:</strong> Hlavním cílem hry je mít co nejvyšší prestiž, a proto  jsou země v  žebříčku seřazeny podle prestiže. Prestiž na konci věku 
+    se promítne do historického žebříčku hráčů. V žebříčku je možnost zobrazit prvních 40 zemí od každé vlády. Žebříček zemí se aktualizuje s každou změnou.</p>
+  <p><strong>Žebříček aliancí:</strong> Funguje stejně jako žebříček zemí s tím, že jsou v něm řazeny <a href="aliance.htm#Al">aliance</a>. Aktualizuje se každých 10 minut. </p>
+  <p><strong>Statistiky: </strong>Zobrazují průměrné a nejvyšší hodnoty většiny vlastností zemí (anonymně). 
+
+
+ Do statistik jsou zahrnuty všechny země, které opustily protekci. Aktualizuje se každou 1 hodinu.<a name="Rek" id="Rek"></a></p>
+  <p><strong>Rekordy: </strong>V přehledu rekordů vidíte jmenovitě 10 nejlepších zemí v atributech jako je velikost území, <a href="zbozi.htm#Lid">počet obyvatel</a>, nejlepší producenty <a href="techno.htm#TUv">technologií</a>, <a href="zbozi.htm#Pen">peněz</a>, dílů v <a href="budovy.htm#Tov">továrnách</a>, <a href="valky.htm#Voj">vojáků</a>, <a href="zbozi.htm#JaE">jídla</a>, <a href="zbozi.htm#JaE">energie</a>, nejsilnější <a href="valky.htm#ROb">rozvědku</a>, počet <a href="valky.htm#Rnu">nukleárních raket</a>, <a href="valky.htm#UZk">nejzkušenější</a> armádu,   
+     nejlepší <a href="valky.htm#GE3">generály</a>, <a href="techno.htm#NBS">nejvyšší budovu světa</a>  a nejdéle žijící obyvatele.  Aktualizuje se jednou za hodinu.</p>
+  <p class="inf">Pokud nejste v rekordech ve výrobě dílu v továrnách, je to zřejmě tím, že vyrábíte <a href="valky.htm#Mech">mechy</a>. Ty mají ale odlišný bonus do výroby, proto je směrodatný údaj při výrobě tanků, stíhaček nebo bunkrů.</p>
+  <p><strong>Historické tabulky: </strong>Poměrně sledovaným aspektem je i historické 
+    pořadí, ve kterém si můžete prohlédnout, jak si který hráč vede v historii hry. V současnosti se body přidělují tak, že hráč dostane za své umístění body, ty se dále ještě vynásobí číslem, které je určeno jeho řádovým umístěním (např. zda byl v první stovce, druhé stovce hráčů atd.). Poté se sečtou body za 3 nejlepší výsledky a tím se určí výsledné pořadí.</p>
+  <p class="inf">Konkrétně se to počítá následujícím způsobem: </p>
+  <p><span class="inf"> Maximum, kterého hráč může dosáhnout je  50 000 bodů. Tento počet bodů dostane  1. hráč, ostatní pak dostávají přímo úměrně méně. <br>
+  (např. ve věku vyšlo z  protekce 25 000 hráčů, tzn. za každé místo dolů je o 2 body méně -&gt; za 2.místo 49 998 bodů, 3.místo 49 996 bodů ...). Tento počet získaných bodů se vynásobí koeficientem dle tabulky.</span><br>
+</p>
+<br>
+  <table width="673" border="2" align="center" bordercolor="#333333" class=std>
+    <tr align="center">
+      <th width=113><div align="center">Umístění</div></th>
+      <th width=70><div align="center"><strong>1</strong></div></th>
+      <th width=70><div align="center">do 10</div></th>
+      <th width=70><div align="center">do 40 </div></th>
+      <th width=70><div align="center">do 100</div></th>
+      <th width=70><div align="center">do 200</div></th>
+      <th width=70><div align="center">do 400</div></th>
+      <th width=70><div align="center">do 700 </div></th>
+      <th width=70> do 1000</th>
+    </tr>
+    <tr align="center">
+      <th width=113>Koeficient</th>
+      <td  width=70><div align="center">2</div></td>
+      <td  width=70><div align="center">1,8</div></td>
+      <td  width=70><div align="center"><span class="styl1">1,6</span></div></td>
+      <td  width=70><div align="center">1,5</div></td>
+      <td  width=70><div align="center">1,4</div></td>
+      <td  width=70><div align="center">1,3</div></td>
+      <td  width=70><div align="center">1,2</div></td>
+      <td width=70><div align="center">1,1</div></td>
+    </tr>
+  </table>
+  <br>
+<!--    <font color=f59700>Parametry s koeficienty pro server GOLD WG:</font>
+  <table width="673" border="2" align="center" bordercolor="#333333" class=std style="color: rgb(245, 151, 0);" >
+    <tr align="center">
+      <th width=113><div align="center">Umístění</div></th>
+      <th width=70><div align="center"><strong>1</strong></div></th>
+      <th width=70><div align="center">do 10</div></th>
+      <th width=70><div align="center">do 40 </div></th>
+      <th width=70><div align="center">do 100</div></th>
+      <th width=70><div align="center">do 200</div></th>
+    </tr>
+    <tr align="center">
+      <th width=113>Koeficient</th>
+      <td  width=70><div align="center">2</div></td>
+      <td  width=70><div align="center">1,8</div></td>
+      <td  width=70><div align="center">1,6</span></div></td>
+      <td  width=70><div align="center">1,4</div></td>
+      <td  width=70><div align="center">1,2</div></td>
+    </tr>
+  </table> 
+  -->
+  <p><br>
+    <br>
+    <span class="inf">Tzn. pokud budu první, získám 50 000*2 bodů, tedy 100 000 bodů do celkového skóre, do kterého se počítají  3 nejlepší dosažené výsledky. Pokud má hráč dvě země, tak se  skóre počítá stejně jako u jiných, jen je každá země hodnocena jinak (jedna má menší a druhá větší váhu). Konkretní vzorec tedy vypadá takto:((5*lepší_zem+2*horší_zem)/7).</span></p>
+  <p>&nbsp; </p>
+  <!-------- STARY HODNOCENI -----------------------------------------------------
+  <p>Eviduje se  pořadí <strong>hráčů</strong> za všechny dosud odehrané věky, kdy je hráč na konci 
+    každého věku obodován podle svého umístění na jeho konci (vítěz má nejvíce bodů 
+    v závislosti na počtu zúčastněných hráčů, poslední hráč získává 0 bodů). Do bodování 
+    se Vám počítá pouze 5 nejlepších věků. Proto mají šanci na dobré umístění 
+    všichni, kteří hrají Webgame alespoň několik věků.</p>
+        -->
+    <!--    HISTORICKE PORADI ALIANCI
+  <p>V historickém pořadí <strong><a href="aliance.htm#Al">aliancí</a></strong> zase vidíte dlouhodobě nejlepší aliance ve Webgame.
+    Na konci věku vždy dostanou aliance body podle svého pořadí plus bonusové body 
+    za některé atributy. V hodnocení aliancí získávají body pouze nejlepší aliance (zhruba 
+    10-15 aliancí za každý věk). Body za všechny věky jsou sečteny a je sestaveno 
+    historické pořadí aliancí.</p>          -->
+  <p><strong>Duely:</strong> Můžete vyzvat libovolný počet zemí k duelu např. v prestiži, zkušenostech nasbíraných za věk apod. Cílová země ho musí přijmout. Poté můžete sledovat na grafu průběh tohoto duelu (jelikož se graf kreslí jednou denně, musíte počkat až bude dostatek dat pro vykreslení). Vyhlášené duely si může každý  prohlížet. Duel  může vyhlásit <strong>pouze <a href="prispevky.htm#GS2">GOLD</a>/<a href="prispevky.htm#GS4">PLATINUM</a> hráč</strong>, ale přijmout jej může kdokoli.</p>
+  
+  <!-- 	ŽEBŘÍČEK NOVÁČKŮ ----------
+  <p><strong>Žebříček nováčků:</strong> Rovněž se eviduje žebříček <a href="podpora.htm#Nov">nováčků</a>, tedy hráčů, kteří hrají Webgame teprve první věk.</p>
+  ----->
+  <p>&nbsp;</p>
+    <hr>
+  <p><a name="Odm" id="Odm"></a></p>
+</blockquote>
+  <h2>12.3 Odměny</h2>
+  
+  
+  <blockquote>
+    <p>Nejlepší hráči jednotlivých věků jsou oceňování ve formě kreditů následujícím způsobem: </p>
+  
+  <br>
+    <p><strong>Jednotlivci:</strong></p>
+  <br> 
+  <table align=center class=tbl border=2>
+  <col align=center>
+  
+    <tr> 
+      <th width="170"><span class="styl1">Umístění</span></th>
+      <th width="170"><span class="styl1">Odměna</span></th>
+    </tr>
+    <tr> 
+      <td><strong>1. místo</strong></span></th>
+      <td> <strong>450 kreditů</strong></td>
+    <tr> 
+      <td><strong>2. místo</strong></span></th>
+      <td><strong>300 kreditů</strong></td>
+    </tr>
+    <tr> 
+      <td><strong>3. místo</strong></span></th>
+      <td><strong>150 kreditů</strong></td>
+    </tr>
+    <tr> 
+      <td>4. místo</span></th>
+      <td>75 kreditů</td>
+    </tr>
+    <tr> 
+      <td>5. místo</span></th>
+      <td>60 kreditů</td>
+    </tr>
+    <tr> 
+      <td>6. místo</span></th>
+      <td>45 kreditů</td>
+    </tr>
+    <tr> 
+      <td>7. místo</span></th>
+      <td>30 kreditů</td>
+    </tr>
+    <tr> 
+      <td>8., 9., 10. místo</span></th>
+      <td>15 kreditů</td>
+    </tr>
+        
+ </table>
+  <br>
+  <p><strong><em>Předseda vítězné aliance – 100 kreditů</em></strong></p>
+  <br>
+    <p><strong>Aliance:</strong></p>
+    <br> 
+    
+  <table align=center class=tbl border=2>
+  <col align=center>
+  
+    <tr> 
+      <th width="170"><span class="styl1">Umístění</span></th>
+      <th width="170"><span class="styl1">Odměna</span></th>
+    </tr>
+    <tr> 
+      <td><strong>Předseda 1. aliance</strong></span></th>
+      <td><strong>450 kreditů</strong></td>
+    <tr> 
+    <tr> 
+      <td><strong>Členové 1. aliance</strong></span></th>
+      <td><strong>75 kreditů</strong></td>
+    <tr> 
+      <td>Členové 2. aliance
+      <td>45 kreditů</td>
+    </tr>
+    <tr> 
+      <td>Členové 3. aliance
+      <td>25 kreditů</td>
+    </tr>
+            
+ </table>
+  <br>
+  </blockquote>
+  <hr>
+  <p><a name="Kar" id="Kar"></a></p>
+</blockquote>
+  <h2>12.4 Kartičky</h2>
+  
+  
+<blockquote>
+    <p>V žebříčcích jsou vidět tzv. kartičky. Dle nich se o dané zemi dá něco zjistit. Proto je dobré vědet, co která kartička značí. Karty lze skrýt pouze pokrokem <a href="techno.htm#TCenz">Cenzura</a>. 
+   Výjimkou jsou karty <a href="aliance.htm#Pre">Přeběhlík</a> a <a href="trhy.htm#TEm">Embargo</a>, které jsou vidět vždy, a dále kartičky Zkušená armáda a Hospod&aacute;řsk&aacute; velmoc, kterou můžete 
+   v detailech země nastavit, zda se má zobrazovat či naopak má zůstat skrytá. </p>
+  </blockquote>
+  
+  
+  
+  <table align=center class=tbl border=2>
+  <col align=center>
+  
+    <tr> 
+      <th width="65"><span class="styl1">Kartička</span></th>
+      <th width="587"><span class="styl1">Popis</span></th>
+    </tr>
+    <tr> 
+      <td><img src="http://www.webgame.cz/wg/img/z.gif"></span></th>
+      <td> Zkušená armáda - 150k expů a více (lze skrýt)</td>
+    </tr>
+    <tr> 
+      <td><img src="http://www.webgame.cz/wg/img/f.gif"></span></th>
+      <td> <a href="techno.htm#TPf">Fašismus</a> (pokrok)</td>
+    </tr>
+    <tr> 
+      <td><img src="http://www.webgame.cz/wg/img/x.gif"></span></th>
+      <td> <a href="techno.htm#TPs">Svatá válka</a> (pokrok)</td>
+    <tr> 
+      <td><img src="http://www.webgame.cz/wg/img/b.gif"></span></th>
+      <td><a href="valky.htm#Rbi">Biocidní</a> rakety (3 a více)  </td>
+    </tr>
+    <tr>
+      <td><img src="http://www.webgame.cz/wg/img/l.gif"></span></th>
+      <td> <a href="valky.htm#Remp">EMP</a> rakety (2 a více) </td>
+    </tr>
+    <tr> 
+      <td><img src="http://www.webgame.cz/wg/img/n.gif"></span></th>
+      <td> <a href="valky.htm#Rnu">Nukleární</a> rakety (2 a více)</td>
+    </tr>
+    <tr> 
+      <td><img src="http://www.webgame.cz/wg/img/r.gif"></span></th>
+      <td><a href="valky.htm#Roz">Rozvědka</a> (značí silnou rozvědku, ((rozloha+2000)/4)+1 = počet potřebných agentů)</td>
+    </tr>
+    <tr> 
+      <td><img src="http://www.webgame.cz/wg/img/p.gif"></span></th>
+      <td><a href="techno.htm#TPp">Pacifismus</a> (pokrok)</td>
+    </tr>
+    <tr> 
+      <td><img src="http://www.webgame.cz/wg/img/e.gif"></span></th>
+      <td><a href="techno.htm#TPF&#367;z">Fúzní elektrárny</a> (pokrok)</td>
+    </tr>
+    <tr> 
+      <td><img src="http://www.webgame.cz/wg/img/v.gif"></span></th>
+      <td>Vybombardovaný (35% <a href="budovy.htm#Neza">nezastavěného území</a> a <a href="budovy.htm#Ruin">ruin</a>, ale s rozlohou země min. 2000km2)</td>
+    </tr>
+    <tr> 
+      <td><img src="http://www.webgame.cz/wg/img/d.gif"></span></th>
+      <td> Demonstrace (Nízká <a href="vlady.htm#Spo">spokojenost</a> - 75% a méně)</td>
+    </tr>
+    <tr> 
+      <td><img src="http://www.webgame.cz/wg/img/m.gif"></span></th>
+      <td><a href="techno.htm#NBS">Mrakodrap</a> - v zemi je budova vy&scaron;&scaron;&iacute; než 500m (pokrok)</td>
+    </tr>
+    <tr> 
+      <td><img src="http://www.webgame.cz/wg/img/a.gif"></span></th>
+      <td><a href="trhy.htm#TEm">Embargo</a> (postih)</td>
+    </tr>
+    <tr> 
+      <td><img src="http://webgame.cz/wg/img/h.gif"></span></th>
+      <td>Hospodářská velmoc (5 <a href="trhy.htm#TEm">Embargo</a> hlasů a více) (lze skr&yacute;t)</td>
+    </tr>
+    <tr> 
+      <td><img src="http://www.webgame.cz/wg/img/q.gif"></span></th>
+      <td><a href="techno.htm#TCenz">Cenzura</a> ukrývá informace, které vlastník nechce zobrazovat, včetně cenzury samotné (pokrok)</td>
+    </tr>
+    <tr>
+      <td><span class="styl1"><img src="http://www.webgame.cz/wg/img/u.png"></span></th>
+      <td><a href="aliance.htm#Pre">Přeběhlík</a> - oslaben&aacute; s&iacute;la arm&aacute;dy na 24h, nelze skrýt ani cenzurou (postih)</td>
+    </tr>
+    
+ </table>
+  <p>&nbsp;</p>
+  <p><br>
+    
+  </p>
+<hr>
+  <p><a name="H3"></a></p>
+
+
+  <h2>12.5 Hodnosti</h2>
+
+<blockquote>
+  <p><a name="H31" id="H31"></a></p>
+  <H3>12.5.1 Obecně</H3>
+  <p>Hodnost země je dána součtem nasbíraných zkušeností v aktuálním věku. Zkušenosti 
+    získáváte hlavně ve <a href="valky.htm#Vou">vojenských útocích</a>. Tato hodnost se objeví v detailech Vaší 
+    země (vidíte i přesný počet zkušeností) a v <a href="#ZeZ">Žebříčku</a> (vidíte pouze hodnost). Takto mohou silní bojovníci odstrašovat slabé a nezkušení obchodníci přitahovat 
+    agresi. </p>
+  <p>Hodnost se dá i skrýt a sice pokrokem <a href="techno.htm#Cen">cenzura</a>. <strong>Zkušenosti jdou i ztrácet, a to při <a href="aliance.htm#FW">Fake war</a>. </strong></p>
+  <p>&nbsp;</p>
+<table class=tbl border=2 align=center>
+  <col>
+  <col align=right>
+  <tr> 
+    <th> Hodnost</div></th>
+    <th align=center>Minimum bodů<br> na hodnost</div></th>
+  </tr>
+  <tr> 
+    <td> <div>1. Farmář</div></th>
+    <td> <div>0</div></td>
+  </tr>
+  <tr> 
+    <td> <div>2. Rekrut</div></th>
+    <td> <div>10 000</div></td>
+  </tr>
+  <tr> 
+    <td> <div>3. Velitel bunkrů</div></th>
+    <td> <div>20 000</div></td>
+  </tr>
+  <tr> 
+    <td> <div>4. Průzkumník</div></th>
+    <td> <div>40 000</div></td>
+  </tr>
+  <tr> 
+    <td> <div>5. Velitel tanků</div></th>
+    <td> <div>80 000</div></td>
+  </tr>
+  <tr> 
+    <td> <div>6. Velitel mechů</div></th>
+    <td> <div>150 000</div></td>
+  </tr>
+  <tr> 
+    <td> <div>7. Poručík letectva</div></th>
+    <td><div>250 000</div></td>
+  </tr>
+  <tr> 
+    <td> <div>8. Kapitán gardy</div></th>
+    <td><div>400 000</div></td>
+  </tr>
+  <tr> 
+    <td> <div>9. Major</div></th>
+    <td><div>600 000</div></td>
+  </tr>
+  <tr> 
+    <td> <div>10. Plukovník</div></th>
+    <td><div>850 000</div></td>
+  </tr>
+  <tr> 
+    <td> <div>11. Generál</div></th>
+    <td><div>1 100 000</div></td>
+  </tr>
+  <tr> 
+    <td> <div>12. Armádní generál</div></th>
+    <td><div>1 500 000</div></td>
+  </tr>
+  <tr> 
+    <td> <div>13. Kápo</div></th>
+    <td><div>1 950 000</div></td>
+  </tr>
+  <tr> 
+    <td> <div>14. Nepřítel populace</div></th>
+    <td><div>2 450 000</div></td>
+  </tr>
+</table>
+<br>
+  <p><a name="H32" id="H32"></a></p>
+    <H3>12.5.2 Veteránské bonusy</H3>
+    <p><br>
+    <span class="style3">Za určitou dosaženou hodnost dostáváte tzv. Veteránské bonusy: </span></p>
+  <ul>
+    <li><strong>Velitel mechu</strong> (6) - 150k zkušeností za věk: +10% obrana proti <a href="valky.htm#VUnt">nočnímu tažení</a></li>
+    <li><strong>Kapitán gardy</strong> (8) - 400k zkušeností za věk: za každých našich 400 padlých 
+          <a href="valky.htm#Voj">vojáků</a>  v útoku (<a href="valky.htm#UNorm">normálním</a> i <a href="valky.htm#UTak">taktickém</a>, při pomoci <a href="aliance.htm#ASp">spojenci</a> nikoli) přibude jeden <a href="valky.htm#Age">agent</a></li>
+    <li><strong>Major</strong> (9) - 600k zkušeností za věk: může přijít 4. generál (z útoku i obrany)</li>
+    <li><strong>Plukovník</strong> (10) - 850k zkušeností za věk: +100 <a href="valky.htm#UZk">zkušeností armády</a> každé kolo</li>
+    <li><strong>Generál</strong> (11) - 1 100k zkušeností za věk: -15% spotřeba <a href="zbozi.htm#JaE">jídla</a> a <a href="zbozi.htm#Ene">energie</a></li>
+    <li><strong>Armádní generál</strong> (12) 1 500k zkušeností za věk: -25% <a href="valky.htm#Zold">žoldy</a></li>
+    <li><strong>Kápo</strong> (13) - 1 950k zkušeností za věk: +25% <a href="valky.htm#UZi">dobyté území a zboží</a>, + 50% na rychlost vyvíjení <a href="valky.htm#Rak">raket</a></li>
+    <li><strong>Nepřítel populace</strong> (14) - 2 450k zkušeností za věk: +10% <a href="valky.htm#USi">síla armády</a>, + 100% na rychlost vyvíjení <a href="valky.htm#Rak">raket</a> </li>
+  </ul>
+  <p class="inf">Při dosažení další hodnosti (veteránského bonusu) se předchozí veteránské bonusy neruší, zůstavají.</p>
+  <p><a name="H33" id="H33"></a></p>
+  <H3>12.5.3 Zisky zkušeností</H3>
+
+    <p><strong>Zisk zkušeností je  následující: </strong><br>
+      <br>
+      <a href="valky.htm#Roz">Rozvědka</a>:<br>
+    - zkušenosti získává obránce i útočník (pouze k hodnosti) <br>
+    - získané zkušenosti = 100*(1+<a href="valky.htm#RSa">zvýšení nebezpečnosti</a>)<br>
+  - pokud je operace neúspěšná, tak získáváte jen 1/10  <br>
+    - zkušenosti za sabotážní akce rozvědky:<br>
+    <p> Z operace ve full war bude za zničení:
+      10 mechů=1 exp,
+      8 stíhaček=1 exp,
+      1 agent=5 exp,
+      uspešná op. zničit rakety=800 exp</p>
+    <p> V Právě vyhlášené válce budou mít útočník i obránce o 1/2 méně než ve full war a mimo war o 1/4.</p>
+    <p class="inf">&nbsp;</p>
+    <p class="inf">Zvýšení nebezpečnosti je: <br>
+                 
+      0 bodů za 30 až 10 akcí rozvědky<br>
+                 
+      1 bod za 9 až 5 akcí rozvědky<br>
+                 
+    2 body za 4 a méně akcí rozvědky</p>
+    <p class="inf">&nbsp;</p>
+    <p class="inf">Příklad: Když má někdo 4 akce rozvědky a projde, bude mít zisk expů útočník 100*(1+2) = 300, obránce pouze 30. Pokud by útočník neprošel, bude mít 30 expů a obránce 300.<br>
+  </p>
+    <br>
+      <a href="valky.htm#Vxp">Zkušenosti armády</a>: <br>
+      - stejné jako při útočení/bránění armádou<br>
+      - část zkušeností získáte při pomoci spojenci<br>
+      <br>
+        <a href="valky.htm#Rak">Rakety</a>:<br>
+      - pokud je raketa zneškodněna protiraketovou obranou, pak napadený získává 3000 zkušeností (pouze k hodnosti)<br>
+      - za úspěšnou <a href="valky.htm#Rko">konvenční</a> získáváte 1000, za <a href="valky.htm#Rbi">biocidní</a> 2000, za <a href="valky.htm#Remp">EMP</a> 2500 a za <a href="valky.htm#Rnu">nukleární</a> 3000 zkušeností (pouze k hodnosti)<br>
+      <br>
+        </p>
+</blockquote>
+
+<hr>
+  <p><a name="H3"></a></p>
+
+  <p><a name="H4" id="H4"></a></p>
+  <h2>12.6 Medaile</h2>
+
+  <H3>12.6.1 Obecně</H3>
+  <p>Medaile (aktuálně formou tabulek) slouží jako určitá forma ocenění a motivace pro všechny hráče webgame. Aktualizují se po odehrání 1 kola a veškeré Vaše medaile se pak zobrazují v menu Detaily -> Medaile, medaile ostatních hráčů naleznete na jejich profilu (ale se zpožděním 1 věku, aby nedocházelo k prozrazování detailů dané země - informace o generálech, pokrocích, stavu armády), který musí mít založený. O získání medaile se dozvíte v konkrétním kole, ve kterém na danou úroveň medaile dosáhnete a to formou výpisu v podobě události. Například:
+<p>
+<span class="pos">Blahopřejeme! Získali jste novou medaili za 1. úroveň v kategorii Počet stíhaček.</span class="pos">
+
+<p>
+Některé úrovně medailí jsou neveřejné a hráči si je musí odhalit sami, je to tak z důvodu motivace k zisku další úrovně
+<p>
+<H3>12.6.2 Přehled medailí</H3>
+
+<p><H4>Ekonomické medaile</H4></p>
+
+<table class=tbl border=2 align=center>
+    <tr> 
+      <th>Název medaile/Úroveň </th>
+      <th><span class="styl1">1.úroveň </span></th>
+      <th><span class="styl1">2.úroveň </span></th>
+      <th><span class="styl1">3.úroveň </span></th>
+      <th><span class="styl1">4.úroveň </span></th>
+      <th><span class="styl1">5.úroveň </span></th>
+    </tr>
+    <tr> 
+      <th><span class="styl1"> Prestiž </span></th>
+      <td><center>600 000</td>
+      <td><center>1 200 000 </td>
+      <td><center>3 600 000</td>
+      <td><center> ??? </td>
+      <td><center> ??? </td>
+    </tr>
+    <tr> 
+      <th><span class="styl1"> Rozloha </span></th>
+      <td><center> 5 000 km      </td>
+      <td><center> 10 000 km </td>
+      <td><center>20 000 km </td>
+      <td><center> ??? km</td>
+      <td><center> ??? km</td>
+    </tr>
+    <tr> 
+      <th><span class="styl1"> Produkce peněz za kolo </span></th>
+      <td><center> 250 000 $ </td>
+      <td><center> 500 000 $ </td>
+      <td><center> 1 000 000 $ </td>
+      <td><center> ??? $ </td>
+      <td><center> ??? $ </td>
+    </tr>
+    <tr> 
+      <th><span class="styl1"> Produkce jídla za kolo </span></th>
+      <td><center> 15 000 t </td>
+      <td><center> 30 000 t </td>
+      <td><center> 60 000 t </td>
+      <td><center> ??? t </td>
+      <td><center> ??? t </td>
+    </tr>
+    <tr> 
+      <th><span class="styl1"> Produkce energie za kolo</span></th>
+      <td><center> 20 000 MWh </td>
+      <td><center> 40 000 MWh </td>
+      <td><center> 80 000 MWh </td>
+      <td><center> ??? MWh </td>
+      <td><center> ??? MWh </td>
+    </tr>
+     <th><span class="styl1"> Produkce technologií za kolo</span></th>
+     <td><center> 500 </td>
+     <td><center> 1 000 </td>
+     <td><center> 2 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>
+    </tr>
+     <th><span class="styl1"> Produkce vojáků za kolo</span></th>
+     <td><center> 1 000 </td>
+     <td><center> 3 000 </td>
+     <td><center> 6 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>
+    </tr>
+     <th><span class="styl1"> Produkce dílů jednotek za kolo</span></th>
+     <td><center> 10 000 </td>
+     <td><center> 25 000 </td>
+     <td><center> 50 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+    </tr>
+     <th><span class="styl1"> Počet vojáků</span></th>
+     <td><center> 300 000 </td>
+     <td><center> 1 000 000 </td>
+     <td><center> 2 000 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>   
+    </tr>
+     <th><span class="styl1"> Počet tanků</span></th>
+     <td><center> 15 000 </td>
+     <td><center> 75 000  </td>
+     <td><center> 200 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+   </tr>
+     <th><span class="styl1"> Počet stíhaček</span></th>
+     <td><center> 15 000 </td>
+     <td><center> 100 000 </td>
+     <td><center> 250 000</td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>   
+   </tr>
+     <th><span class="styl1"> Počet bunkrů</span></th>
+     <td><center> 15 000 </td>
+     <td><center> 100 000 </td>
+     <td><center> 250 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+   </tr>
+     <th><span class="styl1"> Počet mechů</span></th>
+     <td><center> 100 000 </td>
+     <td><center> 400 000 </td>
+     <td><center> 800 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+   </tr>
+     <th><span class="styl1"> Počet agentů</span></th>
+     <td><center> 2 000 </td>
+     <td><center> 5 000 </td>
+     <td><center> 15 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>   
+   </tr>
+     <th><span class="styl1"> Počet konvenčních raket</span></th>
+     <td><center> 5 </td>
+     <td><center> 10 </td>
+     <td><center> 20 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+   </tr>
+     <th><span class="styl1"> Počet biocidních raket</span></th>
+     <td><center> 3 </td>
+     <td><center> 6 </td>
+     <td><center> 12 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+   </tr>
+     <th><span class="styl1"> Počet EMP raket</span></th>
+     <td><center> 1 </td>
+     <td><center> 3 </td>
+     <td><center> 6 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+   </tr>
+     <th><span class="styl1"> Počet nukleárních raket</span></th>
+     <td><center> 1 </td>
+     <td><center> 3 </td>
+     <td><center> 7 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+   </tr>
+     <th><span class="styl1"> Počet obyvatel</span></th>
+     <td><center> 1 000 000 </td>
+     <td><center> 5 000 000 </td>
+     <td><center> 10 000 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+     
+  </table>
+
+<p><H4>Vojenské medaile</H4></p>
+
+<table class=tbl border=2 align=center>
+    <tr> 
+      <th>Název medaile/Úroveň </th>
+      <th><span class="styl1">1.úroveň </span></th>
+      <th><span class="styl1">2.úroveň </span></th>
+      <th><span class="styl1">3.úroveň </span></th>
+      <th><span class="styl1">4.úroveň </span></th>
+      <th><span class="styl1">5.úroveň </span></th>
+    </tr>
+    <tr> 
+      <th><span class="styl1"> Zkušenosti armády </span></th>
+      <td><center>75 000</td>
+      <td><center>100 000 </td>
+      <td><center>150 000</td>
+      <td><center> ??? </td>
+      <td><center> ??? </td>
+    </tr>
+    <tr> 
+      <th><span class="styl1"> Zkušenosti země </span></th>
+      <td><center> 850 000     </td>
+      <td><center> 1 000 000 </td>
+      <td><center> 1 500 000 </td>
+      <td><center> ??? </td>
+      <td><center> ??? </td>
+    </tr>
+    <tr> 
+      <th><span class="styl1"> Zkušenosti generála </span></th>
+      <td><center> 250 000 </td>
+      <td><center> 500 000 </td>
+      <td><center> 1 000 000 </td>
+      <td><center> ??? </td>
+      <td><center> ??? </td>
+    </tr>
+    <tr> 
+      <th><span class="styl1"> Úrovně generála </span></th>
+      <td><center> 1 </td>
+      <td><center> 2 </td>
+      <td><center> 3 </td>
+      <td><center> ???  </td>
+      <td><center> ???  </td>
+    </tr>
+    <tr> 
+      <th><span class="styl1"> Dobyvačný útok - útočník</span></th>
+      <td><center> 3 000 </td>
+      <td><center> 5 000</td>
+      <td><center> 10 000 </td>
+      <td><center> ??? </td>
+      <td><center> ??? </td>
+    </tr>
+     <th><span class="styl1"> Loupeživý útok - útočník</span></th>
+     <td><center> 3 000 </td>
+     <td><center> 5 000 </td>
+     <td><center> 10 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>
+    </tr>
+     <th><span class="styl1"> Partyzánský útok - útočník</span></th>
+     <td><center> 3 000 </td>
+     <td><center> 6 000 </td>
+     <td><center> 10 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>
+    </tr>
+     <th><span class="styl1"> Zaútočit na týl - útočník</span></th>
+     <td><center> 3 000 </td>
+     <td><center> 6 000 </td>
+     <td><center> 10 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+    </tr>
+     <th><span class="styl1"> Taktický nálet - útočník</span></th>
+     <td><center> 3 000 </td>
+     <td><center> 5 000 </td>
+     <td><center> 10 000</td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>   
+    </tr>
+     <th><span class="styl1"> Vniknutí do bunkrů - útočník</span></th>
+     <td><center> 3 000 </td>
+     <td><center> 5 000  </td>
+     <td><center> 10 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+   </tr>
+     <th><span class="styl1"> Noční tažení - útočník</span></th>
+     <td><center> 5 000 </td>
+     <td><center> 10 000 </td>
+     <td><center> 17 000</td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>   
+   </tr>
+     <th><span class="styl1"> Dobyvačný útok - obránce</span></th>
+     <td><center> 3 000 </td>
+     <td><center> 5 000 </td>
+     <td><center> 10 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+   </tr>
+     <th><span class="styl1"> Loupeživý útok - obránce</span></th>
+     <td><center> 3 000 </td>
+     <td><center> 5 000 </td>
+     <td><center> 10 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+   </tr>
+     <th><span class="styl1"> Partyzánský útok - obránce</span></th>
+     <td><center> 3 000 </td>
+     <td><center> 6 000 </td>
+     <td><center> 10 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>   
+   </tr>
+     <th><span class="styl1"> Zaútočit na týl - obránce</span></th>
+     <td><center> 3 000</td>
+     <td><center> 6 000 </td>
+     <td><center> 10 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+   </tr>
+     <th><span class="styl1"> Taktický nálet - obránce</span></th>
+     <td><center> 3 000 </td>
+     <td><center> 5 000 </td>
+     <td><center> 10 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+   </tr>
+     <th><span class="styl1"> Vniknutí do bunkrů - obránce</span></th>
+     <td><center> 3 000 </td>
+     <td><center> 5 000 </td>
+     <td><center> 10 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+   </tr>
+     <th><span class="styl1"> Noční tažení - obránce</span></th>
+     <td><center> 5 000 </td>
+     <td><center> 10 000 </td>
+     <td><center> 17 000 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>    
+  
+  </table>
+
+<p><H4>Ostatní medaile</H4></p>
+
+<table class=tbl border=2 align=center>
+    <tr> 
+      <th>Název medaile/Úroveň </th>
+      <th><span class="styl1">1.úroveň </span></th>
+      <th><span class="styl1">2.úroveň </span></th>
+      <th><span class="styl1">3.úroveň </span></th>
+      <th><span class="styl1">4.úroveň </span></th>
+      <th><span class="styl1">5.úroveň </span></th>
+    </tr>
+    <tr> 
+      <th><span class="styl1"> Fúzní elektrárny </span></th>
+      <td><center>5</td>
+      <td><center>??? </td>
+      <td><center>???</td>
+      <td><center> ??? </td>
+      <td><center> ??? </td>
+    </tr>
+    <tr> 
+      <th><span class="styl1"> Nejvyšší budova světa </span></th>
+      <td><center> 5     </td>
+      <td><center> ??? </td>
+      <td><center> ??? </td>
+      <td><center> ??? </td>
+      <td><center> ??? </td>
+    </tr>
+    <tr> 
+      <th><span class="styl1"> Vojenská akademie </span></th>
+      <td><center> 5 </td>
+      <td><center> ??? </td>
+      <td><center> ??? </td>
+      <td><center> ??? </td>
+      <td><center> ??? </td>
+    </tr>
+    <tr> 
+      <th><span class="styl1"> Výroba raket </span></th>
+      <td><center> 5 </td>
+      <td><center> ??? </td>
+      <td><center> ??? </td>
+      <td><center> ???  </td>
+      <td><center> ???  </td>
+    </tr>
+    <tr> 
+      <th><span class="styl1"> UFO pokroky</span></th>
+      <td><center> 5 </td>
+      <td><center> ???</td>
+      <td><center> ??? </td>
+      <td><center> ??? </td>
+      <td><center> ??? </td>
+    </tr>
+     <th><span class="styl1"> Celkový počet pokroků</span></th>
+     <td><center> 5 </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>
+     <td><center> ??? </td>
+  </table>
+
+   <p><H4>Speciální medaile</H4></p>
+
+<table class=tbl border=2 align=center>
+    <tr> 
+      <th>Název medaile</th>
+      <th><span class="styl1">Popis</span></th>
+    </tr>
+      <tr> 
+      <th><span class="styl1"> Doživotní Silver účet </span></th>
+      <td><center>Hráč podpořil Webgame a získal tak úroveň doživotní SILVER. Děkujeme.</td>
+    </tr>
+    <tr> 
+      <th><span class="styl1"> Doživotní Gold účet </span></th>
+      <td><center>Hráč podpořil Webgame a získal tak úroveň doživotní GOLD. Děkujeme.</td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+</blockquote>
+
+</body>
+</html>
