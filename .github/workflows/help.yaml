@@ -16,7 +16,7 @@ jobs:
       uses: elgohr/Publish-Docker-Github-Action@3.02
       with:
         # The name of the image you would like to push
-        name: webgame/help:latest
+        name: webgame/help
         # The login username for the registry
         username: ${{ secrets.DOCKER_HUB_NAME }}
         # The login password for the registry
