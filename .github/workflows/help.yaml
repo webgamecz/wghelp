@@ -27,14 +27,15 @@ jobs:
         dockerfile: Dockerfile
 
     - name: Deploy to cluster
-      uses: steebchen/kubectl@master
+      uses: danielr1996/kubectl-action@1.0.0
       env:
         KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_BASE64_DATA }}
       with:
+        kubeconfig: ${{ secrets.KUBE_CONFIG_BASE64_DATA }}
         args: rollout restart deployment help-webgame
+
     - name: Verify deployment
-      uses: steebchen/kubectl@master
-      env:
-        KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_BASE64_DATA }}
+      uses: danielr1996/kubectl-action@1.0.0
       with:
+        kubeconfig: ${{ secrets.KUBE_CONFIG_BASE64_DATA }}
         args: rollout status deployment help-webgame
