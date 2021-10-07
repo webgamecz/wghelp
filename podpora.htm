@@ -1,266 +1,336 @@
-<HTML>
-<HEAD>
-<TITLE>Manuál k strategii Webgame</TITLE>
-<META name="keywords" content="">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" href="helpstyle.css" type="text/css">
-</HEAD>
-<body>
-
-<a name="Pod" id="Pod"></a>
-<h1>11 Pomoci, Nováčci, BN</h1>
-
-<a id="rozvojova_zeme"></a>
-<h2>11.1 Rozvojová země</h2>
-<blockquote>
-  <p>
-    Pokud je Vaše země poškozená těžkými boji, můžete se prohlásit za rozvojovou. Získáte tím výhody, které by jí mohly pomoci dostat se nahoru. Rozvojová
-    země je barevně rozlišená podle toho, jestli je země OSN (zelená) nebo AntiOSN (červená). V případě neutrální země zůstává šedá.
-  </p>
-
-  <p>
-    <strong>Výhody rozvojových zemí: </strong>
-    <ul>
-      <li>
-        Když se stanete rozvojovou zemí, dostanete finanční dar od Světové banky (100 000$*počet dní od začátku věku) a 20 <a href="budovy.htm#Sta">stavebních
-        firem</a>. Navíc postavíte +10 <a href="budovy.htm#Sta">budov</a>/kolo.
-      </li>
-      <li>
-        Více kolonizovaného území za kolo.
-      </li>
-      <li>
-        Pokud na Vás zaútočí agresor s <a href="statistiky.htm#H1">prestiží</a> větší než je Vaše, nastává <a href="valky.htm#TuO">tuhý odpor</a>. Máte +25%
-        sílu obrany proti všem <a href="valky.htm#UNorm">normálním útokům</a> a nepřítel má +25% ztráty.
-      </li>
-      <li>
-        Při útoku rozvojové země na rozvojovou zemi se ruší efekt tuhého odporu.
-      </li>
-      <li>
-        Můžete dostávat <a href="#Hum">humanitární</a> pomoc.
-      </li>
-    </ul>
-  </p>
-
-  <p>
-    <strong>Nevýhody rozvojových zemí: </strong>
-    <ul>
-      <li>Postih -20% síla útoku.</li>
-      <li>Nemůžete posílat humanitární pomoc.</li>
-    </ul>
-  </p>
-
-  <p>
-    <strong>Podmínky pro získání  rozvojové země:</strong>
-    <ul>
-      <li>
-        Vaše prestiž je nižší než 1200k prestiže a zároveň 1/5 prestiže 1. země v <a href="statistiky.htm#ZeZ">žebříčku</a>.
-      </li>
-      <li>
-        Uplynulo alespoň 5 dní (120 hodin) od začátku věku.
-      </li>
-      <li>
-        Naše <a href="aliance.htm#aliance">aliance</a> není ve válce, kde by měla nejstarší aktivní diplomatický akt.
-      </li>
-      <li>
-        Na vaši zem bylo provedeno za posledních 48 hodin nejméně 10 <a href="podpora.htm#nicive_utoky">ničívých útoků</a> (pouze útoky a rakety, nikoliv
-        rozvědka).
-      </li>
-    </ul>
-  </p>
-
-  <p>
-    <strong>Země přestává být rozvojovou zemí:</strong>
-    <ul>
-      <li>
-        Pokud překročíte hranici 2400k prestiže, nebo:
-      </li>
-      <li>
-        Pokud jste rozvojovou zemí alespoň 60 hodin a současně:
-      </li>
-      <li>
-        Pokud  je Vaše prestiž vyšší, než 1/5 prestiže 1. země v žebříčku
-      </li>
-      <li>
-        Pokud zrušíte status rozvojové země.
-      </li>
-    </ul>
-  </p>
-
-  <br />
-  <hr />
-</blockquote>
-
-  <p><a name="Hum" id="Hum"> </a> </p>
-  <h2>11.2 Humanitární pomoc </h2>
-      
-  <blockquote>
-  <p>Humanitární pomoc můžete poslat <a href="#rozvojova_zeme">rozvojové zemi</a>, která má menší <a href="statistiky.htm#H1">prestiž</a> než Vy. Pomoc můžete poslat vždy po <b>23 hodinách</b>, ale pouze pokud nejste rozvojová země. Po poskytnutí pomoci se <a href="vlady.htm#Spo">spokojenost</a> Vašich lidí zvedne jednorázově o 5% až 15% a také se přiblížíte více možnosti žít v <a href="vlady.htm#Uto">Utopii</a>.</p>
-  <p>Objem zboží je předem stanoven (roste s Vaší prestiží) a nemůžete ho měnit. Můžete vybrat jen to zboží, které máte na skladě. Lze poslat pouze jednu z komodit. Na výběr jsou peníze, jídlo, energie.  </p>
-  <p>&nbsp;</p>
-
-  <table class=tbl align=center border=2>
-    <tr>
-      <th width="116" scope="col">Odesílatel</th>
-      <th width="116" scope="col">Příjemce</th>
-      <th width="116" scope="col">Spokojenost</th>
-    </tr>
-    <tr>
-      <td><center><b><font color="green">OSN</b></center></td>
-      <td><center><b><font color="green">OSN</b></center></td>
-      <td><center><b>+15%</b></center></td>
-    </tr>
-    <tr>
-      <td><center><b><font color="red">AntiOSN</b></center></td>
-      <td><center><b><font color="red">AntiOSN</b></center></td>
-      <td><center><b>+15%</b></center></td>
-    </tr>
-    <tr>
-      <td><center><b><font color="green">OSN</b></center></td>
-      <td><center><b><font color="red">AntiOSN</b></center></td>
-      <td><center><b>+5%</b></center></td>
-    </tr>
-    <tr>
-      <td><center><b><font color="red">AntiOSN</b></center></td>
-      <td><center><b><font color="green">OSN</b></center></td>
-      <td><center><b>+5%</b></center></td>
-    </tr>
-    <tr>
-      <td><center><b><font color="green">OSN</font>, <font color="red">AntiOSN</b></center></td>
-      <td><center><b><font color="#696969">Neutrální země</b></center></td>
-      <td><center><b>+15%</b></center></td>
-    </tr>
-    <tr>
-      <td><center><b><font color="#696969">Neutrální země</b></center></td>
-      <td><center><b><font color="green">OSN</font>, <font color="red">AntiOSN</b><center></td>
-      <td><center><b>+15%</b></center></td>
-    </tr>
-    <tr>
-      <td><center><b><font color="#696969">Neutrální země</b></center></td>
-      <td><center><b><font color="#696969">Neutrální země</b></center></td>
-      <td><center><b>+15%</b></center></td>
-    </tr>
-  </table>
-  <p>&nbsp; </p>
-  <hr>
-</blockquote>
-
-<a id="hospodarska_pomoc"></a>
-<h2>11.3 Hospodářská pomoc</h2>
-<blockquote>
-  <p>
-    Hospodářskou pomoc (max. 10 % Vašeho <a href="zbozi.htm">zboží</a> a <a href="valky.htm#Jed">jednotek</a>) můžete poslat:
-    <ul>
-      <li>
-        spoluhráčům v <a href="aliance.htm#aliance">alianci</a> (i své druhé zemi)
-      </li>
-      <li>
-        členům <a href="aliance.htm#pakt">paktařské</a> aliance (nikoli však svým zemím)
-      </li>
-      <li>
-        zemi méně <a href="statistiky.htm#H1">prestižní</a>, než je Vaše
-      </li>
-      <li>
-        zemi, která dostala méně než <strong>10</strong> hospodářských pomocí tento věk
-      </li>
-      <li>
-        pokud jste neodeslali žádnou hospodářskou pomoc za posledních <strong>23 hodin</strong>
-      </li>
-      <li>
-        pokud jste odeslali méně než <strong>10</strong> hospodářských pomocí tento věk
-      </li>
-      <li>
-        pokud do konce věku zbývají více než 3 dny (neplatí při posílání v rámci aliance)
-      </li>
-    </ul>
-  </p>
-
-  <p class="inf">
-    Hospodářskou pomoc lze poslat i pokud jste v protekci.
-  </p>
-
-  <p class="inf">
-    Posláním jednotek hospodářskou pomocí neklesají zkušenosti armády.
-  </p>
-
-  <br />
-  <hr />
-</blockquote>
-
-  <p><a name="Nov" id="Nov"> </a>
-<h2>11.4 Nováčci</h2>
-<blockquote>
-  
-  <p>V rámci hry Webgame  existuje projekt tzv. WG škola (univerzita), kde se nováčci (zkušenější hráči) učí hrát pod vedením zkušených hráčů. Ti jim radí v jejich prvních krocích a pomáhají jim lépe a rychleji pochopit hru. Pokud máte zájem nováčky učit, nebo pokud chcete být učeni, napište do pošty  administrátorovi ve funkci vedoucí vzdělávacího týmu. Seznam škol a univerzit, do kterých je možné vstoupit, mají přístupný všichni bezalianční hráči v sekci "Aliance".</p>
-  <p>&nbsp;</p>
-  <hr>
-</blockquote>
-
-<a name="BN" id="BN"></a>
-<h2>11.5 Bezdůvodné ničení </h2>
-    
-<blockquote>
-  <p>
-    Systém bezdůvodného ničení (BN) existuje jako ochrana slušných hráčů před mulťáky. Posuzuje se na úrovni <strong>HRÁČ:ZEMĚ</strong>, kde „hráč" je útočník
-    a „země" je obránce.
-  </p>
-
-  <p>
-    Pracuje tak, že hráč může zaútočit mimo válku ničivými útoky na kteroukoliv zemi, ale pouze do stanoveného limitu maximálního počtu (útoky všech zemí
-    jednoho hráče mimo válku na jinou zemi se sčítají). Tento limit činí maximálně 5 ničivých útoků za 72 hodin (ať úspěšných, či neúspěšných). Pokud s ní
-    válčíte, je přebehlík, případně pokud útočíte v rámci BN odvety, omezení neplatí. BN odvetou se rozumí odplata určité zemi a její alianci za útoky na vás
-    či vaši alianci a platí pouze na 72 hodin od posledního útoku.
-  </p>
-
-  <p>
-    BN odveta tedy nastává po útoku na Vás nebo Vaši alianci a při ní Vám systém BN nebrání v provedení více než 5 ničivých útoků.
-  </p>
-
-  <p>
-    <a id="nicive_utoky"></a>
-    <strong>Do ničivých útoků se počítá:</strong>
-    <ul>
-      <li>
-        <a href="valky.htm#VUn">vyhlazovací</a> útok
-      </li>
-      <li>
-        <a href="valky.htm#VUb">bombardování</a> měst
-      </li>
-      <li>
-        <a href="valky.htm#VUnt">noční tažení</a>
-      </li>
-      <li>
-        <a href="valky.htm#Rbi">biocidní</a> raketa
-      </li>
-      <li>
-        <a href="valky.htm#Rnu">nukleární</a> raketa
-      </li>
-      <li>
-        <a href="valky.htm#Remp">EMP</a> raketa
-      </li>
-      <li>
-        <a href="valky.htm#sabotazni_operace">sabotážní akce</a> rozvědky
-      </li>
-    </ul>
-  </p>
-
-  <p>
-    <strong>BN ochrana se nevztahuje na bezalianční hráče, ti na sebe mohou útočit bez jakéhokoliv omezení.</strong>
-  </p>
-
-  <p>
-    BN systém se posuzuje i na úrovni <strong>HRÁČ:ALIANCE</strong>. Jeden hráč tak se všemi zeměmi může vykonat proti zemím, které jsou umístěné v alianci,
-    ničivé útoky pouze do stanoveného limitu. Tato změna je založena na předpokladu, že aliance svým členům musí poskytovat vyšší ochranu. Vztah
-    <strong>HRÁČ:ALIANCE</strong> je nadřazený vztahu <strong>HRÁČ:ZEMĚ</strong> a limit je stanoven také na 5 útoků za 72 hodin. Z toho vyplývá, že jeden
-    hráč může mimo válku provést maximálně 5 útoků za posledních 72 hodin na celou alianci.
-  <p>
-
-  <p class="inf">
-    BN systém je tedy nadřazen auto-gold pravidlům. Ačkoliv auto-gold pravidla útok připouští, BN systém hráče zastaví.
-  </p>
-
-  <br />
-  <hr />
-</blockquote>
-
-</body>
+<html>
+  <head>
+    <title>Manuál k strategii Webgame</title>
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="helpstyle.css" type="text/css">
+  </head>
+  <body>
+    <h1>11 Pomoci, BN, odveta</h1>
+    <a id="rozvojova_zeme"></a>
+    <h2>11.1 Rozvojová země</h2>
+    <blockquote>
+      <p>
+        Pokud je Vaše země poškozená těžkými boji, můžete se prohlásit za rozvojovou. Získáte tím výhody, které by jí mohly pomoci dostat se nahoru. Rozvojová
+        země je barevně rozlišená podle toho, jestli je země OSN (zelená) nebo AntiOSN (červená). V případě neutrální země zůstává šedá.
+      </p>
+      <p>
+        <strong>Výhody rozvojových zemí: </strong>
+      <ul>
+        <li>
+          Když se stanete rozvojovou zemí, dostanete finanční dar od Světové banky (100 000$*počet dní od začátku věku) a 20 
+          <a href="budovy.htm#Sta">stavebních firem</a>. Navíc postavíte +10 <a href="budovy.htm#Sta">budov</a>/kolo.
+        </li>
+        <li>
+          Více kolonizovaného území za kolo.
+        </li>
+        <li>
+          Pokud na Vás zaútočí agresor s <a href="statistiky.htm#H1">prestiží</a> větší než je Vaše, nastává <a href="podpora.htm.htm#tuhy_odpor">tuhý
+          odpor</a>. Máte +25% sílu obrany proti všem <a href="valky.htm#UNorm">normálním útokům</a> a nepřítel má +25% ztráty.
+        </li>
+        <li>
+          Při útoku rozvojové země na rozvojovou zemi se ruší efekt tuhého odporu.
+        </li>
+        <li>
+          Můžete dostávat <a href="#humanitarni_pomoc">humanitární</a> pomoc.
+        </li>
+      </ul>
+      </p>
+      <p>
+        <strong>Nevýhody rozvojových zemí: </strong>
+      <ul>
+        <li>Postih -20% síla útoku.</li>
+        <li>Nemůžete posílat humanitární pomoc.</li>
+      </ul>
+      </p>
+      <p>
+        <strong>Podmínky pro získání rozvojové země:</strong>
+      <ul>
+        <li>
+          Vaše prestiž je nižší než 1200k prestiže a zároveň 1/5 prestiže 1. země v <a href="statistiky.htm#ZeZ">žebříčku</a>.
+        </li>
+        <li>
+          Uplynulo alespoň 5 dní (120 hodin) od začátku věku.
+        </li>
+        <li>
+          Naše <a href="aliance.htm#aliance">aliance</a> není ve válce, kde by měla nejstarší aktivní diplomatický akt.
+        </li>
+        <li>
+          Na vaši zem bylo provedeno za posledních 48 hodin nejméně 10 <a href="podpora.htm#nicive_utoky">ničívých útoků</a> (pouze útoky a rakety, nikoliv
+          rozvědka).
+        </li>
+      </ul>
+      </p>
+      <p>
+        <strong>Země přestává být rozvojovou zemí:</strong>
+      <ul>
+        <li>
+          Pokud překročíte hranici 2400k prestiže, nebo:
+        </li>
+        <li>
+          Pokud jste rozvojovou zemí alespoň 60 hodin a současně:
+        </li>
+        <li>
+          Pokud je Vaše prestiž vyšší, než 1/5 prestiže 1. země v žebříčku
+        </li>
+        <li>
+          Pokud zrušíte status rozvojové země.
+        </li>
+      </ul>
+      </p>
+      <br />
+      <hr />
+    </blockquote>
+    <a id="tuhy_odpor"></a>
+    <h2>11.2 Tuhý odpor</h2>
+    <blockquote>
+      <p>
+        Tuhý odpor je vojenská pomoc slabé zemi. Nastane-li tuhý odpor, má <strong>obránce +25 % sílu obrany a útočník +25 %
+        <a href="valky.htm#ztraty_jednotek">ztráty jednotek</a></strong>. Tento odpor je způsoben větší zarputilostí napadené armády a vedení války
+        nekonvenčními způsoby, na které není armáda agresora zvyklá <span class=inf>(z historie například USA x Vietnam, USA x Korea, SSSR x
+        Afghanistán)</span>.
+      </p>
+      <p>
+        Tuhý odpor nastává pouze v normálních útocích a to při:
+        <ul>
+          <li>
+            Útoku nerozvojové země na méně prestižní <a href="#rozvojova_zeme">rozvojovou</a>.
+          </li>
+          <li>
+            Útoku <a href="aliance.htm#A1">alianční země</a> na <a href="aliance.htm#bal">bezalianční</a>, pokud je bezalianční dvakrát slabší.
+          </li>
+          <li>
+            Útoku mimo válku na slabší zemi z mnohem slabší aliance (pokud je současně <a href="statistiky.htm#H1">prestiž</a> i průměrná prestiž zemí v
+            <a href="aliance.htm#A1">alianci</a> dvojnásobná a vyšší než u nepřítele).
+          </li>
+          <li>
+            Útoku země mimo válku nebo do cizí války (neplatí pokud na vás někdo zaútočil a vy podnikáte <a href="#odveta">odvetu</a>).
+          </li>
+        </ul>
+      </p>
+      <br />
+      <hr />
+    </blockquote>
+    <a id="humanitarni_pomoc"></a>
+    <h2>11.3 Humanitární pomoc </h2>
+    <blockquote>
+      <p>
+        Humanitární pomoc můžete poslat <a href="#rozvojova_zeme">rozvojové zemi</a>, která má menší <a href="statistiky.htm#H1">prestiž</a> než Vy. Pomoc
+        můžete poslat vždy po <strong>23 hodinách</strong>, ale pouze pokud nejste rozvojová země. Po poskytnutí pomoci se
+        <a href="vlady.htm#Spo">spokojenost</a> Vašich lidí zvedne jednorázově o 5% až 15% a také se přiblížíte více možnosti žít v <a href="vlady.htm#Uto">
+        Utopii</a>.
+      </p>
+      <p>
+        Objem zboží je předem stanoven (roste s Vaší prestiží) a nemůžete ho měnit. Můžete vybrat jen to zboží, které máte na skladě. Lze poslat pouze jednu z
+        komodit. Na výběr jsou peníze, jídlo, energie.
+      </p>
+      <br />
+      <table class=tbl align=center border=2>
+        <tr>
+          <th width="116" scope="col">Odesílatel</th>
+          <th width="116" scope="col">Příjemce</th>
+          <th width="116" scope="col">Spokojenost</th>
+        </tr>
+        <tr>
+          <td>
+            <center><strong><font color="green">OSN</strong></center>
+          </td>
+          <td>
+            <center><strong><font color="green">OSN</strong></center>
+          </td>
+          <td>
+            <center><strong>+15%</strong></center>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center><strong><font color="red">AntiOSN</strong></center>
+          </td>
+          <td>
+            <center><strong><font color="red">AntiOSN</strong></center>
+          </td>
+          <td>
+            <center><strong>+15%</strong></center>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center><strong><font color="green">OSN</strong></center>
+          </td>
+          <td>
+            <center><strong><font color="red">AntiOSN</strong></center>
+          </td>
+          <td>
+            <center><strong>+5%</strong></center>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center><strong><font color="red">AntiOSN</strong></center>
+          </td>
+          <td>
+            <center><strong><font color="green">OSN</strong></center>
+          </td>
+          <td>
+            <center><strong>+5%</strong></center>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center><strong><font color="green">OSN</font>, <font color="red">AntiOSN</strong></center>
+          </td>
+          <td>
+            <center><strong><font color="#696969">Neutrální země</strong></center>
+          </td>
+          <td>
+            <center><strong>+15%</strong></center>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center><strong><font color="#696969">Neutrální země</strong></center>
+          </td>
+          <td>
+            <center><strong><font color="green">OSN</font>, <font color="red">AntiOSN</strong>
+              <center>
+          </td>
+          <td>
+            <center><strong>+15%</strong></center>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center><strong><font color="#696969">Neutrální země</strong></center>
+          </td>
+          <td>
+            <center><strong><font color="#696969">Neutrální země</strong></center>
+          </td>
+          <td>
+            <center><strong>+15%</strong></center>
+          </td>
+        </tr>
+      </table>
+      <br />
+      <hr />
+    </blockquote>
+    <a id="hospodarska_pomoc"></a>
+    <h2>11.4 Hospodářská pomoc</h2>
+    <blockquote>
+      <p>
+        Hospodářskou pomoc (max. 10 % Vašeho <a href="zbozi.htm">zboží</a> a <a href="valky.htm#Jed">jednotek</a>) můžete poslat:
+      <ul>
+        <li>
+          spoluhráčům v <a href="aliance.htm#aliance">alianci</a> (i své druhé zemi)
+        </li>
+        <li>
+          členům <a href="aliance.htm#pakt">paktařské</a> aliance (nikoli však svým zemím)
+        </li>
+        <li>
+          zemi méně <a href="statistiky.htm#H1">prestižní</a>, než je Vaše
+        </li>
+        <li>
+          zemi, která dostala méně než <strong>10</strong> hospodářských pomocí tento věk
+        </li>
+        <li>
+          pokud jste neodeslali žádnou hospodářskou pomoc za posledních <strong>23 hodin</strong>
+        </li>
+        <li>
+          pokud jste odeslali méně než <strong>10</strong> hospodářských pomocí tento věk
+        </li>
+        <li>
+          pokud do konce věku zbývají více než 3 dny (neplatí při posílání v rámci aliance)
+        </li>
+      </ul>
+      </p>
+      <p class="inf">
+        Hospodářskou pomoc lze poslat i pokud jste v protekci.
+      </p>
+      <p class="inf">
+        Posláním jednotek hospodářskou pomocí neklesají zkušenosti armády.
+      </p>
+      <br />
+      <hr />
+    </blockquote>
+    <a id="BN"></a>
+    <h2>11.5 Bezdůvodné ničení</h2>
+    <blockquote>
+      <p>
+        Systém bezdůvodného ničení (BN) existuje jako ochrana slušných hráčů před mulťáky. Posuzuje se na úrovni <strong>HRÁČ:ZEMĚ</strong>, kde „hráč" je
+        útočník
+        a „země" je obránce.
+      </p>
+      <p>
+        Pracuje tak, že hráč může zaútočit mimo válku ničivými útoky na kteroukoliv zemi, ale pouze do stanoveného limitu maximálního počtu (útoky všech zemí
+        jednoho hráče mimo válku na jinou zemi se sčítají). Tento limit činí maximálně 5 ničivých útoků za 72 hodin (ať úspěšných, či neúspěšných). Pokud s ní
+        válčíte, je přebehlík, případně pokud útočíte v rámci BN odvety, omezení neplatí. BN odvetou se rozumí odplata určité zemi a její alianci za útoky na
+        vás
+        či vaši alianci a platí pouze na 72 hodin od posledního útoku.
+      </p>
+      <p>
+        BN odveta tedy nastává po útoku na Vás nebo Vaši alianci a při ní Vám systém BN nebrání v provedení více než 5 ničivých útoků.
+      </p>
+      <p>
+        <a id="nicive_utoky"></a>
+        <strong>Do ničivých útoků se počítá:</strong>
+      <ul>
+        <li>
+          <a href="valky.htm#VUn">vyhlazovací</a> útok
+        </li>
+        <li>
+          <a href="valky.htm#VUb">bombardování</a> měst
+        </li>
+        <li>
+          <a href="valky.htm#VUnt">noční tažení</a>
+        </li>
+        <li>
+          <a href="valky.htm#Rbi">biocidní</a> raketa
+        </li>
+        <li>
+          <a href="valky.htm#Rnu">nukleární</a> raketa
+        </li>
+        <li>
+          <a href="valky.htm#Remp">EMP</a> raketa
+        </li>
+        <li>
+          <a href="valky.htm#sabotazni_operace">sabotážní akce</a> rozvědky
+        </li>
+      </ul>
+      </p>
+      <p>
+        <strong>BN ochrana se nevztahuje na bezalianční hráče, ti na sebe mohou útočit bez jakéhokoliv omezení.</strong>
+      </p>
+      <p>
+        BN systém se posuzuje i na úrovni <strong>HRÁČ:ALIANCE</strong>. Jeden hráč tak se všemi zeměmi může vykonat proti zemím, které jsou umístěné v alianci,
+        ničivé útoky pouze do stanoveného limitu. Tato změna je založena na předpokladu, že aliance svým členům musí poskytovat vyšší ochranu. Vztah
+        <strong>HRÁČ:ALIANCE</strong> je nadřazený vztahu <strong>HRÁČ:ZEMĚ</strong> a limit je stanoven také na 5 útoků za 72 hodin. Z toho vyplývá, že jeden
+        hráč může mimo válku provést maximálně 5 útoků za posledních 72 hodin na celou alianci.
+      <p>
+      <p class="inf">
+        BN systém je tedy nadřazen auto-gold pravidlům. Ačkoliv auto-gold pravidla útok připouští, BN systém hráče zastaví.
+      </p>
+      <br />
+      <hr />
+    </blockquote>
+    <a id="odveta"></a>
+    <h2>11.6 Odveta</h2>
+    <blockquote>
+      <p>
+        <em>under construction...</em>
+      </p>
+      <br />
+      <hr />
+    </blockquote>
+    <a id="Nov"></a>
+    <h2>11.7 Nováčci</h2>
+    <blockquote>
+      <p>
+        V rámci hry Webgame existuje projekt tzv. WG škola (univerzita), kde se nováčci (zkušenější hráči) učí hrát pod vedením zkušených hráčů. Ti jim radí v
+        jejich prvních krocích a pomáhají jim lépe a rychleji pochopit hru. Pokud máte zájem nováčky učit, nebo pokud chcete být učeni, napište do pošty
+        administrátorovi ve funkci vedoucí vzdělávacího týmu. Seznam škol a univerzit, do kterých je možné vstoupit, mají přístupný všichni bezalianční hráči v
+        menu <em>{Aliance}</em>.
+      </p>
+      <br />
+      <hr />
+    </blockquote>
+  </body>
 </html>
