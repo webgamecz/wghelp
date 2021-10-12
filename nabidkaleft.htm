@@ -4,503 +4,450 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <meta http-equiv="content-language" content="cs">
     <style type="text/css">
-      body {
-        background-color: #DEF;
-        font-family: Verdana;
-      }
+        body {
+            background-color: #DEF;
+            font-family: Verdana;
+        }
 
-      .nadpis {
-        font-size: 12px;
-        text-decoration: none;
-        color: black;
-      }
+        .nadpis {
+            font-size: 12px;
+            text-decoration: none;
+            color: black;
+        }
 
-      .nadpis:link {
-        text-decoration: none;
-        color: grey;
-      }
+        .nadpis:link {
+            text-decoration: none;
+            color: grey;
+        }
 
-      .nadpis:hover {
-        text-decoration: none;
-        color: grey;
-      }
+        .nadpis:hover {
+            text-decoration: none;
+            color: grey;
+        }
 
-      table.menu {
-        padding-left: 4px;
-        padding-top: 4px;
-      }
+        table.menu {
+            padding-left: 4px;
+            padding-top: 4px;
+        }
 
-      table.menu a {
-        text-decoration: none;
-        color: #000;
-        font-size: 10px;
-      }
+        table.menu a {
+            text-decoration: none;
+            color: #000;
+            font-size: 10px;
+        }
 
-      table.menu a:hover {
-        text-decoration: none;
-        color: grey;
-      }
+        table.menu a:hover {
+            text-decoration: none;
+            color: grey;
+        }
     </style>
     <script>
-
-
-      function MouseOverOn(objekt) {
-        objekt.style.color = "#0000ff";
-      }
-
-      function MouseOverOff(objekt) {
-        objekt.style.color = "#000000";
-      }
-
-      function FokusOn(objekt) {
-        objekt.style.color = "#1f1fff";
-        window.status = "Hotovo";
-      }
-
-      function FokusOff(objekt) {
-        objekt.style.color = "#6a3f24";
-      }
-
-
-      function hide(co) {
-        if (document.layers) {
-          document[co].style.display = "none";
-        } else if (document.all) {
-          document.all[co].style.display = "none";
-        } else if (document.getElementById) {
-          document.getElementById(co).style.display = "none";
+        function MouseOverOn(objekt) {
+            objekt.style.color = "#0000ff";
         }
-      }
 
-      function show(co, stat) {
-        if (document.layers) {
-          document[co].style.display = stat;
-        } else if (document.all) {
-          document.all[co].style.display = stat;
-        } else if (document.getElementById) {
-          document.getElementById(co).style.display = stat;
+        function MouseOverOff(objekt) {
+            objekt.style.color = "#000000";
         }
-      }
 
-      function zjisti(co) {
-        if (document.layers) {
-          return document[co].style.display;
-        } else if (document.all) {
-          return document.all[co].style.display;
-        } else if (document.getElementById) {
-          return document.getElementById(co).style.display;
+        function FokusOn(objekt) {
+            objekt.style.color = "#1f1fff";
+            window.status = "Hotovo";
         }
-      }
 
-      function cls(co) {
-        if (zjisti(co) == "") {
-          show(co, "none");
-        } else {
-          for (i = 0; i < 17; i++) {
-            hide("V" + i);
-          }
-          show(co, "");
+        function FokusOff(objekt) {
+            objekt.style.color = "#6a3f24";
         }
-      }
 
-      function cls2(co) {
-        if (zjisti(co) == "") {
-          show(co, "none");
-        } else {
-          for (i = 1; i < 8; i++) {
-            hide("P" + i);
-          }
-          show(co, "");
+        function hide(co) {
+            if (document.layers) {
+                document[co].style.display = "none";
+            } else if (document.all) {
+                document.all[co].style.display = "none";
+            } else if (document.getElementById) {
+                document.getElementById(co).style.display = "none";
+            }
         }
-      }
+
+        function show(co, stat) {
+            if (document.layers) {
+                document[co].style.display = stat;
+            } else if (document.all) {
+                document.all[co].style.display = stat;
+            } else if (document.getElementById) {
+                document.getElementById(co).style.display = stat;
+            }
+        }
+
+        function zjisti(co) {
+            if (document.layers) {
+                return document[co].style.display;
+            } else if (document.all) {
+                return document.all[co].style.display;
+            } else if (document.getElementById) {
+                return document.getElementById(co).style.display;
+            }
+        }
+
+        function cls(co) {
+            if (zjisti(co) == "") {
+                show(co, "none");
+            } else {
+                for (i = 0; i < 17; i++) {
+                    hide("V" + i);
+                }
+                show(co, "");
+            }
+        }
+
+        function cls2(co) {
+            if (zjisti(co) == "") {
+                show(co, "none");
+            } else {
+                for (i = 1; i < 8; i++) {
+                    hide("P" + i);
+                }
+                show(co, "");
+            }
+        }
     </script>
   </head>
-
   <body>
-
     <div class=boright>
-
       <table cellspacing=0 cellpadding=0 width="100%">
         <tr>
-          <td height=29 align="center" bgcolor="#8899cc"><font size=3 color="white"><b>Webgame.cz</b></font></td>
+          <td height=29 align="center" bgcolor="#8899cc">
+            <font size=3 color="white"><strong>Webgame.cz</strong></font>
+          </td>
         </tr>
         <tr>
-          <td align="center" bgcolor="#8899cc"><font style="font-size:12px" ;>Aktualizace 10. 10. 2021</font>
-            <br />
-            <font class=nadpis> <a href="wghelp.zip"><i>Stáhnout (cca 2,5 MB)</i></a>
-            </font></td>
+          <td align="center" bgcolor="#8899cc">
+            <font style="font-size:12px" ;>Aktualizace 10. 10. 2021</font><br/>
+            <font class=nadpis><a href="wghelp.zip"><em>Stáhnout (cca 2,5 MB)</em></a></font>
+          </td>
         </tr>
         <tr>
-          <td align="center" bgcolor="#8899cc"><font style="font-size:12px" ;>Otevřít</font><font class=nadpis> <a href="http://help.webgame.cz/gwg"
-                                                                                                                   target="_blank"><b>GWG Help</b></a>
-          </font></td>
+          <td align="center" bgcolor="#8899cc">
+            <font style="font-size:12px" ;>Otevřít</font>
+            <font class=nadpis><a href="http://help.webgame.cz/gwg" target="_blank"><strong>GWG Help</strong></a></font>
+          </td>
         </tr>
         <tr>
           <td width="100%" bgcolor="#000000" height="1"></td>
         </tr>
       </table>
-
-
       <table class=menu cellspacing=0 cellpadding=0 width="100%">
-
         <tr valign="top">
           <td>
-
-
             <a href="zkratka.htm" target="stranka" class="nadpis" onClick="cls('V0')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>&nbsp;&nbsp;1 Ve zkratce</b></font></a><br />
+                    class="nadpis"><strong>&nbsp;&nbsp;1 Ve zkratce</strong></font></a><br/>
             <div id="V0" style="display: none;font-size:8pt">
-              <a href="zkratka.htm#Zap" target="stranka">&nbsp;&nbsp;&nbsp;1.1 Zápisník</a><br />
-              <a href="zkratka.htm#Pra" target="stranka">&nbsp;&nbsp;&nbsp;1.2 Pracovna</a><br />
-              <a href="zkratka.htm#Vla" target="stranka">&nbsp;&nbsp;&nbsp;1.3 Vláda</a><br />
-              <a href="zkratka.htm#Arc" target="stranka">&nbsp;&nbsp;&nbsp;1.4 Archiv</a><br />
-              <a href="zkratka.htm#Det" target="stranka">&nbsp;&nbsp;&nbsp;1.5 Detaily</a><br />
-              <a href="zkratka.htm#Bud" target="stranka">&nbsp;&nbsp;&nbsp;1.6 Budovy</a><br />
-              <a href="zkratka.htm#Tec" target="stranka">&nbsp;&nbsp;&nbsp;1.7 Technologie</a><br />
-              <a href="zkratka.htm#Sve" target="stranka">&nbsp;&nbsp;&nbsp;1.8 Světový trh</a><br />
-              <a href="zkratka.htm#Dom" target="stranka">&nbsp;&nbsp;&nbsp;1.9 Domácí trh</a><br />
-              <a href="zkratka.htm#Vak" target="stranka">&nbsp;&nbsp;&nbsp;1.10 Válka</a><br />
-              <a href="zkratka.htm#Rak" target="stranka">&nbsp;&nbsp;&nbsp;1.11 Rakety</a><br />
-              <a href="zkratka.htm#Roz" target="stranka">&nbsp;&nbsp;&nbsp;1.12 Rozvědka</a><br />
-              <a href="zkratka.htm#Dot" target="stranka">&nbsp;&nbsp;&nbsp;1.13 Dotace</a><br />
-              <a href="zkratka.htm#For" target="stranka">&nbsp;&nbsp;&nbsp;1.14 Fóra</a><br />
-              <a href="zkratka.htm#Spo" target="stranka">&nbsp;&nbsp;&nbsp;1.15 Spojenectví</a><br />
-              <a href="zkratka.htm#Ali" target="stranka">&nbsp;&nbsp;&nbsp;1.16 Aliance</a><br />
-              <a href="zkratka.htm#Kon" target="stranka">&nbsp;&nbsp;&nbsp;1.17 Konflikty</a><br />
-              <a href="zkratka.htm#Naj" target="stranka">&nbsp;&nbsp;&nbsp;1.18 Najít</a><br />
-              <a href="zkratka.htm#Zeb" target="stranka">&nbsp;&nbsp;&nbsp;1.19 Žebříček</a><br />
+              <a href="zkratka.htm#Zap" target="stranka">&nbsp;&nbsp;&nbsp;1.1 Zápisník</a><br/>
+              <a href="zkratka.htm#Pra" target="stranka">&nbsp;&nbsp;&nbsp;1.2 Pracovna</a><br/>
+              <a href="zkratka.htm#Vla" target="stranka">&nbsp;&nbsp;&nbsp;1.3 Vláda</a><br/>
+              <a href="zkratka.htm#Arc" target="stranka">&nbsp;&nbsp;&nbsp;1.4 Archiv</a><br/>
+              <a href="zkratka.htm#Det" target="stranka">&nbsp;&nbsp;&nbsp;1.5 Detaily</a><br/>
+              <a href="zkratka.htm#Bud" target="stranka">&nbsp;&nbsp;&nbsp;1.6 Budovy</a><br/>
+              <a href="zkratka.htm#Tec" target="stranka">&nbsp;&nbsp;&nbsp;1.7 Technologie</a><br/>
+              <a href="zkratka.htm#Sve" target="stranka">&nbsp;&nbsp;&nbsp;1.8 Světový trh</a><br/>
+              <a href="zkratka.htm#Dom" target="stranka">&nbsp;&nbsp;&nbsp;1.9 Domácí trh</a><br/>
+              <a href="zkratka.htm#Vak" target="stranka">&nbsp;&nbsp;&nbsp;1.10 Válka</a><br/>
+              <a href="zkratka.htm#Rak" target="stranka">&nbsp;&nbsp;&nbsp;1.11 Rakety</a><br/>
+              <a href="zkratka.htm#Roz" target="stranka">&nbsp;&nbsp;&nbsp;1.12 Rozvědka</a><br/>
+              <a href="zkratka.htm#Dot" target="stranka">&nbsp;&nbsp;&nbsp;1.13 Dotace</a><br/>
+              <a href="zkratka.htm#For" target="stranka">&nbsp;&nbsp;&nbsp;1.14 Fóra</a><br/>
+              <a href="zkratka.htm#Spo" target="stranka">&nbsp;&nbsp;&nbsp;1.15 Spojenectví</a><br/>
+              <a href="zkratka.htm#Ali" target="stranka">&nbsp;&nbsp;&nbsp;1.16 Aliance</a><br/>
+              <a href="zkratka.htm#Kon" target="stranka">&nbsp;&nbsp;&nbsp;1.17 Konflikty</a><br/>
+              <a href="zkratka.htm#Naj" target="stranka">&nbsp;&nbsp;&nbsp;1.18 Najít</a><br/>
+              <a href="zkratka.htm#Zeb" target="stranka">&nbsp;&nbsp;&nbsp;1.19 Žebříček</a><br/>
             </div>
-
           </td>
         </tr>
         <tr>
           <td>
-
             <a href="system.htm" target="stranka" class="nadpis" onClick="cls('V1')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>&nbsp;&nbsp;2 Systém hry</b></font></a><br />
+                    class="nadpis"><strong>&nbsp;&nbsp;2 Systém hry</strong></font></a><br/>
             <div id="V1" style="display: none;font-size:8pt">
-              <a href="system.htm#Sys" target="stranka">&nbsp;&nbsp;&nbsp;2.1 Systém hry</a><br />
-              <a href="system.htm#Rul" target="stranka" onClick="cls2('P1')">&nbsp;&nbsp;&nbsp;2.2 Důležitá pravidla</a><br />
+              <a href="system.htm#Sys" target="stranka">&nbsp;&nbsp;&nbsp;2.1 Systém hry</a><br/>
+              <a href="system.htm#Rul" target="stranka" onClick="cls2('P1')">&nbsp;&nbsp;&nbsp;2.2 Důležitá pravidla</a><br/>
               <div id="P1" style="display: none;font-size:8pt">
-                <a href="system.htm#Prav" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2.1 Pravidla</a><br />
-                <a href="system.htm#Dod" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2.2 Dodatky</a><br />
-                <a href="system.htm#Upoz" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2.3 Upozornění</a><br />
-                <a href="system.htm#AMK" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2.4 Antimulti</a><br />
-                <a href="system.htm#Rekl" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2.5 Reklamace</a><br />
+                <a href="system.htm#Prav" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2.1 Pravidla</a><br/>
+                <a href="system.htm#Dod" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2.2 Dodatky</a><br/>
+                <a href="system.htm#Upoz" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2.3 Upozornění</a><br/>
+                <a href="system.htm#AMK" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2.4 Antimulti</a><br/>
+                <a href="system.htm#Rekl" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2.5 Reklamace</a><br/>
               </div>
-              <a href="system.htm#Tar" target="stranka">&nbsp;&nbsp;&nbsp;2.3 Cíle autorů</a><br />
+              <a href="system.htm#Tar" target="stranka">&nbsp;&nbsp;&nbsp;2.3 Cíle autorů</a><br/>
             </div>
-
           </td>
         </tr>
         <tr>
           <td>
-
             <a href="zbozi.htm" target="stranka" class="nadpis" onClick="cls('V2')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>&nbsp;&nbsp;3 Lidé a zboží </b></font></a><br />
+                    class="nadpis"><strong>&nbsp;&nbsp;3 Lidé a zboží </strong></font></a><br/>
             <div id="V2" style="display: none;font-size:8pt">
-              <a href="zbozi.htm#Lid" target="stranka">&nbsp;&nbsp;&nbsp;3.1 Lidé</a><br />
-              <a href="zbozi.htm#Pen" target="stranka">&nbsp;&nbsp;&nbsp;3.2 Peníze</a><br />
-              <a href="zbozi.htm#JaE" target="stranka">&nbsp;&nbsp;&nbsp;3.3 Jídlo</a><br />
-              <a href="zbozi.htm#Ene" target="stranka">&nbsp;&nbsp;&nbsp;3.4 Energie</a><br />
+              <a href="zbozi.htm#Lid" target="stranka">&nbsp;&nbsp;&nbsp;3.1 Lidé</a><br/>
+              <a href="zbozi.htm#Pen" target="stranka">&nbsp;&nbsp;&nbsp;3.2 Peníze</a><br/>
+              <a href="zbozi.htm#JaE" target="stranka">&nbsp;&nbsp;&nbsp;3.3 Jídlo</a><br/>
+              <a href="zbozi.htm#Ene" target="stranka">&nbsp;&nbsp;&nbsp;3.4 Energie</a><br/>
             </div>
-
           </td>
         </tr>
         <tr>
           <td>
-
             <a href="budovy.htm" target="stranka" class="nadpis" onClick="cls('V3')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>&nbsp;&nbsp;4 Budovy</b></font></a><br />
+                    class="nadpis"><strong>&nbsp;&nbsp;4 Budovy</strong></font></a><br/>
             <div id="V3" style="display: none;font-size:8pt">
-              <a href="budovy.htm#Zis" target="stranka">&nbsp;&nbsp;&nbsp;4.1 Získávání území</a><br />
-              <a href="budovy.htm#Sta" target="stranka" onClick="cls2('P2')">&nbsp;&nbsp;&nbsp;4.2 Stavění budov</a><br />
+              <a href="budovy.htm#Zis" target="stranka">&nbsp;&nbsp;&nbsp;4.1 Získávání území</a><br/>
+              <a href="budovy.htm#Sta" target="stranka" onClick="cls2('P2')">&nbsp;&nbsp;&nbsp;4.2 Stavění budov</a><br/>
               <div id="P2" style="display: none;font-size:8pt">
-                <a href="budovy.htm#Obe" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.1 Obecně</a><br />
-                <a href="budovy.htm#Cena" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.2 Cena</a><br />
+                <a href="budovy.htm#Obe" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.1 Obecně</a><br/>
+                <a href="budovy.htm#Cena" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.2 Cena</a><br/>
               </div>
-              <a href="budovy.htm#Bou" target="stranka">&nbsp;&nbsp;&nbsp;4.3 Bourání</a><br />
-              <a href="budovy.htm#Typ" target="stranka">&nbsp;&nbsp;&nbsp;4.4 Typy budov</a><br />
+              <a href="budovy.htm#Bou" target="stranka">&nbsp;&nbsp;&nbsp;4.3 Bourání</a><br/>
+              <a href="budovy.htm#Typ" target="stranka">&nbsp;&nbsp;&nbsp;4.4 Typy budov</a><br/>
             </div>
-
           </td>
         </tr>
         <tr>
           <td>
-
             <a href="vlady.htm" target="stranka" class="nadpis" onClick="cls('V4')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>&nbsp;&nbsp;5 Vlády</b></font></a><br />
+                    class="nadpis"><strong>&nbsp;&nbsp;5 Vlády</strong></font></a><br/>
             <div id="V4" style="display: none;font-size:8pt">
-              <a href="vlady.htm#OVl" target="stranka">&nbsp;&nbsp;&nbsp;5.1 O vládách</a><br />
-              <a href="vlady.htm#Vyh" target="stranka">&nbsp;&nbsp;&nbsp;5.2 Výhodnost typů vlád</a><br />
-              <a href="vlady.htm#Bon" target="stranka">&nbsp;&nbsp;&nbsp;5.3 Bonusy a postihy</a><br />
-              <a href="vlady.htm#revoluce" target="stranka">&nbsp;&nbsp;&nbsp;5.4 Revoluce</a><br />
-              <a href="vlady.htm#UaR" target="stranka">&nbsp;&nbsp;&nbsp;5.5 Utopie a robokracie</a><br />
-              <a href="vlady.htm#Spo" target="stranka" onClick="cls2('P3')">&nbsp;&nbsp;&nbsp;5.6 Spokojenost</a><br />
+              <a href="vlady.htm#OVl" target="stranka">&nbsp;&nbsp;&nbsp;5.1 O vládách</a><br/>
+              <a href="vlady.htm#Vyh" target="stranka">&nbsp;&nbsp;&nbsp;5.2 Výhodnost typů vlád</a><br/>
+              <a href="vlady.htm#Bon" target="stranka">&nbsp;&nbsp;&nbsp;5.3 Bonusy a postihy</a><br/>
+              <a href="vlady.htm#revoluce" target="stranka">&nbsp;&nbsp;&nbsp;5.4 Revoluce</a><br/>
+              <a href="vlady.htm#UaR" target="stranka">&nbsp;&nbsp;&nbsp;5.5 Utopie a robokracie</a><br/>
+              <a href="vlady.htm#Spo" target="stranka" onClick="cls2('P3')">&nbsp;&nbsp;&nbsp;5.6 Spokojenost</a><br/>
               <div id="P3" style="display: none;font-size:8pt">
-                <a href="vlady.htm#Svy" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.6.1 Efekt</a><br />
-                <a href="vlady.htm#Sja" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.6.2 Jak ji ovlivnit?</a><br />
-                <a href="vlady.htm#Sef" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.6.3 Efekt středisek</a><br />
+                <a href="vlady.htm#Svy" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.6.1 Efekt</a><br/>
+                <a href="vlady.htm#Sja" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.6.2 Jak ji ovlivnit?</a><br/>
+                <a href="vlady.htm#Sef" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.6.3 Efekt středisek</a><br/>
               </div>
             </div>
-
           </td>
         </tr>
         <tr>
           <td>
-
             <a href="valky.htm" target="stranka" class="nadpis" onClick="cls('V5')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>&nbsp;&nbsp;6 Válčení</b></font></a><br />
+                    class="nadpis"><strong>&nbsp;&nbsp;6 Válčení</strong></font></a><br/>
             <div id="V5" style="display: none;font-size:8pt">
-              <a href="valky.htm#Jed" target="stranka" onClick="cls2('P4')">&nbsp;&nbsp;&nbsp;6.1 Vojenské jednotky</a><br />
+              <a href="valky.htm#Jed" target="stranka" onClick="cls2('P4')">&nbsp;&nbsp;&nbsp;6.1 Vojenské jednotky</a><br/>
               <div id="P4" style="display: none;font-size:8pt">
-                <a href="valky.htm#JOb" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.1.1 Obecně</a><br />
-                <a href="valky.htm#Zold" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.1.2 Přehled a žoldy</a><br />
-                <a href="valky.htm#JZi" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.1.3 Jak získat</a><br />
-
+                <a href="valky.htm#JOb" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.1.1 Obecně</a><br/>
+                <a href="valky.htm#Zold" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.1.2 Přehled a žoldy</a><br/>
+                <a href="valky.htm#JZi" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.1.3 Jak získat</a><br/>
               </div>
-              <a href="valky.htm#Vou" target="stranka" onClick="cls2('P5')">&nbsp;&nbsp;&nbsp;6.2 Útoky</a><br />
+              <a href="valky.htm#Vou" target="stranka" onClick="cls2('P5')">&nbsp;&nbsp;&nbsp;6.2 Útoky</a><br/>
               <div id="P5" style="display: none;font-size:8pt">
-                <a href="valky.htm#UNorm" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.2.1 Normální útoky</a><br />
-                <a href="valky.htm#UTak" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.2.2 Taktické útoky</a><br />
-                <a href="valky.htm#zisky_a_ztraty" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.2.3 Zisky a ztráty</a><br />
-                <a href="valky.htm#USi" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.2.4 Síla armády</a><br />
-                <a href="valky.htm#Vev" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.2.5 Efekt základen</a><br />
-                <a href="valky.htm#UZk" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.2.6 Zkušenosti</a><br />
-
+                <a href="valky.htm#UNorm" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.2.1 Normální útoky</a><br/>
+                <a href="valky.htm#UTak" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.2.2 Taktické útoky</a><br/>
+                <a href="valky.htm#zisky_a_ztraty" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.2.3 Zisky a ztráty</a><br/>
+                <a href="valky.htm#USi" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.2.4 Síla armády</a><br/>
+                <a href="valky.htm#Vev" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.2.5 Efekt základen</a><br/>
+                <a href="valky.htm#UZk" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.2.6 Zkušenosti</a><br/>
               </div>
-              <a href="valky.htm#Gen" target="stranka" onClick="cls2('P6')">&nbsp;&nbsp;&nbsp;6.3 Generálové</a><br />
+              <a href="valky.htm#Gen" target="stranka" onClick="cls2('P6')">&nbsp;&nbsp;&nbsp;6.3 Generálové</a><br/>
               <div id="P6" style="display: none;font-size:8pt">
-                <a href="valky.htm#GE2" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.3.1 Získání</a><br />
-                <a href="valky.htm#generalove_schopnosti" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.3.2 Schopnosti a úrovně</a><br />
-                <a href="valky.htm#GE4" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.3.3 Typy generálů</a><br />
-
-
+                <a href="valky.htm#GE2" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.3.1 Získání</a><br/>
+                <a href="valky.htm#generalove_schopnosti" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.3.2 Schopnosti a úrovně</a><br/>
+                <a href="valky.htm#GE4" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.3.3 Typy generálů</a><br/>
               </div>
-              <a href="valky.htm#rakety" target="stranka" onClick="cls2('P7')">&nbsp;&nbsp;&nbsp;6.4 Rakety</a><br />
+              <a href="valky.htm#rakety" target="stranka" onClick="cls2('P7')">&nbsp;&nbsp;&nbsp;6.4 Rakety</a><br/>
               <div id="P7" style="display: none;font-size:8pt"></div>
-              <a href="valky.htm#Roz" target="stranka" onClick="cls2('P8')">&nbsp;&nbsp;&nbsp;6.5 Rozvědka</a><br />
+              <a href="valky.htm#Roz" target="stranka" onClick="cls2('P8')">&nbsp;&nbsp;&nbsp;6.5 Rozvědka</a><br/>
               <div id="P8" style="display: none;font-size:8pt">
-                <a href="valky.htm#ROb" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.5.1 Obecně</a><br />
-                <a href="valky.htm#RSi" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.5.2 Síla rozvědky</a><br />
-                <a href="valky.htm#RSa" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.5.3 Šance na úspěch</a><br />
-                <a href="valky.htm#RPo" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.5.4 Popis operací</a><br />
-
+                <a href="valky.htm#ROb" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.5.1 Obecně</a><br/>
+                <a href="valky.htm#RSi" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.5.2 Síla rozvědky</a><br/>
+                <a href="valky.htm#RSa" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.5.3 Šance na úspěch</a><br/>
+                <a href="valky.htm#RPo" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.5.4 Popis operací</a><br/>
               </div>
             </div>
-
           </td>
         </tr>
         <tr>
           <td>
-
             <a href="techno.htm" target="stranka" class="nadpis" onClick="cls('V6')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>&nbsp;&nbsp;7 Technologie</b></font></a><br />
+                    class="nadpis"><strong>&nbsp;&nbsp;7 Technologie</strong></font></a><br/>
             <div id="V6" style="display: none;font-size:8pt">
-              <a href="techno.htm#TUv" target="stranka" onClick="cls2('P9')">&nbsp;&nbsp;&nbsp;7.1 Úvod</a><br />
+              <a href="techno.htm#TUv" target="stranka" onClick="cls2('P9')">&nbsp;&nbsp;&nbsp;7.1 Úvod</a><br/>
               <div id="P9" style="display: none;font-size:8pt">
-                <a href="techno.htm#KCJ" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1.1 K čemu jsou?</a><br />
-                <a href="techno.htm#JJZ" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1.2 Jak je získat?</a><br />
-                <a href="techno.htm#JFu" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1.3 Jak fungují?</a><br />
-                <a href="techno.htm#JZv" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1.4 Jak zvýšit výrobu?</a><br />
-                <a href="techno.htm#TPr" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1.5 Přehled druhů</a><br />
-                <a href="techno.htm#TEf" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1.6 Zvýšení efektu</a><br />
+                <a href="techno.htm#KCJ" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1.1 K čemu jsou?</a><br/>
+                <a href="techno.htm#JJZ" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1.2 Jak je získat?</a><br/>
+                <a href="techno.htm#JFu" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1.3 Jak fungují?</a><br/>
+                <a href="techno.htm#JZv" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1.4 Jak zvýšit výrobu?</a><br/>
+                <a href="techno.htm#TPr" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1.5 Přehled druhů</a><br/>
+                <a href="techno.htm#TEf" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1.6 Zvýšení efektu</a><br/>
               </div>
-              <a href="techno.htm#POK" target="stranka" onClick="cls2('P10')">&nbsp;&nbsp;&nbsp;7.2 Pokroky</a><br />
+              <a href="techno.htm#POK" target="stranka" onClick="cls2('P10')">&nbsp;&nbsp;&nbsp;7.2 Pokroky</a><br/>
               <div id="P10" style="display: none;font-size:8pt">
-                <a href="techno.htm#POb" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.2.1 Obecně</a><br />
-                <a href="techno.htm#TPc" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.2.2 Cena</a><br />
-                <a href="techno.htm#typy_pokroku" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.2.3 Typy</a><br />
+                <a href="techno.htm#POb" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.2.1 Obecně</a><br/>
+                <a href="techno.htm#TPc" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.2.2 Cena</a><br/>
+                <a href="techno.htm#typy_pokroku" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.2.3 Typy</a><br/>
               </div>
             </div>
-
-
           </td>
         </tr>
         <tr>
           <td>
-
             <a href="ufo.htm" target="stranka" class="nadpis" onClick="cls('V7')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>&nbsp;&nbsp;8 Události a UFO</b></font></a><br />
+                    class="nadpis"><strong>&nbsp;&nbsp;8 Události a UFO</strong></font></a><br/>
             <div id="V7" style="display: none;font-size:8pt">
-              <a href="ufo.htm#Uda" target="stranka">&nbsp;&nbsp;&nbsp;8.1 Události</a><br />
-              <a href="ufo.htm#UFO" target="stranka" onClick="cls2('P11')">&nbsp;&nbsp;&nbsp;8.2 UFO</a><br />
+              <a href="ufo.htm#Uda" target="stranka">&nbsp;&nbsp;&nbsp;8.1 Události</a><br/>
+              <a href="ufo.htm#UFO" target="stranka" onClick="cls2('P11')">&nbsp;&nbsp;&nbsp;8.2 UFO</a><br/>
               <div id="P11" style="display: none;font-size:8pt">
-                <a href="ufo.htm#Obe" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.2.1 Obecně</a><br />
-                <a href="ufo.htm#Nab" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.2.2 Nabídky</a><br />
+                <a href="ufo.htm#Obe" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.2.1 Obecně</a><br/>
+                <a href="ufo.htm#Nab" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.2.2 Nabídky</a><br/>
               </div>
-              <a href="ufo.htm#Kat" target="stranka">&nbsp;&nbsp;&nbsp;8.3 Katastrofy</a><br />
+              <a href="ufo.htm#Kat" target="stranka">&nbsp;&nbsp;&nbsp;8.3 Katastrofy</a><br/>
             </div>
-
           </td>
         </tr>
         <tr>
           <td>
-
-
             <a href="trhy.htm" target="stranka" class="nadpis" onClick="cls('V8')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>&nbsp;&nbsp;9 Trhy a obchodování</b></font></a><br />
+                    class="nadpis"><strong>&nbsp;&nbsp;9 Trhy a obchodování</strong></font></a><br/>
             <div id="V8" style="display: none;font-size:8pt">
-              <a href="trhy.htm#TDo" target="stranka">&nbsp;&nbsp;&nbsp;9.1 Domácí trh</a><br />
-              <a href="trhy.htm#TSv" target="stranka">&nbsp;&nbsp;&nbsp;9.2 Světový trh</a><br />
-              <a href="trhy.htm#zeme_0" target="stranka">&nbsp;&nbsp;&nbsp;9.3 Země #0</a><br />
-              <a href="trhy.htm#TEm" target="stranka">&nbsp;&nbsp;&nbsp;9.4 Embargo</a><br />
+              <a href="trhy.htm#TDo" target="stranka">&nbsp;&nbsp;&nbsp;9.1 Domácí trh</a><br/>
+              <a href="trhy.htm#TSv" target="stranka">&nbsp;&nbsp;&nbsp;9.2 Světový trh</a><br/>
+              <a href="trhy.htm#zeme_0" target="stranka">&nbsp;&nbsp;&nbsp;9.3 Země #0</a><br/>
+              <a href="trhy.htm#TEm" target="stranka">&nbsp;&nbsp;&nbsp;9.4 Embargo</a><br/>
             </div>
-
           </td>
         </tr>
         <tr>
           <td>
-
-
             <a href="aliance.htm" target="stranka" class="nadpis" onClick="cls('V9')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>10 Aliance a spojenectví</b></font></a><br />
+                    class="nadpis"><strong>10 Aliance a spojenectví</strong></font></a><br/>
             <div id="V9" style="display: none;font-size:8pt">
-              <a href="aliance.htm#aliance_bezaliancni" target="stranka">&nbsp;&nbsp;&nbsp;10.1 Bezalianční</a><br />
-              <a href="aliance.htm#aliance" target="stranka">&nbsp;&nbsp;&nbsp;10.2 Aliance</a><br />
-              <a href="aliance.htm#prebehlik" target="stranka">&nbsp;&nbsp;&nbsp;10.3 Přeběhlík</a><br />
-              <a href="aliance.htm#AliB" target="stranka">&nbsp;&nbsp;&nbsp;10.4 Alianční bonusy</a><br />
-              <a href="aliance.htm#aliancni_pokroky" target="stranka">&nbsp;&nbsp;&nbsp;10.5 Alianční pokroky</a><br />
-              <a href="aliance.htm#ASm" target="stranka">&nbsp;&nbsp;&nbsp;10.6 Smlouvy a diplomacie</a><br />
-              <a href="aliance.htm#ASp" target="stranka">&nbsp;&nbsp;&nbsp;10.7 Spojenectví</a><br />
-              <a href="aliance.htm#A4" target="stranka">&nbsp;&nbsp;&nbsp;10.8 Parťáci</a><br />
-              <a href="aliance.htm#A5" target="stranka">&nbsp;&nbsp;&nbsp;10.9 Registr aliancí/zemí</a><br />
+              <a href="aliance.htm#aliance_bezaliancni" target="stranka">&nbsp;&nbsp;&nbsp;10.1 Bezalianční</a><br/>
+              <a href="aliance.htm#aliance" target="stranka">&nbsp;&nbsp;&nbsp;10.2 Aliance</a><br/>
+              <a href="aliance.htm#prebehlik" target="stranka">&nbsp;&nbsp;&nbsp;10.3 Přeběhlík</a><br/>
+              <a href="aliance.htm#AliB" target="stranka">&nbsp;&nbsp;&nbsp;10.4 Alianční bonusy</a><br/>
+              <a href="aliance.htm#aliancni_pokroky" target="stranka">&nbsp;&nbsp;&nbsp;10.5 Alianční pokroky</a><br/>
+              <a href="aliance.htm#ASm" target="stranka">&nbsp;&nbsp;&nbsp;10.6 Smlouvy a diplomacie</a><br/>
+              <a href="aliance.htm#ASp" target="stranka">&nbsp;&nbsp;&nbsp;10.7 Spojenectví</a><br/>
+              <a href="aliance.htm#A4" target="stranka">&nbsp;&nbsp;&nbsp;10.8 Parťáci</a><br/>
+              <a href="aliance.htm#A5" target="stranka">&nbsp;&nbsp;&nbsp;10.9 Registr aliancí/zemí</a><br/>
             </div>
-
           </td>
         </tr>
         <tr>
           <td>
             <a href="podpora.htm" target="stranka" class="nadpis" onClick="cls('V10')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)">
-              <span class="nadpis"><b>11 Pomoci, nováčci, BN </b></span></a><br />
+              <span class="nadpis"><strong>11 Pomoci, nováčci, BN </strong></span></a><br/>
             <div id="V10" style="display: none;font-size:8pt">
-              <a href="podpora.htm#rozvojova_zeme" target="stranka">&nbsp;&nbsp;&nbsp;11.1 Rozvojová země</a><br />
-              <a href="podpora.htm#tuhy_odpor" target="stranka">&nbsp;&nbsp;&nbsp;11.2 Tuhý odpor</a><br />
-              <a href="podpora.htm#humanitarni_pomoc" target="stranka">&nbsp;&nbsp;&nbsp;11.3 Humanitární pomoc</a><br />
-              <a href="podpora.htm#hospodarska_pomoc" target="stranka">&nbsp;&nbsp;&nbsp;11.4 Hospodářská pomoc</a><br />
-              <a href="podpora.htm#BN" target="stranka">&nbsp;&nbsp;&nbsp;11.5 Bezdůvodné ničení</a><br />
-              <a href="podpora.htm#odveta" target="stranka">&nbsp;&nbsp;&nbsp;11.6 Odveta</a><br />
-              <a href="podpora.htm#Nov" target="stranka">&nbsp;&nbsp;&nbsp;11.7 Nováčci</a><br />
+              <a href="podpora.htm#rozvojova_zeme" target="stranka">&nbsp;&nbsp;&nbsp;11.1 Rozvojová země</a><br/>
+              <a href="podpora.htm#tuhy_odpor" target="stranka">&nbsp;&nbsp;&nbsp;11.2 Tuhý odpor</a><br/>
+              <a href="podpora.htm#humanitarni_pomoc" target="stranka">&nbsp;&nbsp;&nbsp;11.3 Humanitární pomoc</a><br/>
+              <a href="podpora.htm#hospodarska_pomoc" target="stranka">&nbsp;&nbsp;&nbsp;11.4 Hospodářská pomoc</a><br/>
+              <a href="podpora.htm#BN" target="stranka">&nbsp;&nbsp;&nbsp;11.5 Bezdůvodné ničení</a><br/>
+              <a href="podpora.htm#odveta" target="stranka">&nbsp;&nbsp;&nbsp;11.6 Odveta</a><br/>
+              <a href="podpora.htm#Nov" target="stranka">&nbsp;&nbsp;&nbsp;11.7 Nováčci</a><br/>
             </div>
           </td>
         </tr>
         <tr>
           <td>
-
             <a href="statistiky.htm" target="stranka" class="nadpis" onClick="cls('V11')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>12 Žebříčky a hodnosti</b></font></a><br />
+                    class="nadpis"><strong>12 Žebříčky a hodnosti</strong></font></a><br/>
             <div id="V11" style="display: none;font-size:8pt">
-              <a href="statistiky.htm#H1" target="stranka">&nbsp;&nbsp;&nbsp;12.1 Prestiž zemí</a><br />
-              <a href="statistiky.htm#H2" target="stranka">&nbsp;&nbsp;&nbsp;12.2 Žebříček</a><br />
-              <a href="statistiky.htm#Odm" target="stranka">&nbsp;&nbsp;&nbsp;12.3 Odměny</a><br />
-              <a href="statistiky.htm#Kar" target="stranka">&nbsp;&nbsp;&nbsp;12.4 Kartičky</a><br />
-              <a href="statistiky.htm#H3" target="stranka" onClick="cls2('P12')">&nbsp;&nbsp;&nbsp;12.5 Hodnosti</a><br />
+              <a href="statistiky.htm#H1" target="stranka">&nbsp;&nbsp;&nbsp;12.1 Prestiž zemí</a><br/>
+              <a href="statistiky.htm#H2" target="stranka">&nbsp;&nbsp;&nbsp;12.2 Žebříček</a><br/>
+              <a href="statistiky.htm#Odm" target="stranka">&nbsp;&nbsp;&nbsp;12.3 Odměny</a><br/>
+              <a href="statistiky.htm#Kar" target="stranka">&nbsp;&nbsp;&nbsp;12.4 Kartičky</a><br/>
+              <a href="statistiky.htm#H3" target="stranka" onClick="cls2('P12')">&nbsp;&nbsp;&nbsp;12.5 Hodnosti</a><br/>
               <div id="P12" style="display: none;font-size:8pt">
-                <a href="statistiky.htm#H31" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12.5.1 Obecně</a><br />
-                <a href="statistiky.htm#H32" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12.5.2 Veteránské bonusy</a><br />
-                <a href="statistiky.htm#H33" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12.5.3 Zisky zkušeností</a><br />
+                <a href="statistiky.htm#H31" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12.5.1 Obecně</a><br/>
+                <a href="statistiky.htm#H32" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12.5.2 Veteránské bonusy</a><br/>
+                <a href="statistiky.htm#H33" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12.5.3 Zisky zkušeností</a><br/>
               </div>
-              <a href="statistiky.htm#H4" target="stranka">&nbsp;&nbsp;&nbsp;12.6 Medaile</a><br />
+              <a href="statistiky.htm#H4" target="stranka">&nbsp;&nbsp;&nbsp;12.6 Medaile</a><br/>
             </div>
-
           </td>
         </tr>
         <tr>
           <td>
-
             <a href="prispevky.htm" target="stranka" class="nadpis" onClick="cls('V12')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>13 Gold / Platinum</b></font></a><br />
+                    class="nadpis"><strong>13 Gold / Platinum</strong></font></a><br/>
             <div id="V12" style="display: none;font-size:8pt">
-              <a href="prispevky.htm#GS1" target="stranka" onClick="cls2('P13')">&nbsp;&nbsp;&nbsp;13.1 Extra možnosti</a><br />
+              <a href="prispevky.htm#GS1" target="stranka" onClick="cls2('P13')">&nbsp;&nbsp;&nbsp;13.1 Extra možnosti</a><br/>
               <div id="P13" style="display: none;font-size:8pt">
-                <a href="prispevky.htm#gold_hrac" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.1.1 Gold hráč</a><br />
-                <a href="prispevky.htm#GS3" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.1.2 Silver/Gold aliance</a><br />
-                <a href="prispevky.htm#platinum_hrac" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.1.3 Platinum hráč</a><br />
-                <a href="prispevky.htm#GS5" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.1.4 Platinum aliance</a><br />
-                <a href="prispevky.htm#AV" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.1.5 Aktivace výhod</a><br />
+                <a href="prispevky.htm#gold_hrac" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.1.1 Gold hráč</a><br/>
+                <a href="prispevky.htm#GS3" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.1.2 Silver/Gold aliance</a><br/>
+                <a href="prispevky.htm#platinum_hrac" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.1.3 Platinum hráč</a><br/>
+                <a href="prispevky.htm#GS5" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.1.4 Platinum aliance</a><br/>
+                <a href="prispevky.htm#AV" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.1.5 Aktivace výhod</a><br/>
               </div>
-              <a href="prispevky.htm#GS6" target="stranka" onClick="cls2('P14')">&nbsp;&nbsp;&nbsp;13.2 Jak poslat</a><br />
+              <a href="prispevky.htm#GS6" target="stranka" onClick="cls2('P14')">&nbsp;&nbsp;&nbsp;13.2 Jak poslat</a><br/>
               <div id="P14" style="display: none;font-size:8pt">
               </div>
-              <a href="prispevky.htm#GS10" target="stranka">&nbsp;&nbsp;&nbsp;13.3 Kredity</a><br />
+              <a href="prispevky.htm#GS10" target="stranka">&nbsp;&nbsp;&nbsp;13.3 Kredity</a><br/>
               <div id="P15" style="display: none;font-size:8pt">
-                <a href="prispevky.htm#GS11" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.3.1 Expirace kreditů</a><br />
+                <a href="prispevky.htm#GS11" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.3.1 Expirace kreditů</a><br/>
               </div>
             </div>
-
           </td>
         </tr>
         <tr>
           <td>
-
             <a href="strategie.htm" target="stranka" class="nadpis" onClick="cls('V13')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>14 Herní strategie</b></font></a><br />
+                    class="nadpis"><strong>14 Herní strategie</strong></font></a><br/>
             <div id="V13" style="display: none;font-size:8pt">
-              <a href="strategie.htm#Prv" target="stranka">&nbsp;&nbsp;&nbsp;14.1 První dny</a><br />
-              <a href="strategie.htm#planovani_valky" target="stranka">&nbsp;&nbsp;&nbsp;14.2 Plánování války</a><br />
-              <a href="strategie.htm#stvl" target="stranka">&nbsp;&nbsp;&nbsp;14.3 Strategie vlád</a><br />
+              <a href="strategie.htm#Prv" target="stranka">&nbsp;&nbsp;&nbsp;14.1 První dny</a><br/>
+              <a href="strategie.htm#planovani_valky" target="stranka">&nbsp;&nbsp;&nbsp;14.2 Plánování války</a><br/>
+              <a href="strategie.htm#stvl" target="stranka">&nbsp;&nbsp;&nbsp;14.3 Strategie vlád</a><br/>
             </div>
 
           </td>
         </tr>
         <tr>
           <td>
-
             <a href="vyrazy.htm" target="stranka" class="nadpis" onClick="cls('V14')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>15 Výrazy na WG</b></font></a><br />
+                    class="nadpis"><strong>15 Výrazy na WG</strong></font></a><br/>
             <div id="V14" style="display: none;font-size:8pt">
-              <a href="vyrazy.htm#Hra" target="stranka">&nbsp;&nbsp;&nbsp;15.1 Herní výrazy</a><br />
-              <a href="vyrazy.htm#Ost" target="stranka">&nbsp;&nbsp;&nbsp;15.2 Ostatní</a><br />
+              <a href="vyrazy.htm#Hra" target="stranka">&nbsp;&nbsp;&nbsp;15.1 Herní výrazy</a><br/>
+              <a href="vyrazy.htm#Ost" target="stranka">&nbsp;&nbsp;&nbsp;15.2 Ostatní</a><br/>
             </div>
-
           </td>
         </tr>
         <tr>
           <td>
-
             <a href="faq.htm" target="stranka" class="nadpis" onClick="cls('V15')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>16 F.A.Q.</b></font></a><br />
+                    class="nadpis"><strong>16 F.A.Q.</strong></font></a><br/>
             <div id="V15" style="display: none;font-size:8pt">
-              <a href="faq.htm#technicke" target="stranka">&nbsp;&nbsp;&nbsp;16.1 Technické</a><br />
-              <a href="faq.htm#generalove" target="stranka">&nbsp;&nbsp;&nbsp;16.2 Generálové</a><br />
-              <a href="faq.htm#nastaveni" target="stranka">&nbsp;&nbsp;&nbsp;16.3 Nastavení</a><br />
-              <a href="faq.htm#rozvedka" target="stranka">&nbsp;&nbsp;&nbsp;16.4 Rozvědka</a><br />
-              <a href="faq.htm#ostatni" target="stranka">&nbsp;&nbsp;&nbsp;16.5 Ostatní</a><br />
-              <a href="faq.htm#technologie" target="stranka">&nbsp;&nbsp;&nbsp;16.6 Technologie</a><br />
-              <a href="faq.htm#valky" target="stranka">&nbsp;&nbsp;&nbsp;16.7 Války</a><br />
-              <a href="faq.htm#gold_platinum" target="stranka">&nbsp;&nbsp;&nbsp;16.8 Gold/Platinum</a><br />
-              <a href="faq.htm#timeline_veku" target="stranka">&nbsp;&nbsp;&nbsp;16.9 Timeline věku</a><br />
+              <a href="faq.htm#technicke" target="stranka">&nbsp;&nbsp;&nbsp;16.1 Technické</a><br/>
+              <a href="faq.htm#generalove" target="stranka">&nbsp;&nbsp;&nbsp;16.2 Generálové</a><br/>
+              <a href="faq.htm#nastaveni" target="stranka">&nbsp;&nbsp;&nbsp;16.3 Nastavení</a><br/>
+              <a href="faq.htm#rozvedka" target="stranka">&nbsp;&nbsp;&nbsp;16.4 Rozvědka</a><br/>
+              <a href="faq.htm#ostatni" target="stranka">&nbsp;&nbsp;&nbsp;16.5 Ostatní</a><br/>
+              <a href="faq.htm#technologie" target="stranka">&nbsp;&nbsp;&nbsp;16.6 Technologie</a><br/>
+              <a href="faq.htm#valky" target="stranka">&nbsp;&nbsp;&nbsp;16.7 Války</a><br/>
+              <a href="faq.htm#gold_platinum" target="stranka">&nbsp;&nbsp;&nbsp;16.8 Gold/Platinum</a><br/>
+              <a href="faq.htm#timeline_veku" target="stranka">&nbsp;&nbsp;&nbsp;16.9 Timeline věku</a><br/>
             </div>
-
           </td>
         </tr>
         <tr>
           <td>
-
             <a href="wgmobil.htm" target="stranka" class="nadpis" onClick="cls('V16')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>17 WG na mobilu</b></font></a><br />
+                    class="nadpis"><strong>17 WG na mobilu</strong></font></a><br/>
             <div id="V16" style="display: none;font-size:8pt">
             </div>
-
           </td>
         </tr>
         <tr>
           <td>
-
             <a href="search.htm" target="stranka" class="nadpis" onClick="cls('V17')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><b>18 Hledání</b></font></a><br />
-
+                    class="nadpis"><strong>18 Hledání</strong></font></a><br/>
           </td>
         </tr>
-        <!-- -->
-
-
-        </td></tr>
       </table>
-
-      <br />
-      <br />
-      <br />
+      <br/>
+      <br/>
+      <br/>
       <script type="text/javascript"><!--
       google_ad_client = "pub-7145938217367865";
       google_ad_width = 234;
@@ -519,8 +466,5 @@
               src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
       </script>
     </div>
-    </div>
-
   </body>
-
 </html>
