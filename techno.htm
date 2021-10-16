@@ -50,7 +50,16 @@
         <a href="valky.htm#Gen">generálech</a>, <a href="aliance.htm#AliB">aliančním bonusu</a> a na hustotě technologií na danou rozlohu. Velikost bonusu za 0
         technologií na 1km znamená +0%, 1/km2 +11%, 3/km2 +20%, 10/km2 +32%, 20/km2 +39%, 40/km2 +46% atd. To samé pro vojenské technologie. Bonus na výrobu
         vojenských technologií je ještě ovlivněn <a href="valky.htm#Vxp">zkušeností armády</a>. To se promítne s polovičním efektem (např. 10% zkušeností
-        armády udělají +5% do výroby vojenských technologií).
+        armády udělají +5% do výroby vojenských technologií).<br />
+        <br />
+        <strong>Vzorec pro výpočet produkce technologií vypadá následovně:</strong><br />
+        (počet laboratoří) × 0,08 × (1 + bonus za vládu + bonus za pokroky + bonus za generála Technolog + alianční bonus) × (1 + bonus za spokojenost) × (1 +
+        bonus za hustotu) × (1 + bonus za zkušenost)<br />
+        <span class="inf">
+          Příklad: 1 000 laboratoří, Utopie (+25 %), Tajemství mozku (+10 %), Technolog na 4. úrovni (+8 %), bez aliančního bonusu, 120 % spokojenost (+10 %),
+          hustota 10/km<sup>2</sup> (+32 %), zkušenosti armády +10 % (+5 %). Jelikož do produkce hospodářských technologií vstupuje nulový bonus za zkušenost,
+          produkce je tedy 1000 × 0,08 × (1 + 0,25 + 0,10 + 0,08 + 0) × (1 + 0,10) × (1 + 0,32) × (1 + 0) = 166,1088 technologií za kolo.
+        </span>
       </p>
       <a id="TPr"></a>
       <h3>7.1.5 Přehled druhů</h3>
@@ -388,7 +397,7 @@
       </tr>
       <tr>
         <th>
-          <a id="And"></a>
+          <a id="androidi"></a>
           <strong>Androidi</strong>
         </th>
         <td>
@@ -838,7 +847,7 @@
       </tr>
       <tr>
         <th>
-          <a id="TPp"></a>
+          <a id="pacifismus"></a>
           <strong>Pacifismus</strong>
         </th>
         <td>Lidský genom</td>
