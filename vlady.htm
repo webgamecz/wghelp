@@ -1,733 +1,995 @@
-<HTML>
-<HEAD>
-<TITLE>Manuál k strategii Webgame</TITLE>
-<META name="keywords" content="">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" href="helpstyle.css" type="text/css">
-<style type="text/css">
-<!--
-.styl1 {color: #000000}
-.styl2 {color: #0A0}
--->
-</style>
-</HEAD>
-<body>
-<br>
-<a name="Vla"> </a> 
-<h1>5 Vlády</h1>
-
-<blockquote>
-  <p><span class="std">
-    Typ vlády (neboli státní zřízení) rozhodujícím způsobem ovlivňuje <a href="zbozi.htm#Zbo">hospodářskou produkci</a> země, <a href="valky.htm#USi">vojenskou sílu</a>, <a href="vlady.htm#Spo">spokojenost</a> a mnohé další parametry. Na typu vlády záleží způsob jakým budete hrát, co budete produkovat, a jak budete platní v <a href="aliance.htm#A1">alianci</a>.</span></p>
-</blockquote>
-<a name="OVl"> </a> 
-<h2>5.1 O vládách</h2>
-<blockquote>
-    <p>&nbsp;</p>
-    <p class="std">Každé zemi vládne nějaká vláda (ve 
-    hře jich je 10 typů). Zvláštností je <a href="#Ana">Anarchie</a>, v které každá nová země začíná a 
-    většinou v ní zůstává jen první dny věku. Další nestandardní vládou je <a href="#Uto">Utopie</a>,  kterou 
-    můžete mít až po splnění jistých podmínek. Stejně tak <a href="#robokracie">Robokracie</a>  je zvláštní státní zřízení, na které je třeba něco splnit. Z toho vyplývá, že typ vlády není trvalý a lze jej změnit kdykoliv <a href="#revoluce">revolucí</a>. </p>
-    <p>&nbsp;</p>
-</blockquote>
-  <blockquote>
-    <p><b>Demokracie</b> <a name="Dem"></a></p>
-      <p>Demokracie má výhodu ve spokojeném obyvatelstvu a možnosti velkého efektu <a href="techno.htm#TEf">technologií</a> (to 
-    se projeví, až když <a href="techno.htm#TUv">technologií</a> máte hodně), což je dobré v pokročilé části 
-    hry hlavně pro producenta peněz. Nehodí se příliš na začátek věku a na rozsáhlé války.</p>
-      <p><b>Republika</b> <a name="Rep"></a></p>
-      <p>Státní zřízení s vyspělou ekonomikou, která umožňuje efektivní produkci <a href="budovy.htm#Tov">továren</a>,  a navíc <a href="zbozi.htm#Pen">peněz</a> z <a href="budovy.htm#Mes">měst</a> a <a href="budovy.htm#Obch">obchodních zón</a>. Ve válčení nevyniká.</p>
-      <p><b>Technokracie</b> <a name="Tech"></a></p>
-      <p>Má vysokou produkci technologií a velký <a href="techno.htm#TEf">efekt technologií</a>. Také má nižší cenu <a href="techno.htm#TPc">pokroků</a> (nepočítá se prestiž a technologické pokroky). Na jinou produkci se příliš nehodí a 
-    ve válkách je nejslabší, pokud nemá výraznou technologickou převahu.</p>
-      <p><b>Komunismus</b> <a name="Kom"></a></p>
-      <p>Je orientován 
-    na produkci <a href="valky.htm#JZi">vojenských jednotek</a> a 
-    <a href="zbozi.htm#JaE">energie</a>. Nevýhodou je trochu 
-    dražší výroba mechů, nízká <a href="vlady.htm#Spo">spokojenost</a> a malá produkce peněz. Komunistické země mají 
-    ale nejlepší špionážní sítě, a tak se živí <a href="valky.htm#LOu">loupeživými akcemi</a> rozvědky.</p>
-      <p><b>Diktatura</b> <a name="Dik"></a></p>
-      <p>Nejlepší bojové zřízení hry, je nedocenitelné pro agresivní 
-    výboje, ale zpomaluje růst ekonomiky. Každopádně jsou diktatury vojenskou oporou 
-    aliancí a jsou nejlepší v dobývání rozlehlých území.</p>
-      <p><b>Fundamentalismus</b> <a name="Fun"></a></p>
-      <p>Skvělý začátek věku: Díky bonusům dokáže  rychle vytvořit zástupy obětavých vojáků. Fundametalismus je také silný v <a href="valky.htm#sabotazni_operace">teroristických operacích</a>. Technický pokrok ale vázne a s ním i další produkce.</p>
-      <p><b>Anarchie</b> <a name="Ana"></a></p>
-      <p>Jako anarchie 
-      každá země ve WebGame začíná. Má bonus do kolonizování a nižší spotřeby energie budovami, a proto je na první dny věku výhodná. 
-      Hlavní nevýhoda je nízká vojenská produkce a síla armády v útoku.</p>
-      <p><b>Feudalismus</b> <a name="Feu"></a></p>
-      <p>Pracovní nasazení je poměrně vysoké a tím země produkuje od všeho trochu.  Ale zřízení není dobré ve specializaci na jedno odvětví, což může být příčinou nízké efektivity produkce. Pro slabé země je nedocenitelné to, že není oblíbeným cílem útoků, kvůli nižším ziskům zboží a území.</p>
-      <p><b>Utopie</b> <a name="Uto"></a></p>
-      <p>Vysoké pracovní 
-    nasazení  a žádná korupce znamenají velkou produkci 
-    všech druhů zboží. Lidé jsou šťastní a nenechávají se zatáhnout do válek. Lidé jsou na Utopii připraveni 
-    až po dlouhé době a to tím rychleji, čím spokojenější jsou.</p>
-      <p><b>Robokracie</b> <a id="robokracie"></a></p>
-      <p> Vysoká 
-    produktivita zvláště <a href="budovy.htm#Tov">továren</a>, ale také <a href="budovy.htm#Ele">elektráren</a> a <a href="budovy.htm#Lab">laboratoří</a>. Roboti nejedí 
-    <a href="zbozi.htm#JaE">jídlo</a>, ale spotřebovávají obrovské množství <a href="zbozi.htm#JaE">energie</a>. Robokracii lze ale nejdříve udělat až 25. den věku. Předpokladem toho je, že ve společnosti žije hodně 
-    umělých lidí - androidů. Těch je tím více, čím blíže konci věku jste a čím více 
-    <a href="techno.htm#TUv">technologií</a> máte. Robokracie vzhledem ke společnosti složené výhradně z robotů nemůže mít společenské pokroky. Jedinou výjímkou jsou Bezpečnostní senzory, které lze vynaleznout.</p>
-      <blockquote>
-        <hr>
-      </blockquote>
-      <p><a name="Vyh"> </a></p>
-</blockquote>
+<html>
+  <head>
+    <title>Manuál k strategii Webgame</title>
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="helpstyle.css" type="text/css">
+  </head>
+  <body>
+    <a id="Vla"></a>
+    <h1>5 Vlády</h1>
+    <blockquote>
+      <p>
+        Typ vlády (neboli státní zřízení) rozhodujícím způsobem ovlivňuje <a href="zbozi.htm#Zbo">hospodářskou produkci</a> země,
+        <a href="valky.htm#USi">vojenskou sílu</a>, <a href="vlady.htm#Spo">spokojenost</a> a mnohé další parametry. Na typu vlády záleží způsob jakým budete
+        hrát, co budete produkovat, a jak budete platní v <a href="aliance.htm#A1">alianci</a>.
+      </p>
+    </blockquote>
+    <a id="OVl"></a>
+    <h2>5.1 O vládách</h2>
+    <blockquote>
+      <p>
+        Každé zemi vládne nějaká vláda (ve hře jich je 10 typů). Zvláštností je <a href="#Ana">Anarchie</a>, v které každá nová země začíná a většinou v ní
+        zůstává jen první dny věku. Další nestandardní vládou je <a href="#Uto">Utopie</a>, kterou můžete mít až po splnění jistých podmínek. Stejně tak
+        <a href="#robokracie">Robokracie</a> je zvláštní státní zřízení, na které je třeba něco splnit. Z toho vyplývá, že typ vlády není trvalý a lze jej
+        změnit kdykoliv <a href="#revoluce">revolucí</a>.
+      </p>
+      <p style="font-weight: bold">
+        <a id="Dem"></a>
+        Demokracie
+      </p>
+      <p>
+        Demokracie má výhodu ve spokojeném obyvatelstvu a možnosti velkého efektu <a href="techno.htm#TEf">technologií</a> (to se projeví, až když
+        <a href="techno.htm#TUv">technologií</a> máte hodně), což je dobré v pokročilé části hry hlavně pro producenta peněz. Nehodí se příliš na začátek věku
+        a na rozsáhlé války.
+      </p>
+      <p style="font-weight: bold">
+        <a id="Rep"></a>
+        Republika
+      </p>
+      <p>
+        Státní zřízení s vyspělou ekonomikou, která umožňuje efektivní produkci <a href="budovy.htm#Tov">továren</a>, a navíc <a href="zbozi.htm#Pen">peněz</a>
+        z <a href="budovy.htm#Mes">měst</a> a <a href="budovy.htm#Obch">obchodních zón</a>. Ve válčení nevyniká.
+      </p>
+      <p style="font-weight: bold">
+        <a id="Tech"></a>
+        Technokracie
+      </p>
+      <p>
+        Má vysokou produkci technologií a velký <a href="techno.htm#TEf">efekt technologií</a>. Také má nižší cenu <a href="techno.htm#TPc">pokroků</a>
+        (nepočítá se prestiž a technologické pokroky). Na jinou produkci se příliš nehodí a ve válkách je nejslabší, pokud nemá výraznou technologickou
+        převahu.
+      </p>
+      <p style="font-weight: bold">
+        <a id="Kom"></a>
+        Komunismus
+      </p>
+      <p>
+        Je orientován na produkci <a href="valky.htm#JZi">vojenských jednotek</a> a <a href="zbozi.htm#JaE">energie</a>. Nevýhodou je trochu dražší výroba
+        mechů, nízká <a href="vlady.htm#Spo">spokojenost</a> a malá produkce peněz. Komunistické země mají ale nejlepší špionážní sítě, a tak se živí
+        <a href="valky.htm#LOu">loupeživými akcemi</a> rozvědky.
+      </p>
+      <p style="font-weight: bold">
+        <a id="Dik"></a>
+        Diktatura
+      </p>
+      <p>
+        Nejlepší bojové zřízení hry, je nedocenitelné pro agresivní výboje, ale zpomaluje růst ekonomiky. Každopádně jsou diktatury vojenskou oporou aliancí a
+        jsou nejlepší v dobývání rozlehlých území.
+      </p>
+      <p style="font-weight: bold">
+        <a id="Fun"></a>
+        Fundamentalismus
+      </p>
+      <p>
+        Skvělý začátek věku: Díky bonusům dokáže rychle vytvořit zástupy obětavých vojáků. Fundametalismus je také silný v
+        <a href="valky.htm#sabotazni_operace">teroristických operacích</a>. Technický pokrok ale vázne a s ním i další produkce.
+      </p>
+      <p style="font-weight: bold">
+        <a id="Ana"></a>
+        Anarchie
+      </p>
+      <p>Jako anarchie každá země ve WebGame začíná. Má bonus do kolonizování a nižší spotřeby energie budovami, a proto je na první dny věku výhodná. Hlavní
+        nevýhoda je nízká vojenská produkce a síla armády v útoku.
+      </p>
+      <p style="font-weight: bold">
+        <a id="Feu"></a>
+        Feudalismus
+      </p>
+      <p>
+        Pracovní nasazení je poměrně vysoké a tím země produkuje od všeho trochu. Ale zřízení není dobré ve specializaci na jedno odvětví, což může být
+        příčinou nízké efektivity produkce. Pro slabé země je nedocenitelné to, že není oblíbeným cílem útoků, kvůli nižším ziskům zboží a území.
+      </p>
+      <p style="font-weight: bold">
+        <a id="Uto"></a>
+        Utopie
+      </p>
+      <p>
+        Vysoké pracovní nasazení a žádná korupce znamenají velkou produkci všech druhů zboží. Lidé jsou šťastní a nenechávají se zatáhnout do válek. Lidé jsou
+        na Utopii připraveni až po dlouhé době a to tím rychleji, čím spokojenější jsou.
+      </p>
+      <p style="font-weight: bold">
+        <a id="robokracie"></a>
+        Robokracie
+      </p>
+      <p>
+        Vysoká produktivita zvláště <a href="budovy.htm#Tov">továren</a>, ale také <a href="budovy.htm#Ele">elektráren</a> a
+        <a href="budovy.htm#Lab">laboratoří</a>. Roboti nejedí <a href="zbozi.htm#JaE">jídlo</a>, ale spotřebovávají obrovské množství
+        <a href="zbozi.htm#JaE">energie</a>. Robokracii lze ale nejdříve udělat až 25. den věku. Předpokladem toho je, že ve společnosti žije hodně umělých
+        lidí - androidů. Těch je tím více, čím blíže konci věku jste a čím více <a href="techno.htm#TUv">technologií</a> máte. Robokracie vzhledem ke
+        společnosti složené výhradně z robotů nemůže mít společenské pokroky. Jedinou výjímkou jsou Bezpečnostní senzory, které lze vynaleznout.
+      </p>
+      <br/>
+      <hr/>
+    </blockquote>
+    <a id="Vyh"></a>
     <h2>5.2 Tabulka silných a slabých stránek</h2>
-
-<blockquote>
-  <p class="std">Následující tabulka ukazuje orientační ohodnocení jednotlivých 
-    vlastností vlád podle jejich přesných bonusů, které jsou uvedeny až v další 
-    tabulce:<br>
-    Od nejhorší vlastnosti až po nejlepší : <b>- - , - ,</b> <i>nic</i><b>, + , 
-    + +, + + +</b><br>
-"x" u Utopie a Robokracie znázorňuje, že tyto vlastnosti nelze hodnotit. </p>
-
-<br>
-
-<table class=tbl border=2 align=center>
-    <col>
-    <col width=60px>
-    <col width=60px>
-    <col width=60px>
-    
-    <col width=60px>
-    <col width=60px>
-    <col width=60px>
-    
-    <col width=60px>
-    <col width=60px>
-    <col width=60px>
-    
-    <col width=60px>
-    
-    
-    <tr> 
-      <th><span class="styl1">Vláda </span></th>
-      <th><span class="styl1">Dem.</span></th>
-      <th><span class="styl1">Rep.</span></th>
-      <th><span class="styl1">Tech. </span></th>
-      <th><span class="styl1">Anar.</span></th>
-      <th><span class="styl1">Feud.</span></th>
-      <th><span class="styl1">Kom.</span></th>
-      <th><span class="styl1">Dikt.</span></th>
-      <th><span class="styl1">Fund. </span></th>
-      <th><span class="styl1"><i>Utop.</i></span></th>
-      <th><span class="styl1"><i>Robo.</i> </span></th>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Produkce </span></th>
-      <td class=b5> +</td>
-      <td class=b4> + </td>
-      <td class=b5> +</td>
-      <td class=b3> 0 </td>
-      <td class=b4> + </td>
-      <td class=b3> <font color="#993333" size="+1"><strong> -</strong></font></td>
-      <td class=b1> -- </td>
-      <td class=b1> -- </td>
-      <td class=b5> ++ </td>
-      <td class=b5> + </td>
-      <!--    5 stupnu ohodnoceni
-                <td class=b5> ++  </td>
-                <td class=b4> +   </td>
-                <td class=b3> 0   </td>
-                <td class=b2> -   </td>
-                <td class=b1> --  </td>
--->
-    <tr> 
-      <th><span class="styl1"> Vojenská produkce </span></th>
-      <td class=b3>0  </td>
-      <td class=b5> + </td>
-      <td class=b3 >0  </td>
-      <td class=b1> -- </td>
-      <td class=b5> + </td>
-      <td class=b5> +</td>
-      <td class=b4> + </td>
-      <td class=b5> +</td>
-      <td class=b5> ++ </td>
-      <td class=b5> +++ </td>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Síla armády </span></th>
-      <td class=b4> + </td>
-      <td class=b2> -</td>
-      <td class=b2 > - </td>
-      <td class=b2> - </td>
-      <td class=b3> 0 </td>
-      <td class=b3> 0 </td>
-      <td class=b5> ++ </td>
-      <td class=b5> +</td>
-      <td class=b2> - </td>
-      <td class=b5 styl2> + </td>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Rozvědka </span></th>
-      <td class=b1> -</td>
-      <td class=b2> - </td>
-      <td class=b3 > 0 </td>
-      <td class=b3> 0 </td>
-      <td class=b3> 0 </td>
-      <td class=b5> ++ </td>
-      <td class=b4> + </td>
-      <td class=b5> + </td>
-      <td class=b3>0   </td>
-      <td class=b4> +  </td>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Spokojenost </span></th>
-      <td class=b5> ++ </td>
-      <td class=b4> + </td>
-      <td class=b4 > + </td>
-      <td class=b5> </td>
-      <td class=b4> + </td>
-      <td class=b1> - </td>
-      <td class=b1> - </td>
-      <td class=b5> ++ </td>
-      <td class=b5> ++ </td>
-      <td class=b2> x </td>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Začátek v.</span></th>
-      <td class=b2> - </td>
-      <td class=b2> - </td>
-      <td class=b4 >+</td>
-      <td class=b4> + </td>
-      <td class=b4> + </td>
-      <td class=b4> + </td>
-      <td class=b5> + </td>
-      <td class=b5> ++ </td>
-      <td class=b2> x </td>
-      <td class=b2> x </td>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Střed věku</span></th>
-      <td class=b4> + </td>
-      <td class=b4> + </td>
-      <td class=b4 > +</td>
-      <td class=b3> 0 </td>
-      <td class=b4> + </td>
-      <td class=b4> + </td>
-      <td class=b4> + </td>
-      <td class=b3>0  </td>
-      <td class=b5> ++ </td>
-      <td class=b2> x </td>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Konec věku</span></th>
-      <td class=b5> ++ </td>
-      <td class=b4> + </td>
-      <td class=b4 >&nbsp;</td>
-      <td class=b1> -</td>
-      <td class=b2> - </td>
-      <td class=b3> 0 </td>
-      <td class=b1> - </td>
-      <td class=b1> -- </td>
-      <td class=b5> ++ </td>
-      <td class=b5> ++ </td>
-    </tr>
-  </table>
-</h1>
-  <p>&nbsp;</p>
-  <hr>
-</blockquote>
-<a id="Bon"> </a>
-  <h2>5.3 Bonusy a postihy vlád</h2>
-  
-  <blockquote>
-  <p>V této tabulce  vidíte podrobný popis bonusů k určitým vládám. </p>
-  
-  <br>
-  
-  <table class=tbl border=2 align=center>
-    <tr> 
-      <th width="12%">&nbsp; </th>
-      <th width="16%"><span class="styl1">Demokracie </span></th>
-      <th width="18%"><span class="styl1">Republika</span></th>
-      <th width="27%"><span class="styl1">Anarchie </span></th>
-      <th width="27%"><span class="styl1">Feudalismus </span></th>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Produkce </span></th>
-      <td> <span  class=pos> <a href="#RoD">Rozsáhlé země</a> nemají takový problém se
-        spokojeností</span ></td>
-      <td> <span class=pos><b>+20% produkce továren <br>
-        +20% produkce peněz</b></span> </td>
-      <td>
-        <span class="pos">
-          <strong>+20% více prozkoumaného území</strong><br>
-          <strong>+20% jídla z vesnic</strong><br>
-          Mnohem nižší spotřeba energie budovami<br>
-          <strong>Revoluce z anarchie nic nezničí (ztratíte pouze společenské pokroky)</strong><br>
-          Každé kolo +10 bodů v přibližování se k Utopii<br>
-        </span>
-        <span class="neg">
-          <strong>-25% produkce továren</strong><br>
-          Velká nespokojenost pokud je země rozsáhlá.
-        </span></span>
-      </td>
-      <td> <span class=pos>+20% produkce vesnic<br>
-      <b>Pokud je produkčních budov jednoho druhu 
-          (továren, kasáren, farem, laboratoří nebo elektráren) do 20% rozlohy, 
-          mají +15% produkce. </b><span class=neg>Tento bonus postupně klesá až 
-          na -5% při plném zastavění území jedním druhem budov. </span></span></td>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Technologie </span></th>
-      <td> <span class=pos><b>+10% zvýhodnění maximálního efektu hospodářských technologií</b><br>
-      <b>+10% zvýhodnění maximálního efektu vojenských technologií</b>
-        </strong></span></span> 
-      </td>
-      <td>&nbsp; </td>
-      <td>&nbsp; </td>
-      <td> <span class="pos">1 bod hospodářských technologií má 
-      efekt jako 1,5 bodu</span><br>
-        <span class=neg>Maximum efektu hospodářských technologií je o 10% nižší</span></td>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Válčení </span></th>
-      <td> <span class=neg>-20% obrana proti agentům</span><br>
-           <span class=neg>Nemůže vyrábět biocidní rakety</span></td>
-      <td> <span class=neg><strong>-5% síla útoku</strong><br>
-           -20% obrana proti agentům</span><br>
-           <span class=neg>Nemůže vyrábět biocidní rakety</span><br> 
-        <span class=pos>Může mít pokrok Fašismus a pokud jej má, pak nechuť k válčení je Malá</span></td>
-      <td><span class=pos>Při obraně proti normalním útokům se každých 100 obyvatel brání 
-        jako 1 voják</span><br>
-        <span class=pos>Pokud má země více než 1,2M prestiže, má v obraně vůči agresorovi bonus do obrany +15%.</span><br>
-        <span class=neg><strong>Bez pokroku Ochranné a obchodní organizace nemůže útočit.</strong> I s ním má -20% útok.</span></td>
-      <td><span class=pos><b> Ostatní země mají při úspěšné agresi -20% zisky země a zboží</b></span></td>
-    </tr>
-	<tr>
-	  <th><span class="styl1">Alianční bonus</span></th>
-	  <td> <div align="center"><span class=pos>+1% maximálního efektu hospodářských technologií</span> </div></td>
-      <td> <div align="center"><span class=pos>+1% zisky z daní</span> </div></td>
-      <td> <div align="center"><span class=pos>+2 budovy za kolo</span> </div></td>
-      <td> <div align="center"><span class=pos>+1% výroba jednotek (vojáků i techniky)</span> </div></td>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Efekt zábavních<br>
-        středisek </span></th>
-      <td> <div align="center"><span class=pos>Vysoký</span> </div></td>
-      <td> <div align="center"><span class=pos>Střední</span> </div></td>
-      <td> <div align="center"><span class=pos>Střední</span> </div></td>
-      <td> <div align="center"><span class=pos>Střední</span> </div></td>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Nechuť k válčení </span></th>
-      <td> <div align="center"><span class=neg>Velká</span></div></td>
-      <td> <div align="center"><span class=pos>Střední</span> </div></td>
-      <td> <div align="center"><span class=neg>Velká</span> </div></td>
-      <td> <div align="center"><span class=neg>Střední</span> </div></td>
-    </tr>
-  </table>
-
-  <p>&nbsp;</p>
-
-  <table class=tbl border=2 align=center>
-    <tr> 
-      <th width="13%">&nbsp;</th>
-      <th width="26%"><span class="styl1">Komunismus</span></th>
-      <th width="29%"><span class="styl1">Diktatura</span></th>
-      <th width="32%"><span class="styl1">Fundamentalismus </span></th>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Produkce </span></th>
-      <td>
-        <span class="pos">
-          <strong>+15% produkce továren</strong><br>
-          <strong>+10% produkce kasáren</strong><br>
-          <strong>+20% produkce energie</strong><br>
-          Každé kolo +10 bodů v přibližování se k Utopii<br>
-        </span>
-        <span class="neg">
-          <strong>-25% produkce peněz</strong></br>
-          Výroba mechů stojí 25 dílů jednotek</br>
-        </span>
-      </td>
-      <td><span class=pos>+10% produkce kasáren<br>
-        </span><span class="neg">-20 % produkce technologií</span><span class=pos><br>
-        <span class=neg> 
-      Nemůže dotovat produkci technologií a peněz</span></span></td>
-      <td> <span class=pos><b>+20% produkce kasáren </b><br>
-        Paušálně +0,8MWh energie na Elektrárnu (na tento bonus nemají vliv technologie)<br>
-        -20% cena vojáků na domácím trhu <br>
-        <span class=neg>-25% produkce technologií</span> </span> </td>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Technologie </span></th>
-      <td>&nbsp; </td>
-      <td>&nbsp;</td>
-      <td> <span class=pos>+50% zvýhodnění od vojenských základen (kromě výzkumu vesmíru)<br>
-       Vesmír prozkoumává o něco rychleji než ostatní zřízení<br>
-        <span class=neg><b>-25% maximální zvýhodnění od technologií</b></span></span></td>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Válčení </span></th>
-      <td> <span class=pos><strong>-40% cena agentů<br>
-        Může mít 3 špionážní spojence</strong><br>
-        O polovinu větší produkce raket</span> </td>
-      <td> <span class=pos><b>+10% síla armády v útoku i v obraně<br>
-        Může mít 3 útočné spojence<br>
-        </b>+20% síla agentů v obraně <b><br>
-        </b>může mít pokrok Fašismus<b>        <br>
-        </b></span></td>
-      <td> <span class=pos>-1 nebezpečnost sabotážních teroristických útoků</span><span class=pos><br>
-        -25% <a href="valky.htm#Zold">žoldy</a> všech jednotek a agentů<br>
-       může mít pokrok Svatá Válka</span><br>      </td>
-    </tr>
-	<tr>
-	  <th><span class="styl1">Alianční bonus</span></th>
-	  <td> <div align="center"><span class=pos>+3% síla rozvědky</span> </div></td>
-      <td> <div align="center"><span class=pos>+1% síla armády</span> </div></td>
-      <td> <div align="center"><span class=pos>-3% žoldy</span> </div></td>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Efekt zábavních středisek </span></th>
-      <td> <div align="center"><span class=neg>Nízký</span> </div></td>
-      <td> <div align="center"><span class=neg>Nízký</span> </div></td>
-      <td> <div align="center"><span class=pos>Vysoký</span> </div></td>
-    </tr>
-    <tr> 
-      <th><span class="styl1"> Nechuť k válčení </span></th>
-      <td> <div align="center"><span class=pos>Malá</span> </div></td>
-      <td> <div align="center"><span class=pos>Malá</span> </div></td>
-      <td> <div align="center"><span class=pos>Téměř žádná</span> </div></td>
-    </tr>
-  </table>
-
-  <p>&nbsp;</p>
-
-  <table class=tbl border=2 align=center>
-    <tr> 
-      <th width="13%"><span class="styl1">&nbsp; </span></th>
-      <th width="22%"><span class="styl1">Technokracie</span></th>
-      <th width="19%"><span class="styl1">Utopie (nelze hned od začátku)</span></th>
-      <th width="47%"><span class="styl1">Robokracie (lze až po 25. dnu věku)</span></th>
-    </tr>
-    <tr> 
-      <th class="std styl1"> Produkce </th>
-      <td> <span class=pos><b>+20% produkce technologií</b></span> <br>
-        <span class="neg">-10% produkce jídla</span>
-        <p class="pos" style="text-indent: 0px">
-      Nižší cena pokroků - do náročnosti se nezapočítává prestiž a technologické pokroky.</td>
-      <td> <span class=pos><b>+25% produkce továren, kasáren, energie, jídla a 
-          technologií</b><br>
-        +10% spokojenost<br>
-        Výrazně rychlejší kolonizace.<br>
-        </span></td>
-      <td>
-        <span class=pos>
-          <strong>+35% Produkce Továren</strong><br />
-          <strong>+20% výroba energie a technologií</strong><br />
-          Výroba mechů stojí 19 dílů jednotek.<br />
-          Armáda a obyvatelé nejedí jídlo.<br />
-        </span>
-        <span class=neg>
-          <strong>-30% výroba jídla</strong><br />
-          -30% obyvatel<br />
-          Mnohem vyšší spotřeba energie budovami.<br />
-          Bolestnější revoluce (navíc nelze udělat Robokracii přímo z Anarchie).<br />
-          Nemůže dělat společenské pokroky (výjimku tvoří pokrok Bezpečnostní senzory).<br />
-          Poloviční efekt aliančního pokroku <a href="aliance.htm#automatizace_zbrojniho_prumyslu">Automatizace zbrojního průmyslu.</a>
-        </span>
-      </td>
-    </tr>
-    <tr> 
-      <th class="std styl1"> Technologie </th>
-      <td>
-        <span class=pos><strong>+15% maximální zvýhodnění od hospodářských technologií</strong></span>
-      </td>
-      <td>
-        &nbsp;
-      </td>
-      <td>
-        <span class=pos><strong>+20% zvýhodnění maximálního efektu vojenských technologií</strong></span><br />
-        <span class=pos><strong>+10% zvýhodnění maximálního efektu hospodářských technologií</strong></span>
-      </td>
-    </tr>
-    <tr> 
-      <th class="std styl1"> Válčení </th>
-      <td>
-        <span class=neg>
-          -10% síla útoku<br />
-          -20% síla vojáků v obraně i útoku<br />
-          Nelze využít efekt aliančního pokroku <a href="aliance.htm#vakcinace">Vakcinace</a>
-        </span>
-      </td>
-      <td> <span class=neg><strong>-10% síla útoku </strong><br>
-        Může vyrábět a odpalovat pouze konvenční rakety (demoralizace při odpálení je vyšší než u jiných zřízení)</span><br>
-        <span class=pos><strong>Může mít 3 obranné spojence</strong>
-        </span> </td>
-      <td><span class="pos"><strong>Neúčinkuje na ně biocidní raketa, demoralizace, prodej drog či epidemie</strong><br>          
-        Poloviční pokles připravenosti armády při útoku<br>
-        +50% síla rozvědky v obraně<br>
-        +20% síla v útoku i obraně na noční tažení, bombardování a taktický nálet<br>
-        </span><span class="neg"><strong>Při revoluci na Robokracii všichni generálové zemřou,</strong> může sbírat nové generály. Tito generálové sbírají zkušenosti jen poloviční rychlostí. Navíc robokracie nemůže mít generály  Ochránce národa, Nacionalista, Osvoboditel a samozřejmě Populista a Farmář.<br>
-        -50% obrana proti Partyzánským útokům</span>    </tr>
-	<tr>
-	  <th><span class="styl1">Alianční bonus</span></th>
-	  <td> <div align="center"><span class=pos>+1% výroba jídla, energie a technologií</span> </div></td>
-      <td> <div align="center"><span class=pos>+1% spokojenost</span> </div></td>
-      <td> <div align="center"><span class=pos>+1% maximalní efekt vojenských technologií</span> </div></td>
-    </tr>
-    <tr> 
-      <th class="std styl1"> Efekt zábavních středisek </th>
-      <td> <div align="center"><span class=pos>Střední</span></div></td>
-      <td> <div align="center"><span class=pos>Střední</span></div></td>
-      <td> <div align="center"><span class="neg">Nulový -</span> <span class=pos>Stále 
-        100% spokojenost</span></div></td>
-    </tr>
-    <tr> 
-      <th class="std styl1"> Nechuť k válčení </th>
-      <td> <div align="center"><span class=neg>Velká</span> </div></td>
-      <td> <div align="center"><span class=neg>Velká</span> </div></td>
-      <td> <div align="center"><span class=pos>Nulová</span></div></td>
-    </tr>
-  </table>
-
-
-    <p>&nbsp;</p>
-  <hr>
-</blockquote>
-<a id="revoluce"></a>
-<h2>5.4 Revoluce</h2>
-<blockquote>
-  <p>
-    Revoluce je jediný způsob jak změnit <a href="#OVl">typ vlády</a>, ale každá revoluce znamená občanskou válku, která vás oslabí. Proto, než se rozhodnete
-    pro revoluci, dobře si rozmyslete, jestli vám za to stojí. Zároveň <strong>ztratíte</strong> revolucí <strong>všechny společenské pokroky</strong>.
-  </p>
-  <p>
-    <strong>Po revoluci ztratíte:</strong>
-  </p>
-  <ul>
-    <li>
-      <strong>12 %</strong> <a href="valky.htm#JDr">jednotek</a>, <a href="valky.htm#Age">agentů</a>, <a href="zbozi.htm#Pen">peněz</a>,
-      <a href="zbozi.htm#JaE">jídla</a>, <a href="zbozi.htm#JaE">energie</a> a <a href="zbozi.htm#Lid">lidí</a>.
-    </li>
-    <li><strong>8 %</strong> <a href="budovy.htm#BTo">budov</a> a <a href="techno.htm#TUv">technologií</a>.</li>
-    <li>Všechny <a href="techno.htm#spolecenske_pokroky">společenské pokroky</a>.</li>
-    <li>Zkušenosti u generálů (viz dále).</li>
-    <li>Výrazně klesne <a href="valky.htm#Vpa">připravenost armády</a>, proto byste měli po revoluci mít dostatek kol na její obnovení.</li>
-  </ul>
-  <p>
-    Výjimku tvoří revoluce z <a href="#Ana">Anarchie</a>, jelikož ta vás stojí vždy pouze společenské pokroky. A jelikož země začínají hru v Anarchii, je první
-    revoluce vždy bezbolestná (s výjimkou rušení všech společenských pokroků, ty se ruší vždy).
-  </p>
-  <p class="inf">
-    Zboží schované na trhu se při revoluci ničí také.
-  </p>
-  <p class="inf">
-    Při revoluci se nastaví výroba raket na konvenční.
-  </p>
-  <p class="inf">
-    Při revoluci z Demokracie  na Komunismus se navíc dost sníží spokojenost.
-  </p>
-  <p>
-    <strong>Revoluce na Robokracii</strong> je bolestivější, a proto ztratíte mnohem více:
-  </p>
-  <ul>
-    <li><strong>20 %</strong> jednotek, agentů, peněz, jídla, energie a lidí.</li>
-    <li><strong>16 %</strong> budov a technologií.</li>
-    <li><strong>Zahynou všichni <a href="valky.htm#Gen">generálové</a></strong>.</li>
-    <li>Nelze ji udělat přímo z Anarchie.</li>
-  </ul>
-  <p>
-    Revoluci můžete udělat za věk kolikrát chcete, ale čím více kol odehrajete od začátku věku, tím více zkušeností <strong>ztratí generálové</strong> při
-    revoluci. Při odehrání 0 kol → 0 %, při odehrání 2000 kol → 20 %, při odehrání 2300 kol → 23 % nikoliv o 3 %; 3000 kol → 30 %, atd. Zkušenosti neklesají
-    pouze při revoluci z Anarchie.
-  </p>
-  <br/>
-  <hr/>
-</blockquote>
-<p><a name="UaR"> </a> </p>
-  <h2>5.5 Utopie a Robokracie</h2>
-<blockquote>
-  <p>
-    Jak jste blízko k utopii a robokracii vidíte v menu <em>{Vláda} → {Utopie a Robokracie}</em>. Po splnění podmínek Vám přibude v menu <em>{Vláda} →
-    {Revoluce}</em> možnost zvolit utopii či robokracii.
-  </p>
-  <p>&nbsp;</p>
-  <p><b>Podmínky pro Utopii:</b></p>
-  <p>Od jiných se odlišuje hlavně tím, že v ní nemůžete žít ihned od začátku věku. Možnost zvolit  revoluci na <a href="#Uto">Utopii</a> je až po dosáhnutí 100 000 &quot;utopistických 
-    bodů&quot;, což bývá zhruba po půlce věku.</p>
-  <p>Každé kolo získáte tolik bodů, o kolik je vaše <a href="vlady.htm#Spo">spokojenost</a> vyšší, než 105% (body mohou i klesat, minimum je 0). Body na utopii lze získávat i za uplynulý čas. Za každé poslání 
-    <a href="podpora.htm#humanitarni_pomoc">humanitární pomoci</a> je dalších <i>300</i> bodů. </p>
-  <p><span class="inf"><a href="#Ana">Anarchie</a> a <a href="#Kom">Komunismus</a> má navíc každé kolo +10 bodů 
-      bonus. Ve výsledku to znamená, že největší šanci na připravení obyvatel na Utopii mají Anarchie, Demokracie (díky vysoké <a href="#Spo">spokojenosti</a>) 
-      a <a href="vlady.htm#Fun">Fundamentalismus</a> (taktéž díky vysoké spokojenosti).</span></p>
-  <p>&nbsp;</p>
-  <p><b>Podmínky pro Robokracii:</b></p>
-  <p> Robokracie nejde udělat dříve jak 25. den věku a musíte mít alespoň 50%  androidů. Androidi mohou přibývat v zemi až po vynalezení pokroku <a
-          href="techno.htm#androidi">Androidi</a>.
-
-
- Ze začátku je jich jen pár, ale jejich procento roste s uplynulým časem od začátku věku a s hustotou <a href="techno.htm#TUv">technologií</a>, hlavně hospodářských. Ze začátku  je androidů málo, později počet prudce roste. </p>
-  <p class="inf">Nelze udělat <a href="#robokracie">Robokracii</a> přímo z <a href="#Ana">Anarchie</a>.</p>
-  <p class="inf">Před přechodem na <a href="#robokracie">Robokracii</a> může být výhodné snížení rozlohy   (ubouráním území se zvýší hustota technologií na Vaší rozloze a tím výrazně stoupne počet androidů v populaci).</p>
-  <p class="inf">
-    To, kolik času zbývá do možnosti stát se robokracií, vidíte v menu <em>{Vláda} → {Revoluce}</em>.
-  </p>
-  <p>&nbsp;</p>
-  <hr>
-  <p><a name="Spo"> </a></p>
-</blockquote>
-<h2> 5.6 Spokojenost</h2>
-<blockquote>
-
-<p>Spokojenost je faktor ovlivňující mnoho aspektů Vaší země. Základní spokojenost země je 90%. Normální průměrná spokojenost je kolem 100%. Přes 120% už jsou obyvatelé velmi
-      šťastní a pod 80% dosti reptající. 
-  </p>
-  <p class="inf">Horní limit spokojenosti je prakticky neomezený, dolní limit je 0%. </p>
-  <a name="Svy"> </a>
-
-  <h3>5.6.1 Efekt</h3>
-  <p>Každé <strong>1% spokojenosti</strong> má na Vaši zemi nějaký vliv. Podle toho, zda dojde  k nárůstu nebo poklesu spokojenosti, se Vám zvýší nebo sníží tyto parametry země:</p>
-  <ul>
-    <li>o 0,75% <a href="zbozi.htm#Pen">produkce peněz</a> </li>
-    <li>o 0,5% <a href="techno.htm#Tjj">produkce technologií</a></li>
-    <li>o 0,5% <a href="valky.htm#USi">vojenská síla</a> (pouze u Diktatury a Komunismu jen +0,25%)</li>
-    <li>o 1% <a href="valky.htm#RSi">síla rozvědky</a></li>
-    <li> vyšší <a href="zbozi.htm#Porod">porodnost</a> (ale ne maximální počet obyvatelstva)</li>
-    <li> přibližování k <a href="#Uto">Utopii</a></li>
-  </ul>
-  <p class="inf">Příklad: <a href="#Rep">Republika</a> má spokojenost
-      110%. To je o 10% nad normálem (nad 100%). Díky vyšší spokojenosti má například o 7,5%
-      větší <a href="zbozi.htm#Pen">produkci peněz</a> a o 5% větší <a href="valky.htm#USi">vojenskou sílu</a>. Pokud ji potom zasáhne<a href="valky.htm#Rbi"> biocidní
-      raketa</a>,  spokojenost bude dočasně snížena  na 88% a vojenská síla tím klesne oproti předchozímu stavu o 11%.</p>
-
-  <p name="SJa"><a name="Sja"> </a>
-  </p>
-  <h3>5.6.2 Jak ovlivnit spokojenost?</h3>
-  <p>Spokojenost závisí na vládě, počtu <a href="budovy.htm#Zab">zábavních středisek</a>, <a href="techno.htm#POK">pokrocích</a>,  úrovni <a href="valky.htm#Gen">generála Populisty</a>, <a href="#RoD">rozloze</a>, <a href="aliance.htm#AliB">aliančních bonusech</a> a na počtu <a href="valky.htm#Rbi">biocidních</a> a <a href="valky.htm#Rnu">nukleárních</a> raket.
-  Dočasně stoupá po odeslání <a href="podpora.htm#humanitarni_pomoc">humanitární</a> pomoci, dotací, <a href="#Vpre">vojenskou přehlídkou</a>, klesá po Vámi vyhlášené válce,
-    po neúspěšné obraně, akcemi rozvědky, odpálení rakety nebo po jejím zásahu. Jednorázově zvýšit nebo snížit spokojenost mohou také <a href="ufo.htm#Uda">události</a> nebo útok (většině vlád po útoku spokojenost klesá, ale některé bojové vlády spokojenost získají). </p>
-  <p><a name="RoD" id="RoD"> </a></p>
-  <strong>Jak konkrétně</strong> ovlivňují tyto faktory spokojenost:
-  <ul>
-    <li> rozloha/2000 <span class="inf">(Větší země jsou&nbsp;v Demokracii šťastnější, proto je u Demokracie tento postih poloviční. V Anarchii jsou vetší země naopak nešťastnejší, proto je postih dvojnásobný. U všech ostatních vlád platí uvedený vzorec.)</span></li>
-    <li> bonus za generála <a href="valky.htm#populista">Populistu</a> <span class="inf">(+2% každá úroveň)</span></li>
-    <li> bonus nebo postih za <a href="techno.htm#POK">Pokroky</a> <span class="inf">(<a href="techno.htm#TPl">Lidský 
-            genom</a> +10%, <a href="techno.htm#TPKc">Kulturní centrum</a> +10%, <a href="techno.htm#pacifismus">Pacifismus</a>
-      +10%, <a href="techno.htm#TPo"> Ochranné a obchodní organizace</a> +5%, <a href="techno.htm#And">Androidi</a> 
-      -5%, <a href="techno.htm#TPvs">Vojenský stát</a> -10%, <a href="techno.htm#TPb">Bezpečnostní 
-      senzory</a>)</span></li>
-    <li><a href="#Sef">efekt  zábavních středisek</a> </li>
-	<li><a href="aliance.htm#AliB">alianční bonus</a> za utopii</li>
-    <li>zvýšení za  <a href="podpora.htm#humanitarni_pomoc">humanitární</a> pomoc o 5% nebo 15%</li>
-    <li><a name="Vpre" id="Vpre"></a>zvýšení vojenskou přehlídkou <span class="inf">(pokud 
-    
-
-     dotujete připravenost a armáda je už připravená z 98% a více, dělá armáda  vojenské přehlídky, což zvyšuje spokojenost)</span></li>
-    <li>Při vyhlášení první Vámi vyhlášené války klesne jednorázově spokojenost o 2%, při další válce o 4% a při třech válkách o 6%.</li>
-    <li> Při vlastnictví <a href="valky.htm#Rnu">nukleárních</a> a <a href="valky.htm#Rbi">biocidních</a> raket ztrácíte spokojenost o maximálně několik málo procent.</li>
-    <li> Při negativní události.</li>
-    <li>Pomocí akce <a href="valky.htm#LOpd">Prodat drogy</a>, <a href="valky.htm#RDo">demoralizovat obyvatele</a> nebo případně <a href="valky.htm#RRe">rozšířit epidemii</a> lze snížit spokojenost o několik procent.<a name="SPU" id="SPU"> </a></li>
-    <li> Pokles útočením:
+    <blockquote>
+      <p>
+        Následující tabulka ukazuje orientační ohodnocení jednotlivých vlastností vlád podle jejich přesných bonusů, které jsou uvedeny až v další tabulce.
+      </p>
+      <p>
+        Od nejhorší vlastnosti až po nejlepší: <strong>- -</strong>, <strong>-</strong>, <em>nic</em>, <strong>+</strong>, <strong>+ +</strong>, <strong>+ +
+        +</strong>.
+      </p>
+      <p>
+        "x" u Utopie a Robokracie znázorňuje, že tyto vlastnosti nelze hodnotit.
+      </p>
+      <table class=tbl border=2 align=center>
+        <col>
+        <col width=60px>
+        <col width=60px>
+        <col width=60px>
+        <col width=60px>
+        <col width=60px>
+        <col width=60px>
+        <col width=60px>
+        <col width=60px>
+        <col width=60px>
+        <col width=60px>
+        <tr>
+          <th>Vláda</th>
+          <th>Anar</th>
+          <th>Feud</th>
+          <th>Dikt</th>
+          <th>Fund</th>
+          <th>Kom</th>
+          <th>Demo</th>
+          <th>Rep</th>
+          <th>Tech</th>
+          <th>Utop</th>
+          <th>Robo</th>
+        </tr>
+        <!--
+          6 stupnu ohodnoceni
+          <td class=b5>+++</td>
+          <td class=b5>++</td>
+          <td class=b4>+</td>
+          <td class=b3>0</td>
+          <td class=b2>-</td>
+          <td class=b1>--</td>
+        -->
+        <tr>
+          <th>Produkce</th>
+          <td class=b3>0</td>
+          <td class=b4>+</td>
+          <td class=b1>--</td>
+          <td class=b1>--</td>
+          <td class=b2>-</td>
+          <td class=b4>+</td>
+          <td class=b4>+</td>
+          <td class=b4>+</td>
+          <td class=b5>++</td>
+          <td class=b4>+</td>
+        <tr>
+          <th>Vojenská produkce</th>
+          <td class=b1>--</td>
+          <td class=b4>+</td>
+          <td class=b4>+</td>
+          <td class=b4>+</td>
+          <td class=b4>+</td>
+          <td class=b3>0</td>
+          <td class=b4>+</td>
+          <td class=b3>0</td>
+          <td class=b5>++</td>
+          <td class=b5>+++</td>
+        </tr>
+        <tr>
+          <th>Síla armády</th>
+          <td class=b2>-</td>
+          <td class=b3>0</td>
+          <td class=b5>++</td>
+          <td class=b4>+</td>
+          <td class=b3>0</td>
+          <td class=b4>+</td>
+          <td class=b2>-</td>
+          <td class=b2>-</td>
+          <td class=b2>-</td>
+          <td class=b4>+</td>
+        </tr>
+        <tr>
+          <th>Rozvědka</th>
+          <td class=b3>0</td>
+          <td class=b3>0</td>
+          <td class=b4>+</td>
+          <td class=b4>+</td>
+          <td class=b5>++</td>
+          <td class=b2>-</td>
+          <td class=b2>-</td>
+          <td class=b3>0</td>
+          <td class=b3>0</td>
+          <td class=b4>+</td>
+        </tr>
+        <tr>
+          <th>Spokojenost</th>
+          <td class=b4>+</td>
+          <td class=b4>+</td>
+          <td class=b2>-</td>
+          <td class=b5>++</td>
+          <td class=b2>-</td>
+          <td class=b5>++</td>
+          <td class=b4>+</td>
+          <td class=b4>+</td>
+          <td class=b5>++</td>
+          <td class=b2>x</td>
+        </tr>
+        <tr>
+          <th>Začátek věku</th>
+          <td class=b4>+</td>
+          <td class=b4>+</td>
+          <td class=b5>++</td>
+          <td class=b5>++</td>
+          <td class=b4>+</td>
+          <td class=b2>-</td>
+          <td class=b2>-</td>
+          <td class=b4>+</td>
+          <td class=b2>x</td>
+          <td class=b2>x</td>
+        </tr>
+        <tr>
+          <th>Střed věku</th>
+          <td class=b3>0</td>
+          <td class=b4>+</td>
+          <td class=b4>+</td>
+          <td class=b3>0</td>
+          <td class=b4>+</td>
+          <td class=b4>+</td>
+          <td class=b4>+</td>
+          <td class=b4>+</td>
+          <td class=b5>++</td>
+          <td class=b2>x</td>
+        </tr>
+        <tr>
+          <th>Konec věku</th>
+          <td class=b2>-</td>
+          <td class=b2>-</td>
+          <td class=b2>-</td>
+          <td class=b1>--</td>
+          <td class=b3>0</td>
+          <td class=b5>++</td>
+          <td class=b4>+</td>
+          <td class=b3>0</td>
+          <td class=b5>++</td>
+          <td class=b5>++</td>
+        </tr>
+      </table>
+      <br/>
+      <hr/>
+    </blockquote>
+    <a id="Bon"></a>
+    <h2>5.3 Bonusy a postihy vlád</h2>
+    <blockquote>
+      <p>
+        V této tabulce vidíte podrobný popis bonusů k vládám.
+      </p>
+      <br/>
+      <table class=tbl border=2 align=center>
+        <tr>
+          <th width="12%">Vláda</th>
+          <th width="27%">Anarchie</th>
+          <th width="27%">Feudalismus</th>
+        </tr>
+        <tr>
+          <th>Produkce</th>
+          <td>
+            <span class="pos"><strong>+20&nbsp;% více prozkoumaného území.</strong></span><br/>
+            <span class="pos"><strong>+20&nbsp;% jídla z vesnic.</strong></span><br/>
+            <span class="pos"><strong>Revoluce z anarchie nic nezničí (ztratíte pouze společenské pokroky).</strong></span><br/>
+            <span class="pos">Mnohem nižší spotřeba energie budovami.</span><br/>
+            <span class="pos">Každé kolo +10 bodů v přibližování se k Utopii.</span><br/>
+            <span class="neg"><strong>-25&nbsp;% produkce továren.</strong></span><br/>
+            <span class="neg">Velká nespokojenost pokud je země rozsáhlá.</span>
+          </td>
+          <td>
+            <span class="pos"><strong>+20&nbsp;% jídla z vesnic.</strong></span><br/>
+            <span class="pos"><strong>
+              Pokud je produkčních budov jednoho druhu (továren, kasáren, farem, laboratoří nebo elektráren) do 20&nbsp;% rozlohy, mají +15&nbsp;% produkce.
+            </strong></span>
+            <span class=neg>Tento bonus postupně klesá až na -5&nbsp;% při plném zastavění území jedním druhem budov.</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Technologie</th>
+          <td></td>
+          <td>
+            <span class="pos"><strong>1 bod hospodářských technologií má efekt jako 1,5 bodu.</strong></span><br/>
+            <span class=neg>Maximum efektu hospodářských technologií je o 10&nbsp;% nižší.</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Válčení</th>
+          <td>
+            <span class=pos><strong>Při obraně proti normalním útokům se každých 100 obyvatel brání jako 1 voják.</strong></span><br/>
+            <span class=pos>Pokud má země více než 1,2M prestiže, má v obraně vůči agresorovi bonus do obrany +15&nbsp;%.</span><br/>
+            <span class=neg><strong>Bez pokroku Ochranné a obchodní organizace nemůže útočit.</strong> I s ním má -20&nbsp;% útok.</span>
+          </td>
+          <td>
+            <span class=pos><strong>Ostatní země mají při úspěšné agresi -20&nbsp;% zisky území a zboží.</strong></span>
+          </td>
+        </tr>
+        <tr align="center">
+          <th>Alianční bonus</th>
+          <td>
+            <span class=pos>+2 budovy za kolo</span>
+          </td>
+          <td>
+            <span class=pos>+1&nbsp;% výroba jednotek (vojáků i techniky)</span>
+          </td>
+        </tr>
+        <tr align="center">
+          <th>Efekt zábavních středisek</th>
+          <td>
+            <span class=pos>Střední</span>
+          </td>
+          <td>
+            <span class=pos>Střední</span>
+          </td>
+        </tr>
+        <tr align="center">
+          <th>Nechuť k válčení</th>
+          <td>
+            <span class=neg>Velká</span>
+          </td>
+          <td>
+            <span class=neg>Střední</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Vláda</th>
+          <th width="42%">Diktatura</th>
+          <th width="42%">Fundamentalismus</th>
+        </tr>
+        <tr>
+          <th>Produkce</th>
+          <td>
+            <span class=pos><strong>+10&nbsp;% produkce kasáren.</strong></span><br/>
+            <span class=neg><strong>+20&nbsp;% produkce technologií.</strong></span><br/>
+            <span class=neg>Nemůže dotovat produkci technologií a peněz.</span>
+          </td>
+          <td>
+            <span class=pos><strong>+20&nbsp;% produkce kasáren.</strong></span><br/>
+            <span class=pos><strong>Paušálně +0,8MWh energie z Elektrárny (na tento bonus nemají vliv technologie).</strong></span><br/>
+            <span class=pos>-20&nbsp;% cena vojáků na domácím trhu.</span><br/>
+            <span class=neg>-25&nbsp;% produkce technologií.</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Technologie</th>
+          <td></td>
+          <td>
+            <span class=pos>+50% zvýhodnění od vojenských základen (kromě výzkumu vesmíru).</span><br/>
+            <span class=pos>Vesmír prozkoumává paušálně o něco rychleji než ostatní zřízení.</span><br/>
+            <span class=neg><strong>-25% zvýhodnění maximálního efektu technologií.</strong></span>
+          </td>
+        </tr>
+        <tr>
+          <th>Válčení</th>
+          <td>
+            <span class=pos><strong>+10&nbsp;% síla armády.</strong></span><br/>
+            <span class=pos><strong>Může uzavřít 3 útočné spojenectví.</strong></span><br/>
+            <span class=pos><strong>+20&nbsp;% síla agentů v obraně.</strong></span><br/>
+            <span class=pos>Může mít pokrok <a href="techno.htm#fasismus">Fašismus</a>.</span>
+          </td>
+          <td>
+            <span class=pos>-1 náročnost teroristických operací rozvědky.</span><br/>
+            <span class=pos>-25&nbsp;% <a href="valky.htm#Zold">žoldy</a> všech jednotek a agentů.</span><br/>
+            <span class=pos>Může mít pokrok <a href="techno.htm#svata_valka">Svatá válka</a>.</span>
+          </td>
+        </tr>
+        <tr align="center">
+          <th>Alianční bonus</th>
+          <td>
+            <span class=pos>+1&nbsp;% síla armády</span>
+          </td>
+          <td>
+            <span class=pos>-3&nbsp;% žoldy</span>
+          </td>
+        </tr>
+        <tr align="center">
+          <th>Efekt zábavních středisek</th>
+          <td>
+            <span class=neg>Nízký</span>
+          </td>
+          <td>
+            <span class=pos>Vysoký</span>
+          </td>
+        </tr>
+        <tr align="center">
+          <th>Nechuť k válčení</th>
+          <td>
+            <span class=pos>Malá</span>
+          </td>
+          <td>
+            <span class=pos>Téměř žádná</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Vláda</th>
+          <th width="42%">Komunismus</th>
+          <th width="42%">Technokracie</th>
+        </tr>
+        <tr>
+          <th>Produkce</th>
+          <td>
+            <span class="pos"><strong>+15&nbsp;% produkce továren.</strong></span><br/>
+            <span class="pos"><strong>+10&nbsp;% produkce kasáren.</strong></span><br/>
+            <span class="pos"><strong>+20&nbsp;% produkce energie.</strong></span><br/>
+            <span class="pos">Každé kolo +10 bodů v přibližování se k Utopii.</span><br/>
+            <span class="neg"><strong>-25&nbsp;% produkce peněz.</strong></span><br/>
+            <span class="neg">Výroba mechů stojí 25 dílů jednotek.</span><br/>
+          </td>
+          <td>
+            <span class=pos><strong>+20&nbsp;% produkce technologií.</strong></span><br/>
+            <span class=pos>Nižší cena pokroků - do náročnosti se nezapočítává prestiž ani technologické pokroky.</span><br/>
+            <span class=neg><strong>-10&nbsp;% produkce jídla.</strong></span>
+          </td>
+        </tr>
+        <tr>
+          <th>Technologie</th>
+          <td></td>
+          <td>
+            <span class=pos><strong>+15% zvýhodnění maximálního efektu hospodářských technologií.</strong></span>
+          </td>
+        </tr>
+        <tr>
+          <th>Válčení</th>
+          <td>
+            <span class=pos><strong>-40&nbsp;% cena agentů.</strong></span><br/>
+            <span class=pos><strong>Může uzavřít 3 špionážní spojenectví.</strong></span><br/>
+            <span class=pos>Může vynaleznout pokrok <a href="techno.htm#bezpecnostni_senzory">Bezpečnostní senzory</a>.</span><br/>
+            <span class=pos>O polovinu větší produkce raket.</span>
+          </td>
+          <td>
+            <span class=pos>Může vynaleznout pokrok <a href="techno.htm#bezpecnostni_senzory">Bezpečnostní senzory</a>.</span><br/>
+            <span class=neg><strong>-10&nbsp;% síla útoku.</strong></span><br/>
+            <span class=neg><strong>-20&nbsp;% síla vojáků v obraně i útoku.</strong></span><br/>
+            <span class=neg>Nelze využít efekt aliančního pokroku <a href="aliance.htm#vakcinace">Vakcinace</a>.</span>
+          </td>
+        </tr>
+        <tr align="center">
+          <th>Alianční bonus</th>
+          <td>
+            <span class=pos>+3&nbsp;% síla rozvědky</span>
+          </td>
+          <td>
+            <span class=pos>+1&nbsp;% výroba jídla, energie a technologií.</span>
+          </td>
+        </tr>
+        <tr align="center">
+          <th>Efekt zábavních středisek</th>
+          <td>
+            <span class=neg>Nízký</span>
+          </td>
+          <td>
+            <span class=pos>Střední</span>
+          </td>
+        </tr>
+        <tr align="center">
+          <th>Nechuť k válčení</th>
+          <td>
+            <span class=pos>Malá</span>
+          </td>
+          <td>
+            <span class=neg>Velká</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Vláda</th>
+          <th width="42%"><span class="styl1">Demokracie</span></th>
+          <th width="42%"><span class="styl1">Republika</span></th>
+        </tr>
+        <tr>
+          <th>Produkce</th>
+          <td>
+            <span class=pos><a href="#RoD">Rozsáhlé země</a> nemají takový problém se spokojeností.</span>
+          </td>
+          <td>
+            <span class=pos><strong>+20% produkce továren</strong></span><br/>
+            <span class=pos><strong>+20% produkce peněz</strong></span>
+          </td>
+        </tr>
+        <tr>
+          <th>Technologie</th>
+          <td>
+            <span class=pos><strong>+10% zvýhodnění maximálního efektu hospodářských technologií.</strong></span><br/>
+            <span class=pos><strong>+10% zvýhodnění maximálního efektu vojenských technologií.</strong></span><br/>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Válčení</th>
+          <td>
+            <span class=neg>-20&nbsp;% obrana proti agentům.</span><br/>
+            <span class=neg>Nemůže vyrábět biocidní rakety.</span>
+          </td>
+          <td>
+            <span class=neg><strong>-5&nbsp;% síla útoku.</strong></span><br/>
+            <span class=neg>-20&nbsp;% obrana proti agentům.</span><br/>
+            <span class=neg>Nemůže vyrábět biocidní rakety.</span><br>
+            <span class=pos>Může mít pokrok <a href="techno.htm#fasismus">Fašismus</a> a pokud jej má, pak je nechuť k válčení Malá.</span>
+          </td>
+        </tr>
+        <tr align="center">
+          <th>Alianční bonus</th>
+          <td>
+            <span class=pos>+1&nbsp;% maximálního efektu hospodářských technologií.</span>
+          </td>
+          <td>
+            <span class=pos>+1&nbsp;% zisky z daní</span>
+          </td>
+        </tr>
+        <tr align="center">
+          <th>Efekt zábavních středisek</th>
+          <td>
+            <span class=pos>Vysoký</span>
+          </td>
+          <td>
+            <span class=pos>Střední</span>
+          </td>
+        </tr>
+        <tr align="center">
+          <th>Nechuť k válčení</th>
+          <td>
+            <span class=neg>Velká</span>
+          </td>
+          <td>
+            <span class=pos>Střední</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Vláda</th>
+          <th width="42%"><span class="styl1">Utopie (nelze hned od začátku)</span></th>
+          <th width="42%"><span class="styl1">Robokracie (lze až po 25. dni věku)</span></th>
+        </tr>
+        <tr>
+          <th>Produkce</th>
+          <td>
+            <span class=pos><strong>+25&nbsp;% produkce továren, kasáren, energie, jídla a technologií.</strong></span><br/>
+            <span class=pos><strong>+10&nbsp;% spokojenost.</strong></span><br/>
+            <span class=pos>Výrazně rychlejší kolonizace.</span>
+          </td>
+          <td>
+            <span class=pos><strong>+35&nbsp;% Produkce továren.</strong></span><br/>
+            <span class=pos><strong>+20&nbsp;% výroba energie a technologií.</strong></span><br/>
+            <span class=pos>Výroba mechů stojí 19 dílů jednotek.</span><br/>
+            <span class=pos>Armáda a obyvatelé nejedí jídlo.</span><br/>
+            <span class=pos>Může vynaleznout pokrok <a href="techno.htm#bezpecnostni_senzory">Bezpečnostní senzory</a>.</span><br/>
+            <span class=neg><strong>-30&nbsp;% výroba jídla.</strong></span><br/>
+            <span class=neg>-30&nbsp;% obyvatel.</span><br/>
+            <span class=neg>Mnohem vyšší spotřeba energie budovami.</span><br/>
+            <span class=neg>Bolestnější revoluce (navíc nelze udělat Robokracii přímo z Anarchie).</span><br/>
+            <span class=neg>Nemůže dělat společenské pokroky (výjimku tvoří pokrok Bezpečnostní senzory).</span><br/>
+            <span class=neg>
+              Poloviční efekt aliančního pokroku <a href="aliance.htm#automatizace_zbrojniho_prumyslu">Automatizace zbrojního průmyslu</a>.
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <th>Technologie</th>
+          <td></td>
+          <td>
+            <span class=pos><strong>+20% zvýhodnění maximálního efektu vojenských technologií.</strong></span><br/>
+            <span class=pos><strong>+10% zvýhodnění maximálního efektu hospodářských technologií.</strong></span>
+          </td>
+        </tr>
+        <tr>
+          <th>Válčení</th>
+          <td>
+            <span class=pos><strong>Může uzavřít 3 obranná spojenectví.</strong></span><br/>
+            <span class=neg><strong>-10&nbsp;% síla útoku.</strong></span><br/>
+            <span class=neg>Může vyrábět a odpalovat pouze konvenční rakety (demoralizace při odpálení je vyšší než u jiných zřízení).</span>
+          </td>
+          <td>
+            <span class="pos"><strong>Neúčinkuje na ně biocidní raketa, demoralizace, prodej drog či epidemie.</strong></span><br/>
+            <span class="pos"><strong>+50&nbsp;% síla rozvědky v obraně.</strong></span><br/>
+            <span class="pos"><strong>+20&nbsp;% síla v útoku i obraně na noční tažení, bombardování a taktický nálet.</strong></span><br/>
+            <span class="pos">Poloviční pokles připravenosti armády při útoku.</span><br/>
+            <span class="neg">
+              <strong>Při revoluci na Robokracii všichni generálové zemřou,</strong> může sbírat nové generály. Tito generálové sbírají zkušenosti jen
+              poloviční rychlostí. Navíc Robokracie nemůže mít generály Ochránce národa, Nacionalista, Osvoboditel, Populista a Farmář.
+            </span><br/>
+            <span class="neg"><strong>-50&nbsp;% obrana proti Partyzánským útokům.</strong></span>
+          </td>
+        </tr>
+        <tr align="center">
+          <th>Alianční bonus</th>
+          <td>
+            <span class=pos>+1&nbsp;% spokojenost</span>
+          </td>
+          <td>
+            <span class=pos>+1&nbsp;% maximalní efekt vojenských technologií</span>
+          </td>
+        </tr>
+        <tr align="center">
+          <th>Efekt zábavních středisek</th>
+          <td>
+            <span class=pos>Střední</span>
+          </td>
+          <td>
+            <span class="neg">Nulový</span> - <span class=pos>Stále 100% spokojenost</span>
+          </td>
+        </tr>
+        <tr align="center">
+          <th>Nechuť k válčení</th>
+          <td>
+            <span class=neg>Velká</span>
+          </td>
+          <td>
+            <span class=pos>Nulová</span>
+          </td>
+        </tr>
+      </table>
+      <br/>
+      <hr/>
+    </blockquote>
+    <a id="revoluce"></a>
+    <h2>5.4 Revoluce</h2>
+    <blockquote>
+      <p>
+        Revoluce je jediný způsob jak změnit <a href="#OVl">typ vlády</a>, ale každá revoluce znamená občanskou válku, která vás oslabí. Proto, než se
+        rozhodnete pro revoluci, dobře si rozmyslete, jestli vám za to stojí. Zároveň <strong>ztratíte</strong> revolucí <strong>všechny společenské
+        pokroky</strong>.
+      </p>
+      <p>
+        <strong>Po revoluci ztratíte:</strong>
+      </p>
       <ul>
         <li>
-          při <a href="valky.htm#UNorm">normálním</a> útoku klesá spokojenost od několika málo procent (pokud útočíte na srovnatelnou zemi) až po 10-20% (při
-          útoku na 3x slabší zemi) v závislosti na Vaší vládě a odporu k válčení. Ještě větší nespokojenost způsobí útok proti
-          <a href="podpora.htm.htm#tuhy_odpor">tuhému odporu</a> (o dalších -5%)
+          <strong>12 %</strong> <a href="valky.htm#JDr">jednotek</a>, <a href="valky.htm#Age">agentů</a>, <a href="zbozi.htm#Pen">peněz</a>,
+          <a href="zbozi.htm#JaE">jídla</a>, <a href="zbozi.htm#JaE">energie</a> a <a href="zbozi.htm#Lid">lidí</a>.
         </li>
-        <li>při <a href="valky.htm#UTak">taktickém</a> útoku je pokles o 2-6% dle státního zřízení</li>
-        <li>při neúspěšném útoku je pokles ještě o 3% větší</li>
+        <li><strong>8 %</strong> <a href="budovy.htm#BTo">budov</a> a <a href="techno.htm#TUv">technologií</a>.</li>
+        <li>Všechny <a href="techno.htm#spolecenske_pokroky">společenské pokroky</a>.</li>
+        <li>Zkušenosti u generálů (viz dále).</li>
+        <li>Výrazně klesne <a href="valky.htm#Vpa">připravenost armády</a>, proto byste měli po revoluci mít dostatek kol na její obnovení.</li>
+      </ul>
+      <p>
+        Výjimku tvoří revoluce z <a href="#Ana">Anarchie</a>, jelikož ta vás stojí vždy pouze společenské pokroky. A jelikož země začínají hru v Anarchii, je
+        první revoluce vždy bezbolestná (s výjimkou rušení všech společenských pokroků, ty se ruší vždy).
+      </p>
+      <p class="inf">
+        Zboží schované na trhu se při revoluci ničí také.
+      </p>
+      <p class="inf">
+        Při revoluci se nastaví výroba raket na konvenční.
+      </p>
+      <p class="inf">
+        Při revoluci z Demokracie na Komunismus se navíc dost sníží spokojenost.
+      </p>
+      <p>
+        <strong>Revoluce na Robokracii</strong> je bolestivější, a proto ztratíte mnohem více:
+      </p>
+      <ul>
+        <li><strong>20 %</strong> jednotek, agentů, peněz, jídla, energie a lidí.</li>
+        <li><strong>16 %</strong> budov a technologií.</li>
+        <li><strong>Zahynou všichni <a href="valky.htm#Gen">generálové</a></strong>.</li>
+        <li>Nelze ji udělat přímo z Anarchie.</li>
+      </ul>
+      <p>
+        Revoluci můžete udělat za věk kolikrát chcete, ale čím více kol odehrajete od začátku věku, tím více zkušeností <strong>ztratí generálové</strong> při
+        revoluci. Při odehrání 0 kol → 0 %, při odehrání 2000 kol → 20 %, při odehrání 2300 kol → 23 % nikoliv o 3 %; 3000 kol → 30 %, atd. Zkušenosti neklesají
+        pouze při revoluci z Anarchie.
+      </p>
+      <br/>
+      <hr/>
+    </blockquote>
+    <a id="UaR"></a>
+    <h2>5.5 Utopie a Robokracie</h2>
+    <blockquote>
+      <p>
+        Jak jste blízko k utopii a robokracii vidíte v menu <em>{Vláda} → {Utopie a Robokracie}</em>. Po splnění podmínek Vám přibude v menu <em>{Vláda} →
+        {Revoluce}</em> možnost zvolit utopii či robokracii.
+      </p>
+      <br/>
+      <p>
+        <strong>Podmínky pro Utopii:</strong>
+      </p>
+      <p>
+        Od jiných se odlišuje hlavně tím, že v ní nemůžete žít ihned od začátku věku. Možnost zvolit revoluci na <a href="#Uto">Utopii</a> je až po dosáhnutí
+        100 000 &quot;utopistických bodů&quot;, což bývá zhruba po půlce věku.
+      </p>
+      <p>
+        Každé kolo získáte tolik bodů, o kolik je vaše <a href="vlady.htm#Spo">spokojenost</a> vyšší, než 105% (body mohou i klesat, minimum je 0). Body na
+        Utopii lze získávat i za uplynulý čas. Za každé poslání <a href="podpora.htm#humanitarni_pomoc">humanitární pomoci</a> je dalších <em>300</em> bodů.
+      </p>
+      <p class="inf">
+        <a href="#Ana">Anarchie</a> a <a href="#Kom">Komunismus</a> má navíc každé kolo +10 bodů bonus. Ve výsledku to znamená, že největší šanci na připravení
+        obyvatel na Utopii mají Anarchie, Demokracie (díky vysoké <a href="#Spo">spokojenosti</a>) a <a href="vlady.htm#Fun">Fundamentalismus</a> (taktéž díky
+        vysoké spokojenosti).
+      </p>
+      <br/>
+      <p>
+        <strong>Podmínky pro Robokracii:</strong>
+      </p>
+      <p>
+        Robokracie nejde udělat dříve jak 25. den věku a musíte mít alespoň 50% androidů. Androidi mohou přibývat v zemi až po vynalezení pokroku
+        <a href="techno.htm#androidi">Androidi</a>. Ze začátku je jich jen pár, ale jejich procento roste s uplynulým časem od začátku věku a s hustotou
+        <a href="techno.htm#TUv">technologií</a>, hlavně hospodářských. Ze začátku je androidů málo, později počet prudce roste.
+      </p>
+      <p class="inf">
+        Nelze udělat <a href="#robokracie">Robokracii</a> přímo z <a href="#Ana">Anarchie</a>.
+      </p>
+      <p class="inf">
+        Před přechodem na <a href="#robokracie">Robokracii</a> může být výhodné snížení rozlohy (ubouráním území se zvýší hustota technologií na vaší rozloze a
+        tím výrazně stoupne počet androidů v populaci).
+      </p>
+      <p class="inf">
+        To, kolik času zbývá do možnosti stát se robokracií, vidíte v menu <em>{Vláda} → {Revoluce}</em>.
+      </p>
+      <br/>
+      <hr/>
+    </blockquote>
+    <<a id="Spo"></a>
+    <h2> 5.6 Spokojenost</h2>
+    <blockquote>
+      <p>
+        Spokojenost je faktor ovlivňující mnoho aspektů Vaší země. Základní spokojenost země je 90%. Normální průměrná spokojenost je kolem 100%. Přes
+        120&nbsp;% už jsou obyvatelé velmi šťastní a pod 80% dosti reptající.
+      </p>
+      <p class="inf">
+        Horní limit spokojenosti je prakticky neomezený, dolní limit je 0&nbsp;%.
+      </p>
+      <br/>
+      <a id="Svy"></a>
+      <h3>5.6.1 Efekt</h3>
+      <p>
+        Každé <strong>1&nbsp;% spokojenosti</strong> má na Vaši zemi nějaký vliv. Podle toho, zda dojde k nárůstu nebo poklesu spokojenosti, se vám zvýší nebo
+        sníží tyto parametry země:
+      </p>
+      <ul>
+        <li>o 0,75&nbsp;% <a href="zbozi.htm#Pen">produkce peněz</a></li>
+        <li>o 0,5&nbsp;% <a href="techno.htm#Tjj">produkce technologií</a></li>
+        <li>o 0,5&nbsp;% <a href="valky.htm#USi">vojenská síla</a> (pouze u Diktatury a Komunismu jen +0,25%)</li>
+        <li>o 1&nbsp;% <a href="valky.htm#RSi">síla rozvědky</a></li>
+        <li>vyšší <a href="zbozi.htm#Porod">porodnost</a> (ale ne maximální počet obyvatelstva)</li>
+        <li>přibližování k <a href="#Uto">Utopii</a></li>
+      </ul>
+      <p class="inf">
+        Příklad: <a href="#Rep">Republika</a> má spokojenost 110&nbsp;%. To je o 10&nbsp;% nad normálem (nad 100%). Díky vyšší spokojenosti má například o
+        7,5&nbsp;% větší <a href="zbozi.htm#Pen">produkci peněz</a> a o 5&nbsp;% větší <a href="valky.htm#USi">vojenskou sílu</a>. Pokud ji potom
+        zasáhne <a href="valky.htm#Rbi"> biocidní raketa</a>, spokojenost bude dočasně snížena na 88&nbsp;% a vojenská síla tím klesne oproti předchozímu stavu
+        o 11&nbsp;%.
+      </p>
+      <br/>
+      <a id="Sja"></a>
+      <h3>5.6.2 Jak ovlivnit spokojenost?</h3>
+      <p>
+        Spokojenost závisí na vládě, počtu <a href="budovy.htm#Zab">zábavních středisek</a>, <a href="techno.htm#POK">pokrocích</a>, úrovni
+        <a href="valky.htm#Gen">generála Populisty</a>, <a href="#RoD">rozloze</a>, <a href="aliance.htm#AliB">aliančních bonusech</a> a na počtu
+        <a href="valky.htm#Rbi">biocidních</a> a <a href="valky.htm#Rnu">nukleárních</a> raket. Dočasně stoupá po odeslání
+        <a href="podpora.htm#humanitarni_pomoc">humanitární</a> pomoci, dotací, <a href="#Vpre">vojenskou přehlídkou</a>, klesá po vámi vyhlášené válce, po
+        neúspěšné obraně, akcemi rozvědky, odpálení rakety nebo po jejím zásahu. Jednorázově zvýšit nebo snížit spokojenost mohou také <a href="ufo.htm#Uda">události</a>
+        nebo útok (většině vlád po útoku spokojenost klesá, ale některé bojové vlády spokojenost získají).
+      </p>
+      <a id="RoD"> </a>
+      <p>
+        <strong>Jak konkrétně</strong> ovlivňují tyto faktory spokojenost:
+      </p>
+      <ul>
         <li>
-          při odpálení <a href="valky.htm#Rko">konvenční</a> rakety o 1-3% a při <a href="valky.htm#Rnu">nukleární</a> či <a href="valky.htm#Rbi">biocidní</a>
-          raketě o 5-15% (dle nechuti k válčení)
+          rozloha/2000 <span class="inf">(Větší země jsou&nbsp;v Demokracii šťastnější, proto je u Demokracie tento postih poloviční. V Anarchii jsou vetší země
+          naopak nešťastnejší, proto je postih dvojnásobný. U všech ostatních vlád platí uvedený vzorec.)</span>
+        </li>
+        <li>bonus za generála <a href="valky.htm#populista">Populistu</a> <span class="inf">(+2% každá úroveň)</span></li>
+        <li>
+          bonus nebo postih za <a href="techno.htm#POK">Pokroky</a> <span class="inf">(<a href="techno.htm#TPl">Lidský genom</a> +10&nbsp;%,
+          <a href="techno.htm#TPKc">Kulturní centrum</a> +10&nbsp;%, <a href="techno.htm#pacifismus">Pacifismus</a> +10&nbsp;%,
+          <a href="techno.htm#TPo">Ochranné a obchodní organizace</a> +5&nbsp;%, <a href="techno.htm#And">Androidi</a> -5&nbsp;%,
+          <a href="techno.htm#TPvs">Vojenský stát</a> -10&nbsp;%, <a href="techno.htm#bezpecnostni_senzory">Bezpečnostní senzory</a>)</span>
+        </li>
+        <li><a href="#Sef">efekt zábavních středisek</a></li>
+        <li><a href="aliance.htm#AliB">alianční bonus</a> za Utopii</li>
+        <li>zvýšení za <a href="podpora.htm#humanitarni_pomoc">humanitární</a> pomoc o 5&nbsp;% nebo 15&nbsp;%</li>
+        <li>
+          <a id="Vpre"></a>
+          zvýšení vojenskou přehlídkou <span class="inf">(pokud dotujete připravenost a armáda je už připravená z 98&nbsp;% a více, dělá armáda  vojenské
+          přehlídky, což zvyšuje spokojenost)</span>
+        </li>
+        <li>Při vyhlášení první Vámi vyhlášené války klesne jednorázově spokojenost o 2&nbsp;%, při další válce o 4&nbsp;% a při třech válkách o 6&nbsp;%.</li>
+        <li>
+          Při vlastnictví <a href="valky.htm#Rnu">nukleárních</a> a <a href="valky.htm#Rbi">biocidních</a> raket ztrácíte spokojenost o maximálně několik málo
+          procent.
+        </li>
+        <li>Při negativní události.</li>
+        <li>
+          Pomocí akce <a href="valky.htm#LOpd">Prodat drogy</a>, <a href="valky.htm#RDo">demoralizovat obyvatele</a> nebo případně
+          <a href="valky.htm#RRe">rozšířit epidemii</a> lze snížit spokojenost o několik procent.
+        </li>
+        <li>
+          Pokles útočením:
+          <ul>
+            <li>
+              při <a href="valky.htm#UNorm">normálním</a> útoku klesá spokojenost od několika málo procent (pokud útočíte na srovnatelnou zemi) až po
+              10-20&nbsp;% (při útoku na 3x slabší zemi) v závislosti na Vaší vládě a odporu k válčení. Ještě větší nespokojenost způsobí útok proti
+              <a href="podpora.htm.htm#tuhy_odpor">tuhému odporu</a> (o dalších -5&nbsp;%)
+            </li>
+            <li>při <a href="valky.htm#UTak">taktickém</a> útoku je pokles o 2-6&nbsp;% dle státního zřízení</li>
+            <li>při neúspěšném útoku je pokles ještě o 3&nbsp;% větší</li>
+            <li>
+              při odpálení <a href="valky.htm#Rko">konvenční</a> rakety o 1-3&nbsp;% a při <a href="valky.htm#Rnu">nukleární</a> či
+              <a href="valky.htm#Rbi">biocidní</a> raketě o 5-15&nbsp;% (dle nechuti k válčení)
+            </li>
+          </ul>
+        </li>
+        <li>
+          Pokles bráněním:
+          <ul>
+            <li>o 3&nbsp;% při prohře proti <a href="valky.htm#VUd">dobyvačnému</a> nebo <a href="valky.htm#VUl">loupeživému</a> útoku</li>
+            <li>o 8&nbsp;% při úspěšném <a href="valky.htm#VUn">vyhlazovacím</a> útoku</li>
+            <li>při úspěšném <a href="valky.htm#VUb">bombardování</a> klesá až o 10&nbsp;% na nejméně 60&nbsp;%</li>
+            <li>při úspěšném <a href="valky.htm#VUtn">taktickém náletu</a> klesá až o 5&nbsp;% na nejméně 60&nbsp;%</li>
+            <li>
+              při zásahu <a href="valky.htm#Rnu">nukleární</a> raketou o 10&nbsp;% a při dopadu <a href="valky.htm#Rbi">biocidní</a> o 20&nbsp;%
+              <span class="inf">(počítá se o 10&nbsp;% potažmo 20&nbsp;% proti předchozímu stavu, takže při spokojenosti 130&nbsp;% a následném zásahu raketou
+                spokojenost klesne na 117&nbsp;% potažmo 104&nbsp;%)</span>
+            </li>
+          </ul>
         </li>
       </ul>
-    </li>
-    <li>Pokles bráněním:
-        <ul>
-          <li>o 3% při prohře proti <a href="valky.htm#VUd">dobyvačnému</a> nebo <a href="valky.htm#VUl">loupeživému</a> útoku </li>
-          <li>o 8% při úspěšném <a href="valky.htm#VUn">vyhlazovacím</a> útoku</li>
-          <li>při úspěšném <a href="valky.htm#VUb">bombardování</a> klesá až o 10% na nejméně 60%</li>
-          <li>při úspěšném <a href="valky.htm#VUtn">taktickém náletu</a> klesá až o 5% na nejméně 60%</li>
-
-          <li>při zásahu <a href="valky.htm#Rnu">nukleární</a> raketou o 10% a při dopadu <a href="valky.htm#Rbi">biocidní</a> o 20% <span class="inf">(počítá se o 10% potažmo 20% proti předchozímu stavu, takže při spokojenosti 130% a následném zásahu  raketou spokojenost klesne na 117% potažmo 104%) </span></li>
-        </ul>
-    </li>
-  </ul>
-  <blockquote>
-    <p>&nbsp;</p>
-    <span class="inf">Pokles spokojenosti Fundamentalistů při útoku je vždy téměř nulový.</span> </blockquote>
-
-
-  <p><a name="Sef"></a></p>
-  <h3>5.6.3 Efekt zábavních středisek</h3>
-  <p>Ve sloupci &quot;Díl rozlohy&quot; je uvedeno, kolik procent rozlohy zaujímají <a href="budovy.htm#Zab">zábavní střediska</a>. V ostatních sloupcích vidíte, o kolik se Vám zlepší spokojenost v závislosti na Vašem <a href="#Ovl">státním zřízení</a>. Nejlepší efekt zábavních středisek mají <a href="#Fun">Fundamentalismus</a> a <a href="#Dem">Demokracie</a>. Pokud stavíte jen několik procent zábavních středisek, roste spokojenost rychle, později už jen neznatelně. </p>
-  <p>&nbsp;</p>
-  <p><span class="inf">U robokracie zabavní střediska nemají vliv, spokojenost je totiž konstantně 100%.</span></p>
-</blockquote>
-<p>&nbsp;</p>
-  <table class=tbl align=center border=2>
+      <p class="inf">
+        Pokles spokojenosti Fundamentalistů při útoku je vždy téměř nulový.
+      </p>
+      <br/>
+      <a id="Sef"></a>
+      <h3>5.6.3 Efekt zábavních středisek</h3>
+      <p>
+        Ve sloupci "Díl rozlohy" je uvedeno, kolik procent rozlohy zaujímají <a href="budovy.htm#Zab">zábavní střediska</a>. V ostatních sloupcích vidíte, o
+        kolik se Vám zlepší spokojenost v závislosti na Vašem <a href="#Ovl">státním zřízení</a>. Nejlepší efekt zábavních středisek mají
+        <a href="#Fun">Fundamentalismus</a> a <a href="#Dem">Demokracie</a>. Pokud stavíte jen několik procent zábavních středisek, roste spokojenost rychle,
+        později už jen neznatelně.
+      </p>
+      <p class="inf">
+        U Robokracie zabavní střediska nemají vliv, spokojenost je totiž konstantně 100%.
+      </p>
+    </blockquote>
+    <table class=tbl align=center border=2>
       <tr>
-        <th><div align="center"><span class="styl1">Díl rozlohy</span></div></th>
-        <th> <span align="center" class="styl1">Demo, Fund</span><br>
-            <span align="center" class="styl1">(vysoký efekt)</span> </th>
-        <th> <span align="center" class="styl1">Rep, Feud, Anar, Utop, Tech</span><br>
-            <span align="center" class="styl1">(střední efekt)</span> </th>
-        <th> <span align="center" class="styl1">Kom, Dikt</span><br>
-            <span align="center" class="styl1">(nízký efekt)</span> </th>
+        <th>
+          <div align="center"><span class="styl1">Díl rozlohy</span></div>
+        </th>
+        <th><span align="center" class="styl1">Demo, Fund</span><br>
+          <span align="center" class="styl1">(vysoký efekt)</span></th>
+        <th><span align="center" class="styl1">Rep, Feud, Anar, Utop, Tech</span><br>
+          <span align="center" class="styl1">(střední efekt)</span></th>
+        <th><span align="center" class="styl1">Kom, Dikt</span><br>
+          <span align="center" class="styl1">(nízký efekt)</span></th>
       </tr>
       <tr>
-        <td class="h styl1"><div align="center">0%</div></td>
-        <td><div align="center"><span class="styl1">0,0</span></div></td>
-        <td><div align="center"><span class="styl1">0,0</span></div></td>
-        <td><div align="center"><span class="styl1">0,0</span></div></td>
+        <td class="h styl1">
+          <div align="center">0%</div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">0,0</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">0,0</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">0,0</span></div>
+        </td>
       </tr>
       <tr>
-        <td class="h styl1"><div align="center">2%</div></td>
-        <td><div align="center"><span class="styl1">5,6</span></div></td>
-        <td><div align="center"><span class="styl1">4,4</span></div></td>
-        <td><div align="center"><span class="styl1">3,3</span></div></td>
+        <td class="h styl1">
+          <div align="center">2%</div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">5,6</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">4,4</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">3,3</span></div>
+        </td>
       </tr>
       <tr>
-        <td class="h styl1"><div align="center">4%</div></td>
-        <td><div align="center"><span class="styl1">10,3</span></div></td>
-        <td><div align="center"><span class="styl1">8,2</span></div></td>
-        <td><div align="center"><span class="styl1">6,0</span></div></td>
+        <td class="h styl1">
+          <div align="center">4%</div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">10,3</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">8,2</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">6,0</span></div>
+        </td>
       </tr>
       <tr>
-        <td class="h styl1"><div align="center">6%</div></td>
-        <td><div align="center"><span class="styl1">14,2</span></div></td>
-        <td><div align="center"><span class="styl1">11,3</span></div></td>
-        <td><div align="center"><span class="styl1">8,3</span></div></td>
+        <td class="h styl1">
+          <div align="center">6%</div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">14,2</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">11,3</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">8,3</span></div>
+        </td>
       </tr>
       <tr>
-        <td class="h styl1"><div align="center">8%</div></td>
-        <td><div align="center"><span class="styl1">17,5</span></div></td>
-        <td><div align="center"><span class="styl1">13,9</span></div></td>
-        <td><div align="center"><span class="styl1">10,3</span></div></td>
+        <td class="h styl1">
+          <div align="center">8%</div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">17,5</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">13,9</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">10,3</span></div>
+        </td>
       </tr>
       <tr>
-        <td class="h styl1"><div align="center">10%</div></td>
-        <td><div align="center"><span class="styl1">20,2</span></div></td>
-        <td><div align="center"><span class="styl1">16,0</span></div></td>
-        <td><div align="center"><span class="styl1">11,9</span></div></td>
+        <td class="h styl1">
+          <div align="center">10%</div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">20,2</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">16,0</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">11,9</span></div>
+        </td>
       </tr>
       <tr>
-        <td class="h styl1"><div align="center">14%</div></td>
-        <td><div align="center"><span class="styl1">24,4</span></div></td>
-        <td><div align="center"><span class="styl1">19,3</span></div></td>
-        <td><div align="center"><span class="styl1">14,3</span></div></td>
+        <td class="h styl1">
+          <div align="center">14%</div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">24,4</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">19,3</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">14,3</span></div>
+        </td>
       </tr>
       <tr>
-        <td class="h styl1"><div align="center">22%</div></td>
-        <td><div align="center"><span class="styl1">29,3</span></div></td>
-        <td><div align="center"><span class="styl1">23,3</span></div></td>
-        <td><div align="center"><span class="styl1">17,2</span></div></td>
+        <td class="h styl1">
+          <div align="center">22%</div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">29,3</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">23,3</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">17,2</span></div>
+        </td>
       </tr>
       <tr>
-        <td class="h styl1"><div align="center">30%</div></td>
-        <td><div align="center"><span class="styl1">31,7</span></div></td>
-        <td><div align="center"><span class="styl1">25,2</span></div></td>
-        <td><div align="center"><span class="styl1">18,7</span></div></td>
+        <td class="h styl1">
+          <div align="center">30%</div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">31,7</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">25,2</span></div>
+        </td>
+        <td>
+          <div align="center"><span class="styl1">18,7</span></div>
+        </td>
       </tr>
-</table>
-      
-        <p>&nbsp;</p>
-      
-</body>
+    </table>
+  </body>
 </html>
