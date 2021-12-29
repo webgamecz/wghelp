@@ -199,6 +199,33 @@
         ** Agenti se používají v akcích rozvědky, nikoli v normálních útocích.
       </p>
       <br/>
+      <strong>Příklad výpočtu žoldů</strong>
+      <p>
+        Představme si zemi s následujícími parametry:
+      </p>
+      <ul>
+        <li>Prestiž země 2500k (+50 %)</li>
+        <li>Vláda <a href="vlady.htm#fundamentalismus">Fundamentalismus</a> (-25 %)</li>
+        <li>Generál <a href="#ekonom">Ekonom</a> na 6. levelu (-30 %)</li>
+        <li><a href="aliance.htm#AliB">Alianční bonus</a> za Fundamentalismus v plné alianci (-15 %)</li>
+        <li><a href="statistiky.htm#H32">Veteránský bonus</a> za 12. hodnost (-25 %)</li>
+        <li>500k vojáků (30000 $)</li>
+        <li>20k tanků (8400 $)</li>
+        <li>20k stíhaček (6400 $)</li>
+        <li>20k bunkrů (7000 $)</li>
+        <li>150k mechů (30000 $)</li>
+        <li>5k agentů (25000 $)</li>
+      </ul>
+      <p>
+        Vzorec a výsledné žoldy pak bude vypadat následovně:
+      </p>
+      <ul>
+        <li>Celkem za jednotky 106800 $</li>
+        <li>Prestiž 2500k zvedá žoldy o polovinu: 106800 × 1,5 = 160200 $</li>
+        <li>Nyní přichází na řadu slevy, které se posčítají (Fundamentalismus -25 %, Ekonom -30 %, Alianční bonus -15 %): 160200 × 0,3 = 48060 $</li>
+        <li>12. hodnost ukrojí ještě 25 %: 48060 × 0,75 = 36045 $</li>
+      </ul>
+      <br/>
       <a id="JZi"></a>
       <h3>6.1.3 Jak lze získat jednotky</h3>
       <p>
@@ -216,9 +243,9 @@
       </p>
       <p>
         Velký vliv může mít také generál <a href="#zbrojar">Zbrojař</a>. Další ovlivňující faktor je státní zřízení.
-        <a href="vlady.htm#Fun">Fundamentalismus</a>, <a href="vlady.htm#Dik">Diktatura</a>, <a href="vlady.htm#Kom">Komunismus</a>, <a href="vlady.htm#Feu">
-        Feudalismus</a> a <a href="vlady.htm#Uto">Utopie</a> mají totiž bonus na produkci v kasárnách. Pokud navíc máte u Fundamentalismu pokrok
-        <a href="techno.htm#svata_valka">Svatá válka</a>, produkuje vám každých 40 km2 jednoho vojáka. Vliv na výrobu vojáků má také
+        <a href="vlady.htm#fundamentalismus">Fundamentalismus</a>, <a href="vlady.htm#Dik">Diktatura</a>, <a href="vlady.htm#Kom">Komunismus</a>,
+        <a href="vlady.htm#Feu">Feudalismus</a> a <a href="vlady.htm#Uto">Utopie</a> mají totiž bonus na produkci v kasárnách. Pokud navíc máte u
+        Fundamentalismu pokrok <a href="techno.htm#svata_valka">Svatá válka</a>, produkuje vám každých 40 km2 jednoho vojáka. Vliv na výrobu vojáků má také
         <a href="aliance.htm#AliB">alianční bonus</a> za Feudalismus.
       </p>
       <ul>
@@ -1584,7 +1611,7 @@
         <li>
           <strong>Státní zřízení</strong> - Demokracie -20&nbsp;% a Republika -20&nbsp;% obrana proti agentům, naproti tomu
           <a href="vlady.htm#Dik">Diktatura</a> má +20&nbsp;% obranu agentů, Robokracie má bonus +50&nbsp;% k síle rozvědky v obraně a
-          <a href="vlady.htm#Fun">Fundamentalismus</a> má o 1 menší nebezpečnost všech teroristických operací (ale minimálně 1). To znamená větší
+          <a href="vlady.htm#fundamentalismus">Fundamentalismus</a> má o 1 menší nebezpečnost všech teroristických operací (ale minimálně 1). To znamená větší
           <a href="#RSa">šanci na úspěch</a>.
         </li>
         <li><strong><a href="#spion">Generál Špión</a></strong> - přidává +5&nbsp;% k síle rozvědky za každou svou úroveň</li>
@@ -1754,7 +1781,7 @@
         </li>
         <li>
           <a id="LOpd"></a>
-          <strong>Prodat drogy (2)</strong> - Tuto akci mohou uskutečnit pouze vlády <a href="vlady.htm#Fun">Fundamentalismus</a> a
+          <strong>Prodat drogy (2)</strong> - Tuto akci mohou uskutečnit pouze vlády <a href="vlady.htm#fundamentalismus">Fundamentalismus</a> a
           <a href="vlady.htm#Dik">Diktatura</a> a to pokud mají pokrok <a href="techno.htm#TPaOSN">AntiOSN</a>. Při úspěchu získáte
           <a href="zbozi.htm#Pen">peníze</a> a nepřítel ztrácí <a href="vlady.htm#Spo">spokojenost</a>. Více vyděláte, když má cílová země
           <a href="statistiky.htm#H1">prestiž</a> o hodně větší než Vaše (je výhodnější prodat kokain z Kolumbie do USA než obráceně), spokojené obyvatele a
