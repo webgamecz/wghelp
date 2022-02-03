@@ -1,221 +1,186 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html><head><title>Manuál k strategii Webgame</title>
-<meta content="" name=keywords>
-<meta http-equiv=Content-Type content="text/html; charset=utf-8"><link 
-href="helpstyle.css" type=text/css rel=stylesheet>
-<meta content="MSHTML 6.00.2800.1498" name=GENERATOR>
-<style type="text/css">
-<!--
-.styl1 {color: #000000}
--->
-</style>
-</head>
-<body><a name=Trh></a>
-<h1>9 Trhy a obchodování </h1>
-<a id="TDo"></a>
-<h2>9.1 Domácí trh</h2>
-<p align=center>&nbsp;</p>
-
-
-  <table class=tbl align=center border=2>
-    <tbody>
-    <tr>
-      <th>Zboží</div></th>
-      <th>Základní cena [$]</div></th>
-    </tr>
-    <tr>
-      <td><a 
-      href="zbozi.htm#JaE">Jídlo [t]</a> </div></td>
-      <td height=22>
-        <div align=center class="styl1">
-          25 </div>
-        </div></td>
-    </tr>
-    <tr>
-      <td><a 
-      href="zbozi.htm#Ene">Energie [MWh]</a> </div></td>
-      <td height=22>
-        <div align=center class="styl1">
-          25</div>
-        </div></td>
-    </tr>
-    <tr>
-      <td><a href="valky.htm#Voj">Voják</a> 
-      </div></td>
-      <td>
-        <div align=center class="styl1">
-          115</div>
-        </div></td>
-    </tr>
-    <tr>
-      <td><a href="valky.htm#Tan">Tank</a> 
-      </div></td>
-      <td>
-        <div align=center class="styl1">
-          670</div>
-        </div></td>
-    </tr>
-    <tr>
-      <td><a href="valky.htm#Bun">Bunkr</a> 
-      </div></td>
-      <td>
-        <div align=center class="styl1">
-          500</div>
-        </div></td>
-    </tr>
-    <tr>
-      <td><a 
-      href="valky.htm#Sti">Stíhačka</a> </div></td>
-      <td>
-        <div align=center class="styl1">
-          470</div>
-        </div></td>
-    </tr>
-    <tr>
-      <td height=23><a 
-      href="valky.htm#Mech">Mech</a> </div></td>
-      <td height=23>
-        <div align=center class="styl1">
-          350</div>
-        </div></td>
-    </tr>
-    <tr>
-      <td><a href="valky.htm#Age">Agent</a> 
-      </div></td>
-      <td>
-    <div align=center class="styl1">
-      5000 </div>
-    </div></td>
-    </tr></tbody>
-  </table>
-</div>
-<blockquote>
-<p>&nbsp;</p>
-<ul>
-  <li>Každá země má svůj vlastní domácí trh. 
-  <li>Technologie <a href="techno.htm#TCND">Cena na domácím trhu</a> společně s <a 
-  href="budovy.htm#vojenske_zakladny">vojenskými základnami</a>
-  ovlivňují cenu vojenských jednotek (kromě ceny vojáků). 
-  <li><a href="vlady.htm#fundamentalismus">Fundamentalismus</a> má
-  levnější <a href="valky.htm#Voj">vojáky</a> (95$ 
-  místo 115$). 
-  <li><a href="vlady.htm#Kom">Komunismus</a> má 
-  levnější <a href="valky.htm#Age">agenty</a> (3000$ 
-  místo 5000$). 
-  <li>Jednotky na trh přibývají každých 15 minut (každé nové kolo). 
-  <li>Po velkých nákupech na domácím trhu stoupne cena, čím více nakoupíte, tím 
-  více stoupne cena (nejlevnější jednotky při zaplnění 100% - 81% naopak nejdražší při zaplnění 0% - 20%). 
-  <li>Cena <a href="zbozi.htm#JaE">jídla</a> a <a 
-  href="zbozi.htm#Ene">energie</a> je téměř vždy 
-  příznivější na světovém trhu (na světovém běžně mezi 10-20$, na domácím za 
-  minimálně 25$). </li>
-  <li>Čím větší zemi máte a čím více máte <a href="budovy.htm#obchodni_zony">obchodních zón</a> (nemají vliv na počet agentů), tím více zboží na domácím trhu máte. Pokud 100% území země tvoří <a href="budovy.htm#obchodni_zony">obchodní zóny</a>, zvýší se objem trhu, oproti stavu bez zón, na 400%.</li>
-  <li>Prodej jídla a energie je limitován 10-násobkem objemu pro nákup.
-  <li>Domácí trh se zaplní za 37,5h (agenti  za 25h)</li> 
-  <li><a href="valky.htm#Age">Agenty</a> lze nakoupit 
-  pouze na domácím trhu (v protekci agenty nelze nakupovat).</li>
-</ul><br/>
-  <hr>
-</blockquote>
-  
-  <h3 class=std align=left><a name=TSv></a></h3>
-</blockquote>
-<h2 class=std align=left>9.2 Světový trh</h2>
-<blockquote>
-  <p>Na světovém trhu můžete nakoupit, kromě jednotek dostupných na domácím trhu 
-  (vyjma <a href="valky.htm#Age">agentů</a>, ty 
-  můžete kupovat jen na domácím trhu), také <a 
-  href="techno.htm#TUv">technologie</a>. Každá 
-  země, která není v protekci, může poslat zvolený počet zboží za zvolenou cenu. 
-  První se prodává nejlevnější zboží toho druhu, ostatní čekají na prodej ve 
-  frontě podle ceny. Pokud je cena shodná, přednost má dříve přijmuté zboží. </p>
-  <p class="inf">Pohyb cen jednotek, technologií i zboží za celý den (i za celý věk) můžete sledovat na grafech. </p>
-
-<p>&nbsp;</p>
-<p><strong>Pravidla prodeje a nákupu na světovém trhu:</strong></p>
-<ul>
-  <li>Vaše zásilka na trh dorazí za 3-5 minut po odeslání. 
-  <li>Používat světový trh můžete jen pokud nejste v protekci (po odehrání 
-  prvních 100 kol).
-  <li>Z ceny, za kterou prodáte, je sražena obchodní daň ve výši 6 % z prodejní 
-  ceny jednotek a 10 % u prodejní ceny jídla, energie a technologií.  
-  <li>Pokud máte zboží velmi málo (nejméně 500 jednotek, 200 <a href="techno.htm#TUv">technologií</a>, 2000 
-  energie nebo jídla), nemůžete ho prodávat, protože by náklady na jeho 
-  přepravu takřka převýšily výnosy z prodeje. 
-  <li>Existují dolní i horní limity cen, za které lze poslat zboží na trh. 
-  <li>Zboží na trhu jde zlevnit nebo zdražit a to jednorázově o 10% - při tom 
-  ztratíte 4% zboží. 
-  <li>Zboží na trhu je ničeno i při <a href="vlady.htm#revoluce">revoluci</a> (kromě revoluce z <a href="vlady.htm#Ana">Anarchie</a>).
-  <li>Zboží na trhu vám nepřítel sebrat nemůže, ale může zničit 10% zboží na 
-  trhu při úspěšném vyhlazovacím útoku (s pokrokem <a href="techno.htm#TPmaf">Mafie</a> až 20%).
-  <li>Za zboží na trhu stále platíte žoldy, spotřebováváte jídlo i energii do 
-  chvíle, než je prodáno. 
-  <li>Zboží se z trhu nevrátí, zůstává na něm do doby, než se prodá. Můžete ho 
-  pouze stáhnout s pokutou 12% zboží (pokud se ještě převáží tak 8%). 
-  <li>Světový trh je jediné místo, kde můžete obchodovat s <a href="techno.htm#Tuv">technologiemi</a>.
-  <li>Nelze nakupovat zboží od členů vlastní aliance, své druhé země, třetí, případně čtvrté země (v případě <a href="prispevky.htm#GS2">Gold</a>/<a href="prispevky.htm#platinum_hrac">Platinum</a> hráčů) a parťáka.
-  Tyto zásilky jsou systémem automaticky přeskočeny a hráč může nakupovat zásilky, které jsou další v pořadí.
-  V případě, že nejlevnější cenu má komodita prodávána zakázaným hráčem, zobrazí se množství, které hráč koupit nemůže 
-  (včetně ceny), červeně v tabulce Světového trhu. Je to proto, aby hráč měl nadále potřebné informace o objemu světového trhu a jeho pohybech.
-  <li>Prodej surovin koupených pomocí <a href="prispevky.htm#autodokup">automatického dokupování</a> není zobrazen v archívu, peníze však prodejce obrdží.
-</ul>
-<br/>
-<hr>
-</blockquote>
-<a name="zeme_0"></a>
-<h2>9.3 Země #0</h2>
-<blockquote>
-  <p>
-    Protože prodávání na světovém trhu může trvat poněkud déle (v závislosti na denní době či části věku), vystupuje ve hře tzv. <strong>Země #0</strong>,
-    která za specifických podmínek zboží z trhu automaticky vykupuje.
-    <br/>
-    Pokud bylo vaše zboží koupeno díky Zemi #0, jeho prodej se vám zobrazí v archívu stejně jako skutečný prodej reálným hráčem.
-    <br/>
-    Země #0 vykupuje také suroviny a jednotky vždy, když jsou prodány na domácím trhu, nebo když hráči v zemi dojdou peníze na provoz země.
-    Takto koupené komodity pak pošle na Světový trh.
-    <br/>
-    Přesnější pravidla automatického vykupování zboží <strong>nejsou veřejná</strong>.
-  </p>
-  <br/>
-  <hr />
-</blockquote>
-
-<h3><a name=TEm></a></h3>
-<h2>9.4 Embargo</h2>
-<blockquote>
-  <p>Pokud je na zemi uvaleno embargo, má srážku 15% ze zboží koupeného nebo 
-  poslaného na Světový trh. Domácí trh ovlivněn není. O embargu rozhodují 
-  hlasováním jen země OSN s pokrokem <a href="techno.htm#MeS">Mezinárodní spolupráce</a>. Pokud uděláte revoluci a tím zničíte pokrok 
-  Mezinárodní spolupráce, nebudete už moci o embargu hlasovat. Když však opět tento pokrok vynaleznete, budete mít zpátky embargo 
-  body, které jste měli před jeho zničením. Embargem může být postihnuta každá země, která je méně prestižní, než ta hlasující. 
-  Země pod embargem jsou označeny tzv. <a href="statistiky.htm#karticky">kartičkou</a>.<br/>
-  Země mající 5 embarg získá <a href="statistiky.htm#karticky">kartičku</a> Hospodářská velmoc.
-  Mimoto si daná země může nastavit, zda ji chce mít zobrazenou.</p>
-
-
-<p>&nbsp;</p>
-<p><strong>Získávání hlasů:</strong></p>
-<p>Jak často hlas země s pokrokem <a href="techno.htm#MeS">Mezinárodní spolupráce</a> dostává, závisí výrazně 
-na její aktuální prestiži. Zobrazuje se odhad, kdy země získá další embargo hlas, bývá to 300-4000 kol.</p>
-<p>&nbsp;</p>
-<p><strong>Hlasování pro embargo:</strong></p>
-
-  <p>Země, která má hlasy, může hlasovat o jakékoliv méně prestižní zemi. Země 
-  může hlasovat PRO nebo PROTI uvalení embarga. Hlas PRO embargo spotřebuje 1 
-  embargo-bod, hlas PROTI 2 embargo-body. O jedné zemi může rozhodovat libovolný 
-  počet členů OSN. (Jejich hlasy se sčítají a obě strany se mohou dlouho 
-  přebíjet). </p>
-  <p>Embargo platí, pokud je počet hlasů PRO větší, než počet hlasů PROTI a 
-    automatických hlasů postižené země. Postižená země má automaticky 1 hlas 
-    proti, a za každých odehraných 100 kol od začátku embarga další automatický 1 
-    hlas (automatické se nepíšou v přehledu hlasů). Embargo skončí odehráním 
-    daného počtu kol. <br/>
-  </p>
-  <p>Na nejjednodušší embargo tedy stačí 2 PRO : 0 PROTI. Svůj hlas může země 
-    kdykoliv stáhnout, protože se například rozhodla jinak na základě vyjednávání. 
-    Hlas je zrušen, nestojí to žádné další embargo-body a může to zapříčinit konec 
-  embarga.</p>
-  <br/>
-  <hr/>
-</blockquote>
-</body></html>
+<html lang="cs">
+  <head>
+    <title>Manuál k strategii Webgame</title>
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="helpstyle.css" type="text/css">
+  </head>
+  <body>
+    <h1>9 Trhy a obchodování</h1>
+    <a id="domaci_trh"></a>
+    <h2>9.1 Domácí trh</h2>
+    <blockquote>
+      <table class="tbl" align="center" border="2">
+        <tbody>
+          <tr>
+            <th>Zboží</th>
+            <th>Základní cena [$]</th>
+          </tr>
+          <tr>
+            <td><a href="zbozi.htm#jidlo">Jídlo [t]</a></td>
+            <td style="text-align: center">25</td>
+          </tr>
+          <tr>
+            <td style="text-align: center"><a href="zbozi.htm#energie">Energie [MWh]</a></td>
+            <td style="text-align: center">25</td>
+          </tr>
+          <tr>
+            <td><a href="valky.htm#Voj">Voják</a></td>
+            <td style="text-align: center">115</td>
+          </tr>
+          <tr>
+            <td><a href="valky.htm#Tan">Tank</a></td>
+            <td style="text-align: center">670</td>
+          </tr>
+          <tr>
+            <td><a href="valky.htm#Bun">Bunkr</a></td>
+            <td style="text-align: center">500</td>
+          </tr>
+          <tr>
+            <td><a href="valky.htm#Sti">Stíhačka</a></td>
+            <td style="text-align: center">470</td>
+          </tr>
+          <tr>
+            <td><a href="valky.htm#Mech">Mech</a></td>
+            <td style="text-align: center">350</td>
+          </tr>
+          <tr>
+            <td><a href="valky.htm#Age">Agent</a></td>
+            <td style="text-align: center">5000</td>
+          </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>Každá země má svůj vlastní domácí trh.</li>
+        <li>
+          Technologie <a href="techno.htm#TCND">Cena na domácím trhu</a> společně s <a href="budovy.htm#vojenske_zakladny">vojenskými základnami</a> ovlivňují
+          cenu vojenských jednotek (kromě ceny vojáků).
+        </li>
+        <li><a href="vlady.htm#fundamentalismus">Fundamentalismus</a> má levnější <a href="valky.htm#Voj">vojáky</a> (95$ místo 115$).</li>
+        <li><a href="vlady.htm#komunismus">Komunismus</a> má levnější <a href="valky.htm#Age">agenty</a> (3000$ místo 5000$).</li>
+        <li>Jednotky na trh přibývají každých 15 minut (každé nové kolo).</li>
+        <li>
+          Po velkých nákupech na domácím trhu stoupne cena, čím více nakoupíte, tím více stoupne cena (nejlevnější jednotky při zaplnění 100 % - 81 % naopak
+          nejdražší při zaplnění 0 % - 20 %).
+        </li>
+        <li>
+          Cena <a href="zbozi.htm#jidlo">jídla</a> a <a href="zbozi.htm#energie">energie</a> je téměř vždy příznivější na světovém trhu (na světovém běžně mezi
+          10-20$, na domácím za minimálně 25$).
+        </li>
+        <li>
+          Čím větší zemi máte a čím více máte <a href="budovy.htm#obchodni_zony">obchodních zón</a> (nemají vliv na počet agentů), tím více zboží na domácím
+          trhu máte. Pokud 100 % území země tvoří <a href="budovy.htm#obchodni_zony">obchodní zóny</a>, zvýší se objem trhu, oproti stavu bez zón, na 400 %.
+        </li>
+        <li>Prodej jídla a energie je limitován 10-násobkem objemu pro nákup.</li>
+        <li>Domácí trh se zaplní za 37,5h (agenti za 25h)</li>
+        <li><a href="valky.htm#Age">Agenty</a> lze nakoupit pouze na domácím trhu (v protekci agenty nelze nakupovat).</li>
+      </ul>
+      <br/>
+      <hr/>
+    </blockquote>
+    <a id=svetovy_trh></a>
+    <h2>9.2 Světový trh</h2>
+    <blockquote>
+      <p>
+        Na světovém trhu můžete nakoupit, kromě jednotek dostupných na domácím trhu (vyjma <a href="valky.htm#Age">agentů</a>, ty můžete kupovat jen na domácím
+        trhu), také <a href="techno.htm#TUv">technologie</a>. Každá země, která není v protekci, může poslat zvolený počet zboží za zvolenou cenu. První se
+        prodává nejlevnější zboží toho druhu, ostatní čekají na prodej ve frontě podle ceny. Pokud je cena shodná, přednost má dříve přijmuté zboží.
+      </p>
+      <p class="inf">
+        Pohyb cen jednotek, technologií i zboží za celý den (i za celý věk) můžete sledovat na grafech.
+      </p>
+      <p style="font-weight: bold">
+        Pravidla prodeje a nákupu na světovém trhu:
+      </p>
+      <ul>
+        <li>Vaše zásilka na trh dorazí za 3-5 minut po odeslání.</li>
+        <li>Používat světový trh můžete jen pokud nejste v protekci (po odehrání prvních 100 kol).</li>
+        <li>Z ceny, za kterou prodáte, je sražena obchodní daň ve výši 6 % z prodejní ceny jednotek a 10 % u prodejní ceny jídla, energie a technologií.</li>
+        <li>
+          Pokud máte zboží velmi málo (nejméně 500 jednotek, 200 <a href="techno.htm#TUv">technologií</a>, 2000 energie nebo jídla), nemůžete ho prodávat,
+          protože by náklady na jeho přepravu takřka převýšily výnosy z prodeje.
+        </li>
+        <li>Existují dolní i horní limity cen, za které lze poslat zboží na trh.</li>
+        <li>Zboží na trhu jde zlevnit nebo zdražit a to jednorázově o 10 % - při tom ztratíte 4 % zboží.</li>
+        <li>Zboží na trhu je ničeno i při <a href="vlady.htm#revoluce">revoluci</a> (kromě revoluce z <a href="vlady.htm#anarchie">Anarchie</a>).</li>
+        <li>
+          Zboží na trhu vám nepřítel sebrat nemůže, ale může zničit 10 % zboží na trhu při úspěšném vyhlazovacím útoku (s pokrokem
+          <a href="techno.htm#TPmaf">Mafie</a> až 20 %).
+        </li>
+        <li>Za zboží na trhu stále platíte žoldy, spotřebováváte jídlo i energii do chvíle, než je prodáno.</li>
+        <li>Zboží se z trhu nevrátí, zůstává na něm do doby, než se prodá. Můžete ho pouze stáhnout s pokutou 12 % zboží (pokud se ještě převáží tak 8 %).</li>
+        <li>Světový trh je jediné místo, kde můžete obchodovat s <a href="techno.htm#TUv">technologiemi</a>.</li>
+        <li>
+          Nelze nakupovat zboží od členů vlastní aliance, své druhé země, třetí, případně čtvrté země a parťáka. Tyto zásilky jsou systémem automaticky
+          přeskočeny a hráč může nakupovat zásilky, které jsou další v pořadí. V případě, že nejlevnější cenu má komodita prodávána zakázaným hráčem, zobrazí
+          se množství, které hráč koupit nemůže (včetně ceny), červeně v tabulce Světového trhu. Je to proto, aby hráč měl nadále potřebné informace o objemu
+          světového trhu a jeho pohybech.
+        </li>
+        <li>
+          Prodej surovin koupených pomocí <a href="prispevky.htm#autodokup">automatického dokupování</a> není zobrazen v archívu, peníze však prodejce obrdží.
+        </li>
+      </ul>
+      <br/>
+      <hr/>
+    </blockquote>
+    <a id="zeme_0"></a>
+    <h2>9.3 Země #0</h2>
+    <blockquote>
+      <p>
+        Protože prodávání na světovém trhu může trvat poněkud déle (v závislosti na denní době či části věku), vystupuje ve hře tzv. <strong>Země #0</strong>,
+        která za specifických podmínek zboží z trhu automaticky vykupuje.
+      </p>
+      <p>
+        Pokud bylo vaše zboží koupeno díky Zemi #0, jeho prodej se vám zobrazí v archívu stejně jako skutečný prodej reálným hráčem.
+      </p>
+      <p>
+        Země #0 vykupuje také suroviny a jednotky vždy, když jsou prodány na domácím trhu, nebo když hráči v zemi dojdou peníze na provoz země.
+        Takto koupené komodity pak pošle na Světový trh.
+      </p>
+      <p>
+        Přesnější pravidla automatického vykupování zboží <strong>nejsou veřejná</strong>.
+      </p>
+      <br/>
+      <hr/>
+    </blockquote>
+    <a id="embargo"></a>
+    <h2>9.4 Embargo</h2>
+    <blockquote>
+      <p>
+        Pokud je na zemi uvaleno embargo, má srážku 15 % ze zboží koupeného nebo poslaného na Světový trh. Domácí trh ovlivněn není. O embargu rozhodují
+        hlasováním jen země OSN s pokrokem <a href="techno.htm#MeS">Mezinárodní spolupráce</a>. Pokud uděláte revoluci a tím zničíte pokrok Mezinárodní
+        spolupráce, nebudete už moci o embargu hlasovat. Když však opět tento pokrok vynaleznete, budete mít zpátky embargo body, které jste měli před jeho
+        zničením. Embargem může být postihnuta každá země, která je méně prestižní, než ta hlasující. Země pod embargem jsou označeny tzv.
+        <a href="statistiky.htm#karticky">kartičkou</a>. Země mající 5 embarg získá <a href="statistiky.htm#karticky">kartičku</a> Hospodářská velmoc. Mimoto
+        si daná země může nastavit, zda ji chce mít zobrazenou.
+      </p>
+      <p style="font-weight: bold">
+        Získávání hlasů:
+      </p>
+      <p>
+        Jak často hlas země s pokrokem <a href="techno.htm#MeS">Mezinárodní spolupráce</a> dostává, závisí výrazně na její aktuální prestiži. Zobrazuje se
+        odhad, kdy země získá další embargo hlas, bývá to 300-4000 kol.
+      </p>
+      <p style="font-weight: bold">
+        Hlasování pro embargo:
+      </p>
+      <p>
+        Země, která má hlasy, může hlasovat o jakékoliv méně prestižní zemi. Země může hlasovat PRO nebo PROTI uvalení embarga. Hlas PRO embargo spotřebuje 1
+        embargo-bod, hlas PROTI 2 embargo-body. O jedné zemi může rozhodovat libovolný počet členů OSN. (Jejich hlasy se sčítají a obě strany se mohou dlouho
+        přebíjet).
+      </p>
+      <p>
+        Embargo platí, pokud je počet hlasů PRO větší, než počet hlasů PROTI a automatických hlasů postižené země. Postižená země má automaticky 1 hlas proti,
+        a za každých odehraných 100 kol od začátku embarga další automatický 1 hlas (automatické se nepíšou v přehledu hlasů). Embargo skončí odehráním daného
+        počtu kol.
+      </p>
+      <p>
+        Na nejjednodušší embargo tedy stačí 2 PRO : 0 PROTI. Svůj hlas může země kdykoliv stáhnout, protože se například rozhodla jinak na základě vyjednávání.
+        Hlas je zrušen, nestojí to žádné další embargo-body a může to zapříčinit konec embarga.
+      </p>
+      <br/>
+      <hr/>
+    </blockquote>
+  </body>
+</html>
