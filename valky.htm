@@ -2,111 +2,112 @@
 <html lang="cs">
   <head>
     <title>Manuál k strategii Webgame</title>
-    <meta content="" name=keywords>
+    <meta name="keywords" content="">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link href="helpstyle.css" type=text/css rel=stylesheet>
-    <meta content="Microsoft FrontPage 5.0" name=GENERATOR>
+    <link rel="stylesheet" href="helpstyle.css" type="text/css">
   </head>
   <body>
-    <a id="Val"></a>
-    <h1>6 Válčení </h1>
+    <h1>6 Válčení</h1>
     <a id="vojenske_jednotky"></a>
     <h2>6.1 Vojenské jednotky</h2>
     <blockquote>
-      <a id="JOb"></a>
+      <a id="vojenske_jednotky_obecne"></a>
       <h3>6.1.1 Obecně</h3>
       <p>
         Armádu tvoří celkem <strong>6 druhů</strong> jednotek. Tři druhy jednotek jsou univerzální a jsou použitelné do útoku i obrany:
-        <a href="#Voj">vojáci</a>, <a href="#Tan">tanky</a> a <a href="#Mech">mechové</a>. Jednotka vhodná pouze pro obranu je <a href="#Bun">bunkr</a>
-        (nemůže útočit). Naopak <a href="#Sti">stíhačka</a> je pouze pro útočení (brání pouze při <a href="#VUb">bombardování</a> Vaší země a při
-        <a href="#VUtn">taktickém náletu</a>). Speciální jednotkou je pak agent.
+        <a href="#vojaci">vojáci</a>, <a href="#tanky">tanky</a> a <a href="#mechove">mechové</a>. Jednotka vhodná pouze pro obranu je
+        <a href="#bunkry">bunkr</a> (nemůže útočit). Naopak <a href="#stihacky">stíhačka</a> je pouze pro útočení (brání pouze při
+        <a href="#bombardovat_mesta">bombardování</a> vaší země a při <a href="#takticky_nalet">taktickém náletu</a>). Speciální jednotkou je pak agent.
       </p>
       <p>
         Důležité je, nemít celou armádu složenou pouze z jednoho druhu jednotek. V taktických útocích Vás totiž absence některého druhu jednotek může hodně
-        mrzet. Nedostatek <a href="#Sti">stíhaček</a> nepřítel využije k <a href="#VUb">bombardování</a>, nedostatek <a href="#Voj">vojáků</a> k ničení
-        <a href="#Bun">bunkrů</a> nebo <a href="#VUp">partyzánským akcím</a>, chybějící <a href="#Tan">tanky</a> zavdají příčinu k <a href="#VUt">útokům na
-        týl</a>, a pokud nedisponujete <a href="#Mech">mechy</a>, napochodují k Vám geometricky přesně srovnané šiky bojových robotů a budou s nevinným
-        kamenným výrazem na svých kovových hlavách ničit jednotky. Drobné uklidnění pro perfekcionisty - dokonalá obrana neexistuje :-)
+        mrzet. Nedostatek <a href="#stihacky">stíhaček</a> nepřítel využije k <a href="#bombardovat_mesta">bombardování</a>, nedostatek
+        <a href="#vojaci">vojáků</a> k ničení <a href="#bunkry">bunkrů</a> nebo <a href="#partyzansky_utok">partyzánským akcím</a>, chybějící
+        <a href="#tanky">tanky</a> zavdají příčinu k <a href="#zautocit_na_tyl">útokům na týl</a>, a pokud nedisponujete <a href="#mechove">mechy</a>,
+        napochodují k vám geometricky přesně srovnané šiky bojových robotů a budou s nevinným kamenným výrazem na svých kovových hlavách ničit jednotky. Drobné
+        uklidnění pro perfekcionisty - dokonalá obrana neexistuje :-)
       </p>
       <br/>
-      <table border="2" class=tbl>
+      <table border="2" class="tbl">
         <tr>
           <th>Název</th>
           <th>Popis</th>
         </tr>
         <tr>
           <td>
-            <a id="Voj"></a>
+            <a id="vojaci"></a>
             Vojáci
           </td>
           <td>
             Na první pohled nejzaostalejší jednotka. Má ovšem své výhody oproti ostatním jednotkám, zvláště na začátku věku.
             <a href="budovy.htm#kasarny">Kasárny</a> totiž vojáky trénují bez ohledu na technologickou vyspělost země, a tak produkují vyšší
-            <a href="#USi">vojenskou sílu</a>, než <a href="budovy.htm#tovarny">továrny</a> bez technologií <a href="techno.htm#Tpt">Automatizace továren</a>.
-            Početná armáda vojáků spotřebovává hodně <a href="zbozi.htm#jidlo">jídla</a>.
+            <a href="#sila_armady">vojenskou sílu</a>, než <a href="budovy.htm#tovarny">továrny</a> bez technologií <a href="techno.htm#Tpt">Automatizace
+            továren</a>. Početná armáda vojáků spotřebovává hodně <a href="zbozi.htm#jidlo">jídla</a>.
           </td>
         </tr>
         <tr>
           <td>
-            <a id="Tan"></a>
+            <a id="tanky"></a>
             Tanky
           </td>
           <td>
-            Většinou se užívají jen jako rezerva proti <a href="#VUt">útokům na týl</a>. Jsou ale vhodné pro útok i obranu a navíc s nimi lze podnikat útoky
-            na týl nepřítele a snižovat tím velmi jeho <a href="#Vpa">připravenost</a>.
+            Většinou se užívají jen jako rezerva proti <a href="#zautocit_na_tyl">útokům na týl</a>. Jsou ale vhodné pro útok i obranu a navíc s nimi lze
+            podnikat útoky na týl nepřítele a snižovat tím velmi jeho <a href="#pripravenost_armady">připravenost</a>.
           </td>
         </tr>
         <tr>
           <td>
-            <a id="Sti"></a>
+            <a id="stihacky"></a>
             Stíhačky
           </td>
           <td>
-            Na silný útok dobré, leč nebrání (brání pouze proti <a href="#VUb">bombardování</a> a <a href="#VUtn">taktickému náletu</a>). Lze s nimi ale dobře
-            oslabovat protivníka. Stíhačky je možné ničit pomocí teroristické akce rozvědky <a href="#RSl">Sabotovat letiště</a>.
+            Na silný útok dobré, leč nebrání (brání pouze proti <a href="#bombardovat_mesta">bombardování</a> a <a href="#takticky_nalet">taktickému
+            náletu</a>). Lze s nimi ale dobře oslabovat protivníka. Stíhačky je možné ničit pomocí teroristické akce rozvědky
+            <a href="#sabotovat_letiste">Sabotovat letiště</a>.
           </td>
         </tr>
         <tr>
           <td>
-            <a id="Bun"></a>
+            <a id="bunkry"></a>
             Bunkry
           </td>
           <td>
             Velký počet bunkrů zajišťuje silnou obranu. O tu ale můžete snadno přijít, pokud bunkry nechráníte přiměřeným počtem vojákům. Ten, kdo má hodně
-            bunkrů a žádné vojáky, může díky taktickému útoku <a href="#VDB">vniknutí do bunkrů</a> snadno o pracně získanou obranu přijít. Výhodou je, že když
-            útočíte nebo pomáháte v útoku spojenci, nepřijdete o žádné bunkry (bunkry se útoku neúčastní).
+            bunkrů a žádné vojáky, může díky taktickému útoku <a href="#vniknuti_do_bunkru">vniknutí do bunkrů</a> snadno o pracně získanou obranu přijít.
+            Výhodou je, že když útočíte nebo pomáháte v útoku spojenci, nepřijdete o žádné bunkry (bunkry se útoku neúčastní).
           </td>
         </tr>
         <tr>
           <td>
-            <a id="Mech"></a>
+            <a id="mechove"></a>
             Mechové
           </td>
           <td>
             Jsou výjimkou v tom, že je nemůžete kupovat na <a href="trhy.htm#domaci_trh">domácím trhu</a> a vyrábět hned od začátku věku, ale až po vynalezení
             pokroku <a href="techno.htm#PrM">produkce mechů</a> (menu <span class="menu">Technologie - Pokrok</span>). Další jejich vlastností je, že díky
             autoopravě mají o 20 % menší ztráty v bojích. Mechové (bojoví roboti) nespotřebovávají jídlo, ale <a href="zbozi.htm#energie">energii</a>. Mechy
-            lze ničit pomocí akce rozvědky nabourat <a href="#RTm">ovládání mechů</a>. Mechové obránce při nočním tažení částečně <b>brání jednotky</b> proti
-            zničení i při neúspěšné obraně. K obraně všech ostatních jednotek stačí mít v mechách 1/2 prestiže armády. Krytých jednotek umírá pak jen polovina.
+            lze ničit pomocí akce rozvědky nabourat <a href="#nabourat_ovladani_mechu">ovládání mechů</a>. Mechové obránce při nočním tažení částečně
+            <strong>brání jednotky</strong> proti zničení i při neúspěšné obraně. K obraně všech ostatních jednotek stačí mít v mechách 1/2 prestiže armády.
+            Krytých jednotek umírá pak jen polovina.
           </td>
         </tr>
         <tr>
           <td>
-            <a id="Age"></a>
-            Agent
+            <a id="agenti"></a>
+            Agenti
           </td>
           <td>
-            Slouží k provádění operací <a href="#Roz">rozvědky</a>. Agenty lze získat pouze na <a href="trhy.htm#domaci_trh">domácím trhu</a>, pokud jste již
-            opustili protekci. Několik málo jich lze také získat v rámci <a href="statistiky.htm#veteranske_bonusy">veteránského bonusu</a> za 8. hodnost
+            Slouží k provádění operací <a href="#rozvedka">rozvědky</a>. Agenty lze získat pouze na <a href="trhy.htm#domaci_trh">domácím trhu</a>, pokud jste
+            již opustili protekci. Několik málo jich lze také získat v rámci <a href="statistiky.htm#veteranske_bonusy">veteránského bonusu</a> za 8. hodnost
             (Kapitán gardy).
           </td>
         </tr>
       </table>
       <br/>
-      <a id="Zold"></a>
+      <a id="vojenske_jednotky_prehled"></a>
       <h3>6.1.2&nbsp;Přehled a žoldy jednotek</h3>
       <p>
-        <strong>Každé jednotce</strong> musíte <strong>každé kolo</strong> platit žold. To znamená, že v každém kole se Vám odečte z Vaší státní pokladny část
+        <strong>Každé jednotce</strong> musíte <strong>každé kolo</strong> platit žold. To znamená, že v každém kole se Vám odečte z vaší státní pokladny část
         <strong>peněz</strong>. Kromě žoldů také každá jednotka <strong>spotřebuje 0,005 t</strong> <a href="zbozi.htm#jidlo">jídla</a>. Výjimku tvoří mechové,
         kteří spotřebovávají <a href="zbozi.htm#energie">energii</a> místo jídla. Poslední zvláštností je vláda <a href="vlady.htm#robokracie">Robokracie</a>,
         kde jednotky nejí jídlo, ale spotřebovávají místo něj energii. Navíc pokud máte velkou prestiž, rostou žoldy na jednu jednotku.
@@ -189,8 +190,7 @@
       <br/>
       <p class=inf>
         Cenu jednotek na domácím trhu lze snížit technologiemi <a href="techno.htm#TCND">cena na domácím trhu</a> a efektem vojenských základen. Jediná
-        jednotka,
-        na kterou nemá vliv tato technologie je voják. Ti jsou navíc levnější ve fundamentalismu (jen 95$).
+        jednotka, na kterou nemá vliv tato technologie je voják. Ti jsou navíc levnější ve fundamentalismu (jen 95$).
       </p>
       <p class=inf>
         * Základní cena mechů je 21 dílů (u komunismu 25 dílů, u robokracie 19 dílů). Navíc na produkci mechů má technologie Automatizace továren dvojnásobný
@@ -230,11 +230,11 @@
         <li>12. hodnost ukrojí ještě 25 %: 48060 × 0,75 = <strong>36045&nbsp;$</strong></li>
       </ul>
       <br/>
-      <a id="JZi"></a>
+      <a id="vojenske_jednotky_ziskani"></a>
       <h3>6.1.3 Jak lze získat jednotky</h3>
       <p>
         Jednotky se často získávají vlastní výrobou. Pro některá státní zřízení ale může být výroba neefektivní, proto je musí nakupovat na trhu. Tím ale vaše
-        armáda ztrácí <a href="#Vxp">zkušenosti</a> vinou příchodu "zelenáčů". Tento problém odpadá při získání jednotek událostí nebo přijmutím
+        armáda ztrácí <a href="#zkusenosti_armady">zkušenosti</a> vinou příchodu "zelenáčů". Tento problém odpadá při získání jednotek událostí nebo přijmutím
         hospodářské pomoci.
       </p>
       <ul>
@@ -242,8 +242,8 @@
       </ul>
       <p>
         Vojáky produkují <b> <a href="budovy.htm#kasarny">kasárny</a></b>. Produkce v kasárnách není ovlivněna technologiemi, ale závisí, stejně jako veškerá
-        válečná produkce, na <a href="#Vxp">zkušenosti</a> Vaší armády. Ta se do produkčního bonusu promítne s polovičním efektem. To znamená, že pokud máte
-        -20% zkušeností armády je bonus k produkci kasáren -10 %, při efektu zkušeností +10 % je bonus k produkci kasáren +5 %.
+        válečná produkce, na <a href="#zkusenosti_armady">zkušenosti</a> vaší armády. Ta se do produkčního bonusu promítne s polovičním efektem. To znamená, že
+        pokud máte -20 % zkušeností armády je bonus k produkci kasáren -10 %, při efektu zkušeností +10 % je bonus k produkci kasáren +5 %.
       </p>
       <p>
         Velký vliv může mít také generál <a href="#zbrojar">Zbrojař</a>. Další ovlivňující faktor je státní zřízení.
@@ -259,16 +259,16 @@
         Tyto jednotky vyrábí <b><a href="budovy.htm#tovarny">továrny</a></b> (poměr produkce si nastavíte v menu <em>{Dotace} → {Továrny}</em>). Výroba v
         továrnách je závislá na technologiích <a href="techno.htm#Tpt">Automatizace továren</a>. Pokud navíc vlastníte pokrok
         <a href="techno.htm#TPn">Nanotechnologie</a>, bude díky němu možné zvýšit výrobu v továrnách a navíc Vámi vyráběné stroje budou dokonalejší a jejich
-        ztráty v bojích budou nižší. I výroba v továrnách je ovlivněna <a href="#Vxp">zkušeností armády</a>. Platí, stejně jako u <a href="budovy.htm#kasarny">
-        kasáren</a>, že každé 2% bonusu zkušeností znamenají 1% bonusu produkce v továrnách a že výrobu ovlivňuje generál <a href="#zbrojar">Zbrojař</a> a
-        <a href="aliance.htm#aliancni_bonusy">alianční bonus</a> za Feudalismus.
+        ztráty v bojích budou nižší. I výroba v továrnách je ovlivněna <a href="#zkusenosti_armady">zkušeností armády</a>. Platí, stejně jako u
+        <a href="budovy.htm#kasarny"> kasáren</a>, že každé 2 % bonusu zkušeností znamenají 1% bonusu produkce v továrnách a že výrobu ovlivňuje generál
+        <a href="#zbrojar">Zbrojař</a> a <a href="aliance.htm#aliancni_bonusy">alianční bonus</a> za Feudalismus.
       </p>
       <p>
         Také vlády mají bonus na továrny a sice <a href="vlady.htm#komunismus">Komunismus</a>, <a href="vlady.htm#feudalismus">Feudalismus</a>,
         <a href="vlady.htm#republika">Republika</a>, <a href="vlady.htm#utopie">Utopie</a>, <a href="vlady.htm#robokracie">Robokracie</a>. Aby ale
-        <a href="budovy.htm#tovarny">továrny</a> produkovaly větší <a href="#USi">vojenskou sílu</a> než <a href="budovy.htm#kasarny">kasárny</a>, potřebujete
-        vlastnit technologie<a href="techno.htm#Tpt"> Automatizace továren</a>. <a href="#Mech">Mechy</a> můžete produkovat až po vynalezení pokroku
-        <a href="techno.htm#PrM">Produkce mechů</a>.
+        <a href="budovy.htm#tovarny">továrny</a> produkovaly větší <a href="#sila_armady">vojenskou sílu</a> než <a href="budovy.htm#kasarny">kasárny</a>,
+        potřebujete vlastnit technologie<a href="techno.htm#Tpt"> Automatizace továren</a>. <a href="#mechove">Mechy</a> můžete produkovat až po vynalezení
+        pokroku <a href="techno.htm#PrM">Produkce mechů</a>.
       </p>
       <ul>
         <li><strong><a href="trhy.htm#domaci_trh">Domácí trh</a></strong></li>
@@ -279,7 +279,7 @@
         kde lze pořídit agenty.
       </p>
       <p class=inf>
-        Pokud nemáte pokrok Produkce mechů, nemůžete na Vašem domácím trhu mechy nakupovat, a pokud jste v protekci tak nelze nakupovat agenty.
+        Pokud nemáte pokrok Produkce mechů, nemůžete na vašem domácím trhu mechy nakupovat, a pokud jste v protekci tak nelze nakupovat agenty.
       </p>
       <ul>
         <li><strong><a href="trhy.htm#svetovy_trh">Světový trh</a></strong></li>
@@ -295,7 +295,7 @@
         Další způsob získání jednotek je hospodářská pomoc (v menu <em>{Dotace} → {Hospodářská pomoc}</em>) od spřízněné země. Hospodářské pomoci lze zasílat
         pouze spoluhráčům (i vlastní zemi) v <a href="aliance.htm#aliance">alianci</a> nebo všem <a href="aliance.htm#smlouvy">spojencům</a> aliance, zemi
         která má nižší <a href="statistiky.htm#prestiz">prestiž</a> než země odesílatele. Při tomto druhu získání jednotek se nesnižuje celková
-        <a href="#Vxp">zkušenost armády</a> zařazením nezkušených <a href="#vojenske_jednotky">jednotek</a>.
+        <a href="#zkusenosti_armady">zkušenost armády</a> zařazením nezkušených <a href="#vojenske_jednotky">jednotek</a>.
       </p>
       <p class="inf">
         Pokud má hráč dvě země a více zemí, nemůže si hospodářskou pomoc mezi nimi posílat. výjimkou je stav, kdy jsou obě země umístěné v jedné alianci.
@@ -309,7 +309,7 @@
       <br/>
       <hr/>
     </blockquote>
-    <a id="Vou"></a>
+    <a id="vojenske_utoky"></a>
     <h2>6.2 Vojenské útoky</h2>
     <blockquote>
       <p>
@@ -321,23 +321,23 @@
         alianční země maximálně +-30 % vůči své prestiži.
       </p>
       <p>
-        Síla jednotek ve všech útocích je ovlivněna technologií <a href="techno.htm#Tchsi">Síla zbraní</a>, <a href="#Vpa">připraveností</a>,
-        <a href="vlady.htm#spokojenost">spokojeností</a>, <a href="techno.htm#POK">pokroky</a>, <a href="#Gen">generály</a> a <a href="#Vxp">zkušenostmi</a>.
-        Proto může někdy i malá, ale dobře připravená a vybavená armáda uspět proti několikanásobné přesile. Pokud chce útočník uspět v útoku, musí mít sílu o
-        trochu vyšší než obránce. Jeden tank logicky k vítězství nestačí, i když obránce nemá žádný. Ztráty jednotek ve všech typech útoků i v obraně mohou být
-        sníženy o 20 % pokrokem <a href="techno.htm#TPn">Nanotechnologie</a>.
+        Síla jednotek ve všech útocích je ovlivněna technologií <a href="techno.htm#Tchsi">Síla zbraní</a>, <a href="#pripravenost_armady">připraveností</a>,
+        <a href="vlady.htm#spokojenost">spokojeností</a>, <a href="techno.htm#POK">pokroky</a>, <a href="#generalove">generály</a> a
+        <a href="#zkusenosti_armady">zkušenostmi</a>. Proto může někdy i malá, ale dobře připravená a vybavená armáda uspět proti několikanásobné přesile.
+        Pokud chce útočník uspět v útoku, musí mít sílu o trochu vyšší než obránce. Jeden tank logicky k vítězství nestačí, i když obránce nemá žádný. Ztráty
+        jednotek ve všech typech útoků i v obraně mohou být sníženy o 20 % pokrokem <a href="techno.htm#TPn">Nanotechnologie</a>.
       </p>
       <br/>
-      <a id="UNorm"></a>
+      <a id="normalni_utoky"></a>
       <h3>6.2.1 Normální útoky</h3>
       <p>
-        Do této skupiny patří konkrétně útoky <a href="#VUd">dobyvačný</a>, <a href="#VUl">loupeživý</a>, <a href="#VUn">vyhlazovací</a>. Společně se
-        <a href="aliance.htm#spojenectvi">spojenci</a> v nich útočí a brání celá Vaše armáda. Přehled pomoci od spojenců pro normální typy útoků vidíte v menu
-        <em>{Válka} → {Spojenci}</em>.
+        Do této skupiny patří konkrétně útoky <a href="#dobyvacny_utok">dobyvačný</a>, <a href="#loupezivy_utok">loupeživý</a>,
+        <a href="#vyhlazovaci_utok">vyhlazovací</a>. Společně se <a href="aliance.htm#spojenectvi">spojenci</a> v nich útočí a brání celá Vaše armáda. Přehled
+        pomoci od spojenců pro normální typy útoků vidíte v menu <em>{Válka} → {Spojenci}</em>.
       </p>
       <p>
         Běžný útok trvá 2 kola. Je-li poslán <strong> útok totální</strong>, pak trvá kola 4 a jeho síla je ještě o 20% vyšší. Zároveň znamená pro vás ale o
-        polovinu vyšší ztráty a dvojnásobný pokles <a href="#Vpa">připravenosti</a>.
+        polovinu vyšší ztráty a dvojnásobný pokles <a href="#pripravenost_armady">připravenosti</a>.
       </p>
       <p>
         V normálních útocích s procentuálním zastoupením jednotky v armádě také lineárně roste určitý bonus až do uvedeného maxima jak ukazuje tabulka.
@@ -351,32 +351,32 @@
         </tr>
         <tr>
           <td>Vojáci</td>
-          <td>0% - 80%</td>
-          <td>Získáte +0% až +15% peněz a technologií</td>
+          <td>0 % - 80 %</td>
+          <td>Získáte +0 % až +15 % peněz a technologií</td>
         </tr>
         <tr>
           <td>Tanky</td>
-          <td>0% - 40%</td>
-          <td>Získáte +0% až +15% území</td>
+          <td>0 % - 40 %</td>
+          <td>Získáte +0 % až +15 % území</td>
         </tr>
         <tr>
           <td>Stíhačky</td>
-          <td>0% - 40%</td>
-          <td>Ztráty nepřítele +0% až +15%</td>
+          <td>0 % - 40 %</td>
+          <td>Ztráty nepřítele +0 % až +15 %</td>
         </tr>
         <tr>
           <td>Mechy</td>
-          <td>0% - 80%</td>
-          <td>Vaše ztráty -0% až -15%</td>
+          <td>0 % - 80 %</td>
+          <td>Vaše ztráty -0 % až -15 %</td>
         </tr>
       </table>
       <br/>
       <p class="inf">
-        Příklad: Máte 100 000 vojáků (50 % armády tvoří vojáci = +9 % kořist), 40 000 tanků (20 % tanků = +7,5 % dobyto), 20 000 stíhaček
-        (10 % stíhaček = +3,8 % zničeno nepřátel) a 40 000 mechů (20 % mechů = -3,8 % naše ztráty).
+        Příklad: Máte 100 000 vojáků (50 % armády tvoří vojáci = +9 % kořist), 40 000 tanků (20 % tanků = +7,5 % dobyto), 20 000 stíhaček (10 % stíhaček = +3,8
+        % zničeno nepřátel) a 40 000 mechů (20 % mechů = -3,8 % naše ztráty).
       </p>
       <br/>
-      <table border="2" align=center class=tbl>
+      <table border="2" align="center" class="tbl">
         <col>
         <tr>
           <th width="13%">Název</th>
@@ -387,24 +387,24 @@
           <th width="21%">Ztráty jednotek</th>
         </tr>
         <tr>
-          <th class=h width="13%" height=26>
-            <a id="VUd"></a>
-            Dobyvačný
+          <th class=h width="13%" height="26">
+            <a id="dobyvacny_utok"></a>
+            Dobyvačný útok
           </th>
-          <td width="11%" height=26 rowSpan=3>Všechny kromě bunkrů</td>
-          <td width="11%" height=26 rowSpan=3>Všechny kromě stíhaček</td>
-          <td width="19%" height=26 rowSpan=3>
+          <td width="11%" height="26" rowSpan="3">Všechny kromě bunkrů</td>
+          <td width="11%" height="26" rowSpan="3">Všechny kromě stíhaček</td>
+          <td width="19%" height="26" rowSpan="3">
             Síla útoku + útočných spojenců<br/>
             <strong>je větší</strong><br/>
             než síla obránce + obranných spojenců
           </td>
-          <td width="25%" height=26>
+          <td width="25%" height="26">
             2-16 % území<br/>
             1-8 % budov a zboží.<br/>
             Malá část obyvatel přejde na Vaši stranu.<br/>
             Dostanete malou peněžní kořist z dobytého území.
           </td>
-          <td width="21%" height=26 rowSpan=3>
+          <td width="21%" height="26" rowSpan="3">
             3-9 % všech jednotek.<br/>
             O 25 % menší ztráty jednotek obránce.<br/>
             Ztráty obránce klesají pokud je na něj více útoků v řadě.
@@ -412,8 +412,8 @@
         </tr>
         <tr>
           <th class=h width="13%">
-            <a id="VUl"></a>
-            Loupeživý
+            <a id="loupezivy_utok"></a>
+            Loupeživý útok
           </th>
           <td width="25%">
             1-8 % území<br/>
@@ -422,14 +422,14 @@
           </td>
         </tr>
         <tr>
-          <th class=h width="13%" height=55>
-            <a id="VUn"></a>
-            Vyhlazovací
+          <th class="h" width="13%" height="55">
+            <a id="vyhlazovaci_utok"></a>
+            Vyhlazovací útok
           </th>
-          <td width="25%" height=55>
+          <td width="25%" height="55">
             Ničí 2-12 % budov a 2-12 % <a href="budovy.htm#ruiny">ruin</a>*, ničí hodně zboží. Zabíjí obyvatele.<br/>
-            Ničí 10 % zboží na trhu (s <a href="techno.htm#POK">pokrokem</a> Mafie až 20 %). Útočník získá finančí odměnu, která je závislá na
-            velikosti rozlohy obránce.
+            Ničí 10 % zboží na trhu (s <a href="techno.htm#POK">pokrokem</a> Mafie až 20 %). Útočník získá finančí odměnu, která je závislá na velikosti
+            rozlohy obránce.
           </td>
         </tr>
       </table>
@@ -444,7 +444,7 @@
         Po úspěšném normálním útoku přejde menší část obyvatel na Vaši stranu. Navíc dostanete malou peněžní kořist ze zbořených budov.
       </p>
       <br/>
-      <a id="UTak"></a>
+      <a id="takticke_utoky"></a>
       <h3>6.2.2 Taktické útoky </h3>
       <p>
         Mezi tyto útoky se počítá partyzánský útok, vniknutí do bunkrů, útok na týl, bombardování měst, taktický nálet a noční tažení. Během útoku útočí vždy
@@ -455,7 +455,7 @@
         Proto může být útok neúspěšný, i když nepřítel nemá žádný tank a vy zautočíte s 200.
       </p>
       <br/>
-      <table border="2" align=center class=tbl>
+      <table border="2" align="center" class="tbl">
         <tr>
           <th width="13%">Název</th>
           <th width="8%">Útočí jednotky</th>
@@ -466,8 +466,8 @@
         </tr>
         <tr>
           <th class=h width="13%">
-            <a id="VUp"></a>
-            Partyzánský
+            <a id="partyzansky_utok"></a>
+            Partyzánský útok
           </th>
           <td width="8%">Vojáci</td>
           <td width="8%">Vojáci a agenti</td>
@@ -480,8 +480,8 @@
           <td width="19%">Vojáci na obou stranách.</td>
         </tr>
         <tr>
-          <th class=h width="13%">
-            <a id="VDB"></a>
+          <th class="h" width="13%">
+            <a id="vniknuti_do_bunkru"></a>
             Vniknout do bunkrů
           </th>
           <td width="8%">Vojáci</td>
@@ -490,29 +490,27 @@
             Síla útoku je o něco větší než síla obrany.
           </td>
           <td width="24%">Čím více přečíslí útočící vojáci bránící, tím více <strong>zničí bunkrů</strong>.</td>
-          <td width="19%"> Až 25 % vojáků útočníka.</td>
+          <td width="19%">Až 25 % vojáků útočníka.</td>
         </tr>
         <tr>
-          <th class=h width="13%">
-            <a id="VUt"></a>
+          <th class="h" width="13%">
+            <a id="zautocit_na_tyl"></a>
             Zaútočit na týl
           </th>
           <td width="8%">Tanky</td>
           <td width="8%">Tanky</td>
           <td width="17%">Síla útočníka je o něco vyšší než síla obránce.</td>
           <td width="24%"><strong>Připravenost obránce klesá</strong> až o 9 % (na min. 68 %).</td>
-          <td width="19%">Až 10% tanků útočníka, obránce jen polovinu.</td>
+          <td width="19%">Až 10 % tanků útočníka, obránce jen polovinu.</td>
         </tr>
         <tr>
-          <th class=h width="13%">
-            <a id="VUb"></a>
+          <th class="h" width="13%">
+            <a id="bombardovat_mesta"></a>
             Bombardovat města
           </th>
           <td width="8%">Stíhačky</td>
-          <td width="8%"> Stíhačky a bunkry</td>
-          <td width="17%">
-            Síla útoku je o něco větší než síla stíhaček + <strong>1/2</strong> síly bunkrů obrany.
-          </td>
+          <td width="8%">Stíhačky a bunkry</td>
+          <td width="17%">Síla útoku je o něco větší než síla stíhaček + <strong>1/2</strong> síly bunkrů obrany.</td>
           <td width="24%">
             <strong>4 % budov**</strong>, pokud je vítězství částečné tak jen <strong>2 %</strong>, vybombenost v poměru 60 %
             <a href="budovy.htm#ruiny">ruin</a>/40 % nezastavěného. území, 10 % obyvatel, pokles spokojenosti až o 10 % (na min. 60 %).
@@ -520,29 +518,29 @@
           <td width="19%">Až 15 % stíhaček útočník, obránce méně stíhaček i bunkrů.</td>
         </tr>
         <tr>
-          <th class=h width="13%">
-            <a id="VUtn"></a>
+          <th class="h" width="13%">
+            <a id="takticky_nalet"></a>
             Taktický nálet
           </th>
           <td width="8%">Stíhačky</td>
           <td width="8%">Stíhačky a bunkry</td>
           <td width="17%">Síla útoku je o něco větší než síla stíhaček + <strong>1/2</strong> síly bunkrů obrany.</td>
           <td width="24%">
-            <strong>Zničí až 10 % voj. základen do ruin</strong>, při částečném vítězství zbouráno o polovinu méně základen, ale pokles spokojenosti
-            zůstává jako při úplném vítězství. Pokles spokojenosti až o 5 % (na min. 60 %).
+            <strong>Zničí až 10 % voj. základen do ruin</strong>, při částečném vítězství zbouráno o polovinu méně základen, ale pokles spokojenosti zůstává
+            jako při úplném vítězství. Pokles spokojenosti až o 5 % (na min. 60 %).
           </td>
           <td width="19%">Až 15 % stíhaček útočník, obránce méně stíhaček i bunkrů.</td>
         </tr>
         <tr>
-          <th class=h width="13%">
-            <a id="VUnt"></a>
+          <th class="h" width="13%">
+            <a id="nocni_tazeni"></a>
             Noční tažení
           </th>
           <td width="8%">Mechové</td>
           <td width="8%">Mechové</td>
           <td width="17%">Síla útočníka je o něco vyšší než síla obránce.</td>
           <td width="24%">
-            Čím více přečíslí útočící mechové bránící, tím více <strong>zničí vojáků, tanků, stíhaček.</strong> Zničí až <strong> 12 % voj.
+            Čím více přečíslí útočící mechové bránící, tím více <strong>zničí vojáků, tanků, stíhaček.</strong> Zničí až <strong> 12 % vojenských
             základen.</strong>
           </td>
           <td width="19%">Až 15 %*** mechů útočníka, 7 %*** mechů obránce.</td>
@@ -562,73 +560,73 @@
       <br/>
       <a id="zisky_a_ztraty"></a>
       <h3>6.2.3 Zisky a ztráty v útocích</h3>
-      <p>
-        <strong>Větších zisků území, budov a zboží dosáhnete:</strong>
+      <p style="font-weight: bold">
+        Větších zisků území, budov a zboží dosáhnete:
       </p>
       <ul>
-        <li>Při útoku na zemi s větší rozlohou a větší <a href="statistiky.htm#prestiz">prestiží</a> než je Vaše.</li>
-        <li>Útokem na <a href="#USes">nesesvačenou</a> zemi.</li>
+        <li>Při útoku na zemi s větší rozlohou a větší <a href="statistiky.htm#prestiz">prestiží</a> než je vaše.</li>
+        <li>Útokem na <a href="#sesvacenost">nesesvačenou</a> zemi.</li>
         <li>Při útoku s generálem <a href="#dobyvatel">Dobyvatelem</a> (o 5% vyšší zisky za každou úroveň, pokud je aktivní pro útok).</li>
         <li><a href="aliance.htm#bezaliancni">Bezalianční země</a> má při útoku na bezalianční země vždy plné zisky, tzv. fullwar.</li>
         <li>Při útoku na <a href="aliance.htm#prebehlik">přeběhlíka</a>.</li>
-        <li>Pokud má Vaše země pokrok <a href="techno.htm#fasismus">fašismus</a>.</li>
-        <li>Při <a href="#UZz">vyhlášené válce</a>.</li>
-        <li>Při vhodném složení armády (viz. <a href="#UNorm">zde</a>)</li>
+        <li>Pokud má vaše země pokrok <a href="techno.htm#fasismus">fašismus</a>.</li>
+        <li>Při <a href="#zisky_ve_valce">vyhlášené válce</a>.</li>
+        <li>Při vhodném složení armády (viz. <a href="#normalni_utoky">zde</a>)</li>
       </ul>
-      <strong>Menších zisků území, budov a zboží dosáhnete:</strong>
+      <p style="font-weight: bold">
+        Menších zisků území, budov a zboží dosáhnete:
+      </p>
       <ul>
         <li>Při částečném vítězství (zvítězíte jen těsně) jsou o 50 % menší zisky.</li>
-        <li>Při útoku na <a href="#USes">sesvačenou</a> zemi.</li>
+        <li>Při útoku na <a href="#sesvacenost">sesvačenou</a> zemi.</li>
         <li>Pokud máte pokrok <a href="techno.htm#pacifismus">Pacifismus</a> (–25 %).</li>
         <li>Pokud útočíte na <a href="vlady.htm#feudalismus">Feudalismus</a> (-20 %).</li>
         <li>Pokud má obránce pokrok <a href="techno.htm#TPHra">Hraniční pevnosti</a> (-20 %).</li>
-        <li>Bez <a href="#UZz">vyhlášené války</a>.</li>
-        <li>Při nevhodném složení armády (viz. <a href="#UNorm">zde</a>).</li>
+        <li>Bez <a href="#zisky_ve_valce">vyhlášené války</a>.</li>
+        <li>Při nevhodném složení armády (viz. <a href="#normalni_utoky">zde</a>).</li>
       </ul>
       <p class="inf">
         Bonus za generála Dobyvatele a pokrok Fašismus se násobí. Tak i Hraniční pevnosti, 13. hodnost Kápo, postih u Feudalismu. <strong>Příklad</strong>:
         1,20 (fašismus) * 1,40 (dobyvatel) * 0,8 (feudalismus) * 0,8 (hraniční pevnosti) * 1,25 (kápo) = 34,4 %.
       </p>
       <p class="inf">
-        Bonusy za generála Dobyvatele, pokrok Fašismus a 13. hodnost Kápo jsou aktivní pouze při při útocích bezalianční země na bezalianční země,
-        útocích ve válce (i právě vyhlášené), útocích na přeběhlíka a v rámci <a href="podpora.htm#odveta">odvety</a>.
+        Bonusy za generála Dobyvatele, pokrok Fašismus a 13. hodnost Kápo jsou aktivní pouze při při útocích bezalianční země na bezalianční země, útocích ve
+        válce (i právě vyhlášené), útocích na přeběhlíka a v rámci <a href="podpora.htm#odveta">odvety</a>.
       </p>
       <a id="ztraty_jednotek"></a>
       <strong>Větší ztráty budete mít:</strong>
       <ul>
-        <li><span class="h">Je-li poslán <a href="#UNorm"> útok totální</a> (o polovinu vyšší ztráty).</span></li>
+        <li>Je-li poslán <a href="#normalni_utoky"> útok totální</a> (o polovinu vyšší ztráty).</li>
         <li>Má-li soupeř pokrok <a href="techno.htm#TPrO">protiletecká obrana</a> (+20% ztráty stíhaček).</li>
         <li>Nemáte-li pokrok <a href="techno.htm#TPn">nanotechnologie</a> (-20% ztráty).</li>
         <li>Nemáte-li alianční pokrok <a href="aliance.htm#bojove_drony">bojové drony</a> (-1% ztrát za každé vynalezení v alianci).</li>
-        <li>V případě, že útočník zaútočí s výrazně menším počtem jednotek než má obránce, ztrácí většinu vyslaných jednotek. Je to ochrana obránce proti
+        <li>
+          V případě, že útočník zaútočí s výrazně menším počtem jednotek než má obránce, ztrácí většinu vyslaných jednotek. Je to ochrana obránce proti
           zkouškám jeho bonusu. Nezobrazuje se ani hláška o nepřátelském ochránci národa. Vztahuje se to na normální i taktické útoky.
         </li>
-        <li>Při nevhodném složení armády (viz. <a href="#UNorm">zde</a>)</li>
-        <li>
-          Nastane-li <a href="podpora.htm#tuhy_odpor">tuhý odpor</a>, má <strong>obránce +25 % sílu obrany a útočník +25 % ztráty</strong> jednotek.
-        </li>
+        <li>Při nevhodném složení armády (viz. <a href="#normalni_utoky">zde</a>)</li>
+        <li>Nastane-li <a href="podpora.htm#tuhy_odpor">tuhý odpor</a>, má <strong>obránce +25 % sílu obrany a útočník +25 % ztráty</strong> jednotek.</li>
       </ul>
       <p class="inf">
         V posledních 24 hodinách věku jsou v případě neúspěšného útoku ztráty obránce o 90 % menší.
       </p>
       <br/>
-      <a id="UZz"></a>
+      <a id="zisky_ve_valce"></a>
       <strong>Zisky při vyhlášení války:</strong>
       <ul>
         <li>
-          <strong>Bez vyhlášení války:</strong> Nejnižší zisky - například při útoku na stejně <a href="statistiky.htm#prestiz">prestižního</a> protivníka získáte
-          5,6 % rozlohy. Výjimkou jsou útoky <a href="aliance.htm#bezaliancni">bezaliančních</a> na bezalianční. Tam platí bonus, jako při válce
-          (fullwar).
-          Vyhlazovacími útoky a bombardováním ničíte o 25 % méně budov.
+          <strong>Bez vyhlášení války:</strong> Nejnižší zisky - například při útoku na stejně <a href="statistiky.htm#prestiz">prestižního</a> protivníka
+          získáte 5,6 % rozlohy. Výjimkou jsou útoky <a href="aliance.htm#bezaliancni">bezaliančních</a> na bezalianční. Tam platí bonus, jako při válce
+          (fullwar). Vyhlazovacími útoky a bombardováním ničíte o 25 % méně budov.
         </li>
         <li>
-          <strong>Při právě vyhlášené válce:</strong> (tzn. do 12 hodin od vyhlášení ) Zisky jsou o 40 % vyšší než bez vyhlášení války. Při úspěšném útoku
-          na stejně prestižního protivníka získáte 8% rozlohy. Vyhlazovacími útoky a bombardováním ničíte o 25 % méně budov.
+          <strong>Při právě vyhlášené válce:</strong> (tzn. do 12 hodin od vyhlášení ) Zisky jsou o 40 % vyšší než bez vyhlášení války. Při úspěšném útoku na
+          stejně prestižního protivníka získáte 8% rozlohy. Vyhlazovacími útoky a bombardováním ničíte o 25 % méně budov.
         </li>
         <li>
           <a id="full_war"></a>
-          <strong>Útok během platné války:</strong> (tzn. po 12 a více hodinách) &nbsp;Zisky jsou o 70 % vyšší než bez vyhlášení války. Při úspěšném útoku
-          na stejně prestižního protivníka získáte 9,6 % rozlohy.
+          <strong>Útok během platné války:</strong> (tzn. po 12 a více hodinách) Zisky jsou o 70 % vyšší než bez vyhlášení války. Při úspěšném útoku na stejně
+          prestižního protivníka získáte 9,6 % rozlohy.
         </li>
         <li>
           Posledních 24 hodin věku nelze útočit mimo vyhlášenou válku, stejně jako to nyní platí pro rakety a sabotážní akce rozvědky. Nově je k tomuto
@@ -636,32 +634,34 @@
           útoky se berou: sabotážní operace rozvědky, rakety a útoky armádou).
         </li>
       </ul>
-      <a id="USes"></a>
-      <strong>Sesvačenost:</strong>
+      <a id="sesvacenost"></a>
+      <p style="font-weight: bold">
+        Sesvačenost
+      </p>
       <p>
         Tzv. "sesvačenost" poznáte přesně v menu <em>{Najít zem}</em> (po zadání čísla nekteré země). Přibližně ji lze poznat i podle barvy v menu
-        <em>{Žebříček}</em> (zelený - maximální zisk, žlutý - menší, červený - minimální). Pohybuje se v rozmezí 0% - 100% a každý úspěšný
-        <a href="#UNorm">normální</a> útok, který projde obranou, zvyšuje sesvačenost země (max. o 20% za jeden útok). Každý neúspěšný normální také mírně
-        zvýší sesvačenost. Sesvačenost se ztrácí s odehráváním kol (1kolo je -1% sesvačenosti) nebo s uplynulým časem (-1% za 2h). Sesvačenost nemá vliv na
-        zisk zkušeností při taktických útocích.
+        <em>{Žebříček}</em> (zelený - maximální zisk, žlutý - menší, červený - minimální). Pohybuje se v rozmezí 0 % - 100 % a každý úspěšný
+        <a href="#normalni_utoky">normální</a> útok, který projde obranou, zvyšuje sesvačenost země (max. o 20 % za jeden útok). Každý neúspěšný normální také
+        mírně zvýší sesvačenost. Sesvačenost se ztrácí s odehráváním kol (1 kolo je -1 % sesvačenosti) nebo s uplynulým časem (-1 % za 2 hodiny). Sesvačenost
+        nemá vliv na zisk zkušeností při taktických útocích.
       </p>
       <br/>
-      <a id="USi"></a>
+      <a id="sila_armady"></a>
       <h3>6.2.4 Síla armády</h3>
       <p>
-        Základní síla armády v <a href="#UNorm">normálním</a> útoku/obraně je dána součtem základních útočných/obranných čísel všech jednotek. V
-        <a href="#UTak">taktickém</a> útoku/obraně mají jednotky útočné i obranné číslo 1/1. Základní síla může být zvýšena bonusy anebo snížena postihy např.
-        o 100 % (tedy na dvojnásobek). Většinu těchto bonusů a postihů vidíte na stránce v menu <em>{Válka} → {Útoky}</em>.
+        Základní síla armády v <a href="#normalni_utoky">normálním</a> útoku/obraně je dána součtem základních útočných/obranných čísel všech jednotek. V
+        <a href="#takticke_utoky">taktickém</a> útoku/obraně mají jednotky útočné i obranné číslo 1/1. Základní síla může být zvýšena bonusy anebo snížena
+        postihy např. o 100 % (tedy na dvojnásobek). Většinu těchto bonusů a postihů vidíte na stránce v menu <em>{Válka} → {Útoky}</em>.
       </p>
       <p class="inf">
         Příklad: Útočím dobyvačným útokem s 5000 vojáky, 400 stíhačkami a 600 tanky. Základní síla útoku je (5000 × 1) + (400 × 6) + (600 × 6) =
         <strong>11 000.</strong> Dále mám bonus +54 %. Celkový útok i s bonusy tedy bude 11 000 × 1,54 = 16940.
       </p>
       <br/>
-      <p>
-        <strong>Síla armády je ovlivněna následujícími vlastnostmi:</strong>
+      <p style="font-weight: bold">
+        Síla armády je ovlivněna následujícími vlastnostmi:
       </p>
-      <table border="2" align=center class=tbl>
+      <table border="2" align="center" class="tbl">
         <tr>
           <th>Vlastnost</th>
           <th>Minimální bonus</th>
@@ -683,22 +683,23 @@
           <td style="text-align: center">+0 %</td>
           <td style="text-align: center">+20 % (+37,5 %) *</td>
           <td width="66%">
-            Čím větší část území vojenské základny zabírají, tím více účinkují (mají <a href="#Vev">vyšší efekt</a>). Fundamentalismus má dokonce +50%
-            zvýhodnění do základen.
+            Čím větší část území vojenské základny zabírají, tím více účinkují (mají <a href="#efekt_vojenskych_zakladen">vyšší efekt</a>). Fundamentalismus má
+            dokonce +50 % zvýhodnění do základen.
           </td>
         </tr>
         <tr>
           <th width="15%">
-            <a id="Vpa">
-            </a>Připravenost armády
+            <a id="pripravenost_armady"></a>
+            Připravenost armády
           </th>
           <td style="text-align: center">-60 %</td>
           <td style="text-align: center">+0 %</td>
           <td width="66%">
-            Připravenost armády je snad nejdůležitější složka ovlivňující sílu vaší armády. Klesá vždy bezprostředně po vašem <a href="valky.htm#Vou">vojenském
-            útoku.</a> Zde záleží na typu útoku (nejvíce <a href="#UNorm">totálním</a> útokem, nejméně taktickými útoky) a na počtu vyslaných jednotek (čím
-            větší část útočí, tím více klesá). Naopak roste při odehrávání každé kolo o 1-6 % až na své maximum (100 %). Také pokud Vás někdo dobyje
-            normálním útokem, zvýší se vaše připravenost o +10 %. Připravenost Vám může být nepřítelem snižována taktickými útoky, rozvědkou a raketami.
+            Připravenost armády je snad nejdůležitější složka ovlivňující sílu vaší armády. Klesá vždy bezprostředně po vašem
+            <a href="valky.htm#vojenske_utoky">vojenském útoku.</a> Zde záleží na typu útoku (nejvíce <a href="#normalni_utoky">totálním</a> útokem, nejméně
+            taktickými útoky) a na počtu vyslaných jednotek (čím větší část útočí, tím více klesá). Naopak roste při odehrávání každé kolo o 1-6 % až na své
+            maximum (100 %). Také pokud vás někdo dobyje normálním útokem, zvýší se vaše připravenost o +10 %. Připravenost vám může být nepřítelem snižována
+            taktickými útoky, rozvědkou a raketami.
           </td>
         </tr>
         <tr>
@@ -712,17 +713,14 @@
           </td>
         </tr>
         <tr>
-          <th width="15%">
-            <a id="Vxp"></a>
-            Zkušenost armády
-          </th>
+          <th width="15%">Zkušenost armády</th>
           <td style="text-align: center">-20 %</td>
           <td style="text-align: center">+45 % **</td>
           <td width="66%">
             Sílu armády ovlivní její zkušenosti. Čím zkušenější armáda je, tím lépe v bojích obstojí. Zkušenosti armády získáváte v úspěšných i neúspěšných
-            bojích, obraně i útoků, při výpomoci spojencům, dotováním zkušeností a při <a href="ufo.htm#udalosti">události</a>. Ve <a href="#UZz">vyhlášené
-            válce</a> je zisk zkušeností vyšší. Zkušenosti klesají při výrobě nových jednotek (nováčků) a zrovna tak při jejich nákupu na
-            <a href="trhy.htm">trzích</a> (při nákupu je pokles vyšší než při výrobě).
+            bojích, obraně i útoků, při výpomoci spojencům, dotováním zkušeností a při <a href="ufo.htm#udalosti">události</a>. Ve
+            <a href="#zisky_ve_valce">vyhlášené válce</a> je zisk zkušeností vyšší. Zkušenosti klesají při výrobě nových jednotek (nováčků) a zrovna tak při
+            jejich nákupu na <a href="trhy.htm">trzích</a> (při nákupu je pokles vyšší než při výrobě).
           </td>
         </tr>
         <tr>
@@ -730,7 +728,7 @@
           <td style="text-align: center">0</td>
           <td style="text-align: center">různý</td>
           <td width="66%">
-            Aby <a href="#Gen">generál</a> přispíval do útoku, musí být aktivní pro útok, aby přispíval do obrany, musí být aktivní v obraně. To, kde je
+            Aby <a href="#generalove">generál</a> přispíval do útoku, musí být aktivní pro útok, aby přispíval do obrany, musí být aktivní v obraně. To, kde je
             generál aktivní, navolíte v <em>{Válka} → {Generálové}</em>
           </td>
         </tr>
@@ -751,7 +749,7 @@
               <a href="techno.htm#TPKc">Kulturní centrum</a> → -10 % útok, +10 % spokojenost<br/>
               <a href="techno.htm#TPrO">Protiletecká obrana</a> → Dvojnásobná obrana bunkrů proti bombardování a taktickému náletu<br/>
               <a href="techno.htm#TPtm">Pohraniční stráž</a> → +10 % obrana proti taktickým útokům<br/>
-              <a href="techno.htm#bezpecnostni_senzory">Bezpečnostní senzory</a> → +50 % obrana proti <a href="#VUp">partyzánským útokům</a><br/>
+              <a href="techno.htm#bezpecnostni_senzory">Bezpečnostní senzory</a> → +50 % obrana proti <a href="#partyzansky_utok">partyzánským útokům</a><br/>
             </p>
             <p class="inf">
               <strong>Nepřímo se jedná o následující pokroky:</strong><br/>
@@ -776,8 +774,8 @@
               při obraně se každých 100 obyvatel brání jako 1 voják<br/>
               <a href="vlady.htm#utopie">Utopie</a> → -10 % útok<br/>
               <a href="vlady.htm#technokracie">Technokracie</a> → -10 % útok, -20 % síla vojáků<br/>
-              <a href="vlady.htm#robokracie">Robokracie</a> → -50 % obrana proti <a href="#VUp">partyzánským útokům</a>, +25 % síla v
-              <a href="#VUnt">nočním tažení</a>, taktickém náletu a <a href="#VUb">bombardování měst</a><br/>
+              <a href="vlady.htm#robokracie">Robokracie</a> → -50 % obrana proti <a href="#partyzansky_utok">partyzánským útokům</a>, +25 % síla v
+              <a href="#nocni_tazeni">nočním tažení</a>, taktickém náletu a <a href="#bombardovat_mesta">bombardování měst</a><br/>
               <a href="vlady.htm#republika">Republika</a> → -5 % útok<br/>
           </td>
         </tr>
@@ -786,8 +784,8 @@
           <td style="text-align: center"></td>
           <td style="text-align: center"></td>
           <td>
-            Za 6. hodnost (Velitel mechů) je +10% obrana proti nočnímu tažení<br/>
-            Za 14. hodnost (Nepřítel populace) je +10% síla armády
+            Za 6. hodnost (Velitel mechů) je +10 % obrana proti nočnímu tažení<br/>
+            Za 14. hodnost (Nepřítel populace) je +10 % síla armády
           </td>
         </tr>
         <tr>
@@ -800,7 +798,7 @@
           <td style="text-align: center"></td>
           <td style="text-align: center"></td>
           <td>
-            Dále Vaši zemi ovlivňují postihy jako je <a href="system.htm#flastr">flastr</a>, <a href="aliance.htm#prebehlik">přeběhlík</a>,
+            Dále vaši zemi ovlivňují postihy jako je <a href="system.htm#flastr">flastr</a>, <a href="aliance.htm#prebehlik">přeběhlík</a>,
             <a href="podpora.htm#rozvojova_zeme">rozvojová země</a> a <a href="aliance.htm#bezaliancni">bezalianční</a> země nad 14999 km<sup>2</sup>.
           </td>
         </tr>
@@ -812,13 +810,14 @@
         ** Maximální efekt označený je teoreticky neomezený (v praxi ho ale skoro nikdo nepřekročí).
       </p>
       <br/>
-      <a id="Vev"></a>
+      <a id="efekt_vojenskych_zakladen"></a>
       <h3>6.2.5 Efekt Vojenských základen</h3>
       <p>
         Počet základen v zemi výrazně ovlivňuje vojenské oblasti, neboť zlepšuje efekt všech vojenských technologií. Efekt závisí na jejich poměru k celkové
-        rozloze (pro většinu zemí je nejlepší mít 6% - 12% rozlohy vojenských základen). Díky zlepšujícímu efektu je dobré své základny chránit a nepřátelské
-        ničit. Ničit je lze pomocí <a href="#VUnt">nočních tažení</a>, <a href="#VUtn">taktických náletů</a> nebo <a href="#Rko">konvenční</a> raketou, naopak
-        chránit je můžete pokrokem <a href="techno.htm#TPv">Opevněné vojenské základny</a>. Přibližné zlepšení uvádí tato tabulka:
+        rozloze (pro většinu zemí je nejlepší mít 6 % - 12 % rozlohy vojenských základen). Díky zlepšujícímu efektu je dobré své základny chránit a nepřátelské
+        ničit. Ničit je lze pomocí <a href="#nocni_tazeni">nočních tažení</a>, <a href="#takticky_nalet">taktických náletů</a> nebo
+        <a href="#konvencní_rakety">konvenční</a> raketou, naopak chránit je můžete pokrokem <a href="techno.htm#TPv">Opevněné vojenské základny</a>. Přibližné
+        zlepšení uvádí tato tabulka:
       </p>
       <table border="2" align=center class=tbl>
         <tr>
@@ -1017,22 +1016,24 @@
         že například u Fundamentalizmu zvýší Sílu zbraní až o 30 % místo normálních 20 %.
       </p>
       <br/>
-      <a id="UZk"></a>
-      <h3>6.2.6 Zkušenost armády</h3>
+      <a id="zkusenosti_armady"></a>
+      <h3>6.2.6 Zkušenosti armády</h3>
       <p>
-        Výrazně ovlivňuje <a href="#USi">sílu armády</a>. Bonus v praxi nabývá hodnot od -20 % až do +45 % (ale většinou je mezi 0 % a
-        +25 %). Bonus nepřítele za zkušenost se dá zjistit <a href="#INg">infiltrací generálního štábu</a>.
+        Výrazně ovlivňují <a href="#sila_armady">sílu armády</a>. Bonus v praxi nabývá hodnot od -20 % až do +45 % (ale většinou je mezi 0 % a +25 %). Bonus
+        nepřítele za zkušenosti se dá zjistit <a href="#infiltrovat_stab">infiltrací generálního štábu</a>.
       </p>
-      <a id="UZk2"></a>
-      <strong>Zkušenosti armády lze získat:</strong>
+      <br/>
+      <p style="font-weight: bold">
+        Zkušenosti armády lze získat:
+      </p>
       <ul>
         <li>
           Útoky, které přidávají až několik tisíc zkušeností (s právě vyhlášenou válkou je zisk zkušeností 2x vyšší než bez
-          <a href="aliance.htm#valka">války</a>, s déle vyhlášenou válkou 3x vyšší).
+          <a href="aliance.htm#valka">války</a>, s déle vyhlášenou válkou 3× vyšší).
         </li>
         <li>
-          Cvičením armády pomocí "dotování zkušenosti". Počet XP za kolo je stanoven [(vojenské z.)/5 + 100]xp, navíc jsou zavedeny 2 limity:<br/>
-          - pro maximální počet xp armády [(odmocnina z hodnostních xp) * 400] - přes tento počet dotujete pouze 50xp/kolo,<br/>
+          Cvičením armády pomocí "dotování zkušenosti". Počet xp za kolo je stanoven [(vojenské z.) / 5 + 100]xp, navíc jsou zavedeny 2 limity:<br/>
+          - pro maximální počet xp armády [(odmocnina z hodnostních xp) × 400] - přes tento počet dotujete pouze 50xp/kolo,<br/>
           - pro maximální přírůstek xp za kolo [ten je zavislý hlavně na hodnostnich xp, dále na xp armády a voj. základnách], zde vzniká pouze pozvolné
           omezení, expící země by neměl moc omezit.
         </li>
@@ -1044,7 +1045,9 @@
         war.
       </p>
       <br/>
-      <strong>Více zkušeností armády získáte:</strong>
+      <p style="font-weight: bold">
+        Více zkušeností armády získáte:
+      </p>
       <ul>
         <li>Čím více nepřítel ztratí <a href="statistiky.htm#prestiz">prestiže</a>, tím více zkušeností máte.</li>
         <li>Zisk zkušeností je větší při válčení velkých armád (čím prestižnější země bojují, tím je zisk vyšší).</li>
@@ -1055,13 +1058,14 @@
           Funguje až od 5. hodnosti útočníka, neboť dříve jsou rozdíly v hodnostech moc malé, zároveň při rozdílu jedné hodnosti mezi útočníkem a obráncem se
           neprojevuje tento bonus/postih na zisk zkušeností.<br/>
           <p class="inf">
-            Příklad: Máte hodnost 8 a útočíte na hodnost 4. To pro Vás znamená o 20% méně zkušeností (4-8)*5= -20%. Toto nemá vliv na zisk zkušeností obránce.
+            Příklad: Máte hodnost 8 a útočíte na hodnost 4. To pro Vás znamená o 20 % méně zkušeností (4 - 8) × 5= -20 %. Toto nemá vliv na zisk zkušeností
+            obránce.
           </p>
         </li>
       </ul>
       <br/>
-      <p>
-        <strong>Ztráty zkušeností:</strong>
+      <p style="font-weight: bold">
+        Ztráty zkušeností:
       </p>
       <p>
         Pokud nakoupíte na <a href="trhy.htm#svetovy_trh">světovém</a> nebo <a href="trhy.htm#domaci_trh">domácím trhu</a>
@@ -1069,11 +1073,12 @@
         <a href="#vojenske_jednotky">jednotky</a>. Ty si ale děláte pro vaši armádu na míru, a proto snižují zkušenost méně, než cizí koupené jednotky.
       </p>
       <p>
-        Zkušenosti také ztratíte při odchodu z <a href="aliance.htm#aliance">aliance</a> a sice přesně 1/3 Vašich <a href="#Vxp">zkušeností armády</a>.
+        Zkušenosti také ztratíte při odchodu z <a href="aliance.htm#aliance">aliance</a> a sice přesně 1/3 Vašich <a href="#zkusenosti_armady">zkušeností
+        armády</a>.
       </p>
       <p>
-        Zkušenosti ztratíte také za systémem zrušené <a href="aliance.htm#fake_war">Fake war</a> (2. fake war znamená ztrátu 2% zkušeností armády, země i
-        generálů, 3. 4%, 4. 6% ...)
+        Zkušenosti ztratíte také za systémem zrušené <a href="aliance.htm#fake_war">Fake war</a> (2. fake war znamená ztrátu 2 % zkušeností armády, země i
+        generálů, 3. 4 %, 4. 6 %, ...)
       </p>
       <p class="inf">
         Posláním jednotek hospodářskou pomocí neklesají zkušenosti armády. Vojáci za <a href="techno.htm#svata_valka">Svatou válku</a> a
@@ -1082,24 +1087,24 @@
       <br/>
       <hr/>
     </blockquote>
-    <a id="Gen"></a>
+    <a id="generalove"></a>
     <h2>6.3 Generálové</h2>
     <blockquote>
       <p>
         Generálové jsou výjimeční jedinci, vůdci, myslitelé a fanatikové. Podle svých zkušeností a schopností <strong>zlepšují</strong> vlastnost armády,
-        <a href="#Roz">rozvědky</a> nebo fungování ekonomiky.
+        <a href="#rozvedka">rozvědky</a> nebo fungování ekonomiky.
       </p>
       <br/>
-      <a id="GE2"></a>
+      <a id="generalove_ziskani"></a>
       <h3>6.3.1 Získání</h3>
       <p>
         Získání generála je věc čistě <strong>náhodná</strong>, může přijít v útoku i obraně. Vaši přátelé už jich mají několik a Vy stále nic. Proto je dobré
         vědět, co tuto pravděpodobnost příchodu o něco zvýší, ale i přesto je to stále velký kus náhody!
       </p>
       <p>
-        Takže čím více <a href="#Vxp">zkušeností</a> útokem získáte, tím je pravděpodobnost příchodu vyšší. Dále čím máte více generálů, tím je šance, že se
-        objeví další, menší. Proto je dobré ty nepotřebné propustit. Během první vyhlášené války by se měl při dostatečném počtu útoků minimálně jeden objevit.
-        Navíc pokud máte hodně zkušeností armády (v desetitisících), je šance na příchod velmi vysoká, pokud dosud nemáte žádného generála.
+        Takže čím více <a href="#zkusenosti_armady">zkušeností</a> útokem získáte, tím je pravděpodobnost příchodu vyšší. Dále čím máte více generálů, tím je
+        šance, že se objeví další, menší. Proto je dobré ty nepotřebné propustit. Během první vyhlášené války by se měl při dostatečném počtu útoků minimálně
+        jeden objevit. Navíc pokud máte hodně zkušeností armády (v desetitisících), je šance na příchod velmi vysoká, pokud dosud nemáte žádného generála.
       </p>
       <p>
         Maximálně můžete mít 3 generály. Po dosažení <a href="statistiky.htm#hodnost_9">9. hodnosti</a> (Major) můžete mít až 4 generály.
@@ -1157,14 +1162,13 @@
       </p>
       <br/>
       <a id="generalove_schopnosti"></a>
-      <h3>6.3.2&nbsp;Schopnosti a úrovně generála</h3>
+      <h3>6.3.2 Schopnosti a úrovně generála</h3>
       <p>
         <strong>Nový generál</strong> je na 1. úrovni a má vždy 1 náhodnou schopnost. Když se účastní bitvy (v obraně či útoku, ale ne při pomoci spojencům)
-        získává stejné zkušenosti, jako získá armáda. Díky tomu se může naučit <b>druhou schopnost.</b> Pravděpodobnost opět závisí na zkušenostech, které v
-        boji
-        získal. Druhá schopnost nemůže být nikdy stejná jako první, ale mohou se podporovat. Generál také může získávat zkušenosti pomocí dotace, která zvyšuje
-        zkušenosti generálovi (menu Dotace), který je právě aktivní pro útok. Zkušeností není nijak mnoho a závisí na zkušenostech armády a země. Při získávání
-        zkušeností tímto způsobem nemůže generál dostat druhou schopnost.
+        získává stejné zkušenosti, jako získá armáda. Díky tomu se může naučit <strong>druhou schopnost.</strong> Pravděpodobnost opět závisí na zkušenostech,
+        které v boji získal. Druhá schopnost nemůže být nikdy stejná jako první, ale mohou se podporovat. Generál také může získávat zkušenosti pomocí dotace,
+        která zvyšuje zkušenosti generálovi (menu Dotace), který je právě aktivní pro útok. Zkušeností není nijak mnoho a závisí na zkušenostech armády a země.
+        Při získávání zkušeností tímto způsobem nemůže generál dostat druhou schopnost.
       </p>
       <p>
         Například generál se schopností <a href="#nacionalista">Nacionalista</a> a schopností <a href="#osvoboditel">Osvoboditel</a> bude přidávat při útoku na
@@ -1173,14 +1177,13 @@
         Akademie</a> můžete druhou schopnost změnit již na úrovni 50 000 zkušeností.
       </p>
       <p class="inf">
-        Bonusy u generálů se nesčítají ale <strong>násobí </strong>- např. generál na 5. úrovni Osvoboditel(+25%) a Stratég (+25%) dává k taktickým útokům
-        1,25*1,25=1,5625 =&gt; +56,25% bonus.
+        Bonusy u generálů se nesčítají ale <strong>násobí </strong>- např. generál na 5. úrovni Osvoboditel (+25 %) a Stratég (+25 %) dává k taktickým útokům
+        1,25 × 1,25 = 1,5625 → +56,25 % bonus.
       </p>
       <p>
-        Získané zkušenosti
-        určují jeho úroveň:
+        Získané zkušenosti určují jeho úroveň:
       </p>
-      <table border="2" align=center class=tbl>
+      <table border="2" align="center" class="tbl">
         <tr>
           <th align=center>Úroveň</th>
           <th align=center>Zkušenosti generála</th>
@@ -1219,8 +1222,8 @@
         </tr>
       </table>
       <br/>
-      <a id="GE4"></a>
-      <h3>6.3.3&nbsp;Typy generálů</h3>
+      <a id="generalove_typy"></a>
+      <h3>6.3.3 Typy generálů</h3>
       <p>
         Základních typů generálů je 5 - ekonomičtí, útoční, obranní, útočně-obranní a obranně-ekonomičtí. Jejich schopnosti se pak dle toho dají použít buď
         pouze v útoku (v tabulce označeny U), nebo jen v obraně (O) v obojím (UO) nebo v ekonomice (E).
@@ -1228,21 +1231,21 @@
       <p>
         Máte-li více generálů, může vést armádu při útoku nebo obraně země v jednom okamžiku pouze jeden. V menu <em>{Válka} → {Generálové}</em>> zvolíte
         <strong>aktivní generály</strong> pro útok a obranu. Pak generálové aktivní v útoku budou dostávat zkušenosti útočením a aktivní v obraně získají
-        zkušenosti bráněním. Výjimku tvoří ekonomičtí generálové (E). Ti pracují vždy, aniž by byli aktivní v obraně nebo útoku, <a href="#UZk">zkušenosti</a>
-        mohou získat jako ostatní - v boji a dotaci. Navíc pokud mají dva ekonomičtí (E) generálové stejnou schopnost, pomůže vám jen ten se
-        <strong>silnější</strong> schopností. Bonusy se tedy <strong>nesčítají</strong>.
+        zkušenosti bráněním. Výjimku tvoří ekonomičtí generálové (E). Ti pracují vždy, aniž by byli aktivní v obraně nebo útoku,
+        <a href="#zkusenosti_armady">zkušenosti</a> mohou získat jako ostatní - v boji a dotaci. Navíc pokud mají dva ekonomičtí (E) generálové stejnou
+        schopnost, pomůže vám jen ten se <strong>silnější</strong> schopností. Bonusy se tedy <strong>nesčítají</strong>.
       </p>
       <p class="inf">
         Například pro útok <a href="#nacionalista">Nacionalistu</a> a pro obranu <a href="#vlastenec">Vlastence</a>, tak abyste správně využili jejich bonusy.
-        <a href="#vlastenec">Vlastenec</a> v útoku by sám dostával <a href="#UZk">zkušenosti</a>, ale armádě by jinak nebyl prospěšný.
+        <a href="#vlastenec">Vlastenec</a> v útoku by sám dostával <a href="#zkusenosti_armady">zkušenosti</a>, ale armádě by jinak nebyl prospěšný.
       </p>
       <p class="inf">
         Máte-li dva generály Zbrojaře na 3. a druhého na 5. úrovni, získáváte bonus pouze z generála na 5. úrovni. Ten nezískává žádné zkušenosti pokud není
         aktivní ani v obraně ani útoku, ale přesto zlepšuje ekonomiku Vaší země.
       </p>
       <br/>
-      <p>
-        <strong>Shrnutí:</strong>
+      <p style="font-weight: bold">
+        Shrnutí:
       </p>
       <p>
         Schopnost (U) funguje, jen pokud útočíte a je tento generál vybrán pro útok. Obranný (O) jen pokud se bráníte a je tento generál vybrán pro obranu.
@@ -1251,7 +1254,7 @@
         Schopnost (E) funguje vždy, ale zkušenosti získá pouze v boji nebo dotováním zkušeností generála.
       </p>
       <br/>
-      <table border="2" align=center class=tbl>
+      <table border="2" align="center" class="tbl">
         <tr>
           <th align=center>Schopnost</th>
           <th align=center>Bonus za každou úroveň</th>
@@ -1263,10 +1266,10 @@
             <a id="nacionalista"></a>
             Nacionalista
           </td>
-          <td>+3% síla útoku</td>
+          <td>+3 % síla útoku</td>
           <td style="text-align: center">U</td>
           <td>
-            +24% útok
+            +24 % útok
           </td>
         </tr>
         <tr>
@@ -1274,10 +1277,10 @@
             <a id="vlastenec"></a>
             Vlastenec
           </td>
-          <td>+4% síla obrany</td>
+          <td>+4 % síla obrany</td>
           <td style="text-align: center">O</td>
           <td>
-            +32% obrana
+            +32 % obrana
           </td>
         </tr>
         <tr>
@@ -1285,10 +1288,10 @@
             <a id="osvoboditel"></a>
             Osvoboditel
           </td>
-          <td>+5% síla útoku proti prestižnějším zemím</td>
+          <td>+5 % síla útoku proti prestižnějším zemím</td>
           <td style="text-align: center">U</td>
           <td>
-            +40% útok
+            +40 % útok
           </td>
         </tr>
         <tr>
@@ -1296,10 +1299,10 @@
             <a id="strateg"></a>
             Stratég
           </td>
-          <td>+5% síla v <a href="#UTak">taktických útocích</a></td>
+          <td>+5 % síla v <a href="#takticke_utoky">taktických útocích</a></td>
           <td style="text-align: center">UO</td>
           <td>
-            +40% síly v <a href="#UTak">taktických útocích</a></td>
+            +40 % síly v <a href="#takticke_utoky">taktických útocích</a></td>
         </tr>
         <tr>
           <td>
@@ -1307,13 +1310,13 @@
             Ochránce národa
           </td>
           <td>
-            +5 % obrana v <a href="#UTak">taktických útocích</a><br/>
+            +5 % obrana v <a href="#takticke_utoky">taktických útocích</a><br/>
             ruší úplně efekt útočícího nepřátelského <a href="#osvoboditel">Osvoboditele</a> (pokud není na nižším levelu než Osvoboditel)<br/>
             +10 % obrana rozvědky proti <a href="#sabotazni_operace">teroristickým akcím</a> [E]
           </td>
           <td style="text-align: center">O</td>
           <td>
-            +40 % obrana v <a href="#UTak">taktických útocích</a><br/>
+            +40 % obrana v <a href="#takticke_utoky">taktických útocích</a><br/>
             +80 % obrana rozvědky proti <a href="#sabotazni_operace">teroristickým akcím</a> [E]
         </tr>
         <tr>
@@ -1322,13 +1325,13 @@
             Špion
           </td>
           <td>
-            +5 % <a href="#RSi">síla rozvědky</a><br/>
+            +5 % <a href="#rozvedka_sila">síla rozvědky</a><br/>
             -5 % ztráty agentů při akcích rozvědky<br/>
             -5 % ztráty agentů při partyzánech
           </td>
           <td style="text-align: center">E</td>
           <td>
-            +40 % <a href="#RSi">síla rozvědky</a><br/>
+            +40 % <a href="#rozvedka_sila">síla rozvědky</a><br/>
             -40 % ztráty agentů při akcích rozvědky<br/>
             -40 % ztráty agentů při partyzánech
           </td>
@@ -1340,7 +1343,7 @@
           </td>
           <td>-5 % výdaje za</td>
           <td style="text-align: center">E</td>
-          <td>-40 % výdaje za <a href="#Zold">žoldy</a></td>
+          <td>-40 % výdaje za <a href="#vojenske_jednotky_prehled">žoldy</a></td>
         </tr>
         <tr>
           <td>
@@ -1375,11 +1378,11 @@
             Zbrojař
           </td>
           <td>
-            +2 % produkce <a href="#Tan">jednotek</a>, <a href="#Voj">vojáků</a> a <a href="#rakety">raket</a>
+            +2 % produkce <a href="#vojenske_jednotky_obecne">jednotek</a>, <a href="#vojaci">vojáků</a> a <a href="#rakety">raket</a>
           </td>
           <td style="text-align: center">E</td>
           <td>
-            +16% produkce <a href="#Tan">jednotek</a>, <a href="#Voj">vojáků</a> a <a href="#rakety">raket</a></td>
+            +16 % produkce <a href="#vojenske_jednotky_obecne">jednotek</a>, <a href="#vojaci">vojáků</a> a <a href="#rakety">raket</a></td>
         </tr>
         <tr>
           <td>
@@ -1427,8 +1430,8 @@
         <a href="podpora.htm#odveta">odvety</a>.
       </p>
       <br/>
-      <p>
-        <strong>Změna schopností generálů:</strong>
+      <p style="font-weight: bold">
+        Změna schopností generálů:
       </p>
       <p>
         Můžete změnit schopnost generála na libovolnou (kromě té, kterou už má), pokud má generál alespoň 100 000 zkušeností (s pokrokem Vojenská akademie
@@ -1466,13 +1469,14 @@
     <blockquote>
       <p>
         Při konfliktech jsou rakety dobrý oslabující prostředek. <strong>Odpalovat rakety lze</strong> pouze na země <strong>v rozsahu trojnásobku naší
-        prestiže (3x prestižnější nebo 3x méně prestižní), bezalianční země může útočit na alianční země maximálně +-30% vůči své prestiže</strong>. Všechny se
-        <strong>vyrábějí řízeně </strong>a <strong>nelze je koupit</strong>. Náročnost vývoje raket je závislá na druhu rakety. <a href="#Rko">Konvenční</a>
-        raketa potřebuje 100 výzkumných bodů, <a href="#Rbi">biocidní</a> raketa 250, <a href="#Remp">EMP</a> raketa 300 a <a href="#Rnu">nukleární</a> raketa
-        500 bodů. Body na vývoj raket vám začnou přibývat, jestliže vlastníte vojenské základny. Rychlost vývoje (přibývání bodů) urychlují technologie
-        <a href="techno.htm#TVr">produkce raket</a>, zvýšení počtu základen, <a href="statistiky.htm#veteranske_bonusy">veteránský bonus</a> za hodnost kápo nebo nepřítel
-        populace, generál <a href="#zbrojar">zbrojař</a>, případně vláda <a href="vlady.htm#komunismus">komunismus</a>, která vyvíjí rakety o polovinu
-        rychleji. Další možností je získat rakety od <a href="ufo.htm#ufo_nabidky">mimozemské civilizace</a> nebo <a href="ufo.htm#udalosti">událostí</a>.
+        prestiže (3× prestižnější nebo 3× méně prestižní), bezalianční země může útočit na alianční země maximálně +-30 % vůči své prestiže</strong>. Všechny
+        se <strong>vyrábějí řízeně </strong>a <strong>nelze je koupit</strong>. Náročnost vývoje raket je závislá na druhu rakety.
+        <a href="#konvencní_rakety">Konvenční</a> raketa potřebuje 100 výzkumných bodů, <a href="#biocidni_rakety">biocidní</a> raketa 250,
+        <a href="#emp_rakety">EMP</a> raketa 300 a <a href="#nuklearni_rakety">nukleární</a> raketa 500 bodů. Body na vývoj raket vám začnou přibývat, jestliže
+        vlastníte vojenské základny. Rychlost vývoje (přibývání bodů) urychlují technologie <a href="techno.htm#TVr">produkce raket</a>, zvýšení počtu
+        základen, <a href="statistiky.htm#veteranske_bonusy">veteránský bonus</a> za hodnost kápo nebo nepřítel populace, generál
+        <a href="#zbrojar">zbrojař</a>, případně vláda <a href="vlady.htm#komunismus">Komunismus</a>, která vyvíjí rakety o polovinu rychleji. Další možností
+        je získat rakety od <a href="ufo.htm#ufo_nabidky">mimozemské civilizace</a> nebo <a href="ufo.htm#udalosti">událostí</a>.
       </p>
       <p>
         To, kolik máte bodů, potřebných k výrobě raket, zjistíte v menu <em>{Dotace} → {Vývoj raket}</em>.
@@ -1486,58 +1490,58 @@
       </p>
       <ul>
         <li>
-          <a id="Rko"></a>
+          <a id="konvencní_rakety"></a>
           <strong>konvenční</strong>
           <ul>
             <li>
-              ničí 15% <a href="budovy.htm#vojenske_zakladny">vojenských základen</a> a snižuje <a href="#Vpa">připravenost armády</a> (první raketa sníží připravenost o
-              12 %, další o 7 %, 5 %, 3 %, 1 %, 1 %, 1 % na konečných -30 %)
+              ničí 15 % <a href="budovy.htm#vojenske_zakladny">vojenských základen</a> a snižuje <a href="#pripravenost_armady">připravenost armády</a> (první
+              raketa sníží připravenost o 12 %, další o 7 %, 5 %, 3 %, 1 %, 1 %, 1 % na konečných -30 %)
             </li>
             <li>jejich držení vás nic nestojí, takže není důvod, proč jich stále nemít pár na skladě</li>
           </ul>
         </li>
         <li>
-          <a id="Rnu"></a>
+          <a id="nuklearni_rakety"></a>
           <strong>nukleární</strong>
           <ul>
             <li>ničí 10 % území, 5 % lidí, 3 % jednotek, <a href="vlady.htm#spokojenost">demoralizace</a></li>
             <li>nejméně populární ze všech typů raket pro zasaženého, proto čekejte ráznou odvetu</li>
             <li>držení snižuje <a href="vlady.htm#spokojenost">spokojenost</a></li>
-            <li>top10 držitelů nukleárních raket je vidět v <a href="statistiky.htm#rekordy">rekordech</a></li>
+            <li>top 10 držitelů nukleárních raket je vidět v <a href="statistiky.htm#rekordy">rekordech</a></li>
           </ul>
         </li>
         <li>
-          <a id="Rbi"></a>
+          <a id="biocidni_rakety"></a>
           <strong>biocidní</strong>
           <ul>
             <li>zabije 20 % lidí, 5 % vojáků a agentů, velká <a href="vlady.htm#spokojenost">demoralizace</a></li>
-            <li>díky velkému snížení <a href="vlady.htm#spokojenost">spokojenosti</a> klesá velmi obranná síla nepřítele.</li>
+            <li>díky velkému snížení <a href="vlady.htm#spokojenost">spokojenosti</a> klesá velmi obranná síla nepřítele</li>
             <li>za její použití se můžete stát terčem útoků</li>
             <li>držení snižuje <a href="vlady.htm#spokojenost">spokojenost</a></li>
           </ul>
         </li>
         <li>
-          <a id="Remp"></a>
+          <a id="emp_rakety"></a>
           <strong>EMP</strong>
           <ul>
             <li>zboří 15 % <a href="budovy.htm#elektrarny">elektráren</a></li>
             <li>
-              zničí 15 % <a href="zbozi.htm#energie">elektřiny</a> ze zásob v zemi, 10 % <a href="#Mech">mechů</a> a 10 %
+              zničí 15 % <a href="zbozi.htm#energie">elektřiny</a> ze zásob v zemi, 10 % <a href="#mechove">mechů</a> a 10 %
               <a href="techno.htm#TUv">technologií</a>
             </li>
           </ul>
         </li>
       </ul>
       <p>
-        Raketa se odpaluje z menu <span class="menu">Válka - Rakety</span>. Odpálení Vám vezme jedno kolo. To, jestli útok uspěje je určeno
+        Raketa se odpaluje z menu <em>{Válka} → {Rakety}</em>. Odpálení Vám vezme jedno kolo. To, jestli útok uspěje je určeno
         <a href="techno.htm#Tchpr">Protiraketovým štítem</a> nepřítele (zvyšuje se technologiemi a vojenskými základnami). Odpálení rakety snižuje
-        <a href="vlady.htm#spokojenost">spokojenost</a>, více ji sníží odpálení <a href="#Rnu">nukleární</a> a <a href="#Rbi">biocidní</a>. Posledních 24 hodin
-        věku <strong>nejdou</strong> odpalovat rakety mimo válku!
+        <a href="vlady.htm#spokojenost">spokojenost</a>, více ji sníží odpálení <a href="#nuklearni_rakety">nukleární</a> a
+        <a href="#biocidni_rakety">biocidní</a>. Posledních 24 hodin věku <strong>nejdou</strong> odpalovat rakety mimo válku!
       </p>
       <p class="inf">
-        Před útokem má smysl použít na oslabení soupeře <a href="#Rko">konvenční</a>, <a href="#Rbi">biocidní</a> či <a href="#Remp">EMP</a> rakety.
-        <a href="#Rnu">Nukleární rakety</a> zničí velkou část území protivníka a proto potom dobyjete méně země. Před použitím <a href="#Rnu">nukleárních
-        raket</a> si tedy dobře promyslete, zda je opravdu chcete použít.
+        Před útokem má smysl použít na oslabení soupeře <a href="#konvencní_rakety">konvenční</a>, <a href="#biocidni_rakety">biocidní</a> či
+        <a href="#emp_rakety">EMP</a> rakety. <a href="#nuklearni_rakety">Nukleární rakety</a> zničí velkou část území protivníka a proto potom dobyjete méně
+        země. Před použitím <a href="#nuklearni_rakety">nukleárních raket</a> si tedy dobře promyslete, zda je opravdu chcete použít.
       </p>
       <p class="inf">
         Biocidní, EMP a Nukleární rakety mají mimo válku poloviční efekt, ten platí i v právě vyhlášené válce.
@@ -1545,34 +1549,34 @@
       <br/>
       <hr/>
     </blockquote>
-    <a id="Roz"></a>
+    <a id="rozvedka"></a>
     <h2>6.5 Rozvědka</h2>
     <blockquote>
-      <a id="ROb"></a>
+      <a id="rozvedka_obecne"></a>
       <h3>6.5.1 Obecně</h3>
       <p>
         K dispozici máte maximálně 25 akcí rozvědky (s pokrokem <a href="techno.htm#TPmaf">Mafie</a> až 30). Akce Vám přibývají každá 3 nová kola. Pomocí
-        rozvědky můžete soupeře decimovat rozmanitými akcemi, zjišťovat stav jeho země nebo ji okrádat. Navíc Vás <a href="#Age">agenti</a> provádějící tyto
-        akce brání v <a href="#VUp">partyzánském útoku</a>. Pokud je počet vašich agentů větší než <em>(rozloha + 2000) / 4</em>, dostanete
+        rozvědky můžete soupeře decimovat rozmanitými akcemi, zjišťovat stav jeho země nebo ji okrádat. Navíc Vás <a href="#agenti">agenti</a> provádějící tyto
+        akce brání v <a href="#partyzansky_utok">partyzánském útoku</a>. Pokud je počet vašich agentů větší než <em>(rozloha + 2000) / 4</em>, dostanete
         <a href="statistiky.htm#karticky">kartičku</a> Silná rozvědka.
       </p>
       <p style="font-weight: bold">
-        Podnikat operace rozvědkou lze pouze na země v rozsahu trojnásobku naší prestiže (3x prestižnější nebo 3x méně prestižní), bezalianční země
-        může útočit na alianční země maximálně +-30 % vůči své prestiži.
+        Podnikat operace rozvědkou lze pouze na země v rozsahu trojnásobku naší prestiže (3× prestižnější nebo 3× méně prestižní), bezalianční země může útočit
+        na alianční země maximálně +-30 % vůči své prestiži.
       </p>
       <p>
         Posledních 24 hodin věku <strong>nelze</strong> podnikat sabotážní akce mimo válku!
       </p>
       <p>
         Silnou rozvědku má <a href="vlady.htm#komunismus">Komunismus</a>, neboť má výhodu tří špionážních <a href="aliance.htm#spojenectvi">spojenectví</a> a
-        <a href="#Age">agenti</a> stojí o 40 % méně než ostatní státy.
+        <a href="#agenti">agenti</a> stojí o 40 % méně než ostatní státy.
       </p>
       <p>
         Celkem můžete uskutečnit několik desítek operací rozdělených do tří skupin:
       </p>
       <ul>
         <li>
-          <strong>Špionážní</strong> operace - slouží ke zjištění síly a slabin nepřátel. Při úspěšné akci neztrácíte žádné agenty, při neúspěšné 1% poslaných
+          <strong>Špionážní</strong> operace - slouží ke zjištění síly a slabin nepřátel. Při úspěšné akci neztrácíte žádné agenty, při neúspěšné 1 % poslaných
           agentů.
         </li>
         <li>
@@ -1581,17 +1585,17 @@
         </li>
         <li>
           <strong>Loupeživé</strong> operace - slouží k vlastnímu obohacení na úkor nepřítele. Při úspěšné akci vyváznete beze ztrát, při neúspěšné je zabito
-          4 % agentů (pokud použijete akci <a href="#LOpd">prodat drogy</a> a nepřítel má pokrok protidrogová centrála, je ztráta agentů 10 %).
+          4 % agentů (pokud použijete akci <a href="#prodat_drogy">prodat drogy</a> a nepřítel má pokrok protidrogová centrála, je ztráta agentů 10 %).
         </li>
       </ul>
       <p class="inf">
         Pokud nemáte žádného agenta, nemůžete ani provést akci rozvědky.
       </p>
       <br/>
-      <a id="RSi"></a>
+      <a id="rozvedka_sila"></a>
       <h3>6.5.2 Síla rozvědky</h3>
       <p>
-        Zjednodušeně se dá říci, že čím lepší máte <strong>poměr agenti/rozloha </strong>země, tím je Vaše rozvědka silnější. Přesně to vyjadřuje vztah
+        Zjednodušeně se dá říci, že čím lepší máte <strong>poměr agenti/rozloha</strong> země, tím je Vaše rozvědka silnější. Přesně to vyjadřuje vztah
         vyjadřující základní sílu. Tu lze spočítat jako:
       </p>
       <p><em>[počet agentů] / (rozloha + 2000) × [bonus za <a href="techno.htm#Tec">technologie</a> a <a href="budovy.htm#vojenske_zakladny">vojenské
@@ -1617,7 +1621,7 @@
           <strong>Státní zřízení</strong> - Demokracie -20 % a Republika -20 % obrana proti agentům, naproti tomu
           <a href="vlady.htm#diktatura">Diktatura</a> má +20 % obranu agentů, Robokracie má bonus +50 % k síle rozvědky v obraně a
           <a href="vlady.htm#fundamentalismus">Fundamentalismus</a> má o 1 menší nebezpečnost všech teroristických operací (ale minimálně 1). To znamená větší
-          <a href="#RSa">šanci na úspěch</a>.
+          <a href="#rozvedka_sance_na_uspech">šanci na úspěch</a>.
         </li>
         <li><strong><a href="#spion">Generál Špión</a></strong> - přidává +5 % k síle rozvědky za každou svou úroveň</li>
         <li>
@@ -1633,8 +1637,8 @@
           obraně proti nepřátelským akcím.
         </li>
         <li>
-          <strong>Alianční příslušnost</strong> - <a href="aliance.htm#bezaliancni">Bezalianční země</a> mají sníženou sílu rozvědky vůči aliančním zemím o
-          20 %.
+          <strong>Alianční příslušnost</strong> - <a href="aliance.htm#bezaliancni">Bezalianční země</a> mají sníženou sílu rozvědky vůči aliančním zemím o 20
+          %.
         </li>
         <li>
           <strong><a href="techno.htm#POK">Pokroky</a></strong> ovlivňující sílu rozvědky nebo některých akcí rozvědky:
@@ -1644,10 +1648,13 @@
               <ul>
                 <li>
                   <a href="techno.htm#TPte">Teroristická organizace</a>: +100 % <a href="#sabotazni_operace">teroristické akce</a>, +50 %
-                  <a href="#LOu">loupeživé akce</a>
+                  <a href="#loupezive_operace">loupeživé akce</a>
                 </li>
-                <li><a href="techno.htm#TPmaf">Mafie</a>: +100 % <a href="#INf">infiltrace</a>, +50 % <a href="#LOu">loupeživé akce</a></li>
-                <li><a href="techno.htm#TPd">Družice</a>: + 50 % <a href="#INf">infiltrace</a></li>
+                <li>
+                  <a href="techno.htm#TPmaf">Mafie</a>: +100 % <a href="#spionazni_operace">infiltrace</a>, +50 % <a href="#loupezive_operace">loupeživé
+                  akce</a>
+                </li>
+                <li><a href="techno.htm#TPd">Družice</a>: + 50 % <a href="#spionazni_operace">infiltrace</a></li>
               </ul>
             </li>
             <li>
@@ -1662,7 +1669,7 @@
         </li>
       </ul>
       <br/>
-      <a id="RSa"></a>
+      <a id="rozvedka_sance_na_uspech"></a>
       <h3>6.5.3 Šance na úspěch</h3>
       <p>
         Tato šance závisí na poměru síly rozvědky útočníka a obránce. Nikdy není ale stoprocentní, zvláště pokud se pokoušíte o úspěch v nebezpečnější operaci.
@@ -1674,31 +1681,29 @@
         akcí. Pokud Vám zbývá 1 až 4 akce stoupne nebezpečnost o 2.
       </p>
       <p class="inf">
-        Pokud nemáte žádného <a href="#Age" class="inf">agenta</a> v obraně, stejně nejsou nepřítelovy šance stoprocentní, ale jsou maximální možné (od 95 do
-        70 % podle nebezpečnosti operace), můžete si to představit tak, že brání jen necvičená domobrana a málo schopná policie.
+        Pokud nemáte žádného <a href="#agenti" class="inf">agenta</a> v obraně, stejně nejsou nepřítelovy šance stoprocentní, ale jsou maximální možné (od 95
+        do 70 % podle nebezpečnosti operace), můžete si to představit tak, že brání jen necvičená domobrana a málo schopná policie.
       </p>
       <br/>
-      <a id="RPo"></a>
+      <a id="rozvedka_operace"></a>
       <h3>6.5.4 Popis operací</h3>
-      <a id="INf"></a>
-      <p class="tema">
-        <strong>Špionážní operace</strong>
-      </p>
+      <a id="spionazni_operace"></a>
+      <h4>Špionážní operace</h4>
       <ul>
         <li>
-          <a id="INv"></a>
+          <a id="infiltrovat_vladu"></a>
           <strong>Infiltrovat vládu (nebezpečnost operace 1)</strong> - Celkem snadná operace, kdy zjistíte bližší informace o soupeřovi zemi jako počty
           <a href="budovy.htm#typy">budov</a>, <a href="techno.htm#Tec">technologií</a>, <a href="#vojenske_jednotky">vojenských jednotek</a> a
           <a href="vlady.htm#spokojenost">spokojenost</a>*.
         </li>
         <li>
-          <a id="INg"></a>
+          <a id="infiltrovat_stab"></a>
           <strong>Infiltrovat generální štáb (2)</strong> - Získá přístup do tajných vojenských materiálů, díky nímž máte přehled o spojencích země, o bonusu
-          země za <a href="#Vxp">zkušenosti armády</a>, o počtu <a href="#rakety">raket</a>, <a href="#RSi">síle rozvědky</a> a samozřejmě počtu
-          <a href="#vojenske_jednotky">jednotek</a> a <a href="techno.htm#Tchsi">vojenských technologií</a>.
+          země za <a href="#zkusenosti_armady">zkušenosti armády</a>, o počtu <a href="#rakety">raket</a>, <a href="#rozvedka_sila">síle rozvědky</a> a
+          samozřejmě počtu <a href="#vojenske_jednotky">jednotek</a> a <a href="techno.htm#Tchsi">vojenských technologií</a>.
         </li>
         <li>
-          <strong>Infiltrovat rozvědku (3)</strong> - Méně častá operace, která zjistí přesný počet <a href="#Age">agentů</a>, všechny
+          <strong>Infiltrovat rozvědku (3)</strong> - Méně častá operace, která zjistí přesný počet <a href="#agenti">agentů</a>, všechny
           <a href="aliance.htm#spojenectvi">spojence</a> včetně <a href="aliance.htm#spionazni_spojenectvi">špionážních</a> a co je zajímavé - také ofotí
           všechny zprávy, které si udělala infiltracemi na cizí země sama postižená rozvědka.
         </li>
@@ -1708,49 +1713,48 @@
         * Operace infiltrovat vládu se občas úmyslně nezapisuje do archívu cíle této operace.
       </p>
       <a id="sabotazni_operace"></a>
-      <p class=tema>
-        <strong>Teroristické (sabotážní) operace</strong>
-      </p>
+      <h4>Teroristické (sabotážní) operace</h4>
       <ul>
         <li>
-          <a id="RRe"></a>
+          <a id="rozsirit_epidemii"></a>
           <strong>Rozšířit epidemii (2)</strong> - Akci lze provádět pouze s pokrokem <a href="techno.htm#TPte">teroristická organizace</a>. Po provedení akce
           podlehne rychle se šířícímu virovému onemocnění zhruba 5 % obyvatel a sníží výrazně jejich <a href="vlady.htm#spokojenost">spokojenost</a>.
         </li>
         <li>
-          <a id="RSl"></a>
-          <strong>Sabotovat letiště (2)</strong> - <a href="#Age">Agenti</a> vniknou do kokpitů <a href="#Sti">stíhaček</a> a vyhodí jich do vzduchu 4 %
-          (maximálně však <em>2 × [počet vyslaných agentů]</em>).
+          <a id="sabotovat_letiste"></a>
+          <strong>Sabotovat letiště (2)</strong> - <a href="#agenti">Agenti</a> vniknou do kokpitů <a href="#stihacky">stíhaček</a> a vyhodí jich do vzduchu 4
+          % (maximálně však <em>2 × [počet vyslaných agentů]</em>).
         </li>
-        <li><strong>Nasadit cizopasníka (3)</strong> - Uměle rozšířený cizopasník zničí 3% farem. Nemá cenu používat na země bez farem.</li>
+        <li><strong>Nasadit cizopasníka (3)</strong> - Uměle rozšířený cizopasník zničí 3 % farem. Nemá cenu používat na země bez farem.</li>
         <li>
           <strong>Počítačový virus (3)</strong> - Zničí 4 % z celkového počtu všech <a href="techno.htm#TUv">technologií</a> země (maximálně však <em>3 ×
           [počet vyslaných agentů]</em>).
         </li>
         <li>
-          <a id="RTm"></a>
-          <strong>Nabourat ovládání mechů (3)</strong> - Ničí zhruba 4 % <a href="#Mech">mechů</a> (maximálně však <em>3 × [počet vyslaných agentů]</em>).
+          <a id="nabourat_ovladani_mechu"></a>
+          <strong>Nabourat ovládání mechů (3)</strong> - Ničí zhruba 4 % <a href="#mechove">mechů</a> (maximálně však <em>3 × [počet vyslaných agentů]</em>).
         </li>
         <li>
           <strong>Zničit rakety (4)</strong> - Velice užitečná akce, která ušetří mnoho ztrát. Vniknutím do raketových skladů zničí 2
-          <a href="#Rko">konvenční</a> rakety, 1 <a href="#Rbi">biocidní</a>, 1 <a href="#Remp">EMP </a>nebo 1 <a href="#Rnu">nukleární</a> při jedné úspěšné
-          operaci. Nejdříve se ničí konvenční, když soupeř žádné nemá, tak biocidní, potom EMP a nakonec nukleární.
+          <a href="#konvencní_rakety">konvenční</a> rakety, 1 <a href="#biocidni_rakety">biocidní</a>, 1 <a href="#emp_rakety">EMP</a> nebo 1
+          <a href="#nuklearni_rakety">nukleární</a> při jedné úspěšné operaci. Nejdříve se ničí konvenční, když soupeř žádné nemá, tak biocidní, potom EMP a
+          nakonec nukleární.
         </li>
         <li>
-          <a id="RDo"></a>
+          <a id="demoralizovat_obyvatele"></a>
           <strong>Demoralizovat obyvatele (1)</strong> - Rozpoutávání afér, zastrašování obyvatelstva a ovlivňování médií sníží
           <a href="vlady.htm#spokojenost">spokojenost</a> nepřítele. <span class=inf>Zvláštností je u <a href="vlady.htm#komunismus">Komunismu</a> demoralizace
-          obyvatel od <a href="vlady.htm#republika">Republiky</a> nebo<a href="vlady.htm#demokracie"> Demokracie</a>, neboť to pro něj znamená dvojnásobný
+          obyvatel od <a href="vlady.htm#republika">Republiky</a> nebo <a href="vlady.htm#demokracie">Demokracie</a>, neboť to pro něj znamená dvojnásobný
           pokles spokojenosti.</span>
         </li>
         <li>
-          <strong>Sabotovat armádu (3)</strong> - Sníží <a href="#Vpa">připravenost armády</a> (celkově o 11 %, kde první akcí vezme 3 %
+          <strong>Sabotovat armádu (3)</strong> - Sníží <a href="#pripravenost_armady">připravenost armády</a> (celkově o 11 %, kde první akcí vezme 3 %
           připravenosti, dalšími akcemi 2 %, 2 %, 1 %, 1 %, 1 % a 1 % připravenosti).
         </li>
         <li><strong>Zavraždit agenty (1)</strong> - Vaši agenti zavraždí své protějšky. Pokles agentů není nijak výrazný a závisí na počtu útočníků.</li>
         <li>
           <strong>Napadnout sídlo rozvědky (4)</strong> - Masová akce ničení nepřátelské tajné služby. Při úspěchu přijde nepřítel o 15 - 20 %
-          <a href="#Age">agentů</a>.
+          <a href="#agenti">agentů</a>.
         </li>
         <li>
           <strong>Poškodit protiraketovou obranu (3)</strong> - I mnohem silnější země se dá rychle zničit pomocí <a href="#rakety">raket</a>, pokud nemá
@@ -1760,19 +1764,16 @@
       <p class="inf">
         Sabotážní akce rozvědky mimo válku s plnými zisky mají poloviční efekt, výjimkou jsou operace Sabotovat armádu a Zničit rakety.
       </p>
-      <a id="LOu"></a>
-      <p class=tema>
-        <strong>Loupeživé operace</strong>
-      </p>
+      <a id="loupezive_operace"></a>
+      <h4>Loupeživé operace</h4>
       <p>
         To, kolik zboží Vám agenti ukradnou, záleží hodně na technologii <a href="techno.htm#Tchs">Síla rozvědky</a>. Bez této technologie vám ukradnou
-        25 % zásob peněz, 25 % jídla ve skladech, 25 % zásob energie nebo 5 % technologií. Každý bod technologie Síla rozvědky ale chrání
-        před ukradením 1000$, 50t <a href="zbozi.htm#energie">energie</a> a 50t <a href="zbozi.htm#jidlo">jídla</a> a 2
-        <a href="techno.htm#TUv">technologie</a> od každého druhu. Krytých komodit se potom ztratí 25x méně (tzn. 1 % krytých peněz, jídla, energie a 0,2 %
-        technologií).
+        25 % zásob peněz, 25 % jídla ve skladech, 25 % zásob energie nebo 5 % technologií. Každý bod technologie Síla rozvědky ale chrání před ukradením 1000$,
+        50t <a href="zbozi.htm#energie">energie</a> a 50t <a href="zbozi.htm#jidlo">jídla</a> a 2 <a href="techno.htm#TUv">technologie</a> od každého druhu.
+        Krytých komodit se potom ztratí 25x méně (tzn. 1 % krytých peněz, jídla, energie a 0,2 % technologií).
       </p>
       <p>
-        Proto se obrana před kradením musí skládat ze slušného počtu <a href="#Age">agentů</a> (snižuje šanci na úspěch akce) a odpovídajícího počtu
+        Proto se obrana před kradením musí skládat ze slušného počtu <a href="#agenti">agentů</a> (snižuje šanci na úspěch akce) a odpovídajícího počtu
         technologií <a href="techno.htm#Tchs">Síla tajné služby</a> (snižuje ukradené zboží).
       </p>
       <ul>
@@ -1783,20 +1784,20 @@
         </li>
         <li><strong>Ukrást technologie (3)</strong> - Ukradne 5 % nekrytých a 0,2 % krytých <a href="techno.htm#TUv">technologií</a></li>
         <li>
-          <strong>Vykrást sklady (2)</strong> - Ukradne až 25 % nekrytých a 1 % krytých zásob <a href="zbozi.htm#jidlo">jídla</a>, maximálně však tolik
-          jídla, jako je 1/5 prestiže okrádaného.
+          <strong>Vykrást sklady (2)</strong> - Ukradne až 25 % nekrytých a 1 % krytých zásob <a href="zbozi.htm#jidlo">jídla</a>, maximálně však tolik jídla,
+          jako je 1/5 prestiže okrádaného.
         </li>
         <li>
-          <strong>Napíchnout ropovod (2)</strong> - Ukradne až 25 % nekrytých a 1 % krytých zásob <a href="zbozi.htm#energie">energie</a>, maximálně však
-          tolik energie, jako je 1/5 prestiže okrádaného.
+          <strong>Napíchnout ropovod (2)</strong> - Ukradne až 25 % nekrytých a 1 % krytých zásob <a href="zbozi.htm#energie">energie</a>, maximálně však tolik
+          energie, jako je 1/5 prestiže okrádaného.
         </li>
         <li>
-          <a id="LOpd"></a>
+          <a id="prodat_drogy"></a>
           <strong>Prodat drogy (2)</strong> - Tuto akci mohou uskutečnit pouze vlády <a href="vlady.htm#fundamentalismus">Fundamentalismus</a> a
           <a href="vlady.htm#diktatura">Diktatura</a> a to pokud mají pokrok <a href="techno.htm#TPaOSN">AntiOSN</a>. Při úspěchu získáte
           <a href="zbozi.htm#penize">peníze</a> a nepřítel ztrácí <a href="vlady.htm#spokojenost">spokojenost</a>. Více vyděláte, když má cílová země
-          <a href="statistiky.htm#prestiz">prestiž</a> o hodně větší než Vaše (je výhodnější prodat kokain z Kolumbie do USA než obráceně), spokojené obyvatele a
-          když je v cílové zemi hodně obyvatel. Zisk v penězích standardně nepřesáhne <em>1,5 × [prestiž útočníka]</em> a <em>200 × [rozlohu útočníka]</em>.
+          <a href="statistiky.htm#prestiz">prestiž</a> o hodně větší než Vaše (je výhodnější prodat kokain z Kolumbie do USA než obráceně), spokojené obyvatele
+          a když je v cílové zemi hodně obyvatel. Zisk v penězích standardně nepřesáhne <em>1,5 × [prestiž útočníka]</em> a <em>200 × [rozlohu útočníka]</em>.
           Při prodeji drog ve válce s plnými zisky je peněžní zisk o 50 % vyšší.<br/>
           <p class="inf">
             Na <a href="vlady.htm#robokracie" class="inf">Robokracii</a> drogy <strong>nepůsobí</strong>. Při úspěšném prodeji je zisk 0$ a
@@ -1806,8 +1807,8 @@
             Při prodeji drog do zemí s prestiží stejnou nebo nižší než je naše je výdělek 100$ a obránci klesá spokojenost jen o 0,1 %.
           </p>
           <p class="inf">
-            Hranice pod kterou už neklesne spokojenost při prodeji drog bude 100 %. Při prodeji pod touto hranicí bude pokles spokojenost 0 % a zisk
-            bude 100 dolarů.
+            Hranice pod kterou už neklesne spokojenost při prodeji drog bude 100 %. Při prodeji pod touto hranicí bude pokles spokojenost 0 % a zisk bude 100
+            dolarů.
           </p>
         </li>
       </ul>
