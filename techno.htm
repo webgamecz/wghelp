@@ -2,80 +2,82 @@
 <html lang="cs">
   <head>
     <title>Manuál k strategii Webgame</title>
-    <meta content="" name=keywords>
-    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-    <link href="helpstyle.css" type=text/css rel=stylesheet>
-    <meta content="MSHTML 6.00.2800.1498" name=GENERATOR>
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="helpstyle.css" type="text/css">
   </head>
   <body>
-    <a id="Tec"></a>
     <h1>7 Technologie</h1>
-    <a id="TUv"></a>
+    <a id="technologie_uvod"></a>
     <h2>7.1 O technologiích</h2>
-    <a id="KCJ"></a>
+    <a id="technologie_ucel"></a>
     <blockquote>
       <h3>7.1.1 K čemu jsou?</h3>
       <p>
         Technologie jsou jedním z velmi důležitých faktorů hry, ale téměř pro každou vládu jsou vhodné jiné. Technologie ovlivňují výrobu v mnoha budovách,
-        popřípadě zlepšují Vaši zemi ve vojenských oblastech. Zkrátka díky nim je Vaše země silnější (i při malém území dokáže solidně produkovat a je vojensky
+        popřípadě zlepšují vaši zemi ve vojenských oblastech. Zkrátka díky nim je vaše země silnější (i při malém území dokáže solidně produkovat a je vojensky
         silná). Pro lepší přiblížení byste si technologie mohli představit jako určitý vynález, díky němuž se vyrobí např. více energie, díky němuž mají vojáci
         účinnější zbraně apod.
       </p>
       <br/>
-      <a id="JJZ"></a>
+      <a id="technologie_ziskani"></a>
       <h3>7.1.2 Jak je získat?</h3>
       <p>
         Technologie lze vyrobit v <a href="budovy.htm#laboratore">laboratořích</a>. Dále je můžete koupit na <a href="trhy.htm#svetovy_trh">světovém trhu</a>.
         Většinou se ceny technologií pohybují okolo 400-500$/kus (některé jsou ale dlouhodobě dražší, jiné spíše levnější). V úvodních týdnech věku rovněž
-        stoupá cena s poptávkou vyvolanou díky získávání <a href="#POK">pokroků</a> závislých na technologiích. Poslední možností, jak můžete získat některé
-        technologie, je pomocí <a href="ufo.htm#udalosti">událostí</a> nebo je můžete ukrást jiné zemi <a href="valky.htm#rozvedka">rozvědkou</a> či útokem.
+        stoupá cena s poptávkou vyvolanou díky získávání <a href="#pokroky">pokroků</a> závislých na technologiích. Poslední možností, jak můžete získat
+        některé technologie, je pomocí <a href="ufo.htm#udalosti">událostí</a> nebo je můžete ukrást jiné zemi <a href="valky.htm#rozvedka">rozvědkou</a> či
+        útokem.
       </p>
       <br/>
-      <a id="JFu"></a>
+      <a id="technologie_fungovani"></a>
       <h3>7.1.3 Jak fungují?</h3>
       <p>
-        Jednoduše řečeno fungují tak, že čím více jich máte na určité rozloze, tím větší je zlepšení (závisí na poměru <span class="inf"><i>počet
-        technologií/rozloha</i></span>). Nejprve je zlepšení (efekt) vysoké, ale postupně čím více technologií máte, tím menší vliv mají na zvyšování bonusu.
+        Jednoduše řečeno fungují tak, že čím více jich máte na určité rozloze, tím větší je zlepšení (závisí na poměru <span class="inf"><em>počet
+        technologií/rozloha</em></span>). Nejprve je zlepšení (efekt) vysoké, ale postupně čím více technologií máte, tím menší vliv mají na zvyšování bonusu.
         Závislost tedy není lineární.
       </p>
       <p>
-        Každá z hospodářských technologií zvyšuje produkci jednoho typu budov. Například pokud máte 0 bodů technologie Zemědělství, je efekt 100% a to znamená,
-        že Vaše <a href="budovy.htm#farmy">farmy</a> produkují normální množství jídla (2t). Pokud máte například efekt technologií Zemědělství 150%, znamená
-        to, že vaše farmy produkují o 50% jídla více (3t místo 2t jídla každé kolo). Podobně je tomu také u vojenských technologií. Ty ale většinou zlepšují
-        některý atribut vaší armády.
+        Každá z hospodářských technologií zvyšuje produkci jednoho typu budov. Například pokud máte 0 bodů technologie Zemědělství, je efekt 100 % a to
+        znamená, že vaše <a href="budovy.htm#farmy">farmy</a> produkují normální množství jídla (2t). Pokud máte například efekt technologií Zemědělství 150 %,
+        znamená to, že vaše farmy produkují o 50 % jídla více (3t místo 2t jídla každé kolo). Podobně je tomu také u vojenských technologií. Ty ale většinou
+        zlepšují některý atribut vaší armády.
       </p>
       <br/>
-      <a id="JZv"></a>
+      <a id="technologie_vyroba"></a>
       <h3>7.1.4 Jak zvýšit výrobu?</h3>
       <p>
-        Technologie se dělí na dva základní druhy - na <a href="#HoT">hospodářské</a> a na <a href="#VoT">vojenské</a>. To, kolik technologií budete vyrábět,
-        záleží na počtu laboratoří, <a href="vlady.htm#spokojenost">spokojenosti</a>, <a href="vlady.htm#bonusy">vládě</a>, <a href="#POK">pokrocích</a>,
-        <a href="valky.htm#generalove">generálech</a>, <a href="aliance.htm#aliancni_bonusy">aliančním bonusu</a> a na hustotě technologií na danou rozlohu.
-        Velikost bonusu za 0 technologií na 1 km znamená +0 %, 1/km<sup>2</sup> +11 %, 3/km<sup>2</sup> +20 %, 10/km<sup>2</sup> +32 %, 20/km<sup>2</sup> +39
-        %, 40/km<sup>2</sup> +46 % atd. To samé pro vojenské technologie. Bonus na výrobu vojenských technologií je ještě ovlivněn
-        <a href="valky.htm#zkusenosti_armady">zkušeností armády</a>. To se promítne s polovičním efektem (např. 10 % zkušeností armády udělají +5 % do výroby
-        vojenských technologií).<br/>
-        <br/>
-        <strong>Vzorec pro výpočet produkce technologií vypadá následovně:</strong><br/>
-        (počet laboratoří) × 0,08 × (1 + bonus za vládu + bonus za pokroky + bonus za generála Technolog + alianční bonus) × (1 + bonus za spokojenost) × (1 +
-        bonus za hustotu) × (1 + bonus za zkušenost)<br/>
-        <span class="inf">
-          Příklad: 1 000 laboratoří, Utopie (+25 %), Tajemství mozku (+10 %), Technolog na 4. úrovni (+8 %), bez aliančního bonusu, 120 % spokojenost (+10 %),
-          hustota 10/km<sup>2</sup> (+32 %), zkušenosti armády +10 % (+5 %). Jelikož do produkce hospodářských technologií vstupuje nulový bonus za zkušenost,
-          produkce je tedy 1000 × 0,08 × (1 + 0,25 + 0,10 + 0,08 + 0) × (1 + 0,10) × (1 + 0,32) × (1 + 0) = 166,1088 technologií za kolo.
-        </span>
+        Technologie se dělí na dva základní druhy - na <a href="#hospodarske_technologie">hospodářské</a> a na <a href="#vojenske_technologie">vojenské</a>.
+        To, kolik technologií budete vyrábět, záleží na počtu laboratoří, <a href="vlady.htm#spokojenost">spokojenosti</a>,
+        <a href="vlady.htm#bonusy">vládě</a>, <a href="#pokroky">pokrocích</a>, <a href="valky.htm#generalove">generálech</a>,
+        <a href="aliance.htm#aliancni_bonusy">aliančním bonusu</a> a na hustotě technologií na danou rozlohu. Velikost bonusu za 0 technologií na 1 km znamená
+        +0 %, 1/km<sup>2</sup> +11 %, 3/km<sup>2</sup> +20 %, 10/km<sup>2</sup> +32 %, 20/km<sup>2</sup> +39 %, 40/km<sup>2</sup> +46 % atd. To samé pro
+        vojenské technologie. Bonus na výrobu vojenských technologií je ještě ovlivněn <a href="valky.htm#zkusenosti_armady">zkušeností armády</a>. To se
+        promítne s polovičním efektem (např. 10 % zkušeností armády udělají +5 % do výroby vojenských technologií).
       </p>
       <br/>
-      <a id="TPr"></a>
+      <p style="font-weight: bold">
+        Vzorec pro výpočet produkce technologií vypadá následovně:
+      </p>
+      <p>
+        [počet laboratoří] × 0,08 × (1 + [bonus za vládu] + [bonus za pokroky] + [bonus za generála Technologa] + [alianční bonus]) × (1 + [bonus za
+        spokojenost]) × (1 + [bonus za hustotu]) × (1 + [bonus za zkušenostii]).
+      </p>
+      <p class="inf">
+        Příklad: 1.000 laboratoří, Utopie (+25 %), Tajemství mozku (+10 %), Technolog na 4. úrovni (+8 %), bez aliančního bonusu, 120 % spokojenost (+10 %),
+        hustota 10/km<sup>2</sup> (+32 %), zkušenosti armády +10 % (+5 %). Jelikož do produkce hospodářských technologií vstupuje nulový bonus za zkušenost,
+        produkce je tedy 1.000 × 0,08 × (1 + 0,25 + 0,10 + 0,08 + 0) × (1 + 0,10) × (1 + 0,32) × (1 + 0) = 166,1088 technologií za kolo.
+      </p>
+      <br/>
+      <a id="technologie_druhy"></a>
       <h3>7.1.5 Přehled druhů</h3>
       <p>
-        Dohromady je 12 druhů technologií (6 hospodářských a 6 vojenských) a mají různý efekt na různé aspekty Vaší země. Bližší popis je vidět v tabulce. Dané
+        Dohromady je 12 druhů technologií (6 hospodářských a 6 vojenských) a mají různý efekt na různé aspekty vaší země. Bližší popis je vidět v tabulce. Dané
         efekty jsou uvedeny v minimálních až maximálních hodnotách (minimální a maximální hodnoty jsou uvedeny na určité <a href="vlady.htm#vlady">vládě</a> s
-        případnými <a href="#POK">pokroky</a> a zároveň minimum je myšleno jako nejnižší maximální efekt a maximum jako nejvyšší maximální efekt, základem je
-        pak hodnota maximálního efektu bez veškerých bonusů či postihů).
+        případnými <a href="#pokroky">pokroky</a> a zároveň minimum je myšleno jako nejnižší maximální efekt a maximum jako nejvyšší maximální efekt, základem
+        je pak hodnota maximálního efektu bez veškerých bonusů či postihů).
       </p>
     </blockquote>
-    <a id="HoT"></a>
     <table border="2" align="center" class=tbl>
       <col>
       <col align="center">
@@ -83,7 +85,7 @@
       <col align="center">
       <tr>
         <th>
-          <a id="Tho"></a>
+          <a id="hospodarske_technologie"></a>
           Hospodářské<br/>
           technologie
         </th>
@@ -96,84 +98,83 @@
       </tr>
       <tr>
         <td>
-          <a id="Trs"></a>
+          <a id="rychlost_stavby"></a>
           Rychlost stavby
         </td>
-        <td>175%</td>
-        <td>200%</td>
-        <td>245%</td>
+        <td>175 %</td>
+        <td>200 %</td>
+        <td>245 %</td>
         <td>Zvýší počet budov a ruin postavených za jedno kolo.</td>
         <td>Dvojnásobný</td>
       </tr>
       <tr>
         <td>
-          <a id="Tob"></a>
+          <a id="obchod"></a>
           Obchod
         </td>
-        <td>175%</td>
-        <td>200%</td>
-        <td>245%</td>
+        <td>175 %</td>
+        <td>200 %</td>
+        <td>245 %</td>
         <td>Zvýší příjmy peněz na jednoho obyvatele.</td>
         <td>Normální</td>
       </tr>
       <tr>
         <td>
-          <a id="Thu"></a>
+          <a id="hustota_zalidneni"></a>
           Hustota zalidnění
         </td>
-        <td>145%</td>
-        <td>160%</td>
-        <td>187%</td>
+        <td>145 %</td>
+        <td>160 %</td>
+        <td>187 %</td>
         <td>Zvýší počet obyvatel žijících na 1 km<sup>2</sup>.</td>
         <td>Normální</td>
       </tr>
       <tr>
         <td>
-          <a id="Tze"></a>
+          <a id="zemedelstvi"></a>
           Zemědělství
         </td>
-        <td>160%</td>
-        <td>180%</td>
-        <td>245%</td>
-        <td>Zvýší produkci jídla z farem <span class="inf">(<a href="budovy.htm#vesnice">vesnice</a> jen max. 170%).</span></td>
+        <td>160 %</td>
+        <td>180 %</td>
+        <td>245 %</td>
+        <td>Zvýší produkci jídla z farem <span class="inf">(<a href="budovy.htm#vesnice">vesnice</a> jen max. 170 %).</span></td>
         <td>Dvojnásobný</td>
       </tr>
       <tr>
         <td>
-          <a id="Tpt"></a>
+          <a id="automatizace_tovaren"></a>
           Automatizace továren
         </td>
-        <td>145%</td>
-        <td>160%</td>
-        <td>216%</td>
+        <td>145 %</td>
+        <td>160 %</td>
+        <td>216 %</td>
         <td>Zvýší počet dílů vyrobených v továrnách.</td>
         <td>Dvojnásobný</td>
       </tr>
       <tr>
         <td>
-          <a id="Tene"></a>
+          <a id="energetika"></a>
           Energetika
         </td>
-        <td>160%</td>
-        <td>180%</td>
-        <td>347%</td>
+        <td>160 %</td>
+        <td>180 %</td>
+        <td>347 %</td>
         <td>Zvýší produkci energie.</td>
         <td>Normální</td>
       </tr>
     </table>
     <blockquote>
       <p class="inf">
-        Na produkci mechů má technologie Automatizace továren dvojnásobný vliv. Např. Automatizace s efektem 180% zvedne produkci všech jednotek o +80%, ale
-        mechů dokonce o +160% (2*80%).
+        Na produkci mechů má technologie Automatizace továren dvojnásobný vliv. Např. Automatizace s efektem 180 % zvedne produkci všech jednotek o +80 %, ale
+        mechů dokonce o +160 % (2 × 80 %).
       </p>
       <p class="inf">
         * Minimálního efektu lze dosáhnout s vládou <a href="vlady.htm#fundamentalismus">Fundamentalismus</a>, maximálního pak s
-        <a href="vlady.htm#technokracie">Technokracií</a> s příslušnými <a href="#POK">pokroky</a> na zvýšení maxima technologií a v plné alianci využívající
-        <a href="aliance.htm#aliancni_bonusy">alianční bonus</a> za Demokracii.
+        <a href="vlady.htm#technokracie">Technokracií</a> s příslušnými <a href="#pokroky">pokroky</a> na zvýšení maxima technologií a v plné alianci
+        využívající <a href="aliance.htm#aliancni_bonusy">alianční bonus</a> za Demokracii.
       </p>
     </blockquote>
     <br/>
-    <a id="VoT"></a>
     <table border="2" align="center" class=tbl>
       <col>
       <col align="center">
@@ -183,7 +184,7 @@
       <col align=center>
       <tr>
         <th>
-          <a id="Tvo"></a>
+          <a id="vojenske_technologie"></a>
           Vojenské technologie
         </th>
         <th colspan="3">
@@ -199,34 +200,34 @@
       </tr>
       <tr>
         <td>
-          <a id="Tchsi"></a>
+          <a id="sila_zbrani"></a>
           Síla zbraní
         </td>
-        <td>130%</td>
-        <td>140%</td>
-        <td>168%</td>
+        <td>130 %</td>
+        <td>140 %</td>
+        <td>168 %</td>
         <td>Zvýší sílu armády.</td>
-        <td>160% - 193% **</td>
+        <td>160 % - 193 % **</td>
         <td>Normální</td>
       </tr>
       <tr>
         <td>
-          <a id="TCND"></a>
+          <a id="cena_na_domacim_trhu"></a>
           Cena na domácím trhu
         </td>
-        <td>91%</td>
-        <td>88%</td>
-        <td>84%</td>
+        <td>91 %</td>
+        <td>88 %</td>
+        <td>84 %</td>
         <td>
           Zlepší ceny jednotek na domácím trhu<br/>
           (krom vojáků, jídla a energie).
         </td>
-        <td>82% - 77%</td>
+        <td>82 % - 77 %</td>
         <td>Dvojnásobný</td>
       </tr>
       <tr>
         <td>
-          <a id="TVr"></a>
+          <a id="vyvoj_raket"></a>
           Vývoj raket
         </td>
         <td>1,1b***</td>
@@ -238,31 +239,31 @@
       </tr>
       <tr>
         <td>
-          <a id="Tchpr"></a>
+          <a id="protiraketova_obrana"></a>
           Protiraketová obrana
         </td>
-        <td>10%</td>
-        <td>40%</td>
-        <td>95%</td>
+        <td>10 %</td>
+        <td>40 %</td>
+        <td>95 %</td>
         <td>Zvýší šanci na zničení nepřátelské rakety.</td>
-        <td>55% - 100%</td>
+        <td>55 % - 100 %</td>
         <td>Normální</td>
       </tr>
       <tr>
         <td>
-          <a id="Tchs"></a>
+          <a id="sila_rozvedky"></a>
           Síla rozvědky
         </td>
-        <td>137%</td>
-        <td>150%</td>
-        <td>168%</td>
+        <td>137 %</td>
+        <td>150 %</td>
+        <td>168 %</td>
         <td>Zvýší obranu i útok rozvědky.</td>
-        <td>175% - 193%</td>
+        <td>175 % - 193 %</td>
         <td>Normální</td>
       </tr>
       <tr>
         <td>
-          <a id="Tvy"></a>
+          <a id="vyzkum_vesmiru"></a>
           Výzkum vesmíru
         </td>
         <td>-</td>
@@ -286,7 +287,7 @@
       </p>
       <p class="inf">
         * Minimálního efektu lze dosáhnout s vládou <a href="vlady.htm#fundamentalismus">Fundamentalismus</a>, maximálního pak s
-        <a href="vlady.htm#robokracie">Robokracií</a> s příslušnými <a href="#POK">pokroky</a> na zvýšení maxima technologií a vojenských základen a v plné
+        <a href="vlady.htm#robokracie">Robokracií</a> s příslušnými <a href="#pokroky">pokroky</a> na zvýšení maxima technologií a vojenských základen a v plné
         alianci využívající <a href="aliance.htm#aliancni_bonusy">alianční bonus</a> za Robokracii.
       </p>
       <p class="inf">
@@ -298,18 +299,19 @@
         <a href="valky.htm#rakety">rakety</a> za kolo.
       </p>
       <br/>
-      <a id="TEf"></a>
+      <a id="technologie_zvyseni_efektu"></a>
       <h3>7.1.6 Zvýšení efektu</h3>
       <p>
         Existují vlády, které mohou maximální efekt technologií snížit nebo zvýšit. Snížení efektu je pro hráče nežádoucí záležitost, naopak výhodné je mít
         efekt co nejvyšší. Máte-li totiž určitý počet technologií a vysoký horní "strop" efektu, pak bude efekt vyšší, než při stropu nízkém. Pro pochopení vám
         pomůže jednoduchý příklad.
       </p>
-      <p class="inf">Řekněme, že máte dvě naprosto stejné země, jen jedná má maximální efekt zemědělství 172 % a druhá 192 %. V obou zemích máte 5000 technologií
-        zemědělství. V první zemi s nižším "stropem" máte výsledný efekt 134 % a v zemi druhé, kde máte maximum vyšší, máte efekt 138 %.
+      <p class="inf">
+        Řekněme, že máte dvě naprosto stejné země, jen jedná má maximální efekt zemědělství 172 % a druhá 192 %. V obou zemích máte 5000 technologií
+        Zemědělství. V první zemi s nižším "stropem" máte výsledný efekt 134 % a v zemi druhé, kde máte maximum vyšší, máte efekt 138 %.
       </p>
       <p>
-        A jak se vůbec tyto efekty počítají? Pokud např. vláda <a href="vlady.htm#demokracie">demokracie</a> zvýší efekt ze 160 % o 10 %, bude výsledný
+        A jak se vůbec tyto efekty počítají? Pokud např. vláda <a href="vlady.htm#demokracie">Demokracie</a> zvýší efekt ze 160 % o 10 %, bude výsledný
         maximální efekt 166 %, nikoli 170 %!
       </p>
       <p class="inf">
@@ -321,45 +323,53 @@
         Kdybychom si řekli, že jde třeba o technologie automatizace a přidali si pokroky nanotechnologie a androidi, změní se náš případ takto: Nanotechnologie
         navýší max efekt ze 160 % na 180 %, androidi pak bonus z 10 % na 10 % + 10 % = 20 %. Výsledný efekt pak bude 80 % × 1,2 = 96 % → 196 %.
       </p>
-      <!--<p class="inf">Výpočet je rozepsán jako: Starý efekt je 160%.  Jelikož efekt přešel přes hranici 100% (jednoho celku), musíte odečíst tento celek a zbavit se procentuální časti vydělením 100%. (160%-100%) /100% = 0,6. Z čísla 0,6 pak počítáte navýšení efektu o 10%. Číslo 0,6 vynásobíme hodnotou 0,1 (0,1 = 10%/100%). Vyjde Vám hodnota navýšení (0,06), tu přičtete k starému efektu a vynásobíte opět 100% - tím získáte konečný efekt (0,06 + 1,6) * 100 % = 166 %.</p>
-      <p class="inf">Celý vzorec vypadá takto: [((160%-100%) /100%*(10%/100%)+(160%-100%) /100%)]*100%</p>-->
-      <br/>
+      <!--
+      <p class="inf">
+        Výpočet je rozepsán jako: Starý efekt je 160%.  Jelikož efekt přešel přes hranici 100% (jednoho celku), musíte odečíst tento celek a zbavit se
+        procentuální časti vydělením 100%. (160%-100%) /100% = 0,6. Z čísla 0,6 pak počítáte navýšení efektu o 10%. Číslo 0,6 vynásobíme hodnotou 0,1 (0,1 =
+        10%/100%). Vyjde vám hodnota navýšení (0,06), tu přičtete k starému efektu a vynásobíte opět 100% - tím získáte konečný efekt (0,06 + 1,6) * 100 % =
+         166 %.
+       </p>
+      <p class="inf">
+        Celý vzorec vypadá takto: [((160%-100%) /100%*(10%/100%)+(160%-100%) /100%)]*100%
+      </p>
+      -->
       <p>
         Na velikost efektu mají krom vlády dále vliv i pokroky a alianční bonusy (v případě vojenských technologií mají vliv i vojenské základny).
       </p>
       <br/>
       <hr />
     </blockquote>
-    <a id="POK"></a>
+    <a id="pokroky"></a>
     <h2>7.2 Pokroky</h2>
     <blockquote>
-      <a id="POb"></a>
+      <a id="pokroky_obecne"></a>
       <h3>7.2.1 Obecně</h3>
       <p>
-        Pokrok je určité vylepšení, posilující určitou vlastnost Vaší země. Získáváte jej natrvalo a nikdo Vám pokrok již nemůže vzít (krom Vás samotných u
+        Pokrok je určité vylepšení, posilující určitou vlastnost vaší země. Získáváte jej natrvalo a nikdo vám pokrok již nemůže vzít (krom vás samotných u
         určitých pokroků). Vynalezení stojí nejčastěji technologie občas peníze nebo vojáky. Abyste mohli vynaleznout pokrok, musíte často mít už nějaké
         předchozí pokroky vynalezené nebo naopak mít nesmíte (pokroky se navzájem vylučují). Některé pokroky jsou přístupné jen určitým druhům vlád (např.
         pokrok <a href="techno.htm#fasismus">Fašismus</a> pro vlády <a href="vlady.htm#diktatura">Diktatura</a> nebo
         <a href="vlady.htm#republika">Republika</a>) nebo jsou závislé na jiné podmínce.
       </p>
       <br/>
-      <a id="TPc"></a>
+      <a id="pokroky_cena"></a>
       <h3>7.2.2 Cena</h3>
       <p>
         Cena, za kterou pokrok vynaleznete, je násobkem náročnosti pokroků a základní ceny.
       </p>
       <a id="narocnonst_pokroku"></a>
       <p>
-        <strong>Náročnost pokroků (NP)</strong> se spočítá jako <strong>2 + počet pokroků/5 + rozloha/10 000 + prestiž/1 000 000</strong>. Do vzorce se
+        <strong>Náročnost pokroků (NP)</strong> se spočítá jako <strong>2 + [počet pokroků] / 5 + rozloha / 10.000 + prestiž / 1.000.000</strong>. Do vzorce se
         nezapočítávajíi společenské (S), <a href="aliance.htm#aliancni_pokroky">alianční</a> (A) a <a href="ufo.htm#ufo_nabidky">mimozemské</a> (M) pokroky,
         pouze technologické (T) a konstrukční (K). Země začíná s náročností těsně přes 2 a nejlepší země mívají na konci věku zhruba 20-25. <strong>U
-        <a href="vlady.htm#technokracie"> Technokracie</a> se do náročnosti pokroků nezapočítává prestiž a technologické pokroky.</strong>
+        <a href="vlady.htm#technokracie">Technokracie</a> se do náročnosti pokroků nezapočítává prestiž a technologické pokroky.</strong>
         <a href="aliance.htm#bezaliancni">Bezalianční země</a> má o něco vyšší náročnost pokroků.
       </p>
       <p class="inf">
-        Příklad: Vaše země má 6000 km<sup>2</sup>, 800 000 prestiže a 6 pokroků z toho jeden společenský. To znamená, že NP = 4,4 = 2 + 1 (za počet pokroků) + 0.6 (za rozlohu)
-        + 0.8 (za prestiž). Základní cena pokroku, který chcete, např. <a href="budovy.htm#mesta">Mezinárodní spolupráce</a> je 4000 technologií Obchodu. Proto
-        musíte zaplatit 4 000 * 4,4 = 17600 technologií Obchodu.
+        Příklad: Vaše země má 6.000 km<sup>2</sup>, 800.000 prestiže a 6 pokroků z toho jeden společenský. To znamená, že NP = 4,4 = 2 + 1 (za počet pokroků) +
+        0.6 (za rozlohu) + 0.8 (za prestiž). Základní cena pokroku, který chcete, např. <a href="budovy.htm#mesta">Mezinárodní spolupráce</a> je 4.000
+        technologií Obchodu. Proto musíte zaplatit 4.000 * 4,4 = 17.600 technologií Obchodu.
       </p>
       <br/>
       <a id="typy_pokroku"></a>
@@ -396,7 +406,7 @@
       </p>
     </blockquote>
     <br/>
-    <table border="2" align="center" class=tbl>
+    <table border="2" align="center" class="tbl">
       <tr>
         <th>Pokrok</th>
         <th>Musíš mít pro vynalezení</th>
@@ -413,20 +423,20 @@
         <td>
           Tajemství mozku<br/>
           Produkce mechů<br/>
-          Prestiž země alespoň 600 000.
+          Prestiž země alespoň 600.000.
         </td>
         <td></td>
         <td align="center">K</td>
-        <td>10 000 technologií Automatizace továren</td>
+        <td>10.000 technologií Automatizace továren</td>
         <td>
           <span class="pos">
-            +10% maximální efekt všech technologií
+            +10 % maximální efekt všech technologií
           </span><br/>
           <span class="pos">
-            Umožní androidy v populaci (pokud jich budete mít přes 50%, můžete žít v <a href="vlady.htm#robokracie">Robokracii</a>).
+            Umožní androidy v populaci (pokud jich budete mít přes 50 %, můžete žít v <a href="vlady.htm#robokracie">Robokracii</a>).
           </span><br/>
           <span class="neg">
-            -5% <a href="vlady.htm#spokojenost">spokojenost</a>
+            -5 % <a href="vlady.htm#spokojenost">spokojenost</a>
           </span>
         </td>
       </tr>
@@ -436,53 +446,53 @@
           <strong>Bezpečnostní senzory</strong>
         </th>
         <td>Androidi<br/>
-          Prestiž země alespoň 600 000.<br/>
+          Prestiž země alespoň 600.000.<br/>
           Vládu Technokracie, Komunismus, Robokracie.
         </td>
         <td></td>
         <td align="center">S</td>
-        <td>10 000 technologií Síla rozvědky</td>
+        <td>10.000 technologií Síla rozvědky</td>
         <td>
           <span class="pos">
-            +50% obrana proti agentům a partyzánským útokům
+            +50 % obrana proti agentům a partyzánským útokům
           </span><br/>
           <span class="pos">
-            Postihy u <a href="vlady.htm#spokojenost">spokojenosti</a> pod 100% se promítnou s polovičním efektem (např. pokud máte psanou základní spokojenost
-            90 %, bude se vám držet spokojenost na 95 % → 100 - 90 = 10, 10 / 2 = 5, 90 + 5 = 95 %.
+            Postihy u <a href="vlady.htm#spokojenost">spokojenosti</a> pod 100 % se promítnou s polovičním efektem (např. pokud máte psanou základní
+            spokojenost 90 %, bude se vám držet spokojenost na 95 % → 100 - 90 = 10, 10 / 2 = 5, 90 + 5 = 95 %.
           </span>
       </td>
       </tr>
       <tr>
         <th>
-          <a id="TCenz"></a>
+          <a id="cenzura"></a>
           <strong>Cenzura</strong>
         </th>
         <td>AntiOSN</td>
         <td></td>
         <td align="center">S</td>
-        <td>4 000 technologií Síla rozvědky</td>
+        <td>4.000 technologií Síla rozvědky</td>
         <td>
           <span class="pos">
-            +50% obrana proti infiltracím
+            +50 % obrana proti infiltracím
           </span><br/>
           <span class="pos">
-            Skryje <a href="statistiky.htm#hodnosti">hodnost</a> a <a href="statistiky.htm#karticky">kartičky</a> s vlastnostmi země před ostatními (zobrazuje jen to co
-            chcete).
+            Skryje <a href="statistiky.htm#hodnosti">hodnost</a> a <a href="statistiky.htm#karticky">kartičky</a> s vlastnostmi země před ostatními (zobrazuje
+            jen to co chcete).
           </span><br/>
           <span class="neg">
-            -20% produkce <a href="zbozi.htm#penize">peněz</a>
+            -20 % produkce <a href="zbozi.htm#penize">peněz</a>
           </span>
         </td>
       </tr>
       <tr>
         <th>
-          <a id="TPaOSN"></a>
+          <a id="antiosn"></a>
           <strong>Členství v AntiOSN</strong>
         </th>
         <td></td>
         <td>Členství v OSN</td>
         <td align="center">S</td>
-        <td>200 000 $</td>
+        <td>200.000 $</td>
         <td>
           <span class="pos">
             Umožní rozvědce používat loupeživou operaci <a href="valky.htm#prodat_drogy">Prodat drogy</a> (jen Fundamentalismus a Diktatura).
@@ -495,41 +505,40 @@
       </tr>
       <tr>
         <th>
-          <a id="TPOSN"></a>
+          <a id="osn"></a>
           <strong>Členství v OSN</strong>
         </th>
         <td></td>
         <td>Členství v AntiOSN</td>
         <td align="center">S</td>
-        <td>200 000 $</td>
+        <td>200.000 $</td>
         <td>
           <span class="pos">
-            <a href="podpora.htm#humanitarni_pomoc">Humanitární</a> pomoc poslaná v rámci OSN zlepší
-            <a href="vlady.htm#spokojenost">spokojenost</a> o 15 %.
+            <a href="podpora.htm#humanitarni_pomoc">Humanitární</a> pomoc poslaná v rámci OSN zlepší <a href="vlady.htm#spokojenost">spokojenost</a> o 15 %.
           </span>
         </td>
       </tr>
       <tr>
         <th>
-          <a id="TPd"></a>
+          <a id="druzice"></a>
           <strong>Družice</strong>
         </th>
         <td>
           Nanotechnologie<br/>
-          Prestiž země alespoň 600 000.
+          Prestiž země alespoň 600.000.
         </td>
         <td></td>
         <td align="center">K</td>
-        <td>10 000 technologií Výzkum vesmíru</td>
+        <td>10.000 technologií Výzkum vesmíru</td>
         <td>
           <span class="pos">
-            +5% síla armády
+            +5 % síla armády
           </span><br/>
           <span class="pos">
-            +50% síla agentů při <a href="valky.htm#spionazni_operace">infiltraci</a>
+            +50 % síla agentů při <a href="valky.htm#spionazni_operace">infiltraci</a>
           </span><br/>
           <span class="pos">
-            95% maximum <a href="techno.htm#Tchpr">Protiraketové obrany</a>
+            95 % maximum <a href="techno.htm#protiraketova_obrana">Protiraketové obrany</a>
           </span>
         </td>
       </tr>
@@ -544,16 +553,16 @@
         </td>
         <td></td>
         <td align="center">S</td>
-        <td>2 000 tanků</td>
+        <td>2.000 tanků</td>
         <td>
           <span class="pos">
-            +10% síla útoku
+            +10 % síla útoku
           </span><br/>
           <span class="pos">
-            +20% válečná kořist (území i zboží)
+            +20 % válečná kořist (území i zboží)
           </span><br/>
           <span class="neg">
-            Každé kolo je zničeno 0,1 % <a href="#Trs">hospodářských technologií</a>.
+            Každé kolo je zničeno 0,1 % <a href="#hospodarske_technologie">hospodářských technologií</a>.
           </span><br/>
           <span class="neg">
             Jeho efekt je uplatňován pouze při útocích ve <a href="aliance.htm#valka">válce</a>, na <a href="aliance.htm#prebehlik">přeběhlíka</a>, mezi
@@ -563,23 +572,23 @@
       </tr>
       <tr>
         <th>
-          <a id="TPFůz"></a>
+          <a id="fuzni_elektrarny"></a>
           <strong>Fúzní elektrárny</strong>
         </th>
         <td>
           Měsíční základna<br/>
           Nukleární zbraně<br/>
-          Prestiž země alespoň 1 200 000.
+          Prestiž země alespoň 1.200.000.
         </td>
         <td></td>
         <td align="center">K</td>
         <td>
-          400 000 technologií Energetika<br/>
+          400.000 technologií Energetika<br/>
           Náročnost pokroků nemá vliv.
         </td>
         <td>
           <span class="pos">
-            270% maximum <a href="techno.htm#Tene">Energetiky</a>
+            270 % maximum <a href="techno.htm#energetika">Energetiky</a>
           </span><br/>
           <span class="pos">
             Nehrozí <a href="ufo.htm#jaderna_havarie">jaderná katastrofa</a>.
@@ -588,16 +597,16 @@
       </tr>
       <tr>
         <th>
-          <a id="TPg"></a>
+          <a id="geneticky_modifikovane_rostliny"></a>
           <strong>Geneticky modifikované rostliny</strong>
         </th>
         <td></td>
         <td></td>
         <td align="center">T</td>
-        <td>4000 technologií Zemědělství</td>
+        <td>4.000 technologií Zemědělství</td>
         <td>
           <span class="pos">
-            200% maximum <a href="techno.htm#Tze">Zemědělství</a>
+            200 % maximum <a href="techno.htm#zemedelstvi">Zemědělství</a>
           </span><br/>
           <span class="neg">
             Hrozí nebezpečí <a href="ufo.htm#geneticka_katastrofa">genetické katastrofy</a>.
@@ -606,16 +615,16 @@
       </tr>
       <tr>
         <th>
-          <a id="TPHra"></a>
+          <a id="hranicni_pevnosti"></a>
           <strong>Hraniční pevnosti </strong>
         </th>
         <td>
           Nanotechnologie<br/>
-          Prestiž země alespoň 1 200 000.
+          Prestiž země alespoň 1.200.000.
         </td>
         <td></td>
         <td align="center">K</td>
-        <td>20 000 technologií Rychlost stavby</td>
+        <td>20.000 technologií Rychlost stavby</td>
         <td>
           <span class="pos">
             +10 % obrana armády
@@ -624,7 +633,7 @@
             Při napadení jsou zisky území a zboží sníženy o 20 %.
           </span><br/>
           <span class="pos">
-            Pokrok lze zrušit (cena za zrušení = [rozloha země]*1000$).
+            Pokrok lze zrušit (cena za zrušení = [rozloha země] × 1000$).
           </span><br/>
           <span class="neg">
             Spotřebuje 2$/km<sup>2</sup> za kolo
@@ -633,16 +642,16 @@
       </tr>
       <tr>
         <th>
-          <a id="TPJad"></a>
+          <a id="jaderne_elektrarny"></a>
           <strong>Jaderné elektrárny</strong>
         </th>
         <td></td>
         <td></td>
         <td align="center">K</td>
-        <td>2000 technologií Energetika</td>
+        <td>2.000 technologií Energetika</td>
         <td>
           <span class="pos">
-            200% maximum <a href="techno.htm#Tene">Energetiky</a>
+            200 % maximum <a href="techno.htm#energetika">Energetiky</a>
           </span><br/>
           <span class="neg">
             Hrozí nebezpečí <a href="ufo.htm#jaderna_havarie">jaderné katastrofy</a>.
@@ -651,18 +660,18 @@
       </tr>
       <tr>
         <th>
-          <a id="TPKc"></a>
+          <a id="kulturni_centrum"></a>
           <strong>Kulturní centrum</strong>
         </th>
         <td>
-          Alespoň <strong>10 000 bodů</strong> na Utopii <strong>za spokojenost a humanitární pomoc</strong>.
+          Alespoň <strong>10.000 bodů</strong> na Utopii <strong>za spokojenost a humanitární pomoc</strong>.
         </td>
         <td>Vojenský stát</td>
         <td align="center">S</td>
-        <td>2 000 000 $</td>
+        <td>2.000.000 $</td>
         <td>
           <span class="pos">
-            +25% efekt jednoho bodu hospodářských technologií
+            +25 % efekt jednoho bodu hospodářských technologií
           </span><br/>
           <span class="pos">
             +10 % <a href="vlady.htm#spokojenost">spokojenost</a>
@@ -677,13 +686,13 @@
       </tr>
       <tr>
         <th>
-          <a id="TPl"></a>
+          <a id="lidsky_genom"></a>
           <strong>Lidský genom</strong>
         </th>
         <td>Geneticky modifikované rostliny</td>
         <td></td>
         <td align="center">T</td>
-        <td>5 000 technologií Hustota zalidnění</td>
+        <td>5.000 technologií Hustota zalidnění</td>
         <td>
           <span class="pos">
             +10 % <a href="vlady.htm#spokojenost">spokojenost</a>
@@ -692,19 +701,19 @@
       </tr>
       <tr>
         <th>
-          <a id="TPmaf"></a>
+          <a id="mafie"></a>
           <strong>Mafie</strong>
         </th>
         <td>AntiOSN</td>
         <td>Teroristická organizace</td>
         <td align="center">S</td>
-        <td>1 000 000 $</td>
+        <td>1.000.000 $</td>
         <td>
           <span class=pos>
-            +100% síla útoku v <a href="valky.htm#spionazni_operace">špionážních operacích</a>
+            +100 % síla útoku v <a href="valky.htm#spionazni_operace">špionážních operacích</a>
           </span><br/>
           <span class=pos>
-            +50% síla útoku v <a href="valky.htm#loupezive_operace">loupeživých operacích</a>
+            +50 % síla útoku v <a href="valky.htm#loupezive_operace">loupeživých operacích</a>
           </span><br/>
           <span class=pos>
             +5 akcí rozvědky navíc
@@ -716,20 +725,20 @@
       </tr>
       <tr>
         <th>
-          <a id="TMZ"></a>
+          <a id="mesicni_zakladna"></a>
           <strong>Měsíční základna</strong>
         </th>
         <td>
           Androidi<br/>
           Družice<br/>
-          Prestiž země alespoň 1 200 000.
+          Prestiž země alespoň 1.200.000.
         </td>
         <td></td>
         <td align="center">T</td>
-        <td>20 000 technologií Výzkum vesmíru</td>
+        <td>20.000 technologií Výzkum vesmíru</td>
         <td>
           <span class=pos>
-            +20% produkce technologie <a href="techno.htm#Tvy">Výzkum vesmíru</a>
+            +20 % produkce technologie <a href="techno.htm#vyzkum_vesmiru">Výzkum vesmíru</a>
           </span><br/>
           <span class=pos>
             Větší šance na objevení mimozemské civilizace.
@@ -738,19 +747,19 @@
       </tr>
       <tr>
         <th>
-          <a id="MeS"></a>
+          <a id="mezinarodni_spoluprace"></a>
           <strong>Mezinárodní spolupráce</strong>
         </th>
         <td>OSN</td>
         <td></td>
         <td align="center">S</td>
-        <td>4 000 technologií Obchod</td>
+        <td>4.000 technologií Obchod</td>
         <td>
           <span class=pos>
-            +5% produkce <a href="zbozi.htm#penize">peněz</a>
+            +5 % produkce <a href="zbozi.htm#penize">peněz</a>
           </span><br/>
           <span class=pos>
-            +5% produkce <a href="techno.htm#JZv">technologií</a>
+            +5 % produkce <a href="techno.htm#technologie_vyroba">technologií</a>
           </span><br/>
           <span class=pos>
             Možnost hlasovat o <a href="trhy.htm#embargo">embargu</a>.
@@ -759,34 +768,34 @@
       </tr>
       <tr>
         <th>
-          <a id="TPn"></a>
+          <a id="nanotechnologie"></a>
           <strong>Nanotechnologie</strong>
         </th>
         <td></td>
         <td></td>
         <td align="center">K</td>
-        <td>2000 technologií Automatizace továren</td>
+        <td>2.000 technologií Automatizace továren</td>
         <td>
           <span class="pos">
-            180% maximum <a href="techno.htm#Tpt">Automatizace továren</a>
+            180 % maximum <a href="techno.htm#automatizace_tovaren">Automatizace továren</a>
           </span><br/>
           <span class="pos">
-            -20% ztráty <a href="valky.htm#vojenske_jednotky">jednotek</a>
+            -20 % ztráty <a href="valky.htm#vojenske_jednotky">jednotek</a>
           </span>
         </td>
       </tr>
       <tr>
         <th>
-          <a id="NBS"></a>
+          <a id="mrakodrap"></a>
           <strong>Nejvyšší budova světa</strong>
         </th>
         <td>
           Mezinárodní spolupráce<br/>
-          Prestiž země alespoň 600 000.
+          Prestiž země alespoň 600.000.
         </td>
         <td></td>
         <td align="center">K-</td>
-        <td>4 000 000 $</td>
+        <td>4.000.000 $</td>
         <td>
           <span class="pos">
             Nejvyšší budova světa (základní výška 500m) zvedne zemi <a href="zbozi.htm#penize">příjmy</a> o 30 %.
@@ -794,7 +803,7 @@
           <span class="pos">
             Pokud je překonána, stává se z ní Bývalá nejvyšší budova světa a zvedá příjmy jen o 10 %.
           </span><br/>
-            Každá další budova je o 2 metry vyšší a o 50 000$ dražší.<br/>
+            Každá další budova je o 2 metry vyšší a o 50.000 $ dražší.<br/>
           <span class="pos">
             Při rušení OSN se jako jediný navazujíci pokrok neruší.
           </span><br/>
@@ -806,16 +815,16 @@
       </tr>
       <tr>
         <th>
-          <a id="TPnu"></a>
+          <a id="nuklearni_zbrane"></a>
           <strong>Nukleární zbraně</strong>
         </th>
         <td>
           Jaderné elektrárny<br/>
-          Prestiž země alespoň 600 000.
+          Prestiž země alespoň 600.000.
         </td>
         <td></td>
         <td align="center">K</td>
-        <td>2000 technologií Vývoj raket</td>
+        <td>2.000 technologií Vývoj raket</td>
         <td>
           <span class="pos">
             Umožní produkovat <a href="valky.htm#nuklearni_rakety">nukleární</a> a <a href="valky.htm#emp_rakety">EMP</a> rakety.
@@ -824,13 +833,13 @@
       </tr>
       <tr>
         <th>
-          <a id="TPo"></a>
+          <a id="obchodni_a_ochranne_organizace"></a>
           <strong>Obchodní a ochranné organizace </strong>
         </th>
         <td>Vládu Anarchie.</td>
         <td></td>
         <td align="center">S</td>
-        <td>2000 technologií Obchod</td>
+        <td>2.000 technologií Obchod</td>
         <td>
           <span class="pos">
             +5 % <a href="vlady.htm#spokojenost">spokojenost</a>
@@ -842,13 +851,13 @@
       </tr>
       <tr>
         <th>
-          <a id="TPv"></a>
+          <a id="opevnene_vojenske_zakladny"></a>
           <strong>Opevněné vojenské základny</strong>
         </th>
         <td></td>
         <td></td>
         <td align="center">K</td>
-        <td>4 000 technologií Rychlost stavby</td>
+        <td>4.000 technologií Rychlost stavby</td>
         <td>
           <span class="pos">
             -50 % vojenských základen zničeno při <a href="valky.htm#nocni_tazeni">nočním tažení</a>, <a href="valky.htm#takticky_nalet">taktickém náletu</a> a
@@ -864,7 +873,7 @@
         <td>Lidský genom</td>
         <td>Vojenský stát</td>
         <td align="center">S</td>
-        <td>8 000 technologií Obchod</td>
+        <td>8.000 technologií Obchod</td>
         <td>
           <span class=pos>
             +15 % obrana
@@ -876,7 +885,7 @@
             -20 % útok
           </span><br/>
           <span class="neg">
-            -25% zisky z dobyvačného útoku
+            -25 % zisky z dobyvačného útoku
           </span><br/>
           <span class="neg">
             Země může produkovat jen konvenční rakety.
@@ -885,13 +894,13 @@
       </tr>
       <tr>
         <th>
-          <a id="PrM"></a>
+          <a id="produkce_mechu"></a>
           <strong>Produkce mechů</strong>
         </th>
         <td>Nanotechnologie</td>
         <td></td>
         <td align="center">T</td>
-        <td>10 000 technologií Síla zbraní</td>
+        <td>10.000 technologií Síla zbraní</td>
         <td>
           <span class="pos">
             Umožní produkovat <a href="valky.htm#mechove">mechy</a> v továrnách a kupovat je na <a href="trhy.htm#domaci_trh">domácím trhu</a>
@@ -900,16 +909,16 @@
       </tr>
       <tr>
         <th>
-          <a id="TPps"></a>
+          <a id="pohranicni_straz"></a>
           <strong>Pohraniční stráž</strong>
         </th>
         <td>
           Vládu Feudalismus.<br/>
-          Prestiž země alespoň 600 000.
+          Prestiž země alespoň 600.000.
         </td>
         <td></td>
         <td align="center">S</td>
-        <td>5 000 technologií Síla zbraní</td>
+        <td>5.000 technologií Síla zbraní</td>
         <td>
           <span class=pos>
             +10 % obrana proti taktickým útokům
@@ -918,13 +927,13 @@
       </tr>
       <tr>
         <th>
-          <a id="TPdc"></a>
+          <a id="protidrogova_centrala"></a>
           <strong>Protidrogová centrála</strong>
         </th>
         <td>OSN</td>
         <td>AntiOSN</td>
         <td align="center">S</td>
-        <td>2 000 technologií Síla rozvědky</td>
+        <td>2.000 technologií Síla rozvědky</td>
         <td>
           <span class="pos">
             Zvyšuje obranu rozvědky proti akci <a href="valky.htm#prodat_drogy">Prodat drogy</a> o 30% a zvyšuje ztráty útočníka v případě neúspěchu operace
@@ -934,25 +943,26 @@
       </tr>
       <tr>
         <th>
-          <a id="TPrO"></a>
+          <a id="protiletecka_obrana"></a>
           <strong>Protiletecká obrana</strong>
         </th>
         <td></td>
         <td></td>
         <td align="center">K</td>
-        <td>5 000 technologií Síla zbraní</td>
+        <td>5.000 technologií Síla zbraní</td>
         <td>
           <span class="pos">
-            Dvojnásobná obrana bunkrů proti <a href="valky.htm#bombardovat_mesta">bombardování</a> a <a href="valky.htm#takticky_nalet">taktickém náletu</a>.
+            Dvojnásobná obrana bunkrů proti <a href="valky.htm#bombardovat_mesta">Bombardování měst</a> a <a href="valky.htm#takticky_nalet">Taktickému
+            náletu</a>.
           </span><br/>
           <span class="pos">
             +20 % ztráty nepřátelských stíhaček ve všech útocích
           </span><br/>
           <span class="pos">
-            -20% budov zničeno při bombardování a taktickém náletu
+            -20 % budov zničeno při bombardování a taktickém náletu
           </span><br/>
           <span class="pos">
-            Pokrok lze zrušit (cena za zrušení = [rozloha země]*1000$).
+            Pokrok lze zrušit (cena za zrušení = [rozloha země] × 1000$).
           </span><br/>
           <span class="neg">
             Spotřebuje 2$/km<sup>2</sup> za kolo.
@@ -971,7 +981,7 @@
         </td>
         <td></td>
         <td align="center">S</td>
-        <td>20 000 vojáků</td>
+        <td>20.000 vojáků</td>
         <td>
           <span class=pos>
             +10 % síla armády
@@ -980,13 +990,13 @@
             Každé kolo vyprodukuje 1 <a href="valky.htm#vojaci">vojáka</a> za každých 40 km<sup>2</sup>.
           </span><br/>
           <span class="neg">
-            Každé kolo je zničeno 0,2 % <a href="techno.htm#Trs">hospodářských technologií</a>.
+            Každé kolo je zničeno 0,2 % <a href="techno.htm#hospodarske_technologie">hospodářských technologií</a>.
           </span>
         </td>
       </tr>
       <tr>
         <th>
-          <a id="TPtm"></a>
+          <a id="tajemstvi_mozku"></a>
           <strong>Tajemství mozku</strong>
         </th>
         <td>
@@ -995,22 +1005,22 @@
         </td>
         <td></td>
         <td align="center">T</td>
-        <td>5 000 000$</td>
+        <td>5.000.000 $</td>
         <td>
           <span class=pos>
-            +10% <a href="techno.htm#JZv">produkce technologií</a>
+            +10 % <a href="techno.htm#technologie_vyroba">produkce technologií</a>
           </span>
         </td>
       </tr>
       <tr>
         <th>
-          <a id="TPte"></a>
+          <a id="teroristicka_organizace"></a>
           <strong>Teroristická organizace</strong>
         </th>
         <td>AntiOSN</td>
         <td>Mafie</td>
         <td align="center">S</td>
-        <td>10 000 vojáků</td>
+        <td>10.000 vojáků</td>
         <td>
           <span class=pos>
             +100 % síla útoku v <a href="valky.htm#sabotazni_operace">teroristických operacích</a>
@@ -1035,18 +1045,18 @@
         <td></td>
         <td align="center">K</td>
         <td>
-          1000 technologií Síla zbraní<br/>
-          Za každou další zemi, která pokrok vynalezne, stoupá cena o 2 technologie až do konečné základní ceny 4000 technologií Síly zbraní.
+          1.000 technologií Síla zbraní<br/>
+          Za každou další zemi, která pokrok vynalezne, stoupá cena o 2 technologie až do konečné základní ceny 4.000 technologií Síly zbraní.
         </td>
         <td>
           <span class=pos>
-            Umožní změnit schopnost <a href="valky.htm#generalove">generála</a> už při jeho 50k zkušenostech (místo 100k).
+            Umožní změnit schopnost <a href="valky.htm#generalove">generála</a> už při jeho 50.000 zkušenostech (místo 100.000).
           </span>
         </td>
       </tr>
       <tr>
         <th>
-          <a id="TPvs"></a>
+          <a id="vojensky_stat"></a>
           <strong>Vojenský stát </strong>
         </th>
         <td></td>
@@ -1055,7 +1065,7 @@
           Pacifismus
         </td>
         <td align="center">S</td>
-        <td> 20 000 vojáků</td>
+        <td>20.000 vojáků</td>
         <td>
           <span class="pos">
             +10 % <a href="valky.htm#sila_armady">síla armády</a>
