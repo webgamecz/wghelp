@@ -93,7 +93,7 @@
             if (zjisti(co) == "") {
                 show(co, "none");
             } else {
-                for (i = 0; i < 18; i++) {
+                for (i = 0; i < 17; i++) {
                     hide("V" + i);
                 }
                 show(co, "");
@@ -104,7 +104,7 @@
             if (zjisti(co) == "") {
                 show(co, "none");
             } else {
-                for (i = 1; i < 22; i++) {
+                for (i = 1; i < 23; i++) {
                     hide("P" + i);
                 }
                 show(co, "");
@@ -122,7 +122,7 @@
         </tr>
         <tr>
           <td align="center" bgcolor="#8899cc">
-            <font style="font-size:12px" ;>Aktualizace 06. 02. 2022</font><br/>
+            <font style="font-size:12px" ;>Aktualizace 08. 02. 2022</font><br/>
             <font class=nadpis><a href="https://github.com/webgamecz/wghelp/archive/refs/heads/master.zip"><em>Stáhnout (cca 2,6 MB)</em></a></font>
           </td>
         </tr>
@@ -441,11 +441,18 @@
         </tr>
         <tr>
           <td>
-            <a href="vyrazy.htm" target="stranka" class="nadpis" onClick="cls('V14')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><strong>15 Výrazy na WG</strong></font></a><br/>
+            <a href="komunikace.htm" target="stranka" class="nadpis" onClick="cls('V14')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
+                    class="nadpis"><strong>15 Komunikace</strong></font></a><br/>
             <div id="V14" style="display: none;font-size:8pt">
-              <a href="vyrazy.htm#herni_vyrazy" target="stranka">&nbsp;&nbsp;&nbsp;15.1 Herní výrazy</a><br/>
-              <a href="vyrazy.htm#ostatni_vyrazy" target="stranka">&nbsp;&nbsp;&nbsp;15.2 Ostatní</a><br/>
+              <a href="komunikace.htm#posta" target="stranka" onclick="cls2('P22')">&nbsp;&nbsp;&nbsp;15.1 Pošta</a><br/>
+              <div id="P22" style="display: none;font-size:8pt">
+                <a href="komunikace.htm#ignore_seznam" target="stranka">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15.1.1 Ignore seznam</a><br/>
+              </div>
+              <a href="komunikace.htm#diskuzni_fora" target="stranka">&nbsp;&nbsp;&nbsp;15.2 Diskuzní fóra</a><br/>
+              <a href="komunikace.htm#formatovani_zprav" target="stranka">&nbsp;&nbsp;&nbsp;15.3 Formátování zpráv</a><br/>
+              <a href="komunikace.htm#herni_vyrazy" target="stranka">&nbsp;&nbsp;&nbsp;15.4 Herní výrazy</a><br/>
+              <a href="komunikace.htm#ostatni_vyrazy" target="stranka">&nbsp;&nbsp;&nbsp;15.5 Ostatní</a><br/>
+              <a href="komunikace.htm#ostatni_vyrazy" target="stranka">&nbsp;&nbsp;&nbsp;15.6 WG na Discordu</a><br/>
             </div>
           </td>
         </tr>
@@ -468,17 +475,9 @@
         </tr>
         <tr>
           <td>
-            <a href="discord.htm" target="stranka" class="nadpis" onClick="cls('16')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
-                    class="nadpis"><strong>17 WG na Discordu</strong></font></a><br/>
-            <div id="V16" style="display: none;font-size:8pt">
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="search.htm" target="stranka" class="nadpis" onClick="cls('V17')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
+            <a href="search.htm" target="stranka" class="nadpis" onClick="cls('V16')" onMouseOver="MouseOverOn(this)" onMouseOut="MouseOverOff(this)"><font
                     class="nadpis"><strong>18 Hledání</strong></font></a><br/>
-            <div id="V17" style="display: none;font-size:8pt">
+            <div id="V16" style="display: none;font-size:8pt">
             </div>
           </td>
         </tr>
