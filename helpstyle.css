@@ -184,16 +184,3 @@ a:hover {
 .menu {
     font-style: italic;
 }
-
-.exception {
-    font-family: "Times New Roman", Times, serif;
-    font-size: x-small;
-    font-style: italic;
-    color: #999999;
-    background-color: #DFDEED;
-    white-space: normal;
-    clear: left;
-    float: left;
-    border: thin dotted;
-    left: 1cm;
-}
