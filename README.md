@@ -11,7 +11,7 @@
 ## Užitečné příklady formátování
 
 ### Menu
-<em>{Válka} → {Útoky}</em>
+`<span class="menu">{Válka} → {Útoky}</span>`
 
 ### Vzoreček
 1000 × 0,08 × (1 + 0,25 + 0,10 + 0,08 + 0) × (1 + 0,10) × (1 + 0,32) × (1 + 0) = 166,1088 technologií za kolo.
