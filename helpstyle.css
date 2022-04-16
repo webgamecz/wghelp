@@ -181,15 +181,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.exception {
-    font-family: "Times New Roman", Times, serif;
-    font-size: x-small;
+.menu {
     font-style: italic;
-    color: #999999;
-    background-color: #DFDEED;
-    white-space: normal;
-    clear: left;
-    float: left;
-    border: thin dotted;
-    left: 1cm;
 }
