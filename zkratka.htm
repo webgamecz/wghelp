@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html lang="cs">
+<html lang="cs" xmlns="http://www.w3.org/1999/html">
   <head>
     <title>Manuál k strategii Webgame</title>
     <meta name="keywords" content="">
@@ -10,39 +10,35 @@
     <h1>1 Ve zkratce</h1>
     <blockquote>
       <p>
-        <strong>Jedna hra (věk) trvá necelých 6 týdnů (přesně 39 dní a 9 hodin)</strong>. Proto vám stačí hrát zhruba každé dva dny. Účelem hry je, kromě
-        pobavení, být co nejvýše v žebříčku zemí.
-      </p>
-      <p>
         Tento Help slouží jako dokumentace hry. Co v něm není uvedeno je považováno za neveřejné info. Pokud se vám zdá nějaká informace v Helpu uvedena
-        chybně, napište o tom na fórum Dotazy nebo kontaktujte vedoucího informačního týmu.
-      </p>
-      <p class="inf">
-        Systém menu je naprogramován tak, že v levé liště máte hlavní nabídku, která obsahuje podnabídky (podmenu).
+        chybně, napište o tom na fórum Dotazy nebo kontaktujte vedoucího informačního týmu či viceadminy.
       </p>
       <br/>
       <hr/>
     </blockquote>
-    <a id="zapisnik"> </a>
-    <h2>1.1 Zápisník</h2>
+    <a id="popisy_hry"></a>
+    <h2>1.1 Popis hry</h2>
     <blockquote>
       <p>
-        Jedná se o váš soukromý zápisník, do kterého si můžete zapisovat různé věci. Jednoduše si založíte listy, do kterých vpisujete své poznámky od seznamu
-        vašich přátel/nepřátel, přes vtipy, nápady, agresi na vás či alianci, vhodné cíle na útoky apod. Blok je pro hráče trvalý a nikdy se nemaže.
+        Webgame je tahová budovatelská hra, ve které hráči ovládají až 4 země. Ve svých zemích hráči staví budovy, vynalézají pokroky a válčí s jinými zeměmi
+        nebo s nimi uzavírají spojenectví. Své země mohou také shromažďovat v aliancích.
       </p>
       <br/>
-      <hr/>
-    </blockquote>
-    <a id="pracovna"></a>
-    <h2>1.2 Pracovna</h2>
-    <blockquote>
-      <p>
-        První stránka hry, kterou po přihlášení vidíte. Jsou zde základní informace o vaší zemi a aktuální informace o světě Webgame.
-      </p>
       <a id="kola"></a>
+      <h3>1.1.1 Kola</h3>
       <p>
-        <span class="tema">Kola</span> - 1 kolo představuje časové období ve vaší zemi. Nové kolo přibude vždy každých 15 minut. Za každé kolo země produkuje
-        zboží a navíc můžete dát příkaz k vykonání nějaké akce:
+        Vaše akce ve hře jsou vykonávány pomocí tahů, které spotřebovávají <strong>kola</strong>. Kolo je tedy základní odehrávací jednotkou. <strong>Do země
+        přibývá 1 kolo každých 15 minut.</strong>
+      </p>
+      <p>
+        Celkem můžete získat za den 96 kol. Maximálně můžete mít uloženo 140 kol ke hraní. Pokud již máte tento počet naplněný, dalších 200 kol se ukládá do
+        dočasně <strong>nepřístupných</strong> kol (aby se zabránilo odehrávání všech 340 kol najednou). Po spotřebování kol ke hraní se do nich postupně
+        převádějí i nepřístupná kola. S každým novým kolem, které obdržíte, se převedou 2 nepřístupná kola do hratelných (tím si můžete našetřit až 340 kol,
+        ale odehrát najednou jen 140). Pokud máte 140+200 kol a má vám přijít kolo další, tak tzv. propadne (nemá se kam uložit, oba "zásobníky" kol jsou
+        plné).
+      </p>
+      <p>
+        Každým odehraným kolem vyprodukuje země suroviny. Kola lze využít na následující akce:
       </p>
       <ul>
         <li>
@@ -70,169 +66,339 @@
           část ekonomiky a zlepšit tím produkci.
         </li>
       </ul>
-      <p class="inf">
-        Celkem můžete získat za den 96 kol. Maximálně můžete mít uloženo 140 kol ke hraní. Pokud máte už tento počet naplněný, dalších 200 kol se ukládá do
-        dočasně <strong>nepřístupných</strong> kol (aby se zabránilo odehrávání všech 340 kol najednou). Po spotřebování kol ke hraní se do nich postupně
-        převádějí i nepřístupná kola. S každým novým kolem, které obdržíte, se převedou 2 nepřístupná kola do hratelných (tím si můžete našetřit až 340 kol,
-        ale odehrát najednou jen 140). Pokud máte 140+200 kol a má vám přijít kolo další, tak tzv. propadne (nemá se kam uložit, oba "zásobníky" kol jsou
-        plné).
+      <br/>
+      <h3>1.1.2 Věk</h3>
+      <p>
+        Věk vymezuje pevně dané období, ve kterém se hráči snaží dosáhnout svých herních cílů. Na začátku věku jsou nově založené země ve stejném stavu. Vítězí
+        země a aliance, které mají na konci věku nejvyšší prestiž.
+      </p>
+      <p style="font-weight: bold">
+        Věk trvá necelých 6 týdnů (přesně 39 dní a 9 hodin).
       </p>
       <br/>
+      <h3>1.1.3 Mezihra</h3>
       <p>
-        <span class="tema">Parametry hry</span> - Zde najdete základní údaje o právě probíhajícím věku.
+        Jedná se o speciální mód na odlišném herním serveru, ve kterém jsou upraveny některé z parametrů hry.
+      </p>
+      <br/>
+      <hr/>
+    </blockquote>
+    <a id="stranky_hry"></a>
+    <h2>1.2 Stránky hry</h2>
+    <blockquote>
+      <p>
+        Jednotlivé stránky hry jsou přepínány z levého menu. Tyto stránky pak zpravidla obsahují podstránky (horní menu).
       </p>
       <p>
-        <span class="tema">Seznam administrátorů</span> - Zde vidíte seznam lidí, kteří mají chod hry na starost.
+        V následující sekci jsou představeny jednotlivé stránky dostupné ze Standardního menu. Ve hře se kromě Standardního menu nacházejí také Nové menu a
+        Quick menu, jejichž odkazy jsou upraveny pro rychlejší navigaci hrou zkušenějšími hráči.
+      </p>
+      <br/>
+      <a id="help"></a>
+      <h3>1.2.1 Help</h3>
+      <p>
+        Odkaz vedoucí do těchto manuálových stránek.
+      </p>
+      <br/>
+      <a id="zapisnik"></a>
+      <h3>1.2.2 Zápisník</h3>
+      <p>
+        Jedná se o váš soukromý zápisník, do kterého si můžete zapisovat různé věci. Jednoduše si založíte listy, do kterých vpisujete své poznámky od seznamu
+        vašich přátel/nepřátel, přes vtipy, nápady, agresi na vás či alianci, vhodné cíle na útoky apod. Blok je pro hráče trvalý a nikdy se nemaže.
+      </p>
+      <br/>
+      <a id="pracovna"></a>
+      <h3>1.2.3 Pracovna</h3>
+      <p>
+        Úvodní stránka po přihlášení do hry. Naleznete zde informace o vašem účtu, aktuální umístění země v různých aspektech hry, přehled stavu země a odměny
+        za konečné umístění zemí a aliancí.
+      </p>
+      <p class="tema">
+        Parametry hry
       </p>
       <p>
-        <span class="tema">Vývoj WG</span> - Zde najdete plánované novinky ve vývoji, ale i starší již naprogramované změny.
+        Základní údaje a nastavené parametry právě probíhajícího věku.
+      </p>
+      <p class="tema">
+        Seznam administrátorů
       </p>
       <p>
-        <span class="tema">WG Aukce</span> - Jedná se o systém, který hráčům umožňuje vydražit si čísla zemí pro následující věk - a to od 31 do 99999. Hráči,
-        kteří čísla vydraží, je budou moci následující věk použít při zakládání země. Po ukončení Aukce budou všichni výherci infomováný poštou - od té doby
-        budou moci se svým číslem dále nakládat: darovat jinému hráči nebo prodat jinému hráči. Dražba čísel probíhá za kredity z WG Plus, které jsou v
-        okamžiku příhozu odečteny z účtu a vráceny v případě přehození jiným hráčem. <strong> Vyvolávací cena všech dražených čísel je 10 kreditů.</strong>
+        Seznam lidí, kteří mají chod hry na starost.
+      </p>
+      <p class="tema">
+        Vývoj WG
+      </p>
+      <p>
+        Přehled postupných úprav hry a plánované novinky ve vývoji.
+      </p>
+      <p class="tema">
+        WG Aukce
+      </p>
+      <p>
+        Jedná se o systém, který hráčům umožňuje vydražit si čísla zemí pro následující věk (od 31 do 99999). Hráči, kteří čísla vydraží, je budou moci
+        následující věk použít při zakládání země. Po ukončení Aukce budou všichni výherci infomováný poštou - od té doby budou moci se svým číslem dále
+        nakládat: darovat jinému hráči nebo prodat jinému hráči. Dražba čísel probíhá za kredity z WG Plus, které jsou v okamžiku příhozu odečteny z účtu a
+        vráceny v případě přehození jiným hráčem. <strong>Vyvolávací cena všech dražených čísel je 10 kreditů.</strong>
         <a href="https://www.webgame.cz/wg/index.php?p=wgaukce&s=pravidla" target="_blank">Zde</a> naleznete podrobná pravidla a systém fungování aukce.
       </p>
-      <p>
-        <span class="tema">WG Plus</span> - Lze snadno a rychle zjistit svůj stav kreditů, aktivovaných výhod. Umožňuje zakoupit jakékoliv výhody bez ohledu na
-        typ účtu. Proto i normální hráč si může aktivovat například 4 země apod. nebo GOLD hráč jakoukoliv výhodu z účtu PLATINUM.
-        <a href="https://www.webgame.cz/wg/index.php?p=pracovna&s=wgplus" target="_blank">Zde</a> je popsáno, jakým způsobem lze získat kredity.
+      <p class="tema">
+        WG Plus
       </p>
       <p>
-        <span class="tema">Nastavení účtu</span> - V tomto podmenu provádíte důležité změny jako změnu hesla, rušení vaší země, nastavení profilu hráče apod.
+        Lze snadno a rychle zjistit svůj stav kreditů, aktivovaných výhod. Umožňuje zakoupit jakékoliv výhody bez ohledu na typ účtu. Proto i normální hráč si
+        může aktivovat například 4 země apod. nebo <a href="wgplus.htm#gold_hrac">Gold</a> hráč jakoukoliv výhodu z účtu
+        <a href="wgplus.htm#platinum_hrac">Platinum</a>. <a href="https://www.webgame.cz/wg/index.php?p=pracovna&s=wgplus" target="_blank">Zde</a> je popsáno,
+        jakým způsobem lze získat kredity.
       </p>
-      <br/>
-      <hr/>
-    </blockquote>
-    <a id="vlada"></a>
-    <h2>1.3 Vláda</h2>
-    <blockquote>
-      <p>
-        <span class="tema">Revoluce</span> - Revoluce umožní změnit <a href="vlady.htm#vlady">státní zřízení</a>. Každé státní zřízení má své
-        výhody a nevýhody, které ovlivňují produkci, vojenskou sílu a další parametry vaší země. Každý hráč začíná v Anarchii při prvním přihlášení do hry v
-        novém věku.
+      <a id="nastaveni_uctu"></a>
+      <p class="tema">
+        Nastavení účtu
       </p>
       <p>
-        <span class="tema">Utopie a Robokracie</span> - Zde vidíte, jak se přibližujete ke speciálním vládám - <a href="vlady.htm#utopie">Utopii</a> a
-        <a href="vlady.htm#robokracie">Robokracii</a> (na ně je potřeba splnit určité podmínky).
+        V tomto podmenu provádíte důležité změny jako změnu hesla, rušení vaší země, nastavení profilu hráče apod.
       </p>
       <p>
-        <span class="tema">Rozvojová země</span> - Pokud je vaše země slabá, může se prohlásit za <a href="podpora.htm#rozvojova_zeme">rozvojovou</a>. Získá
-        tím výhody, které by jí mohly pomoci dostat se nahoru. Zároveň si zde <a href="wgplus.htm">Gold / Platinum hráči</a> mohou půjčovat peníze na
-        prosperitu země.
+        <span class="tema">Informace</span> - Všechna vydaná oznámení dříve viditelná přímo z hlavní stránky pracovny.
+      </p>
+      <p class="tema">
+        WG noviny a aktuality
+      </p>
+      <p>
+        Doprovodné články z herního prostředí. Lze je filtrovat podle věku vydání.
       </p>
       <br/>
-      <hr/>
-    </blockquote>
-    <a id="archiv"></a>
-    <h2>1.4 Archiv</h2>
-    <blockquote>
+      <a id="vlada"></a>
+      <h3>1.2.4 Vláda</h3>
+      <p class="tema">
+        Revoluce
+      </p>
       <p>
-        Zde se zobrazuje, co se ve vaší zemi událo. Jsou zde oznámení o všech vojenských útocích na vás (to symbolizuje červený vykřičník v horní liště), o
-        pomoci spojencům (označeno zeleným vykřičníkem) a o operacích rozvědky na vás provedených (označeno žlutým vykřičníkem).
+        Revoluce umožní změnit <a href="vlady.htm#vlady">státní zřízení</a>. Každé státní zřízení má své výhody a nevýhody, které ovlivňují produkci, vojenskou
+        sílu a další parametry vaší země. Každý hráč začíná v <a href="vlady.htm#anarchie">Anarchii</a> při prvním přihlášení do hry v novém věku. Nachází se
+        zde i placené výhody <a href="wgplus.htm#nacteni_protekce">načtení protekce</a> a <a href="wgplus.htm#restart_protekce">restart protekce</a>.
+      </p>
+      <p class="tema">
+        Utopie a Robokracie
+      </p>
+      <p>
+        Stav přibližování ke speciálním vládám - <a href="vlady.htm#utopie">Utopii</a> a <a href="vlady.htm#robokracie">Robokracii</a> (na ně je potřeba splnit
+        určité podmínky).
+      </p>
+      <p class="tema">
+        Rozvojová země
+      </p>
+      <p>
+        Pokud je vaše země slabá, může se prohlásit za <a href="podpora.htm#rozvojova_zeme">rozvojovou</a>. Získá tím výhody, které by jí mohly pomoci dostat
+        se nahoru. Zároveň si zde <a href="wgplus.htm">Gold / Platinum hráči</a> mohou půjčovat peníze na prosperitu země.
+      </p>
+      <p class="tema">
+        WG Tabs
+      </p>
+      <p>
+        <a href="wgplus.htm#inteligentni_wg_tabulky">Placená výhoda</a>. Jedná se o sérii pomocných výpočetních tabulek.
       </p>
       <br/>
-      <hr/>
-    </blockquote>
-    <a id="detaily"></a>
-    <h2>1.5 Detaily</h2>
-    <blockquote>
+      <a id="archiv"></a>
+      <h3>1.2.5 Archiv</h3>
       <p>
-        Zde vidíte podrobný přehled všeho ve vaší zemi - <a href="budovy.htm#typy">budovy</a>, <a href="techno.htm#">technologie</a>,
-        <a href="valky.htm#vojenske_jednotky">vojenské jednotky</a>, <a href="valky.htm#rakety">rakety</a>, produkci a spotřebu, odehraná kola atd. Můžete se
-        také podívat na detaily členů vaší aliance (pokud to oni dovolí) a zjistit tak, jakým způsobem hrají ostatní a jak dobře se jim vede. Stejně tak zde
-        vidíte detaily parťáka. Poslední volbou jsou detaily vaší prestiže.
+        Zde se zobrazuje, co se ve vaší zemi událo. Jsou zde oznámení o všech <a href="valky.htm#vojenske_utoky">vojenských útocích</a> (pokud byl na vás
+        proveden útok, v horní liště se objeví červený vykřičník), o pomoci <a href="aliance.htm#spojenectvi">spojencům</a> (označeno zeleným vykřičníkem v
+        horní liště), o <a href="valky.htm#rozvedka_operace">operacích rozvědky</a> (pokud na vás byla provedena operace rozvědky, v horní liště se objeví
+        žlutý vykřičník). Dále jsou zde zaznamenány nákupy a prodeje na <a href="trhy.htm#svetovy_trh">Světovém</a> a <a href="trhy.htm#domaci_trh">Domácím</a>
+        trhu, příchody/vyhození/zvýšení hodností <a href="valky.htm#generalove">generálů</a>, nabídky <a href="aliance.htm#spojenectvi">spojenectví</a>,
+        vyhlášené <a href="aliance.htm#valka">války</a>, přijaté/odmítnuté <a href="ufo.htm#ufo_nabidky">UFO dary a pokroky</a>, přijaté/odeslané
+        <a href="podpora.htm#humanitarni_pomoc">humanitární</a> a <a href="podpora.htm#hospodarska_pomoc">hospodářské</a> pomoci.
+      </p>
+      <p>
+        Kromě vlastního zde naleznete také <a href="aliance.htm#partaci">parťákův</a> archiv a pokud jste členem
+        <a href="wgplus.htm#silver_aliance">Silver</a>/<a href="wgplus.htm#gold_aliance">Gold</a>/<a href="wgplus.htm#platinum_aliance">Platinum</a> aliance,
+        tak i archiv všech <a href="aliance.htm#aliance">aliančních</a> zemí.
       </p>
       <br/>
-      <hr/>
-    </blockquote>
-    <a id="budovy"></a>
-    <h2>1.6 Budovy</h2>
-    <blockquote>
+      <a id="detaily"></a>
+      <h3>1.2.6 Detaily</h3>
       <p>
-        <a href="budovy.htm"><b>Budovy</b></a> jsou velice důležité - to ony pro vás produkují <a href="zbozi.htm#penize">peníze</a>,
-        <a href="zbozi.htm">zboží</a>, <a href="valky.htm#vojenske_jednotky">vojenské jednotky</a> a umožňují vám rozvíjet se.
+        Podrobný přehled všeho ve vaší zemi, vašich <a href="aliance.htm#aliance">aliančních</a> kolegů, vašeho <a href="aliance.htm#partaci">parťáka</a>.
+      </p>
+      <p class="tema">
+        Detaily
       </p>
       <p>
-        <span class="tema">Stavět a kolonizovat</span> - Abyste měli kde <a href="budovy.htm#staveni">stavět budovy</a>, potřebujete <strong>nezastavěné
-        území</strong>. To se dá získat zpočátku kolonizováním a později <a href="valky.htm#vojenske_utoky">vojenskými útoky</a>. Pro
-        <a href="budovy.htm#ziskavani_uzemi">kolonizování</a> stačí zadat, kolik kol chcete kolonizovat, a poté můžete <a href="budovy.htm#staveni">stavět</a>
-        (stavba a kolonizování stojí kola).
+        Podrobný přehled všeho ve vaší zemi - produkce a spotřeba, <a href="budovy.htm">budovy</a>, <a href="techno.htm#">technologie</a>,
+        <a href="valky.htm#vojenske_jednotky">vojenské jednotky</a>, <a href="valky.htm#sila_armady">síla armády</a>,
+        <a href="valky.htm#generalove">generálové</a>, zásilky na <a href="trhy.htm#svetovy_trh">Světovém trhu</a>, <a href="techno.htm#pokroky">pokroky</a> (i
+        <a href="aliance.htm#aliancni_pokroky">alianční</a>).
+      </p>
+      <p class="tema">
+        Medaile
       </p>
       <p>
-        <span class="tema">Bourat budovy</span> - Někdy se stane, že některé budovy už nepotřebujete. V menu <a href="budovy.htm#bourani">Bourat budovy</a> je
-        můžete zničit. Také  můžete opustit území, pokud se bojíte, že ho například neubráníte. S menším územím totiž máte vyšší vojenskou sílu, sílu rozvědky
-        a jste celkově méně lákavý cíl.
+        Obdržené ekonomické a vojenské <a href="statistiky.htm#medaile">medaile</a>. Ty se váží k vašemu hráči a jejich hodnoty jsou překonávány napříč věky.
+      </p>
+      <p class="tema">
+        Členové aliance
+      </p>
+      <p>
+        Možnost podívat se na detaily zemí členů <a href="aliance.htm#aliance">aliance</a> (pokud vám to dovolí, neboť detaily lze v rámci aliance skrýt v
+        <a href="#nastaveni_uctu">Nastavení účtu</a>).
+      </p>
+      <p class="tema">
+        Detaily parťáka
+      </p>
+      <p>
+        Máte-li <a href="aliance.htm#partaci">Parťáka</a>, vidíte zde jeho detaily.
+      </p>
+      <p class="tema">
+        Detaily aliance
+      </p>
+      <p>
+        Pouze <a href="wgplus.htm#silver_aliance">Silver</a>/<a href="wgplus.htm#gold_aliance">Gold</a>/<a href="wgplus.htm#platinum_aliance">Platinum</a>
+        aliance. Velmi podrobný přehled <a href="wgplus.htm#detaily_aliance">detailů aliančních zemí</a>.
+      </p>
+      <p class="tema">
+        Detaily prestiže
+      </p>
+      <p>
+        Kompletní přehled hodnot, ze kterých je tvořena vaše <a href="statistiky.htm#prestiz">prestiž</a>.
+      </p>
+      <p class="tema">
+        Viditelnost vlastností země
+      </p>
+      <p>
+        Nastavení viditelnosti <a href="statistiky.htm#karticky">kartiček</a> země. Standardní země zde provádí nastavení viditelnosti pro kartičky
+        <a href="statistiky.htm#karticka_zkusena_armada">Zkušená armáda</a> a <a href="statistiky.htm#karticka_hospodarska_velmoc">Hospodářská velmoc</a>,
+        avšak s pokrokem <a href="techno.htm#cenzura">Cenzura</a> lze skrýt všechny kartičky země (s výjimkou kartiček
+        <a href="statistiky.htm#karticka_prebehlik">Přeběhlík</a> a <a href="statistiky.htm#karticka_embargo">Embargo</a>).
       </p>
       <br/>
-      <hr/>
-    </blockquote>
-    <a id="technologie"></a>
-    <h2>1.7 Technologie</h2>
-    <blockquote>
+      <a id="budovy"></a>
+      <h3>1.2.7 Budovy</h3>
       <p>
-        <strong>Zlepšují vám produkci</strong> (<a href="techno.htm#hospodarske_technologie">hospodářské</a> technologie), nebo vám <strong>posílí nějakou
-        vojenskou</strong> oblast (<a href="techno.htm#vojenske_technologie">vojenské technologie</a>). Technologie mohou vyprodukovat budovy
-        <a href="budovy.htm#laboratore">Laboratoře</a>, můžete je získat útokem, <a href="valky.htm#rozvedka">rozvědkou</a> nebo je koupit na
+        <a href="budovy.htm">Budovy</a> jsou velice důležité - to ony pro vás produkují <a href="zbozi.htm#penize">peníze</a>, <a href="zbozi.htm">zboží</a>,
+        <a href="valky.htm#vojenske_jednotky">vojenské jednotky</a> a umožňují vám rozvíjet se.
+      </p>
+      <p class="tema">
+        Stavět a kolonizovat
+      </p>
+      <p>
+        Abyste měli kde <a href="budovy.htm#staveni">stavět budovy</a>, potřebujete <a href="budovy.htm#nezastavene_uzemi">nezastavěné území</a>. Zpočátku země
+        <a href="budovy.htm#kolonizovani">kolonizováním</a> získává dostatečné množství nezastavěného území, s rostoucí rozlohou však množství kolonizovaného
+        území klesá a je proto výhodnější získávat ji <a href="valky.htm#normalni_utoky">vojenskými útoky</a>. Stavba i kolonizování stojí kola.
+      </p>
+      <p class="tema">
+        Bourat budovy
+      </p>
+      <p>
+        Někdy se stane, že některé budovy už nepotřebujete a proto může  být výhodné ze <a href="budovy.htm#bourani">zbourat</a>. Také můžete opustit území,
+        pokud se bojíte, že ho například neubráníte. S menším územím totiž máte vyšší <a href="valky.htm#sila_armady">vojenskou sílu</a>,
+        <a href="valky.htm#rozvedka_sila">sílu rozvědky</a> a jste celkově méně lákavý cíl.
+      </p>
+      <br/>
+      <a id="technologie"></a>
+      <h3>1.2.8 Technologie</h3>
+      <p>
+        Zlepšují vám produkci (<a href="techno.htm#hospodarske_technologie">hospodářské technologie</a>), posilují některé vojenské oblasti
+        (<a href="techno.htm#vojenske_technologie">vojenské technologie</a>) nebo umožňují vynálezat <a href="techno.htm#pokroky">pokroky</a>. Technologie
+        mohou vyprodukovat budovy <a href="budovy.htm#laboratore">Laboratoře</a>, můžete je získat <a href="valky.htm#normalni_utoky">útokem</a>,
+        <a href="valky.htm#rozvedka">rozvědkou</a>, <a href="ufo.htm#udalosti">mimořádnou událostí</a> nebo je koupit na
         <a href="trhy.htm#svetovy_trh">Světovém trhu</a>.
       </p>
-      <p>
-        Pokud máte nějaké laboratoře, nastavíte si, které body technologií vyrábět v menu <a href="techno.htm">Technologie</a> - Výzkum a vývoj. Každé kolo vám
-        potom laboratoře produkují nové body technologií v takovém složení, jaké jste si nastavil.
+      <p class="tema">
+        Výzkum a vývoj
       </p>
       <p>
-        Za technologie také můžete koupit <a href="techno.htm#pokroky">pokroky</a>, které vám zlepšují některé herní vlastnosti (útok, obranu, ztráty,
-        spokojenost, maximum produkce) či umožňují něco speciálního.
+        Nastavení produkce technologií z <a href="budovy.htm#laboratore">Laboratoří</a>, jejich počet, efekt a
+        <a href="techno.htm#technologie_zvyseni_efektu">maximální efekt</a>.
+      </p>
+      <p class="tema">
+        Pokroky
       </p>
       <p>
-        Zároveň v tomto menu vidíte, jakou máte šanci na objev <a href="ufo.htm#ufo">mimozemské civilizace</a>.
+        Díky <a href="techno.htm#pokroky">pokrokům</a> získává vaše země lepší vlastnosti a možnosti. Pokroky vás stojí <a href="zbozi.htm#penize">peníze</a>,
+        <a href="valky.htm#vojenske_jednotky">vojenské jednotky</a> nebo <a href="techno.htm#technologie_druhy">technologie</a>.
       </p>
-      <br/>
-      <hr/>
-    </blockquote>
-    <a id="svetovy_trh"></a>
-    <h2>1.8 Světový trh</h2>
-    <blockquote>
-      <p>
-        Ceny zde určují sami <strong>hráči</strong> svými nabídkami. Koupit lze všechno včetně <a href="valky.htm#vojenske_jednotky">vojenských jednotek</a>
-        (kromě <a href="valky.htm#agenti">agentů</a> a <a href="valky.htm#rakety">raket</a>) a <a href="techno.htm">technologií</a>. Nevýhodou Světového
-        trhu je, že musíte počkat, než vaše zboží někdo koupí. Na Světovém trhu nemohou operovat země, které se nacházejí v protekci (tzn. země, které
-        neodehrály více jak 100 kol).
+      <p class="tema">
+        Alianční pokroky
       </p>
       <p>
-        <span class="tema">Země #0</span> - Cílem je rozvinout ekonomiku WG - v tom smyslu, že se nebude jídlo, energie a další komodity brát odněkud ze
-        vzduchu, ale právě od země #0. Reálně obchoduje s hráči, nakupuje jídlo a energii na Světovém trhu pro expresní dodávky, půjčuje peníze a vykupuje
-        jednotky při nedostatku peněz pro odehrání kola. Také je určitě zajímavé sledovat obchodování ve hře a celkové obraty na WG. Aktuální stav naleznete
-        <a href="https://www.webgame.cz/wg/index.php?p=pracovna&s=land0" target="_blank">Zde</a>.
+        Pokud hrajete v <a href="aliance.htm#aliance">alianci</a>, můžete vynaleznout <a href="aliance.htm#aliancni_pokroky">alianční pokroky</a>. Na rozdíl od
+        standardních pokroků vás nestojí žádné zboží ani jednotky, avšak jejich vynalezení je podmíněné vaší <a href="statistiky.htm#hodnosti">hodností</a> a
+        hodností vaší aliance.
+      </p>
+      <p class="tema">
+        Mimozemské civilizace
       </p>
       <p>
-        V tomto menu najdete také přehled <a href="trhy.htm#embargo">embarg</a> uvalených na země.
+        Každá země může hledat <a href="ufo.htm#ufo">mimozemské civilizace</a>. Kromě šance na její objevení zde také naleznete výběr
+        <a href="ufo.htm#ufo_nabidky">darů</a>, pokud se vám ji podaří objevit.
       </p>
       <br/>
-      <hr/>
-    </blockquote>
-    <a id="domaci_trh"></a>
-    <h2>1.9 Domácí trh</h2>
-    <blockquote>
+      <a id="svetovy_trh"></a>
+      <h3>1.2.9 Světový trh</h3>
       <p>
-        Na <a href="trhy.htm#domaci_trh">Domácím trhu</a> můžete <strong>nakupovat</strong> <a href="zbozi.htm#jidlo">jídlo</a>,
-        <a href="zbozi.htm#energie">energii</a>, <a href="valky.htm#vojenske_jednotky">vojenské jednotky</a> (kapacita trhu je ale omezená a pokud nějakou
-        komoditu hodně nakupujete, její cena roste) a také je <strong>prodávat</strong>. Rozdíl mezi Světovým a Domácím trhem je ten, že prodej na Domácím se
-        příliš nevyplatí (ceny na <strong>Světovém trhu bývají výhodnější</strong>). Jedinou výhodou prodeje na Domácím trhu je, že zde dostanete peníze ihned
-        a můžete s nimi okamžitě operovat. Pouze na Domácím trhu je možné nakupovat a prodávat <a href="valky.htm#agenti">agenty</a> (pokud země opustila protekci).
+        Na světovém trhu můžou hráči obchodovat až v momentě, kdy jejich země opustí protekci. Ceny zde určují přímo hráči svými nabídkami. Nevýhodou světového
+        trhu je, že musíte počkat, než je vaše zboží koupeno.
+      </p>
+      <a id="nakup_prodej_zbozi"></a>
+      <p class="tema">
+        Nákup / prodej zboží (graf)
+      </p>
+      <p>
+        Směna surovin a jednotek. V grafu lze pozorovat vývoj ceny.
+      </p>
+      <p class="tema">
+        Nákup / prodej technologií (graf)
+      </p>
+      <p>
+        Směna technologií. V grafu lze pozorovat vývoj ceny.
+      </p>
+      <p class="tema">
+        Embargo
+      </p>
+      <p>
+        Přehled <a href="trhy.htm#embargo">embargo</a> bodů a predikce získání dalších. Můžete zde vidět i uvalená embarga na další země a také zde hlasujete o
+        udělení svých embargo bodů.
+      </p>
+      <p class="tema">
+        Země #0
+      </p>
+      <p>
+        Statistika obchodování <a href="trhy.htm#zeme_0">Země #0</a>.
+      </p>
+      <p class="tema">
+        Nastavení - Automatický prodej
+      </p>
+      <p>
+        Pokud nastane situace, kdy vaše země nedisponuje penězi potřebnými pro odehrání kola a vy se přesto rozhodnete kola odehrávat, peníze jsou získané
+        prodejem komodit země za výrazně horší cenu. V této části lze nastavit pořadí prodávaných položek. Položky se prodávají tak dlouho, dokud není v zemi
+        dostatek peněz k odehrání kola.
       </p>
       <br/>
-      <hr/>
-    </blockquote>
-    <a id="valka"> </a>
-    <h2>1.10 Válka</h2>
-    <blockquote>
+      <a id="domaci_trh"></a>
+      <h3>1.2.10 Domácí trh</h3>
+      <p>
+        Na <a href="trhy.htm#domaci_trh">Domácím trhu</a> mohou obchodovat i země v protekci. Množství zboží je ovlivněno množstvím
+        <a href="budovy.htm#obchodni_zony">Obchodních zón</a>. Cena je ovlivněna <a href="vlady.htm#vlady">státním zřízením</a>
+        (<a href="vlady.htm#fundamentalismus">Fundamentalismus</a> má levnější cenu <a href="valky.htm#vojaci">vojáků</a>,
+        <a href="vlady.htm#komunismus">Komunismus</a> má poloviční cenu <a href="valky.htm#agenti">agentů</a>) a technologiemi
+        <a href="techno.htm#cena_na_domacim_trhu">Cena na domácím trhu</a>.
+      </p>
+      <p>
+        Nakupovat zde můžete <a href="zbozi.htm#jidlo">jídlo</a>, <a href="zbozi.htm#energie">energii</a>, <a href="valky.htm#vojenske_jednotky">vojenské
+        jednotky</a> a <a href="valky.htm#agenti">agenty</a>.
+      </p>
+      <p>
+        Transakce zde učiněné se provedou hned. Prodejní cena je však vždy nižší než na <a href="trhy.htm#svetovy_trh">Světovém trhu</a>.
+      </p>
+      <br/>
+      <a id="valka"></a>
+      <h3>1.2.11 Válka</h3>
+      <p>
       <p>
         Vojenské výboje jsou důležité hlavně pro <strong>rozšíření vaší země</strong> na úkor jiných a pro získávání
         <a href="valky.htm#zkusenosti_armady">zkušeností armády</a> i <a href="valky.htm#generalove">generálů</a>. Důležité jsou nejen
-        <a href="valky.htm#dobyvacny_utok">dobyvačné útoky</a>, které nepříteli seberou území, ale i další podobné útoky -
-        <a href="valky.htm#loupezivy_utok">loupeživé</a> (hlavně berou zboží) a <a href="valky.htm#vyhlazovaci_utok">vyhlazovací</a> (ničení země nepřítele).
+        <a href="valky.htm#dobyvacny_utok">Dobyvačné útoky</a>, které nepříteli seberou území, ale i další podobné útoky -
+        <a href="valky.htm#loupezivy_utok">Loupeživé</a> (hlavně berou zboží) a <a href="valky.htm#vyhlazovaci_utok">Vyhlazovací</a> (ničení země nepřítele).
         Všechny tyto útoky mají společné to, že v nich <strong>pomáhají jednotky</strong> <a href="aliance.htm#spojenectvi">spojenců</a>. Také se jim říká
         <a href="valky.htm#normalni_utoky">normální</a>.
       </p>
@@ -245,50 +411,105 @@
         Útok je <strong>úspěšný</strong>, pokud je útočná síla vašich jednotek (včetně bonusů a u normálních útoků včetně adekvátní síly
         <a href="aliance.htm#spojenectvi">spojenců</a>) vyšší než obranná síla nepřítele.
       </p>
-      <p class="inf">
-        K provedení útoku <strong>potřebujete</strong> volná kola, zapsat číslo cílové země a počet poslaných jednotek. O výsledku útoku - ziscích a ztrátách -
-        se hned dozvíte. Vojenské útoky trvají 2 kola, případně 4 kola (totální útoky).
+      <p class="tema">
+        Útoky
       </p>
       <p>
-        <strong>Bonusy k síle armády:</strong><br/>
+        K provedení útoku <strong>potřebujete</strong> volná kola, zapsat číslo cílové země a počet poslaných jednotek. Pro snadnější navigaci cílů zde najdete
+        země, se kterými jste aktuálně ve <a href="aliance.htm#valka">válce</a>. O výsledku útoku (ziscích a ztrátách) se hned dozvíte. Vojenské útoky trvají
+        2 kola, případně 4 kola (totální útoky).
+      </p>
+      <p>
         Vyšší sílu vám zajistí technologie <strong>síla zbraní</strong> a hodně <a href="budovy.htm#vojenske_zakladny">vojenských základen</a>. Je také
         ovlivněna <a href="vlady.htm#spokojenost">spokojeností</a> obyvatel, vynalezenými <a href="techno.htm#pokroky">pokroky</a>,
         <a href="valky.htm#zkusenosti_armady">zkušeností armády</a>, <a href="valky.htm#pripravenost_armady">připraveností armády</a>,
         <a href="vlady.htm#bonusy">vládou</a> a <a href="valky.htm#generalove">generály</a>.
       </p>
       <p>
-        Posledními nabídkami v tomto menu jsou Generálové a Spojenci. V menu <span class="menu">{Válka} → {Generálové}</span> vidíte vaše získané generály,
-        které lze zapínat do útoku či obrany. Menu <span class="menu">{Válka} → {<a href="aliance.htm#spojenectvi">Spojenci</a>}</span> obsahuje údaje o
-        příspěvcích spojeneckých armád k té vaší.
+        Naleznete zde i přepínání <a href="valky.htm#generalove">generálů</a> pro právě chystaný útok a zjednodušenou tabulku pro okamžitý nákup na
+        <a href="trhy.htm#svetovy_trh">Světovém trhu</a>. Formou dalších odkazů se můžete ihned dostat k <a href="#nakup_prodej_zbozi">Nákup zboží na světovém
+        trhu</a>. Nastavení produkce továren a Nastavení produkce raket.
+        TODO odkazy do dotace až bude
       </p>
-      <br/>
-      <hr/>
-    </blockquote>
-    <a id="rakety"></a>
-    <h2>1.11 Rakety</h2>
-    <blockquote>
+      <p class="tema">
+        Generálové
+      </p>
+      <p>
+        Zde hráč může měnit schopnosti <a href="valky.htm#generalove">generálů</a>, určovat jejich úkoly (útok/obrana) a vidět kolečko generálů. Pokud máte
+        placenou výhodu <a href="wgplus.htm#uprava_rotace_generalu">Úprava rotace generálů</a>, naleznete zde její nastavení.
+      </p>
+      <p class="tema">
+        Rakety
+      </p>
+      <p>
+        Máte-li v zemi vyrobené <a href="valky.htm#rakety">rakety</a>, odtud řídíte jejich odpálení.
+      </p>
       <p>
         Raketa je zákeřná a mocná zbraň. <a href="valky.htm#konvencní_rakety">Konvenční raketa</a> slouží pro dočasné oslabení armády. Často je proto použita
         na silnějšího nepřítele, u kterého se chcete ujistit, že váš útok bude úspěšný.
       </p>
       <p>
-        Použít <a href="valky.htm#biocidni_rakety">biocidní</a>, <a href="valky.htm#emp_rakety">EMP</a> nebo dokonce
-        <a href="valky.htm#nuklearni_rakety">nukleární</a> raketu je velice riskantní, neboť její použití bude nepřítel téměř jistě opětovat.
+        Použít <a href="valky.htm#biocidni_rakety">Biocidní</a>, <a href="valky.htm#emp_rakety">EMP</a> nebo dokonce
+        <a href="valky.htm#nuklearni_rakety">Nukleární</a> raketu je velice riskantní, neboť její použití bude nepřítel téměř jistě opětovat.
       </p>
       <p>
-        <span class="tema">Výroba raket</span> - každé kolo vyprodukujete určitý počet bodů na raketu. Tento počet bodů lze zvýšit pomocí technologií
-        <a href="techno.htm#vyvoj_raket">vývoj raket</a> a také <a href="budovy.htm#vojenske_zakladny">vojenskými základnami</a>.
+        Každé kolo vyprodukujete určitý počet bodů na raketu. Tento počet bodů lze zvýšit pomocí technologií
+        <a href="techno.htm#vyvoj_raket">Vývoj raket</a> a také <a href="budovy.htm#vojenske_zakladny">Vojenskými základnami</a>.
       </p>
       <p>
-        <span class="tema">Obrana proti raketám</span> - Nikdy není stoprocentní šance, že raketa zasáhne svůj cíl. Může být zničena nepřátelským
-        protiraketovým deštníkem. Nepřátelský protiraketový deštník (též SDI) je tím lepší, čím více má nepřítel <a href="techno.htm">technologií</a>
-        <a href="techno.htm#protiraketova_obrana">Protiraketová obrana</a> a Vojenských základen. Její maximum je též vyšší s
-        <a href="techno.htm#pokroky">pokroky</a>.
+        Nikdy není stoprocentní šance, že raketa zasáhne svůj cíl. Může být zničena nepřátelským protiraketovým deštníkem. Nepřátelský protiraketový deštník
+        (též SDI) je tím lepší, čím více má nepřítel technologií <a href="techno.htm#protiraketova_obrana">Protiraketová obrana</a> a
+        <a href="budovy.htm#vojenske_zakladny">Vojenských základen</a>. Její maximum je též vyšší s <a href="techno.htm#pokroky">pokroky</a>.
       </p>
+      <p class="tema">
+        Spojenci
+      </p>
+      <p>
+        Přehled příspěvků armád a rozvědky <a href="aliance.htm#spojenectvi">spojenců</a>. Podrobně zde naleznete jak moc vám vaši spojenci pomáhají.
+      </p>
+      <br/>
+      <a id="rozvedka"></a>
+      <h3>1.2.12 Rozvědka</h3>
+      <br/>
+      <a id="dotace"></a>
+      <h3>1.2.13 Dotace</h3>
+      <br/>
+      <a id="posta"></a>
+      <h3>1.2.14 Pošta</h3>
+      <br/>
+      <a id="forum"></a>
+      <h3>1.2.15 Fórum</h3>
+      <br/>
+      <a id="spojenectvi"></a>
+      <h3>1.2.16 Spojenectví</h3>
+      <br/>
+      <a id="aliance"></a>
+      <h3>1.2.17 Aliance</h3>
+      <br/>
+      <a id="konflikty"></a>
+      <h3>1.2.18 Konflikty</h3>
+      <br/>
+      <a id="najit"></a>
+      <h3>1.2.19 Najít</h3>
+      <br/>
+      <a id="zebricek"></a>
+      <h3>1.2.20 Žebříček</h3>
+      <br/>
+      <a id="antimulti"></a>
+      <h3>1.2.21 Anti-Multi</h3>
+      <br/>
+      <a id="prepnout_zem"></a>
+      <h3>1.2.22 Přepnout zem</h3>
+      <br/>
+      <a id="odhlasit"></a>
+      <h3>1.2.23 Odhlásit</h3>
+      <br/>
+
+
+
       <br/>
       <hr/>
     </blockquote>
-    <a id="rozvedka"></a>
     <h2>1.12 Rozvědka</h2>
     <blockquote>
       <p>
@@ -316,7 +537,6 @@
       <br/>
       <hr/>
     </blockquote>
-    <a id="dotace"></a>
     <h2>1.13 Dotace</h2>
     <blockquote>
       <p>
@@ -366,7 +586,6 @@
       <br/>
       <hr/>
       </blockquote>
-    <a id="spojenectvi"></a>
     <h2>1.15 Spojenectví</h2>
     <blockquote>
       <p>
@@ -401,7 +620,6 @@
       <br/>
       <hr/>
     </blockquote>
-    <a id="aliance"></a>
     <h2>1.16 Aliance</h2>
     <blockquote>
       <p>
@@ -427,7 +645,6 @@
       <br/>
       <hr/>
     </blockquote>
-    <a id="konflikty"></a>
     <h2>1.17 Konflikty</h2>
     <blockquote>
       <p>
@@ -437,7 +654,6 @@
       <br/>
       <hr/>
     </blockquote>
-    <a id="najit"> </a>
     <h2>1.18 Najít</h2>
     <blockquote>
       <p>
@@ -450,7 +666,6 @@
       <br/>
       <hr/>
     </blockquote>
-    <a id="zebricek"></a>
     <h2>1.19 Žebříček</h2>
     <blockquote>
       <p>
