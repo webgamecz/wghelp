@@ -307,9 +307,27 @@
         pomůže jednoduchý příklad.
       </p>
       <p class="inf">
-        Řekněme, že máte dvě naprosto stejné země, jen jedná má maximální efekt zemědělství 172 % a druhá 192 %. V obou zemích máte 5000 technologií
-        Zemědělství. V první zemi s nižším "stropem" máte výsledný efekt 134 % a v zemi druhé, kde máte maximum vyšší, máte efekt 138 %.
+        Řekněme, že máte dvě naprosto stejné země.
+        Jedna má maximální efekt zemědělství 172 % a druhá 192 %.
+        V obou zemích máte 5 000 technologií Zemědělství.
+        V první zemi máte výsledný efekt zemědělství 134 % a v druhé zemi 138 %.
       </p>
+      <p>
+        Veškeré bonusy na zvýšení maximálního efektu technologií se sčítají (vyjma zvýšení <strong>základního</strong> efektu technologie).
+      </p>
+      <p class="inf">
+        Nejvyšše lze dosáhnout 45% maximálního efektu hospodářských technologií, tj. 15 % (<a href="vlady.htm#technokracie">Technokracie</a>) + 10 % (<a href="techno.htm#androidi">Androidi</a>) + 5 % (plný <a href="aliance.htm#aliancni_bonusy">alianční bonus</a> za <a href="vlady.htm#demokracie">Demokracii</a>) + 15 % (Mimomozemský superpočítač).
+      </p>
+      <p class="inf">
+        Nejvyšše lze dosáhnout 35% maximálního efektu hospodářských technologií, tj. 20 % (<a href="vlady.htm#robokracie">Robokracie</a>) + 10 % (<a href="techno.htm#androidi">Androidi</a>) + 5 % (plný <a href="aliance.htm#aliancni_bonusy">alianční bonus</a> za <a href="vlady.htm#robokracie">Robokracii</a>).
+      </p>
+      <p>
+        Výsledný maximální efekt technologie se počítá následovně: [základní maximální efekt] + ([základní maximální efekt] – 100 %) · [maximální efekt technologie].
+      </p>
+      <p class="inf">
+        V případě maximálního efektu technologie Hustota zalidnění u bezalianční <a href="vlady.htm#demokracie">Demokracie</a>) s <a href="#pokroky">pokroky</a> Androidi a Mimozemský superpočítač dostáváme 160 % + (160 – 100) % · 0,35 = 181 %.
+      </p>
+      <!--
       <p>
         A jak se vůbec tyto efekty počítají? Pokud např. vláda <a href="vlady.htm#demokracie">Demokracie</a> zvýší efekt ze 160 % o 10 %, bude výsledný
         maximální efekt 166 %, nikoli 170 %!
@@ -323,7 +341,6 @@
         Kdybychom si řekli, že jde třeba o technologie automatizace a přidali si pokroky nanotechnologie a androidi, změní se náš případ takto: Nanotechnologie
         navýší max efekt ze 160 % na 180 %, androidi pak bonus z 10 % na 10 % + 10 % = 20 %. Výsledný efekt pak bude 80 % × 1,2 = 96 % → 196 %.
       </p>
-      <!--
       <p class="inf">
         Výpočet je rozepsán jako: Starý efekt je 160%.  Jelikož efekt přešel přes hranici 100% (jednoho celku), musíte odečíst tento celek a zbavit se
         procentuální časti vydělením 100%. (160%-100%) /100% = 0,6. Z čísla 0,6 pak počítáte navýšení efektu o 10%. Číslo 0,6 vynásobíme hodnotou 0,1 (0,1 =
@@ -335,7 +352,7 @@
       </p>
       -->
       <p>
-        Na velikost efektu mají krom vlády dále vliv i pokroky a alianční bonusy (v případě vojenských technologií mají vliv i vojenské základny).
+        Na velikost efektu mají kromě vlády dále vliv i pokroky a alianční bonusy (v případě vojenských technologií mají vliv i vojenské základny).
       </p>
       <br/>
       <hr/>
@@ -375,34 +392,35 @@
       <a id="typy_pokroku"></a>
       <h3>7.2.3 Typy</h3>
       <p>
-        Je pět základních typů pokroků: společenské (S), konstrukční (K), technologické (T), alianční (A) a mimozemské (M). Každý typ má své specifické
-        vlastnosti. <strong>Zrušit</strong> se dá pouze 13 vybraných pokroků (v menu <span class="menu">{Technologie} → {Pokroky}</span>) a <strong>všechny
-        společenské pokroky (S) se zruší při revoluci a alianční (A) při opuštění aliance.</strong> Za zrušení pokroku Hraniční pevnosti a Protiletecká obrana
-        zaplatíte částku, která se rovná vzorci: ([rozloha země] × 1 000 $). Ostatní pokroky se rušit nedají.
+        Je pět základních typů pokroků: společenské (S), konstrukční (K), technologické (T), alianční (A) a mimozemské (M).
+        Každý typ má své specifické vlastnosti.
+        <strong>Zrušit</strong> se dá pouze 14 vybraných (S)+(K) pokroků (v menu <span class="menu">{Technologie} → {Pokroky}</span>; ať už přímo nebo jako navazující pokrok). 
+        Z aliančních pokroků lze zrušit pouze <a href="aliance.htm#guerillove_valky">Guerillové války</a> (v menu <span class="menu">{Technologie} → {Alianční pokroky}</span>).
+        <strong>všechny společenské pokroky (S) se zruší při revoluci a alianční (A) při opuštění aliance.</strong>
+        Za zrušení pokroku Hraniční pevnosti a Protiletecká obrana zaplatíte částku, která se rovná vzorci: ([rozloha země] × 1 000 $).
       </p>
       <p>
-        <strong>Technologické</strong> - Nejtěžší je vynaleznout je poprvé, potom jejich cena pro další země klesá za každého hráče, který tento pokrok má o
-        0,5 % až na 20 % ceny původní. Potom už dále neklesá. Minimální ceny dosáhne technologický pokrok pokud jej má 160 zemí.
-      </p>
-      <p class="inf">
-        U technokracie se technologické pokroky nezapočítávají do NP.
+        <a id="spolecenske_pokroky"></a>
+        <strong>Společenské</strong> - Jejich základní cena zůstává vždy stejná, nehledě na to, kolik zemí už tento pokrok má.
       </p>
       <p>
         <strong>Konstrukční</strong> - S každou zemí, která tento pokrok má, klesá cena pro další o 0,1 % až na 40 % základní ceny. Minimální ceny dosáhne
         konstrukční pokrok pokud jej má 600 zemí.
       </p>
       <p>
-        <a id="spolecenske_pokroky"></a>
-        <strong>Společenské</strong> - Jejich základní cena zůstává vždy stejná, nehledě na to, kolik zemí už tento pokrok má. <strong>Nezapočítávají se do
-        ceny NP.</strong>
+        <strong>Technologické</strong> - Nejtěžší je vynaleznout je poprvé, potom jejich cena pro další země klesá za každého hráče, který tento pokrok má o
+        0,5 % až na 20 % ceny původní. Potom už dále neklesá. Minimální ceny dosáhne technologický pokrok pokud jej má 160 zemí.
       </p>
-      <p>
-        <strong>Mimozemské</strong> - Tyto pokroky lze dostat <strong>pouze</strong> od <a href="ufo.htm#ufo">mimozemské civilizace</a> a nelze je vynaleznout
-        jiným způsobem. Mimozemské pokroky nelze zrušit.
+      <p class="inf">
+        U Technokracie se technologické pokroky nezapočítávají do NP.
       </p>
       <p>
         <strong>Alianční</strong> - Lze je vynaleznout zdarma po dosažení hodnosti vlastní i alianční. <a href="aliance.htm#aliancni_pokroky">Alianční
         pokroky</a> podrobně.
+      </p>
+      <p>
+        <strong>Mimozemské</strong> - Tyto pokroky lze dostat <strong>pouze</strong> od <a href="ufo.htm#ufo">mimozemské civilizace</a> a nelze je vynaleznout
+        jiným způsobem. Mimozemské pokroky nelze zrušit.
       </p>
     </blockquote>
     <br/>
