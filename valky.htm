@@ -1274,13 +1274,13 @@
       <h3>6.3.3 Typy generálů</h3>
       <p>
         Základních typů generálů je 5 - ekonomičtí, útoční, obranní, útočně-obranní a obranně-ekonomičtí. Jejich schopnosti se pak dle toho dají použít buď
-        pouze v útoku (v tabulce označeny U), nebo jen v obraně (O) v obojím (UO) nebo v ekonomice (E).
+        pouze v útoku (v tabulce označeny U), nebo jen v obraně (O) či ekonomice (E), případně i v kombinaci (UO, OE).
       </p>
       <p>
         Máte-li více generálů, může vést armádu při útoku nebo obraně země v jednom okamžiku pouze jeden. V menu <span class="menu">{Válka} →
         {Generálové}</span> zvolíte <strong>aktivní generály</strong> pro útok a obranu. Pak generálové aktivní v útoku budou dostávat zkušenosti útočením a
         aktivní v obraně získají zkušenosti bráněním. Výjimku tvoří ekonomičtí generálové (E). Ti pracují vždy, aniž by byli aktivní v obraně nebo útoku,
-        <a href="#zkusenosti_armady">zkušenosti</a> mohou získat jako ostatní - v boji a dotaci. Navíc pokud mají dva ekonomičtí (E) generálové stejnou
+        <a href="#zkusenosti_armady">zkušenosti</a> mohou získat jako ostatní - v boji a dotaci. Navíc pokud mají dva ekonomičtí (E, OE) generálové stejnou
         schopnost, pomůže vám jen ten se <strong>silnější</strong> schopností. Bonusy se tedy <strong>nesčítají</strong>.
       </p>
       <p class="inf">
@@ -1362,7 +1362,7 @@
             ruší úplně efekt útočícího nepřátelského <a href="#osvoboditel">Osvoboditele</a><sup>1)</sup><br/>
             +10 % obrana rozvědky proti <a href="#sabotazni_operace">teroristickým akcím</a> [E]
           </td>
-          <td style="text-align: center">O</td>
+          <td style="text-align: center">OE</td>
           <td>
             +40 % obrana v <a href="#takticke_utoky">taktických útocích</a><br/>
             +80 % obrana rozvědky proti <a href="#sabotazni_operace">teroristickým akcím</a> [E]
@@ -1379,9 +1379,9 @@
           </td>
           <td style="text-align: center">E</td>
           <td>
-            +40 % <a href="#rozvedka_sila">síla rozvědky</a><br/>
-            -40 % ztráty agentů při akcích rozvědky<br/>
-            -40 % ztráty agentů při partyzánech
+            +70 % <a href="#rozvedka_sila">síla rozvědky</a><br/>
+            -70 % ztráty agentů při akcích rozvědky<br/>
+            -70 % ztráty agentů při partyzánech
           </td>
         </tr>
         <tr>
@@ -1391,7 +1391,7 @@
           </td>
           <td>-5 % výdaje za <a href="#vojenske_jednotky_prehled">žoldy</a></td>
           <td style="text-align: center">E</td>
-          <td>-40 % výdaje za <a href="#vojenske_jednotky_prehled">žoldy</a></td>
+          <td>-70 % výdaje za <a href="#vojenske_jednotky_prehled">žoldy</a></td>
         </tr>
         <tr>
           <td>
@@ -1401,7 +1401,7 @@
           <td>+2 % <a href="vlady.htm#spokojenost">spokojenost</a></td>
           <td style="text-align: center">E</td>
           <td>
-            +16 % <a href="vlady.htm#spokojenost">spokojenost</a></td>
+            +28 % <a href="vlady.htm#spokojenost">spokojenost</a></td>
         </tr>
         <tr>
           <td>
@@ -1415,9 +1415,9 @@
           </td>
           <td style="text-align: center">E</td>
           <td>
-            +40 <a href="budovy.htm#staveni">postavěných budov</a> za kolo<br/>
-            -40 % <a href="budovy.htm#cena">cena budov</a><br/>
-            +40 % <a href="budovy.htm#kolonizovani">kolonizace</a>
+            +70 <a href="budovy.htm#staveni">postavěných budov</a> za kolo<br/>
+            -70 % <a href="budovy.htm#cena">cena budov</a><br/>
+            +70 % <a href="budovy.htm#kolonizovani">kolonizace</a>
           </td>
         </tr>
         <tr>
@@ -1430,7 +1430,7 @@
           </td>
           <td style="text-align: center">E</td>
           <td>
-            +16 % produkce <a href="#vojenske_jednotky_obecne">jednotek</a>, <a href="#vojaci">vojáků</a> a <a href="#rakety">raket</a></td>
+            +28 % produkce <a href="#vojenske_jednotky_obecne">jednotek</a>, <a href="#vojaci">vojáků</a> a <a href="#rakety">raket</a></td>
         </tr>
         <tr>
           <td>
@@ -1456,7 +1456,7 @@
           </td>
           <td style="text-align: center">E</td>
           <td>
-            +16 % produkce jídla<br/>
+            +28 % produkce jídla<br/>
             brání příchodu genetické katastrofy
           </td>
         </tr>
@@ -1468,7 +1468,7 @@
           <td>+2 % produkce technologií</td>
           <td style="text-align: center">E</td>
           <td>
-            +16 % produkce technologií
+            +28 % produkce technologií
           </td>
         </tr>
       </table>
@@ -1485,6 +1485,11 @@
         2) Bonus na zisk území a zboží u generála Dobyvatele je aktivní pouze při útocích bezalianční země na bezalianční země, útocích ve
         <a href="aliance.htm#valka">válce</a> (i právě vyhlášené), útocích na <a href="aliance.htm#prebehlik">přeběhlíka</a> a v rámci
         <a href="podpora.htm#odveta">odvety</a>.
+      </p>
+      <p class="inf">
+        Efekt schopnosti generálů typu U, O a OE je lineárně závislý na úrovni generála.
+        V případě schopnosti typu E je efekt lineárně závislý na úrovni generála do 5. úrovně.
+        Od 6. úrovně nastává kvadratický efekt.
       </p>
       <br/>
       <p style="font-weight: bold">
