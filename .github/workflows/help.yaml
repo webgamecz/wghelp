@@ -13,7 +13,7 @@ jobs:
     - name: Publish Docker
       # You may pin to the exact commit or the version.
       # uses: elgohr/Publish-Docker-Github-Action@f7aca2fea76a5218f3c76cd5933c3ba1d8008774
-      uses: elgohr/Publish-Docker-Github-Action@3.02
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         # The name of the image you would like to push
         name: harbor-registry.webgame.cluster.expertni-sluzby.cz/webgame/help
@@ -25,6 +25,7 @@ jobs:
         default_branch: master
         # Use dockerfile when you would like to explicitly build a Dockerfile
         dockerfile: Dockerfile
+        registry: harbor-registry.webgame.cluster.expertni-sluzby.cz
 
     - name: Deploy to cluster
       uses: danielr1996/kubectl-action@1.0.0
